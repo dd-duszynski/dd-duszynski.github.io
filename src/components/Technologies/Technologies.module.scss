@@ -1,0 +1,10 @@
+@import "../../scss/vm.scss";
+
+.Technologies{
+   color: white;
+   grid-column: 2/3;
+}
+.Technologies ul{
+   display: flex;
+   flex-wrap: wrap;
+}

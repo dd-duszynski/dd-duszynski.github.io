@@ -1,0 +1,9 @@
+@import "../../scss/vm.scss";
+
+.Layout {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 5% 90% 5%;
+   position: relative;
+   margin-top: 80px;
+}

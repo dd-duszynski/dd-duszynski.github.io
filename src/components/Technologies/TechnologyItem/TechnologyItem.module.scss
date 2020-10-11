@@ -1,0 +1,41 @@
+@import '../../../scss/vm.scss';
+
+.TechnologyItem {
+	width: 68px;
+	height: auto;
+	margin: 8px 5px;
+	svg {
+		width: 30px;
+		height: 30px;
+		color: gray;
+   }
+   
+	&:hover {
+		cursor: help;
+		svg {
+			color: lightgray;
+		}
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.icon {
+	max-width: 40px;
+	max-height: 40px;
+	filter: grayscale(90%);
+	&:hover {
+		cursor: help;
+		filter: grayscale(0);
+	}
+}
+
+.title {
+	text-align: center;
+	margin-top: 3px;
+}

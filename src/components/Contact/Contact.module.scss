@@ -1,0 +1,71 @@
+@import "../../scss/vm.scss";
+
+.Contact {
+   grid-column: 2/3;
+   height: calc(100vh - 160px);
+
+}
+
+.Container {
+   display: flex;
+   flex-direction: column;
+   height: 80%;
+   align-items: center;
+   justify-content: center;
+}
+
+.singleFormItem {
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   padding: 10px 0;
+   &:hover{
+      label{
+         color: green;
+      }
+   }
+}
+
+.Contact label {
+   font-size: 14px;
+}
+
+.Contact input,
+.Contact textarea,
+.Contact button {
+   font-size: 14px;
+   margin-top: 4px;
+}
+
+.Contact button {
+   font-size: 15px;
+   border: none;
+   border: 1px solid white;
+   background: none;
+   color: white;
+   padding: 10px 0;
+   border-radius: 6px;
+   &:hover {
+      border: 1px solid green;
+      background: $bgcolor;
+      color: green;
+      cursor: pointer;
+   }
+}
+
+.Contact input,
+.Contact textarea {
+   background: none;
+   color: white;
+   border: none;
+   border-bottom: 1px solid lightgray;
+   @include roboto300;
+   outline: none;
+   &:focus {
+      border-bottom: 1px solid green;
+   }
+}
+
+.Contact textarea {
+   resize: none;
+}

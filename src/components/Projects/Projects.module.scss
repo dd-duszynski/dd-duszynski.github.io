@@ -1,0 +1,7 @@
+@import "../../scss/vm.scss";
+.Projects{
+   grid-column: 2/3;
+}
+.Header{
+   @include sectionsHeader;
+}

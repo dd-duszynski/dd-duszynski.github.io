@@ -1,0 +1,25 @@
+@import "../../../scss/vm.scss";
+
+.logo {
+   z-index: 3;
+   width: 80px;
+   height: 80px;
+   cursor: pointer;
+   position: relative;
+}
+
+.logo__container {
+   position: absolute;
+   top: 20px;
+   left: 0;
+   color: white;
+   background-repeat: no-repeat;
+}
+.logo__image {
+   transition: all 0.5s ease;
+   width: 43px;
+   height: 43px;
+   &:hover{
+      color: red;
+   }
+}
