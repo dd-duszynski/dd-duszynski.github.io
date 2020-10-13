@@ -16,18 +16,21 @@ const Footer = ({ footerFixed }) => {
             url="https://www.linkedin.com/in/dd-duszynski"
             activeIcon={linkedinOutline}
             icon={linkedinFull}
+            description="linkedin icon"
          />
          <FooterItem
             text="dd.duszynski@gmail.com"
             url="mailto:dd.duszynski@gmail.com"
             activeIcon={mailOutline}
             icon={mailFull}
+            description="mail icon"
          />
          <FooterItem
             text="github.com/dd-duszynski"
             url="https://github.com/dd-duszynski"
             activeIcon={gitOutline}
             icon={gitFull}
+            description="github icon"
          />
       </footer>
    )

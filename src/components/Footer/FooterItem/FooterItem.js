@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './FooterItem.module.scss'
 
-const FooterItem = ({ url, icon, activeIcon }) => {
+const FooterItem = ({ url, icon, activeIcon, description }) => {
    const [isIconHover, setIsIconHover] = useState(false)
    const isIconHoverHandler = () => {
       isIconHover ? setIsIconHover(false) : setIsIconHover(true)
@@ -15,7 +15,7 @@ const FooterItem = ({ url, icon, activeIcon }) => {
          onMouseEnter={isIconHoverHandler}
          onMouseLeave={isIconHoverHandler}
       >
-         <img src={isIconHover ? activeIcon : icon} className={styles.image} />
+         <img src={isIconHover ? activeIcon : icon} className={styles.image} alt={description}/>
       </a>
    )
 }

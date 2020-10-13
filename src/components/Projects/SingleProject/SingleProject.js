@@ -8,7 +8,7 @@ import gatsby from '../../../assets/icon_gatsby.svg'
 
 const SingleProject = ({ nazwa, rodzaj, opis, photo }) => {
    const arrOfImages = [html, css, gatsby]
-
+   
    return (
       <article className={styles.SingleProject}>
          <H2 text={nazwa} />
@@ -17,8 +17,8 @@ const SingleProject = ({ nazwa, rodzaj, opis, photo }) => {
             <p className={styles.paragraph}>{opis}</p>
             <hr />
             <div className={styles.iconsContainer}>
-               {arrOfImages.map(i => {
-                  return <img src={i} alt="tech" className={styles.icon} />
+               {arrOfImages.map((i, index) => {
+                  return <img src={i} className={styles.icon} alt=" " key={index}/>
                })}
             </div>
          </div>

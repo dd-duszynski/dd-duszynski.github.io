@@ -8,7 +8,7 @@ const NavLinkItem = ({ onClickHandler, linkTo, children }) => {
          to={linkTo}
          onClick={onClickHandler}
          className={styles.navLink}
-         activeClassName={styles.navLinkActive}
+         // activeclassName={styles.navLinkActive}
       >
          {children}
       </Link>

@@ -1,9 +1,7 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import { AppContext } from "../../context/context"
 import styles from "./Sidebar.module.scss"
 import NavLinkItem from "../Navbar/NavLinkItem/NavLinkItem"
-import PL from "../../textContent/PL"
-import EN from "../../textContent/EN"
 
 const Sidebar = () => {
    const { isSidebarOpen, handleCloseSidebar, textContent, handleLanguageChange, language } = useContext(AppContext)
@@ -19,9 +17,10 @@ const Sidebar = () => {
          }
       >
          <section className={styles.linksContainer}>
-            {navigation.map(item => {
+            {navigation.map((item, index) => {
                return (
                   <NavLinkItem
+                     key={index}
                      linkTo={item[1]}
                      onClickHandler={handleCloseSidebar}
                   >

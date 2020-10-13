@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styles from "./HamburgerMenu.module.scss"
 
 const HamburgerMenu = ({isSidebarOpen, handleCloseSidebar, handleOpenSidebar}) => {

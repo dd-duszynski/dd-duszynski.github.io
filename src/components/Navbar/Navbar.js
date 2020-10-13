@@ -17,7 +17,6 @@ const Navbar = () => {
       textContent
    } = useContext(AppContext);
 
-   console.log(textContent);
    const text = language === "PL" ? PL : EN;
 
    const biggerSize = (
