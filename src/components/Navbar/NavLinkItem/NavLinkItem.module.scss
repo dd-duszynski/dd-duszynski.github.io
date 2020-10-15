@@ -1,15 +1,16 @@
-@import "../../../scss/vm.scss";
+@import '../../../scss/vm.scss';
 
-.navLink, .navLinkActive {
-   text-transform: capitalize;
-   @include roboto300;
-   color: white;
-   font-size: 1.6rem;
-   line-height: 75px;
-   &:hover{
-      color: green;
-   }
+.navLink,
+.navLinkActive {
+	text-transform: capitalize;
+	@include roboto300;
+	color: white;
+	font-size: 1.6rem;
+	line-height: 75px;
+	&:hover {
+		color: green;
+	}
 }
 .navLinkActive {
-   color: darkgreen;
+	color: darkgreen;
 }

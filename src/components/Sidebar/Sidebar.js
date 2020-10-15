@@ -17,16 +17,29 @@ const Sidebar = () => {
          }
       >
          <section className={styles.linksContainer}>
-            {navigation.map((item, index) => {
-               return (
-                  <NavLinkItem
-                     key={index}
-                     linkTo={item[1]}
-                     onClickHandler={handleCloseSidebar}
-                  >
-                     {item[0]}
-                  </NavLinkItem>
-               )
+            {navigation.map((item) => {
+               if (item[1].indexOf("#") > 0) {
+                  return (
+                     <NavLinkItem
+                        key={item[0]}
+                        linkTo={item[1]}
+                        onClickHandler={handleCloseSidebar}
+                        hash
+                     >
+                        {item[0]}
+                     </NavLinkItem>
+                  )
+               } else {
+                  return (
+                     <NavLinkItem
+                        key={item[0]}
+                        linkTo={item[1]}
+                        onClickHandler={handleCloseSidebar}
+                     >
+                        {item[0]}
+                     </NavLinkItem>
+                  )
+               }
             })}
             <div>
                <button

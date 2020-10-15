@@ -12,7 +12,7 @@ const App = ({ lang }) => {
    const ContentSwitch = (
       <Switch>
          <Route path='/' exact>
-            <Layout>
+            <Layout footerFixed>
                <Hero />
                <Projects />
                <Technologies />

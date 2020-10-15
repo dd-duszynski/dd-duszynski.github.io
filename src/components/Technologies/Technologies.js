@@ -8,14 +8,14 @@ import { DiCss3, DiSass, DiJavascript, DiScrum, DiTrello } from 'react-icons/di'
 import { GrGatsbyjs, GrNode } from 'react-icons/gr';
 import { GiPencilBrush } from 'react-icons/gi';
 import { CgFigma } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
-import { SiRedux, SiAdobexd, SiAdobephotoshop, SiAdobeillustrator, SiAffinitydesigner, SiAffinitypublisher, SiVisualstudiocode, SiJira, SiMicrosoftexcel } from 'react-icons/si';
+import { FaReact, FaGitAlt } from 'react-icons/fa';
+import { SiMongodb, SiRedux, SiAdobexd, SiAdobephotoshop, SiAdobeillustrator, SiAffinitydesigner, SiAffinitypublisher, SiVisualstudiocode, SiJira, SiMicrosoftexcel } from 'react-icons/si';
 import Modal from '../UI/Modal'
-import {AppContext} from '../../context/context'
+import { AppContext } from '../../context/context'
 
 const Technologies = () => {
    const { textContent } = useContext(AppContext)
-   const {technologies} = textContent
+   const { technologies } = textContent
    const [showModal, setShowModal] = useState(false);
    const [modalContent, setModalContent] = useState(null);
 
@@ -38,103 +38,115 @@ const Technologies = () => {
       <>
          {modal}
          <section className={styles.Technologies} id="tools">
-            <H1 text={`Tools & Technologies`} />
+            <H1 text={technologies.header} />
             <article>
-               <H2 text="Development" />
+               <H2 text={technologies.subheaders[0]} />
                <ul className={styles.technologyList}>
-                  <TechnologyItem 
-                     name="HTML" 
-                     onClick={() => handleModalToggle("HTML")}
-                     >
-                     <AiFillHtml5 />
-                  </TechnologyItem>
-                  <TechnologyItem 
-                     name="CSS"
-                     onClick={() => handleModalToggle("CSS")}
-                  >
-                     <DiCss3 />
-                  </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="JavaScript"
                      onClick={() => handleModalToggle("JavaScript")}
                   >
                      <DiJavascript />
                   </TechnologyItem>
-                  <TechnologyItem 
-                     name="Node"
-                     onClick={() => handleModalToggle("Node")}
+                  <TechnologyItem
+                     name="HTML"
+                     onClick={() => handleModalToggle("HTML")}
                   >
-                     <GrNode />
+                     <AiFillHtml5 />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
+                     name="CSS"
+                     onClick={() => handleModalToggle("CSS")}
+                  >
+                     <DiCss3 />
+                  </TechnologyItem>
+                  <TechnologyItem
+                     name="SCSS"
+                     onClick={() => handleModalToggle("SCSS")}
+                  >
+                     <DiSass />
+                  </TechnologyItem>
+                  <TechnologyItem
                      name="React"
                      onClick={() => handleModalToggle("React")}
                   >
                      <FaReact />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Redux"
                      onClick={() => handleModalToggle("Redux")}
                   >
                      <SiRedux />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Gatsby"
                      onClick={() => handleModalToggle("Gatsby")}
                   >
                      <GrGatsbyjs />
                   </TechnologyItem>
-                  <TechnologyItem 
-                     name="GIT"
-                     onClick={() => handleModalToggle("GIT")}
+                  <TechnologyItem
+                     name="Node"
+                     onClick={() => handleModalToggle("Node")}
+                  >
+                     <GrNode />
+                  </TechnologyItem>
+                  <TechnologyItem
+                     name="MongoDB"
+                     onClick={() => handleModalToggle("MongoDB")}
+                  >
+                     <SiMongodb />
+                  </TechnologyItem>
+                  <TechnologyItem
+                     name="Git"
+                     onClick={() => handleModalToggle("Git")}
+                  >
+                     <FaGitAlt />
+                  </TechnologyItem>
+                  <TechnologyItem
+                     name="Github"
+                     onClick={() => handleModalToggle("Github")}
                   >
                      <AiFillGithub />
-                  </TechnologyItem>
-                  <TechnologyItem 
-                     name="SASS"
-                     onClick={() => handleModalToggle("SASS")}
-                  >
-                     <DiSass />
                   </TechnologyItem>
                </ul>
             </article>
 
             <article>
-               <H2 text="Design" />
-               <ul 
+               <H2 text={technologies.subheaders[1]} />
+               <ul
                   className={styles.technologyList}
                >
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Adobe XD"
                      onClick={() => handleModalToggle("XD")}
                   >
                      <SiAdobexd />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Adobe Photoshop"
                      onClick={() => handleModalToggle("Photoshop")}
                   >
                      <SiAdobephotoshop />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Adobe Illustrator"
                      onClick={() => handleModalToggle("Illustrator")}
                   >
                      <SiAdobeillustrator />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Figma"
                      onClick={() => handleModalToggle("Figma")}
                   >
                      <CgFigma />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Affinity Designer"
                      onClick={() => handleModalToggle("Designer")}
                   >
                      <SiAffinitydesigner />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Affinity Publisher"
                      onClick={() => handleModalToggle("Publisher")}
                   >
@@ -144,42 +156,42 @@ const Technologies = () => {
             </article>
 
             <article>
-               <H2 text="Others" />
-               <ul 
+               <H2 text={technologies.subheaders[2]}/>
+               <ul
                   className={styles.technologyList}
                >
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="UX/UI"
                      onClick={() => handleModalToggle("UI")}
                   >
                      <GiPencilBrush />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Scrum"
                      onClick={() => handleModalToggle("Scrum")}
                   >
                      <DiScrum />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="VSC"
                      onClick={() => handleModalToggle("VSC")}
                   >
                      <SiVisualstudiocode
                      />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Jira"
                      onClick={() => handleModalToggle("Jira")}
                   >
                      <SiJira />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Trello"
                      onClick={() => handleModalToggle("Trello")}
                   >
                      <DiTrello />
                   </TechnologyItem>
-                  <TechnologyItem 
+                  <TechnologyItem
                      name="Excel"
                      onClick={() => handleModalToggle("Excel")}
                   >
