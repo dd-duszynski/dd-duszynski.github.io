@@ -11,10 +11,18 @@
 }
 
 .container{
-   width: 90%;
-   margin-left: 5%;
+   width: 86%;
+   margin-left: 7%;
    height: 80px;
    display: flex;
    align-items: center;
    justify-content: space-between;
+}
+
+.links{
+   display: flex;
+}
+
+.link{
+   margin-left: 35px;
 }

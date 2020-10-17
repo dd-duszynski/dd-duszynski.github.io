@@ -7,7 +7,7 @@
    display: grid;
    grid-column: 2/3;
    position: relative;
-   height: calc(100vh - 160px);
+   height: calc(100vh - 200px);
    display: flex;
    align-items: center;
 
@@ -41,8 +41,8 @@
 .container {
    position: absolute;
    top: 0;
-   left: -5%;
-   width: 110%;
+   left: -7%;
+   width: 114%;
    height: 100%;
    background: rgb(36, 36, 36);
    background: linear-gradient(

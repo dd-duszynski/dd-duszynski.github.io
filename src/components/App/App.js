@@ -6,7 +6,7 @@ import Technologies from "../Technologies/Technologies"
 import Hero from "../Hero/Hero"
 import Projects from "../Projects/Projects"
 import Contact from "../Contact/Contact"
-
+import Materials from '../Materials/Materials'
 const App = ({ lang }) => {
 
    const ContentSwitch = (
@@ -22,6 +22,11 @@ const App = ({ lang }) => {
          <Route path='/projects' exact>
             <Layout footerFixed>
                <Projects />
+            </Layout >
+         </Route>
+         <Route path='/materials' exact>
+            <Layout footerFixed>
+               <Materials />
             </Layout >
          </Route>
          <Route path='/about' exact>

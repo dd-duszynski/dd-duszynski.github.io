@@ -3,8 +3,8 @@ import photo2 from '../assets/printxl.png'
 
 const textContent = {
    navigation: [
-      ["Strona Główna", "/#nav"],
       ["Projekty", "/projects"],
+      ["Materiały", "/materials"],
       ["Kontakt", "/#contact"],
       ["O mnie", "/about"]
    ],
