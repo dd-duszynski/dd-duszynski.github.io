@@ -1,54 +1,41 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import { AppContext } from '../../context/context'
 import styles from './Materials.module.scss'
-import ExternalLink from '../UI/ExternalLink'
 import H1 from '../UI/H1'
-import H2 from '../UI/H2'
 import Paragraph from '../UI/Paragraph'
 import { AiFillHtml5 } from 'react-icons/ai';
+import MaterialsItem from './MaterialsItem/MaterialsItem'
 
 const Materials = () => {
+   const { textContent } = useContext(AppContext);
+   const [choosenTechnology, setChoosenTechnology] = useState(null)
+   const { materials } = textContent
+   const { listOfMaterials } = materials
+
+   const choosenTechnologyHandler = (id) => {
+      choosenTechnology === id ? setChoosenTechnology(null) : setChoosenTechnology(id)
+   }
+
    return (
       <section className={styles.Materials}>
-         <H1 text="Materiały" />
+         <H1 text={materials.header} />
          <Paragraph
-            text="Znajdziesz tu zbiór materiałów, które uważam za wartościowe w nauce wymienionych technologii"
+            text={materials.mainParagraph[0]}
             breakLine
-            />
-         <Paragraph
-            text="Począwszy od oficjalnych dokumentacji przez artykuły i kursy wyjaśniające ich zawiłości."
-
          />
-         <article className={styles.technology}>
-            <div className={styles.headerContainer}>
-               <H2 text="HTML"/>  
-               <AiFillHtml5/>
-            </div>
-            <ExternalLink
-               to="https://reactjs.org/"
-               header="React - Oficjalna dokumentacja"
-               type="docs"
+         <Paragraph
+            text={materials.mainParagraph[1]}
+         />
+         {listOfMaterials.map((item) => {
+            return (
+               <MaterialsItem
+                  changeTechnology={choosenTechnologyHandler}
+                  current={choosenTechnology}
+                  content={item}
+                  key={item.id}
                />
-            <ExternalLink
-               to="https://reactjs.org/"
-               header="React - Oficjalna"
-               type="docs"
-            />
-            <ExternalLink
-               to="https://reactjs.org/"
-               header="React - dokumentacja"
-               type="video"
-            />
-            <ExternalLink
-               to="https://reactjs.org/"
-               header="React - Kurs"
-               type="video"
-            />
-            <ExternalLink
-               to="https://reactjs.org/"
-               header="React - Oficjalna dokumentacja"
-               type="article"
-            />
-         </article>
+            )
+         })}
       </section>
    )
 }

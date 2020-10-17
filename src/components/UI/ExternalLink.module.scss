@@ -3,6 +3,9 @@
 .ExternalLink {
    color: white;
    font-size: 1.4rem;
+   display: flex;
+   align-items: center;
+   padding: 3px;
 	&:hover {
 		cursor: pointer;
 		color: green;
@@ -12,8 +15,8 @@
    }
    
    svg {
-      width: 14px;
-      height: 14px;
+      width: 16px;
+      height: 16px;
       color: gray;
       margin-right: 6px;
    }

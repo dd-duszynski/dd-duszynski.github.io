@@ -3,7 +3,7 @@ import styles from "./Hero.module.scss"
 import GlitchClip from 'react-glitch-effect/core/Clip';
 import ScrollDown from './ScrollDown/ScrollDown';
 import { AppContext } from "../../context/context"
-
+import Paragraph from '../UI/Paragraph'
 const Hero = () => {
    const { textContent } = useContext(AppContext)
    const {hero} = textContent
@@ -11,12 +11,18 @@ const Hero = () => {
    return (
       <section className={styles.Hero}>
           <GlitchClip iterationCount="2">
-            <p>{hero[0]}</p>
-            <br />
-            <p>{hero[1]}</p>
-            <br />
-            <p>{hero[2]}</p>
-            <br />
+            <Paragraph 
+               text={hero[0]} 
+               breakLine
+            />
+            <Paragraph 
+               text={hero[1]} 
+               breakLine
+            />
+            <Paragraph 
+               text={hero[2]} 
+               breakLine
+            />
          </GlitchClip>
          <ScrollDown />
          <div className={styles.container}>

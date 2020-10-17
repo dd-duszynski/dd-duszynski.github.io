@@ -57,6 +57,14 @@ const textContent = {
       emailLabel:"Email",
       messageLabel:"Message",
       sendMessageButton:"Send your message",
+   },
+   materials:{
+      header: "Recommended materials",
+      mainParagraph: [
+         "Here you will find a collection of materials that I consider valuable in learning the following technologies.",
+         "From official documentation to games, articles and courses explaining their intricacies."
+      ],
+
    }
 }
 

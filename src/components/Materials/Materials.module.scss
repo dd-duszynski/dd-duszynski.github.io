@@ -17,8 +17,9 @@
 .headerContainer{
    display: flex;
    align-items: center;
+   cursor: pointer;
    svg {
-      margin-left: 12px;
+      margin-right: 8px;
       width: 22px;
       height: 22px;
 		color: gray;
@@ -28,4 +29,19 @@
 			color: lightgray;
 		}
 	}
+}
+
+.markIsChoosen{
+   font-size: 1.4rem;
+   margin-right: 10px;
+}
+
+.linksContainer{
+   display: block;
+   margin-left: 10px;
+}
+
+.linksContainerDisactive{
+   @extend .linksContainer;
+   display: none;
 }

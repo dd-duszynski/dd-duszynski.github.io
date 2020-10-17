@@ -1,9 +1,12 @@
 import React from 'react'
 import styles from './H2.module.scss'
 
-const H2 = ({ text }) => {
+const H2 = ({ text, hoverActive, active }) => {
+   const css = hoverActive ?
+      [styles.H2, styles.hoverActive].join(' ') :
+      styles.H2;
    return (
-      <header className={styles.H2}>
+      <header className={css}>
          <h2>{text}</h2>
       </header>
    )
