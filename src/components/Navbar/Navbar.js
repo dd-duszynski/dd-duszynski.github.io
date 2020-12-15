@@ -1,10 +1,10 @@
 import React, { useContext } from "react"
+import GlitchClip from 'react-glitch-effect/core/Clip';
 import { AppContext } from "../../context/context"
 import NavLinkItem from "./NavLinkItem/NavLinkItem"
 import styles from "./Navbar.module.scss"
 import Logo from "./Logo/Logo"
 import HamburgerMenu from "./HamburgerMenu/HamburgerMenu"
-import GlitchClip from 'react-glitch-effect/core/Clip';
 
 const Navbar = () => {
    const {
@@ -17,8 +17,8 @@ const Navbar = () => {
 
    const { navigation } = textContent
 
-   const biggerSize = (
-      <div className={styles.container}>
+   const largeDevices = (
+      <>
          <Logo />
          <GlitchClip iterationCount="1">
             <ul className={styles.links}>
@@ -44,24 +44,26 @@ const Navbar = () => {
                }
             </ul>
          </GlitchClip>
-      </div>
+      </>
    )
 
-   const smallerSize = (
-      <div className={styles.container}>
+   const smallDevice = (
+      <>
          <Logo />
          <HamburgerMenu
             handleOpenSidebar={handleOpenSidebar}
             handleCloseSidebar={handleCloseSidebar}
             isSidebarOpen={isSidebarOpen}
          />
-      </div>
+      </>
    )
 
    return (
-      <nav className={styles.navbar} id="nav">
-         {size > 992 ? biggerSize : smallerSize}
-      </nav>
+      <header className={styles.navbar} id="nav">
+         <nav className={styles.container}>
+            {size > 992 ? largeDevices : smallDevice}
+         </nav>
+      </header>
    )
 }
 

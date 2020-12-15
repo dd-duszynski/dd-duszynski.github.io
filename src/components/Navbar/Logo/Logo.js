@@ -1,30 +1,24 @@
-import React, { useState } from 'react'
-import {Link} from "react-router-dom";
+import React from 'react'
+import { Link } from "react-router-dom";
 import styles from './Logo.module.scss'
-// import logo from '../../../assets/dd_logo.svg'
-// import logoHover from '../../../assets/dd_logoHover.svg'
+import logo from '../../../assets/dd_logo.svg'
+// impDort logoHover from '../../../assets/dd_logoHover.svg'
 
 const Logo = () => {
-   const [isLogoHover, setIsLogoHover] = useState(false)
-   const setIsLogoHoverHandler = () => {
-      isLogoHover ? setIsLogoHover(false) : setIsLogoHover(true)
-   }
+   // const [isLogoHover, setIsLogoHover] = React.useState(false)
+   // const setIsLogoHoverHandler = () => {
+   //    isLogoHover ? setIsLogoHover(false) : setIsLogoHover(true)
+   // }
    return (
-      <Link to="/" className={styles.logo}>
-         <div className={styles.container}>
-            <div className={styles.box}>
-               {/* <div className={styles.circle1}></div>
-               <div className={styles.circle2}></div>
-               <div className={styles.circle3}></div> */}
-            </div>
-            {/* <img
-               src={isLogoHover ? logoHover : logo}
-               alt="logo"
-               className={styles.logo__image}
-               onMouseEnter={setIsLogoHoverHandler}
-               onMouseLeave={setIsLogoHoverHandler}
-            /> */}
-         </div>
+      <Link to="/" className={styles.Logo}>
+         <img
+            // src={isLogoHover ? logoHover : logo}
+            src={logo}
+            alt="logo"
+            className={styles.logoImg}
+         // onMouseOver={setIsLogoHoverHandler}
+         // onMouseLeave={setIsLogoHoverHandler}
+         />
       </Link>
    )
 }

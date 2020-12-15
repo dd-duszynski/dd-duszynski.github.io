@@ -4,14 +4,15 @@ import App from './components/App/App';
 import './scss/main.scss';
 import * as serviceWorker from './serviceWorker';
 
+const localStorageLang = localStorage.getItem('lang');
 const browserLanguage = window.navigator.userLanguage || window.navigator.language;
 const browserLanguageShort = browserLanguage.substring(0, 2).toUpperCase();
-// const browserLanguageUpperCase = browserLanguageShort.toUpperCase();
-const lang = browserLanguageShort === "PL" ? "PL" : "EN";
+const browserlang = browserLanguageShort === "PL" ? "PL" : "EN";
+const appLanguage = localStorageLang !== null ? localStorageLang : browserlang;
 
 ReactDOM.render(
    <React.StrictMode>
-      <App lang={lang}/>
+      <App lang={appLanguage} />
    </React.StrictMode>,
    document.getElementById('root')
 );

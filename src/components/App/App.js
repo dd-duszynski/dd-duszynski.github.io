@@ -1,38 +1,26 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { AppProvider } from '../../context/context'
-import Layout from "../Layout/Layout"
-import Technologies from "../Technologies/Technologies"
-import Hero from "../Hero/Hero"
-import Projects from "../Projects/Projects"
-import Contact from "../Contact/Contact"
-import Materials from '../Materials/Materials'
-const App = ({ lang }) => {
 
+import Main from '../../pages/Main/Main'
+import Materials from '../../pages/Materials/Materials'
+import Projects from "../../pages/Projects/Projects"
+import About from "../../pages/About/About"
+
+const App = ({ lang }) => {
    const ContentSwitch = (
       <Switch>
          <Route path='/' exact>
-            <Layout footerFixed>
-               <Hero />
-               <Projects />
-               <Technologies />
-               <Contact />
-            </Layout>
+            <Main />
          </Route>
          <Route path='/projects' exact>
-            <Layout footerFixed>
-               <Projects />
-            </Layout >
+            <Projects />
          </Route>
          <Route path='/materials' exact>
-            <Layout footerFixed>
-               <Materials />
-            </Layout >
+            <Materials />
          </Route>
          <Route path='/about' exact>
-            <Layout footerFixed>
-               <h1>O mnie</h1>
-            </Layout>
+            <About />
          </Route>
          <Redirect to='/' />
       </Switch>

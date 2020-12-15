@@ -1,14 +1,15 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import PL from '../textContent/PL'
 import EN from '../textContent/EN'
 
 const AppContext = React.createContext()
 
 const AppProvider = ({ children, lang }) => {
-   const [size, setSize] = React.useState(null)
-   const [height, setHeight] = React.useState(null)
-   const [isSidebarOpen, setSidebar] = React.useState(false)
-   const [language, setLanguage] = React.useState(lang)
+   const [size, setSize] = useState(null)
+   const [height, setHeight] = useState(null)
+   const [isSidebarOpen, setSidebar] = useState(false)
+   const [language, setLanguage] = useState(lang)
+   
    useEffect(() => {
       if (window) {
          setSize(window.innerWidth)
@@ -33,8 +34,10 @@ const AppProvider = ({ children, lang }) => {
       setSidebar(false)
    }
    const handleLanguageChange = (lng) => {
+      localStorage.setItem('lang', lng)
       setLanguage(lng)
    }
+
    const textContent = language === "PL" ? PL : EN;
 
    return (

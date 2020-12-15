@@ -7,12 +7,12 @@ import styles from './Layout.module.scss'
 
 const Layout = ({ children, footerFixed }) => {
    return (
-      <main className={styles.Layout}>
+      <div className={styles.Layout}>
          <Navbar />
          <Sidebar />
          {children}
-         <Footer footerFixed={footerFixed}/>
-      </main>
+         <Footer footerFixed={footerFixed} />
+      </div>
    )
 }
 

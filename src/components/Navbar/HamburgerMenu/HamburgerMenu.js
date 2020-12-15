@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./HamburgerMenu.module.scss"
 
-const HamburgerMenu = ({isSidebarOpen, handleCloseSidebar, handleOpenSidebar}) => {
+const HamburgerMenu = ({ isSidebarOpen, handleCloseSidebar, handleOpenSidebar }) => {
    return (
       <button
          type="button"
@@ -14,9 +14,9 @@ const HamburgerMenu = ({isSidebarOpen, handleCloseSidebar, handleOpenSidebar}) =
                : handleOpenSidebar
          }
       >
-         <div className={styles.line1}></div>
-         <div className={styles.line2}></div>
-         <div className={styles.line3}></div>
+         <div className={styles.line1} />
+         <div className={styles.line2} />
+         <div className={styles.line3} />
       </button>
    )
 }
