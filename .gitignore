@@ -10,7 +10,8 @@
 
 # production
 /build
-
+/src/assets
+/zasoby
 # misc
 .DS_Store
 .env.local

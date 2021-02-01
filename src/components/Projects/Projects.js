@@ -1,12 +1,12 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import SingleProject from './SingleProject/SingleProject'
 import styles from './Projects.module.scss'
 import H1 from '../UI/H1'
-import {AppContext} from '../../context/context'
+import { AppContext } from '../../context/context'
 
 const Projects = () => {
-   const {textContent} = useContext(AppContext)
-   const {projects} = textContent;
+   const { textContent: { projects } } = useContext(AppContext)
+
    return (
       <section className={styles.Projects}>
          <H1 text={projects.title} />

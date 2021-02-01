@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './H2.module.scss'
 
-const H2 = ({ text, hoverActive, active }) => {
+const H2 = ({ text, hoverActive }) => {
    const css = hoverActive ?
       [styles.H2, styles.hoverActive].join(' ') :
       styles.H2;

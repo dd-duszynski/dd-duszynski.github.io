@@ -5,6 +5,7 @@ import { AppProvider } from '../../context/context'
 import Main from '../../pages/Main/Main'
 import Materials from '../../pages/Materials/Materials'
 import Projects from "../../pages/Projects/Projects"
+import Project from "../../pages/Project/Project"
 import About from "../../pages/About/About"
 
 const App = ({ lang }) => {
@@ -15,6 +16,9 @@ const App = ({ lang }) => {
          </Route>
          <Route path='/projects' exact>
             <Projects />
+         </Route>
+         <Route path='/projects/:link' exact>
+            <Project />
          </Route>
          <Route path='/materials' exact>
             <Materials />

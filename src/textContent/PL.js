@@ -1,5 +1,15 @@
 import photo1 from '../assets/bigfive.png'
 import photo2 from '../assets/printxl.png'
+import pxl1 from '../assets/pxl1.JPG'
+import pxl2 from '../assets/pxl2.JPG'
+import pxl3 from '../assets/pxl3.JPG'
+import pxl4 from '../assets/pxl4.JPG'
+import pxl5 from '../assets/pxl5.JPG'
+import bf1 from '../assets/bf1.JPG'
+import bf2 from '../assets/bf2.JPG'
+import kanban1 from '../assets/kanban1.JPG'
+import kanban2 from '../assets/kanban2.JPG'
+import kanban3 from '../assets/kanban3.JPG'
 
 const textContent = {
    navigation: [
@@ -17,33 +27,33 @@ const textContent = {
       title: "Projekty",
       listOfProjects: [
          {
-            nazwa: "Projekt 1",
+            nazwa: "Kanbanator",
             rodzaj: "dev",
-            opis: "Opis 11",
-            photo: photo1
+            opis: "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
+            photo: kanban1,
+            photos: [kanban2, kanban3],
+            link: '/projects/kanbanator',
+            technologies: ['html','css', 'js','react', 'redux','material-ui' ,'node', 'mysql']
          },
          {
-            nazwa: "Projekt 2",
+            nazwa: "PrintXL",
             rodzaj: "dev",
-            opis: "Opis 22",
-            photo: photo2
+            opis: "Redesign strony internetowej na potrzeby drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do specyfikacji technicznych.",
+            photo: pxl1,
+            photos: [pxl2, pxl3, pxl4, pxl5],
+            link: '/projects/pxl',
+            technologies: ['react', 'gatsby']
+         },
+         {
+            nazwa: "BigFive",
+            rodzaj: "dev",
+            opis: "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
+            photo: bf1,
+            photos: [bf2],
+            link: '/projects/big-five',
+            technologies: ['react', 'gatsby']
          },
       ],
-      listOfPlayground: [
-         {
-            nazwa: "Playground 1",
-            rodzaj: "dev",
-            opis: "Opis 1",
-            photo: photo1
-         },
-         {
-            nazwa: "Playground 2",
-            rodzaj: "design",
-            opis: "Opis 3",
-            photo: photo2
-         },
-      ],
-
    },
    technologies: {
       header: "Narzędzia i technologie",
@@ -525,8 +535,6 @@ const textContent = {
          },
       ]
    }
-
-
 }
 
 
