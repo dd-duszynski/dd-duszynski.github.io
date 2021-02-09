@@ -1,10 +1,21 @@
-@import "../../scss/vm.scss";
+@import '../../scss/vm.scss';
 
 .Layout {
-   width: 100%;
-   display: grid;
+	width: 100%;
+	display: grid;
    grid-template-columns: 5% 90% 5%;
-   position: relative;
-   margin-top: 80px;
-   margin-bottom: 68px;
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 68px;
+}
+
+@media only screen and (min-width: 600px) {
+   .Layout {
+      width: 100%;
+		display: grid;
+      grid-template-columns: 10% 80% 10%;
+      position: relative;
+		margin-top: 80px;
+		margin-bottom: 68px;
+	}
 }

@@ -1,12 +1,11 @@
 @import '../../scss/vm.scss';
 
 .Materials{
-   grid-column: 2/3;
+   @include sectionBasic;
    p{
       font-size: 1.4rem;
    }
 }
-
 .technology{
    display: flex;
    flex-direction: column;

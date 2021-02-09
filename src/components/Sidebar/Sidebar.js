@@ -8,6 +8,7 @@ const Sidebar = () => {
    const { navigation } = textContent
    const btnPLCSS = language === "PL" && styles.active;
    const btnENCSS = language === "EN" && styles.active;
+   const isHash = i => i.indexOf("#") > 0;
    return (
       <aside
          className={
@@ -18,7 +19,7 @@ const Sidebar = () => {
       >
          <section className={styles.linksContainer}>
             {navigation.map((item) => {
-               if (item[1].indexOf("#") > 0) {
+               if (isHash(item[1])) {
                   return (
                      <NavLinkItem
                         key={item[0]}

@@ -12,7 +12,17 @@ import TechnologyItemTest from '../Technologies/TechnologyItem/TechnologyItemTes
 const Project = ({ link }) => {
    const { textContent: { projects: { listOfProjects } } } = useContext(AppContext)
    const [project] = listOfProjects.filter(i => i.link === `/projects/${link}`)
-   console.log(project);
+
+   fetch('http://localhost:1337/projects', {
+      method: 'GET',
+      headers: {
+         'Content-Type': 'application/json',
+      },
+   })
+      .then(response => response.json())
+      .then(data => console.log(data));
+
+   
    return (
       <main className={styles.Project}>
          <Box justify='space-between' align="center">

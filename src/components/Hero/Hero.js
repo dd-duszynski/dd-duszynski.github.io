@@ -4,15 +4,20 @@ import GlitchClip from 'react-glitch-effect/core/Clip';
 import ScrollDown from './ScrollDown/ScrollDown';
 import { AppContext } from "../../context/context"
 import Paragraph from '../UI/Paragraph'
-
+import Box from '../UI/Box'
 const Hero = () => {
    const { textContent } = useContext(AppContext)
    const { hero } = textContent
 
    return (
       <section className={styles.Hero}>
-         <article className={styles.article}>
-            <GlitchClip iterationCount="2">
+         <Box
+            addClass={styles.box}
+            justify="flex-start"
+            align="flex-start"
+            column
+         >
+            <GlitchClip iterationCount="1">
                <Paragraph
                   text={hero[0]}
                   breakLine
@@ -28,7 +33,7 @@ const Hero = () => {
             </GlitchClip>
             <ScrollDown />
             <div className={styles.background} />
-         </article>
+         </Box>
       </section>
    )
 }

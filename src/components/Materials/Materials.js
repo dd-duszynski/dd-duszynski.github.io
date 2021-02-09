@@ -5,6 +5,7 @@ import H1 from '../UI/H1'
 import Paragraph from '../UI/Paragraph'
 import { AiFillHtml5 } from 'react-icons/ai';
 import MaterialsItem from './MaterialsItem/MaterialsItem'
+import Box from '../UI/Box'
 
 const Materials = () => {
    const { textContent } = useContext(AppContext);
@@ -18,24 +19,31 @@ const Materials = () => {
 
    return (
       <section className={styles.Materials}>
-         <H1 text={materials.header} />
-         <Paragraph
-            text={materials.mainParagraph[0]}
-            breakLine
-         />
-         <Paragraph
-            text={materials.mainParagraph[1]}
-         />
-         {listOfMaterials.map((item) => {
-            return (
-               <MaterialsItem
-                  changeTechnology={choosenTechnologyHandler}
-                  current={choosenTechnology}
-                  content={item}
-                  key={item.id}
-               />
-            )
-         })}
+         <Box
+            justify="center"
+            align="flex-start"
+            column
+         >
+
+            <H1 text={materials.header} />
+            <Paragraph
+               text={materials.mainParagraph[0]}
+               breakLine
+            />
+            <Paragraph
+               text={materials.mainParagraph[1]}
+            />
+            {listOfMaterials.map((item) => {
+               return (
+                  <MaterialsItem
+                     changeTechnology={choosenTechnologyHandler}
+                     current={choosenTechnology}
+                     content={item}
+                     key={item.id}
+                  />
+               )
+            })}
+         </Box>
       </section>
    )
 }

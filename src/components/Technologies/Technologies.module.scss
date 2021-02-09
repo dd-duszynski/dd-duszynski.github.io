@@ -1,10 +1,14 @@
-@import "../../scss/vm.scss";
+@import '../../scss/vm.scss';
 
-.Technologies{
-   color: white;
-   grid-column: 2/3;
-}
-.Technologies .technologyList{
+.Technologies {
+	color: white;
+	grid-column: 2/3;
    display: flex;
-   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.Technologies .technologyList {
+	display: flex;
+	flex-wrap: wrap;
 }

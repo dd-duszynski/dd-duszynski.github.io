@@ -16,14 +16,15 @@ const Navbar = () => {
    } = useContext(AppContext);
 
    const { navigation } = textContent
-
+   const isHash = i => i.indexOf("#") > 0;
+   
    const largeDevices = (
       <>
          <Logo />
          <GlitchClip iterationCount="1">
             <ul className={styles.links}>
                {navigation.map(item => {
-                  if (item[1].indexOf("#") > 0) {
+                  if (isHash(item[1])) {
                      return (
                         <li key={item[0]} className={styles.link}>
                            <NavLinkItem linkTo={item[1]} hash={true}>

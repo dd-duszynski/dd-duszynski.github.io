@@ -1,71 +1,78 @@
-@import "../../scss/vm.scss";
+@import '../../scss/vm.scss';
 
 .Contact {
-   grid-column: 2/3;
-   height: calc(100vh - 160px);
-
-}
-
-.Container {
+	grid-column: 2/3;
    display: flex;
-   flex-direction: column;
-   height: 80%;
-   align-items: center;
    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.Container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 0 40px;
+   width: 100%;
 }
 
 .singleFormItem {
-   display: flex;
-   flex-direction: column;
-   width: 80%;
-   padding: 10px 0;
-   &:hover{
-      label{
-         color: green;
-      }
-   }
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	max-width: 380px;
+	padding: 12px 0;
+	&:hover {
+		label {
+			color: lightgreen;
+		}
+	}
 }
 
 .Contact label {
-   font-size: 14px;
+	font-size: 14px;
 }
 
 .Contact input,
 .Contact textarea,
 .Contact button {
-   font-size: 14px;
-   margin-top: 4px;
+	font-size: 1.3rem;
+	margin-top: 6px;
+	&::placeholder {
+      font-size: 1.2rem;
+		color: darkgray;
+	}
 }
 
 .Contact button {
-   font-size: 15px;
-   border: none;
-   border: 1px solid white;
-   background: none;
-   color: white;
-   padding: 10px 0;
-   border-radius: 6px;
-   &:hover {
-      border: 1px solid green;
-      background: $bgcolor;
-      color: green;
-      cursor: pointer;
-   }
+	font-size: 15px;
+	border: none;
+	border: 1px solid white;
+	background: none;
+	color: white;
+	padding: 10px 0;
+	border-radius: 6px;
+	&:hover {
+		border: 1px solid lightgreen;
+		background: $bgcolor;
+		color: lightgreen;
+		cursor: pointer;
+	}
 }
 
 .Contact input,
 .Contact textarea {
-   background: none;
-   color: white;
-   border: none;
-   border-bottom: 1px solid lightgray;
-   @include roboto300;
-   outline: none;
-   &:focus {
-      border-bottom: 1px solid green;
-   }
+	background: none;
+	color: white;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	@include roboto300;
+	outline: none;
+	&:focus {
+		border-bottom: 1px solid lightgreen;
+	}
 }
 
 .Contact textarea {
-   resize: none;
+	resize: none;
 }

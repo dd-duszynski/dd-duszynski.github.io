@@ -5,13 +5,13 @@ import Sidebar from '../Sidebar/Sidebar'
 import Footer from '../Footer/Footer'
 import styles from './Layout.module.scss'
 
-const Layout = ({ children, footerFixed }) => {
+const Layout = ({ children }) => {
    return (
       <div className={styles.Layout}>
          <Navbar />
          <Sidebar />
          {children}
-         <Footer footerFixed={footerFixed} />
+         <Footer />
       </div>
    )
 }

@@ -1,33 +1,15 @@
 @import '../../scss/vm.scss';
 
-.Footer,
-.Footer__fixed {
-	grid-column: 1/4;
-	text-align: center;
+.Footer {
 	background-color: $bgGray;
 	z-index: 2;
-}
-.Footer__fixed {
    position: fixed;
-	bottom: 0;
-	width: 100%;
-}
-.container{
+   bottom: 0;
    width: 100%;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
+}
+.box{
+   margin: 0 auto;
    height: 68px;
+   width: 80% !important;
+   max-width: 500px !important;
 }
-
-@media(min-width: 500px){
-   .container{
-      width: 500px;
-      margin: auto;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      height: 68px;
-   }
-}
-

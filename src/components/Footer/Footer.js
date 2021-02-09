@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Footer.module.scss'
 import FooterItem from './FooterItem/FooterItem'
-
+import Box from '../UI/Box'
 import gitFull from '../../assets/git_full.svg'
 import gitOutline from '../../assets/git_outline.svg'
 import linkedinFull from '../../assets/linkedin_full.svg'
@@ -9,10 +9,14 @@ import linkedinOutline from '../../assets/linkedin_outline.svg'
 import mailFull from '../../assets/mail_full.svg'
 import mailOutline from '../../assets/mail_outline.svg'
 
-const Footer = ({ footerFixed }) => {
+const Footer = () => {
    return (
-      <footer className={footerFixed ? styles.Footer__fixed : styles.Footer}>
-         <div className={styles.container}>
+      <footer className={styles.Footer}>
+         <Box 
+            addClass={styles.box}
+            justify="space-between"
+            align="center"
+         >
             <FooterItem
                url="https://www.linkedin.com/in/dd-duszynski"
                activeIcon={linkedinOutline}
@@ -33,7 +37,7 @@ const Footer = ({ footerFixed }) => {
                icon={gitFull}
                description="github icon"
             />
-         </div>
+         </Box>
       </footer>
    )
 }

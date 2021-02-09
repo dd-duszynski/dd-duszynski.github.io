@@ -68,6 +68,9 @@ const textContent = {
       emailLabel: "Email",
       messageLabel: "Wiadomość",
       sendMessageButton: "Wyślij wiadomość",
+      namePlaceholder: "John",
+      emailPlaceholder: "john@gmail.com",
+      messagePlaceholder: "Treść wiadomości..."
    },
    materials: {
       header: "Polecane materiały",
