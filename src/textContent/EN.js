@@ -1,5 +1,17 @@
-import photo1 from '../assets/bigfive.png'
-import photo2 from '../assets/printxl.png'
+import pxl1 from '../assets/pxl1.JPG'
+import pxl2 from '../assets/pxl2.JPG'
+import pxl3 from '../assets/pxl3.JPG'
+import pxl4 from '../assets/pxl4.JPG'
+import pxl5 from '../assets/pxl5.JPG'
+import bigFive1 from '../assets/bigFive1.JPG'
+import bigFive2 from '../assets/bigFive2.JPG'
+import bigFive3 from '../assets/bigFive3.png'
+import bigFiveHero from '../assets/bigFiveHero.png'
+import pxlHero from '../assets/pxlHero.png'
+import kanbanatorHero from '../assets/kanbanatorHero.png'
+import kanban1 from '../assets/kanban1.JPG'
+import kanban2 from '../assets/kanban2.JPG'
+import kanban3 from '../assets/kanban3.JPG'
 
 const textContent = {
    navigation: [
@@ -19,23 +31,29 @@ const textContent = {
          {
             nazwa: "Kanbanator",
             rodzaj: "dev",
-            opis: "The project facilitates project management in the Kanban methodology. It allows you to set up your own account, create boards and group tasks in them.",
-            photo: photo1,
-            link: '/projects/kanbanator'
+            opis: "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
+            photo: kanbanatorHero,
+            photos: [kanban1, kanban2, kanban3],
+            link: '/projects/kanbanator',
+            technologies: ['html','css', 'js','react', 'redux','material-ui' ,'node', 'mysql']
          },
          {
-            nazwa: "Projekt 2",
+            nazwa: "PrintXL",
             rodzaj: "dev",
-            opis: "Website redesign for the needs of a large-format printing house. The main goal was to present a rich offer and easier access to technical specifications.",
-            photo: photo2,
-            link: '/projects/pxl'
+            opis: "Redesign strony internetowej na potrzeby drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do specyfikacji technicznych.",
+            photo: pxlHero,
+            photos: [pxl1,pxl2, pxl3, pxl4, pxl5],
+            link: '/projects/pxl',
+            technologies: ['react', 'gatsby']
          },
          {
             nazwa: "BigFive",
             rodzaj: "dev",
-            opis: "It resulted from my passion for football and idea of creating a page which would alow to view the results and statistics of the five largest leagues in the world.",
-            photo: photo2,
-            link: '/projects/big-five'
+            opis: "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
+            photo: bigFiveHero,
+            photos: [bigFive1, bigFive2, bigFive3],
+            link: '/projects/big-five',
+            technologies: ['react', 'gatsby']
          },
       ],
    },

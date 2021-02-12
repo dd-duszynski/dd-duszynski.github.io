@@ -17,7 +17,7 @@ const Navbar = () => {
 
    const { navigation } = textContent
    const isHash = i => i.indexOf("#") > 0;
-   
+
    const largeDevices = (
       <>
          <Logo />
@@ -62,7 +62,7 @@ const Navbar = () => {
    return (
       <header className={styles.navbar} id="nav">
          <nav className={styles.container}>
-            {size > 992 ? largeDevices : smallDevice}
+            {size > 800 ? largeDevices : smallDevice}
          </nav>
       </header>
    )

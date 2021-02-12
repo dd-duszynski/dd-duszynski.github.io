@@ -13,6 +13,7 @@ import { SiMongodb, SiRedux, SiAdobexd, SiAdobephotoshop, SiAdobeillustrator, Si
 import Modal from '../UI/Modal'
 import { AppContext } from '../../context/context'
 import Box from '../UI/Box'
+import TechnologyRow from './TechnologyRow/TechnologyRow'
 
 const Technologies = () => {
    const { textContent } = useContext(AppContext)
@@ -44,9 +45,49 @@ const Technologies = () => {
                align="flex-start"
                column
             >
-
                <H1 text={technologies.header} />
-               <article>
+               <TechnologyRow
+                  handleModalToggle={handleModalToggle}
+                  headerText={technologies.subheaders[0]}
+                  technologies={[
+                     "JavaScript",
+                     "HTML",
+                     "CSS",
+                     "SCSS",
+                     "React",
+                     "Redux",
+                     "Gatsby",
+                     "Node",
+                     "MongoDB",
+                     "Git",
+                     "Github"
+                  ]}
+               />
+               <TechnologyRow
+                  handleModalToggle={handleModalToggle}
+                  headerText={technologies.subheaders[1]}
+                  technologies={[
+                     "XD",
+                     "Photoshop",
+                     "Illustrator",
+                     "Figma",
+                     "Designer",
+                     "Publisher"
+                  ]}
+               />
+               <TechnologyRow
+                  handleModalToggle={handleModalToggle}
+                  headerText={technologies.subheaders[2]}
+                  technologies={[
+                     "UI",
+                     "Scrum",
+                     "VSC",
+                     "Jira",
+                     "Trello",
+                     "Excel",
+                  ]}
+               />
+               {/* <article>
                   <H2 text={technologies.subheaders[0]} />
                   <ul className={styles.technologyList}>
                      <TechnologyItem
@@ -116,9 +157,9 @@ const Technologies = () => {
                         <AiFillGithub />
                      </TechnologyItem>
                   </ul>
-               </article>
-
-               <article>
+               </article> */}
+               {/* ---------------------------- */}
+               {/* <article>
                   <H2 text={technologies.subheaders[1]} />
                   <ul
                      className={styles.technologyList}
@@ -160,9 +201,9 @@ const Technologies = () => {
                         <SiAffinitypublisher />
                      </TechnologyItem>
                   </ul>
-               </article>
+               </article> */}
 
-               <article>
+               {/* <article>
                   <H2 text={technologies.subheaders[2]} />
                   <ul
                      className={styles.technologyList}
@@ -205,7 +246,7 @@ const Technologies = () => {
                         <SiMicrosoftexcel />
                      </TechnologyItem>
                   </ul>
-               </article>
+               </article> */}
             </Box>
          </section>
       </>

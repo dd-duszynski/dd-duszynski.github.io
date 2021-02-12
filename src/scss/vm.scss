@@ -31,3 +31,12 @@ $fs3: 16px;
    flex-direction: column;
    grid-column: 2/3;
 }
+
+@mixin grid{
+   display: grid;
+   grid-template-columns: 5% 90% 5%;
+   @media(min-width: 600px){
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+   }
+}

@@ -6,7 +6,6 @@ const TechnologyItem = ({ name, children, onClick }) => {
       <li className={styles.TechnologyItem} onClick={onClick}>
          <div className={styles.container}>
             {children}
-            {/* <img src={icon} alt={name} className={styles.icon} /> */}
             <p className={styles.title}>{name}</p>
          </div>
       </li>

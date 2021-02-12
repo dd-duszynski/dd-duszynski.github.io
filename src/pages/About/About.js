@@ -1,10 +1,13 @@
 import React from 'react';
 import Layout from "../../components/Layout/Layout"
+import AboutComponent from '../../components/About/About'
 
 const About = () => {
    return (
       <Layout footerFixed>
-         <h1>About dd-duszynski</h1>
+         <AboutComponent
+            text="Jam jest Damion"
+         />
       </Layout>
    )
 }

@@ -11,8 +11,9 @@
 }
 
 .container{
-   width: 86%;
-   margin-left: 7%;
+   max-width: 900px;
+   width: 90%;
+   margin: 0 auto;
    height: 80px;
    display: flex;
    align-items: center;
@@ -25,4 +26,10 @@
 
 .link{
    margin-left: 35px;
+}
+
+@media(min-width: 600px) {
+   .container {
+      width: 80%;
+	}
 }

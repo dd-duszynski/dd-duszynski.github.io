@@ -5,6 +5,7 @@ import ScrollDown from './ScrollDown/ScrollDown';
 import { AppContext } from "../../context/context"
 import Paragraph from '../UI/Paragraph'
 import Box from '../UI/Box'
+
 const Hero = () => {
    const { textContent } = useContext(AppContext)
    const { hero } = textContent
@@ -13,8 +14,8 @@ const Hero = () => {
       <section className={styles.Hero}>
          <Box
             addClass={styles.box}
-            justify="flex-start"
-            align="flex-start"
+            justify="center"
+            align="center"
             column
          >
             <GlitchClip iterationCount="1">

@@ -1,14 +1,13 @@
 @import '../../scss/vm.scss';
 
 .Technologies {
+   display: flex;
+   flex-wrap: wrap;
 	color: white;
 	grid-column: 2/3;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
-}
-.Technologies .technologyList {
-	display: flex;
-	flex-wrap: wrap;
+   padding: 80px 0;
 }
