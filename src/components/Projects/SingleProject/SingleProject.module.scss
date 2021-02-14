@@ -3,28 +3,10 @@
 .SingleProject {
 	position: relative;
 	width: 100%;
-	margin-bottom: 120px;
-	height: calc(100vh - 130px);
+   margin-bottom: 8vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-   &:nth-child(1) {
-      height: auto;
-   }
-   &:nth-of-type(1) {
-      height: auto;
-
-	}
-   // hr {
-   //    transition: all 1s;
-   //    transition-delay: 0.4s;
-   //    opacity: 0;
-   //    display: block;
-   //    border-bottom: solid 1px white;
-   //    width: 20%;
-   //    margin-left: 2rem;
-   // }
-   
 }
 
 .link {
@@ -34,13 +16,12 @@
 	color: white;
 }
 
-.header {
-	display: inline-block;
-	margin-bottom: 60px;
+.box{
+   margin-bottom: 4vh;
 }
 
 .projectImg {
-	opacity: 0.4;
+	opacity: 0.7;
 	max-width: 100%;
 	width: 100%;
 	height: auto;
@@ -71,6 +52,15 @@
 	margin-left: 20px;
 	opacity: 0;
 	margin-top: 10px;
+}
+hr {
+   transition: all 1s;
+   transition-delay: 0.4s;
+   opacity: 0;
+   display: block;
+   border-bottom: solid 1px white;
+   width: 20%;
+   margin-left: 2rem;
 }
 .icon {
 	transition: all 1s;
@@ -113,7 +103,7 @@
 	}
 
 	.projectImg {
-		opacity: 0.6;
+		opacity: 0.9;
 		cursor: pointer;
 	}
 }

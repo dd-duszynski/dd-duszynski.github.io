@@ -15,9 +15,9 @@ const SingleProject = ({ nazwa, rodzaj, opis, photo, link }) => {
    return (
       <article className={styles.SingleProject}>
          <Link to={link} className={styles.link}>
-            <Box align="flex-start" justify="space-between">
-               <H2 text={nazwa} addClass={styles.header} />
-               <Aside>{rodzaj}</Aside>
+            <Box align="flex-end" justify="space-between" addClass={styles.box}>
+               <H2 text={nazwa}/>
+               {/* <Aside>{rodzaj}</Aside> */}
             </Box>
                {/* <div className={styles.overlay}>
                   <p className={styles.paragraph}>

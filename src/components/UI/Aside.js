@@ -7,7 +7,6 @@ const Aside = ({children}) => {
          fontSize: '12px',
          right: '0',
          position: 'absolute',
-         marginTop: '12px'
       }}>
          {`{${children}}`}
       </aside>

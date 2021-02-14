@@ -15,7 +15,7 @@ const Projects = () => {
             align="flex-start"
             column
          >
-            <H1 text={projects.title} />
+            <H1 text={projects.title} addClass={styles.h1} />
             {projects.listOfProjects.map((item, index) => {
                return <SingleProject key={index} {...item} />
             })}

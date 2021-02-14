@@ -5,6 +5,7 @@ import styles from './Contact.module.scss'
 import H1 from '../UI/H1'
 import Box from '../UI/Box'
 
+
 const ContactForm = (props) => {
    const [name, setName] = useState("")
    const [email, setEmail] = useState("")

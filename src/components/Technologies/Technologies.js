@@ -45,8 +45,9 @@ const Technologies = () => {
                align="flex-start"
                column
             >
-               <H1 text={technologies.header} />
+               <H1 text={technologies.header} addClass={styles.h1}/>
                <TechnologyRow
+                  type="dev"
                   handleModalToggle={handleModalToggle}
                   headerText={technologies.subheaders[0]}
                   technologies={[
@@ -64,6 +65,7 @@ const Technologies = () => {
                   ]}
                />
                <TechnologyRow
+               type="design"
                   handleModalToggle={handleModalToggle}
                   headerText={technologies.subheaders[1]}
                   technologies={[
@@ -76,6 +78,7 @@ const Technologies = () => {
                   ]}
                />
                <TechnologyRow
+               type="others"
                   handleModalToggle={handleModalToggle}
                   headerText={technologies.subheaders[2]}
                   technologies={[

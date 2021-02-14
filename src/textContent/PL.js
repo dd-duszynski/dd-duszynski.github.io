@@ -22,8 +22,8 @@ const textContent = {
    ],
    hero: [
       "Witaj. Nazywam się Damian.",
-      "Jestem entuzjastą Web Developmentu oraz szeroko pojętego UX/UI.",
-      "Chciałbym zaprezentować Ci swoje prace, snippety oraz technologie, których używam."
+      "Jestem Frontend Developerem oraz entuzjastą UX/UI.",
+      "Znajdziesz tu moje projekty, materiały do nauki oraz opis technologii, których używam."
    ],
    projects: {
       title: "Projekty",

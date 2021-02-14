@@ -1,8 +1,30 @@
 .TechnologyRow {
-	width: 98%;
-	margin: 20px auto;
+	width:100%;
+   margin-bottom: 2vh;
+   
+}
+.box{
+   margin-bottom: 2vh;
 }
 .technologyList {
-	display: flex;
-	flex-wrap: wrap;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+.icon{
+   color: gray;
+   margin-right: 1rem;
+}
+.iconDev {
+   width: 25px;
+   height: 25px;
+}
+.iconDesign {
+   width: 25px;
+   height: 25px;
+}
+.iconOthers {
+   width: 25px;
+   height: 25px;
 }
