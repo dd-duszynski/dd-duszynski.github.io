@@ -15,7 +15,7 @@ import kanban3 from '../assets/kanban3.JPG'
 
 const textContent = {
    navigation: [
-      ["Projects", "/projects"],
+      ["Projects", "/#projects"],
       ["Materials", "/materials"],
       ["Contact", "/#contact"],
       ["About Me", "/about"]

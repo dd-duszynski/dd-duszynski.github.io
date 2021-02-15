@@ -20,7 +20,9 @@ const Navbar = () => {
 
    const largeDevices = (
       <>
-         <Logo />
+         <GlitchClip iterationCount="1">
+            <Logo />
+         </GlitchClip>
          <GlitchClip iterationCount="1">
             <ul className={styles.links}>
                {navigation.map(item => {
@@ -50,7 +52,9 @@ const Navbar = () => {
 
    const smallDevice = (
       <>
-         <Logo />
+         <GlitchClip iterationCount="1">
+            <Logo />
+         </GlitchClip>
          <HamburgerMenu
             handleOpenSidebar={handleOpenSidebar}
             handleCloseSidebar={handleCloseSidebar}

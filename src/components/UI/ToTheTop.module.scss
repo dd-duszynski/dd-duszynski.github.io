@@ -1,0 +1,22 @@
+@import '../../scss/vm.scss';
+
+.toTheTop {
+	color: white;
+	&:hover {
+		.icon,
+		.paragraph {
+			color: lightgreen;
+		}
+	}
+}
+
+.paragraph {
+	font-size: 12px !important;
+}
+.icon {
+	height: 25px;
+	width: 25px;
+	color: white;
+	margin-bottom: 6px;
+	margin-right: 6px;
+}

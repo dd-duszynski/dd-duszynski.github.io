@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import Paragraph from '../../UI/Paragraph'
 import styles from './FooterItem.module.scss'
 
-const FooterItem = ({ url, icon, activeIcon, description }) => {
+const FooterItem = ({ url, icon, activeIcon, description, text }) => {
    const [isIconHover, setIsIconHover] = useState(false)
    const isIconHoverHandler = () => {
       isIconHover ? setIsIconHover(false) : setIsIconHover(true)
@@ -15,7 +16,12 @@ const FooterItem = ({ url, icon, activeIcon, description }) => {
          onMouseEnter={isIconHoverHandler}
          onMouseLeave={isIconHoverHandler}
       >
-         <img src={isIconHover ? activeIcon : icon} className={styles.image} alt={description}/>
+         <img
+            src={isIconHover ? activeIcon : icon}
+            className={styles.image}
+            alt={description}
+         />
+         {text && <Paragraph text={text} addClass={styles.paragraph}/>}
       </a>
    )
 }

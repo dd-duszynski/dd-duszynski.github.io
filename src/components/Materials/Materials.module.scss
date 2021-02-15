@@ -1,46 +1,53 @@
 @import '../../scss/vm.scss';
 
-.Materials{
-   @include sectionBasic;
-   p{
-      font-size: 1.4rem;
-   }
+.Materials {
+	@include sectionBasic;
+	p {
+		font-size: 1.4rem;
+	}
+	min-height: calc(100vh - 80px - 68px);
 }
-.technology{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
+.technology {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 
-.headerContainer{
-   display: flex;
-   align-items: center;
-   cursor: pointer;
-   svg {
-      margin-right: 8px;
-      width: 22px;
-      height: 22px;
+.headerContainer {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	svg {
+		margin-right: 8px;
+		width: 22px;
+		height: 22px;
 		color: gray;
-   }
-   &:hover {
+	}
+	&:hover {
 		svg {
 			color: lightgray;
 		}
 	}
 }
 
-.markIsChoosen{
-   font-size: 1.4rem;
-   margin-right: 10px;
+.markIsChoosen {
+	font-size: 1.4rem;
+	margin-right: 10px;
 }
 
-.linksContainer{
-   display: block;
-   margin-left: 10px;
+.linksContainer {
+	display: block;
+	margin-left: 10px;
 }
 
-.linksContainerDisactive{
-   @extend .linksContainer;
-   display: none;
+.linksContainerDisactive {
+	@extend .linksContainer;
+	display: none;
 }
+
+// @include medium {
+// 	.Materials {
+// 		margin-top: 120px;
+// 	}
+// }

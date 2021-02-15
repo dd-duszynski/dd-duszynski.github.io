@@ -1,9 +1,14 @@
 @import '../../scss/vm.scss';
 
 .Layout {
-   @include grid;
+	@include grid;
 	width: 100%;
 	position: relative;
 	margin-top: 80px;
 	margin-bottom: 68px;
+}
+@media (min-width: 600px) {
+	.Layout {
+		margin-bottom: 0;
+	}
 }

@@ -11,7 +11,7 @@ const Hero = () => {
    const { hero } = textContent
 
    return (
-      <section className={styles.Hero}>
+      <section className={styles.Hero} id="hero">
          <Box
             addClass={styles.box}
             justify="center"

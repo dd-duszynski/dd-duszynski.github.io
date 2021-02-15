@@ -5,6 +5,11 @@
    color: white;
    display: flex;
    align-items: center;
+   &:hover{
+      .paragraph{
+         color: lightgreen;
+      }
+   }
 }
 .image{
    width: 50px;
@@ -12,10 +17,23 @@
 }
 
 .paragraph{
-   font-size: 12px;
-   margin-left: 7px;
+   display: none
 }
+
 .paragraphActive{
    @extend .paragraph;
    color: lightgreen;
+}
+
+@media(min-width: $mediumDevice){
+   .image{
+      width: 35px;
+      height: 35px;
+   }
+   .paragraph{
+      display: block;
+      font-size: 12px;
+      margin-left: 7px;
+
+   }
 }

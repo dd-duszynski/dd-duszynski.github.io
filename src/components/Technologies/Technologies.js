@@ -45,7 +45,7 @@ const Technologies = () => {
                align="flex-start"
                column
             >
-               <H1 text={technologies.header} addClass={styles.h1}/>
+               <H1 text={technologies.header} addClass={styles.h1} />
                <TechnologyRow
                   type="dev"
                   handleModalToggle={handleModalToggle}
@@ -54,37 +54,38 @@ const Technologies = () => {
                      "JavaScript",
                      "HTML",
                      "CSS",
-                     "SCSS",
+                     "Material UI",
                      "React",
                      "Redux",
                      "Gatsby",
                      "Node",
-                     "MongoDB",
+                     "MySQL",
                      "Git",
-                     "Github"
+                     "Github",
+                     "VSC"
                   ]}
                />
                <TechnologyRow
-               type="design"
+                  type="design"
                   handleModalToggle={handleModalToggle}
                   headerText={technologies.subheaders[1]}
                   technologies={[
-                     "XD",
-                     "Photoshop",
-                     "Illustrator",
+                     "UX/UI",
+                     "Adobe XD",
+                     "Adobe Photoshop",
+                     "Adobe Illustrator",
                      "Figma",
-                     "Designer",
-                     "Publisher"
+                     "Affinity Designer",
+                     "Affinity Publisher"
                   ]}
                />
                <TechnologyRow
-               type="others"
+                  type="others"
                   handleModalToggle={handleModalToggle}
                   headerText={technologies.subheaders[2]}
                   technologies={[
-                     "UI",
                      "Scrum",
-                     "VSC",
+                     "Kanban",
                      "Jira",
                      "Trello",
                      "Excel",

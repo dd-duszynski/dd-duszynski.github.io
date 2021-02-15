@@ -5,16 +5,19 @@
 	height: auto;
 	margin-bottom: 1vh;
 	svg {
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
 		color: gray;
    }
    
 	&:hover {
-		cursor: help;
+		cursor: pointer;
 		svg {
 			color: lightgray;
 		}
+      .title{
+         color: lightgray;
+      }
 	}
 }
 
@@ -28,15 +31,15 @@
 .icon {
 	max-width: 40px;
 	max-height: 40px;
-	filter: grayscale(90%);
+	// filter: grayscale(90%);
 	&:hover {
-		cursor: help;
-		filter: grayscale(0);
+		cursor: pointer;
+		// filter: grayscale(0);
 	}
 }
 
 .title {
 	text-align: center;
    margin-top: 3px;
-   font-size: $fsp;
+   font-size: $fs4;
 }

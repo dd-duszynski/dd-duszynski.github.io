@@ -15,10 +15,10 @@ import kanban3 from '../assets/kanban3.JPG'
 
 const textContent = {
    navigation: [
-      ["Projekty", "/projects"],
+      ["O mnie", "/about"],
+      ["Projekty", "/#projects"],
       ["Materiały", "/materials"],
-      ["Kontakt", "/#contact"],
-      ["O mnie", "/about"]
+      ["Kontakt", "/#contact"]
    ],
    hero: [
       "Witaj. Nazywam się Damian.",
@@ -26,7 +26,7 @@ const textContent = {
       "Znajdziesz tu moje projekty, materiały do nauki oraz opis technologii, których używam."
    ],
    projects: {
-      title: "Projekty",
+      title: "Projekty:",
       listOfProjects: [
          {
             nazwa: "Kanbanator",
@@ -39,7 +39,7 @@ const textContent = {
          },
          {
             nazwa: "PrintXL",
-            rodzaj: "dev",
+            rodzaj: "dev & design",
             opis: "Redesign strony internetowej na potrzeby drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do specyfikacji technicznych.",
             photo: pxlHero,
             photos: [pxl1,pxl2, pxl3, pxl4, pxl5],
@@ -48,7 +48,7 @@ const textContent = {
          },
          {
             nazwa: "BigFive",
-            rodzaj: "dev",
+            rodzaj: "dev & design",
             opis: "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
             photo: bigFiveHero,
             photos: [bigFive1, bigFive2, bigFive3],
@@ -58,7 +58,7 @@ const textContent = {
       ],
    },
    technologies: {
-      header: "Narzędzia i technologie",
+      header: "Narzędzia i technologie:",
       subheaders: ["Development", "Design", "Pozostałe"],
       HTML: "HTML (ang. HyperText Markup Language) – hipertekstowy język znaczników, wykorzystywany do tworzenia dokumentów hipertekstowych.",
       CSS: "Kaskadowe arkusze stylów (ang. Cascading Style Sheets, w skrócie CSS) – język służący do opisu formy prezentacji (wyświetlania) stron WWW. CSS został opracowany przez organizację W3C w 1996 r. jako potomek języka DSSSL przeznaczony do używania w połączeniu z SGML-em. Pierwszy szkic CSS zaproponował w 1994 r. Håkon Wium Lie[1].",

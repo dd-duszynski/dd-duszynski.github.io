@@ -12,24 +12,24 @@ const TechnologyRow = ({ type, headerText, technologies, handleModalToggle }) =>
    let icon
    switch (type) {
       case 'dev':
-         icon = <BiCodeAlt className={[styles.icon, styles.iconDev].join(' ')}/>
+         icon = <BiCodeAlt className={[styles.icon, styles.iconDev].join(' ')} />
          break
       case 'design':
-         icon = <GiPencilBrush className={[styles.icon, styles.iconDesign].join(' ')}/>
+         icon = <GiPencilBrush className={[styles.icon, styles.iconDesign].join(' ')} />
          break
       default:
-         icon = <GoTools className={[styles.icon, styles.iconOthers].join(' ')}/>
+         icon = <GoTools className={[styles.icon, styles.iconOthers].join(' ')} />
    }
 
    return (
       <article className={styles.TechnologyRow}>
-         <Box 
+         <Box
             justify="flex-start"
             align="center"
             addClass={styles.box}
          >
-            {icon}
-            <H2 text={headerText}  />
+            {/* {icon} */}
+            <H2 text={`- ${headerText}:`} />
          </Box>
          <ul className={styles.technologyList}>
             {technologies.map(item => (
@@ -37,10 +37,7 @@ const TechnologyRow = ({ type, headerText, technologies, handleModalToggle }) =>
                   key={item}
                   name={item}
                   onClick={() => handleModalToggle(item)}
-               >
-                  <DiJavascript />
-               </TechnologyItem>
-
+               />
             ))}
          </ul>
       </article>
