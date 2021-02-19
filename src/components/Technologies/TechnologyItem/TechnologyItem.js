@@ -10,6 +10,9 @@ import { DiScrum, DiTrello } from 'react-icons/di';
 import { GiPencilBrush } from 'react-icons/gi';
 import { CgFigma } from 'react-icons/cg';
 import { SiAdobexd, SiAdobephotoshop, SiAdobeillustrator, SiAffinitydesigner, SiAffinitypublisher, SiVisualstudiocode, SiMicrosoftexcel } from 'react-icons/si';
+import H3 from '../../UI/H3'
+import Aside from '../../UI/Aside'
+import Paragraph from '../../UI/Paragraph'
 
 const SwitchIcon = ({ name }) => {
    let icon;
@@ -89,11 +92,6 @@ const SwitchIcon = ({ name }) => {
       case 'Excel':
          icon = <SiMicrosoftexcel />
          break
-
-
-
-
-
       default:
          icon = <SiRedux />
    }
@@ -105,7 +103,12 @@ const TechnologyItem = ({ name, onClick }) => {
       <li className={styles.TechnologyItem} onClick={onClick}>
          <div className={styles.container}>
             <SwitchIcon name={name} />
-            <p className={styles.title}>{name}</p>
+            <H3 text={name} addClass={styles.title} />
+         </div>
+         <div className={styles.backdrop} >
+            <div className={styles.bottomBackdrop}>
+               Zobacz więcej
+            </div>
          </div>
       </li>
    )

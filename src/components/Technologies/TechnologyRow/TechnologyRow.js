@@ -29,7 +29,7 @@ const TechnologyRow = ({ type, headerText, technologies, handleModalToggle }) =>
             addClass={styles.box}
          >
             {/* {icon} */}
-            <H2 text={`- ${headerText}:`} />
+            <H2 text={headerText} />
          </Box>
          <ul className={styles.technologyList}>
             {technologies.map(item => (

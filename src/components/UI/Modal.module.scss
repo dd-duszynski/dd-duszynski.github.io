@@ -3,21 +3,17 @@
 .Modal {
 	z-index: 100;
 	position: fixed;
-	top: 22vh;
-	left: 10%;
-   width: 80%;
-   height: 300px;
+	top: 15vh;
+   height: 70vh;
+	left: 15vw;
+   width: 70vw;
 	background: white;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
    border-radius: 8px;
+   border-radius: 8px;
+   background-color: #353535;
    p{
       color: black;
    }
 }
 
-.header {
-	width: 100%;
-	padding: 1rem 0.5rem;
-	background: $bgcolor;
-	color: white;
-}

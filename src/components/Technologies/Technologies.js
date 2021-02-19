@@ -14,6 +14,7 @@ import Modal from '../UI/Modal'
 import { AppContext } from '../../context/context'
 import Box from '../UI/Box'
 import TechnologyRow from './TechnologyRow/TechnologyRow'
+import TechnologyModal from './TechnologyModal/TechnologyModal'
 
 const Technologies = () => {
    const { textContent } = useContext(AppContext)
@@ -30,10 +31,13 @@ const Technologies = () => {
    const modal = (
       <Modal
          show={showModal}
-         header={modalContent}
          onCancel={closeModal}
-         technology={`technologies.${modalContent}`}
-      />
+         >
+         <TechnologyModal
+            header={modalContent}
+            technology={`technologies.${modalContent}`}
+         />
+      </Modal>
    )
 
    return (

@@ -1,45 +1,90 @@
 @import '../../../scss/vm.scss';
 
 .TechnologyItem {
-   width: 85px;
-	height: auto;
-	margin-bottom: 1vh;
+	width: 30%;
+   max-width: 120px;
+	height: 140px;
+	border: 1px solid gray;
+	border-radius: 8px;
+	margin-bottom: 20px;
+   margin-right: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #353535;
+	position: relative;
+
 	svg {
-      width: 40px;
-      height: 40px;
-		color: gray;
-   }
+		width: 40px;
+		height: 40px;
+		color: #ddd;
+	}
    
 	&:hover {
 		cursor: pointer;
-		svg {
-			color: lightgray;
+		// .container,
+		// .icon,
+		// .title,
+		// svg {
+		// 	color: lightgreen;
+		// }
+		.backdrop,
+		.bottomBackdrop {
+         color: lightgreen;
+			opacity: 1;
 		}
-      .title{
-         color: lightgray;
-      }
 	}
 }
 
+.backdrop,
+.bottomBackdrop {
+	position: absolute;
+	background-color: rgba(20, 20, 20, 0.6);
+	opacity: 0;
+	transition: opacity 0.6s;
+   width: 100%;
+}
+.backdrop {
+	top: 0;
+	height: 100%;
+	background-color: rgba(20, 20, 20, 0.6);
+	border-radius: 8px;
+	opacity: 0;
+}
+.bottomBackdrop {
+	bottom: 0;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	height: 25px;
+	background-color: #353535;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	&:hover {
+		cursor: pointer;
+	}
 }
-
 .icon {
 	max-width: 40px;
 	max-height: 40px;
-	// filter: grayscale(90%);
-	&:hover {
-		cursor: pointer;
-		// filter: grayscale(0);
-	}
 }
 
 .title {
 	text-align: center;
-   margin-top: 3px;
-   font-size: $fs4;
+	margin-top: 10px;
+	font-size: $fs4;
+}
+
+
+@media(min-width: 600px){
+   .TechnologyItem {
+      width: 100px;
+      margin: 14px;
+   }
 }

@@ -11,12 +11,7 @@ const Modal = (props) => {
             <>
                <Backdrop onClick={props.onCancel} />
                <div className={styles.Modal}>
-                  <header className={styles.header}>
-                     <h2>{props.header}</h2>
-                  </header>
-                  <article>
-                     <p>{props.technology}</p>
-                  </article>
+                  {props.children}
                </div>
             </>
          )}
