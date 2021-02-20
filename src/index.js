@@ -8,7 +8,7 @@ const localStorageLang = localStorage.getItem('lang');
 const browserLanguage = window.navigator.userLanguage || window.navigator.language;
 const browserLanguageShort = browserLanguage.substring(0, 2).toUpperCase();
 const browserlang = browserLanguageShort === "PL" ? "PL" : "EN";
-const appLanguage = localStorageLang !== null ? localStorageLang : browserlang;
+const appLanguage = localStorageLang !== null ? localStorageLang : browserlang; 
 
 ReactDOM.render(
    <React.StrictMode>

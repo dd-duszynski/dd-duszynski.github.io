@@ -7,21 +7,21 @@ import Project from "../../pages/Project/Project"
 import About from "../../pages/About/About"
 
 const App = ({ lang }) => {
-   const ContentSwitch = (
-      <Switch>
-         <Route path='/' exact>
-            <Main />
-         </Route>
-         <Route path='/projects/:link' exact>
-            <Project />
-         </Route>
-         <Route path='/materials' exact>
-            <Materials />
-         </Route>
-         <Route path='/about' exact>
-            <About />
-         </Route>
-         <Redirect to='/' />
+const ContentSwitch = (
+<Switch>
+<Route path='/' exact>
+<Main />
+</Route>
+<Route path='/projects/:link' exact>
+<Project />
+</Route>
+<Route path='/materials' exact>
+<Materials />
+</Route>
+<Route path='/about' exact>
+<About />
+</Route>
+<Redirect to='/' />
       </Switch>
    )
 
