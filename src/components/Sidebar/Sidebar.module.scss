@@ -1,7 +1,7 @@
 @import "../../scss/vm.scss";
 
 .sidebar {
-   background-color: $bgcolor;
+   background-color: $bgColor;
    position: fixed;
    top: 80px;
    left: 0;
@@ -12,7 +12,7 @@
 }
 
 .closeSidebar {
-   background-color: $bgcolor;
+   background-color: $bgColor;
    transform: translateX(-100%);
 }
 

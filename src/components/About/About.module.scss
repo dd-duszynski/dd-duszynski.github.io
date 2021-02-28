@@ -1,6 +1,29 @@
-@import '../../scss/vm.scss';
+@import "../../scss/vm.scss";
 
-.About{
-   grid-column: 2/3;
-   min-height: calc(100vh - 80px - 169px);
+.About {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	grid-column: 2/3;
+	min-height: calc(100vh - 80px - 169px);
+}
+.box {
+	margin-bottom: 30px;
+}
+.header_H1 {
+	margin-top: 10px;
+	&:hover {
+		color: lightgreen;
+	}
+}
+.header_H2 {
+	margin-top: 10px;
+	&:hover {
+		color: lightgreen;
+	}
+}
+.header_H3 {
+	margin-bottom: 8px;
+	margin-top: 6px;
 }

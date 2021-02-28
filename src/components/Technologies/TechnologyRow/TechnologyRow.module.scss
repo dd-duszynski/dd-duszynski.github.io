@@ -1,16 +1,16 @@
 .TechnologyRow {
-	width:100%;
+   width: 100%;
    margin-bottom: 2vh;
 }
-.box{
+.box {
    margin-bottom: 1vh;
 }
 .technologyList {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: flex-start;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-items: start;
 }
-.icon{
+.icon {
    color: gray;
    margin-right: 1rem;
 }
@@ -27,10 +27,10 @@
    height: 25px;
 }
 
-@media(min-width: 600px){
+@media (min-width: 600px) {
    .technologyList {
       display: flex;
       justify-content: flex-start;
-      
+      flex-wrap: wrap;
    }
 }

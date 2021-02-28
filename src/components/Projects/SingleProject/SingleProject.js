@@ -15,8 +15,8 @@ const SingleProject = ({ nazwa, rodzaj, opis, photo, link }) => {
    return (
       <article className={styles.SingleProject}>
          <Link to={link} className={styles.link}>
-            <Box align="flex-end" justify="space-between" addClass={styles.box}>
-               <H2 text={`- ${nazwa}`}/>
+            <Box align="center" justify="space-between" addClass={styles.box}>
+               <H2 text={`• ${nazwa}`}/>
                <Aside>{rodzaj}</Aside>
             </Box>
                {/* <div className={styles.overlay}>

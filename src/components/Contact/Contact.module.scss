@@ -1,73 +1,28 @@
-@import '../../scss/vm.scss';
+@import "../../scss/vm.scss";
 
 .Contact {
 	grid-column: 2/3;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-.Container {
+
+.listContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 70px 0 100px;
-   width: 100%;
+	padding: 80px 0 80px;
+	width: 100%;
 }
 
 .singleFormItem {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
-	max-width: 380px;
-	padding: 12px 0;
+	max-width: 400px;
+	padding: 20px 0;
 }
 
-.Contact label {
-	font-size: 14px;
-}
 
-.Contact input,
-.Contact textarea,
-.Contact button {
-	font-size: 1.3rem;
-	margin-top: 6px;
-	&::placeholder {
-      font-size: 1.2rem;
-		color: darkgray;
-	}
-}
-
-.Contact button {
-	font-size: 15px;
-	border: none;
-	border: 1px solid white;
-	background: none;
-	color: white;
-	padding: 10px 0;
-	border-radius: 6px;
-	&:hover {
-		border: 1px solid lightgreen;
-		background: $bgcolor;
-		color: lightgreen;
-		cursor: pointer;
-	}
-}
-
-.Contact input,
-.Contact textarea {
-	background: none;
-	color: white;
-	border: none;
-	border-bottom: 1px solid lightgray;
-	@include roboto300;
-	outline: none;
-	&:focus {
-		border-bottom: 1px solid lightgreen;
-	}
-}
-
-.Contact textarea {
-	resize: none;
-}

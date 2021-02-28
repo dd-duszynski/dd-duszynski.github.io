@@ -29,7 +29,7 @@ const Footer = () => {
                align="flex-start"
                column
             >
-               <H3 text="Kontakt:" add />
+               <H3 text="Kontakt:" addClass={styles.header} />
                <FooterItem
                   text="linkedin.com/in/dd-duszynski"
                   url="https://www.linkedin.com/in/dd-duszynski"

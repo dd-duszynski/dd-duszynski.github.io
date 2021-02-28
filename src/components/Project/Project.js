@@ -5,7 +5,7 @@ import H1 from '../UI/H1'
 import H2 from '../UI/H2'
 import Box from '../UI/Box'
 import Paragraph from '../UI/Paragraph'
-import TechnologyItemTest from '../Technologies/TechnologyItem/TechnologyItemTest'
+import TechnologyItem from '../Technologies/TechnologyItem/TechnologyItem'
 // import { AiFillHtml5 } from 'react-icons/ai';
 // import MaterialsItem from './MaterialsItem/MaterialsItem'
 
@@ -43,13 +43,13 @@ const Project = ({ link }) => {
          <H2 text="Wykorzystane technologie" />
          <ul className={styles.technologyList}>
             <Box justify='flex-start' align="center">
-               {project.technologies.map(i => (
-                  <TechnologyItemTest
+               {/* {project.technologies.map(i => (
+                  <TechnologyItem
                      key={i}
                      name={i}
                   />
                )
-               )}
+               )} */}
             </Box>
          </ul>
          <H2 text='Ekrany' />
