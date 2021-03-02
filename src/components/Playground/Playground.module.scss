@@ -1,9 +1,11 @@
 @import '../../scss/vm.scss';
 
-.Box {
-   width: 100%;
+.Playground {
+   grid-column: 2/3;
    display: flex;
    justify-content: center;
    align-items: center;
-   max-width: 1050px;
+   flex-direction: column;
 }
+
+

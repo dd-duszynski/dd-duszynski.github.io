@@ -127,7 +127,7 @@ const Footer = () => {
       </footer>
    )
    return (
-      size >= 800 ? largeDevices : smallDevice
+      size >= 900 ? largeDevices : smallDevice
    )
 }
 

@@ -6,10 +6,11 @@ import styles from './ToTheTop.module.scss'
 import { NavHashLink } from 'react-router-hash-link';
 
 const ToTheTop = () => {
+   
    return (
       <NavHashLink
          smooth
-         exact to={"/#hero"}
+         exact to={"#hero"}
       // className={styles.toTheTop}
       >
          <Box

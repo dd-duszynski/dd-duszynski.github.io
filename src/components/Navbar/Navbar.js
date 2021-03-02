@@ -53,7 +53,10 @@ const Navbar = () => {
    const smallDevice = (
       <>
          <GlitchClip iterationCount="1">
-            <Logo />
+            <Logo  
+               handleCloseSidebar={handleCloseSidebar}
+               isSidebarOpen={isSidebarOpen}
+            />
          </GlitchClip>
          <HamburgerMenu
             handleOpenSidebar={handleOpenSidebar}
@@ -66,7 +69,7 @@ const Navbar = () => {
    return (
       <header className={styles.navbar} id="nav">
          <nav className={styles.container}>
-            {size > 800 ? largeDevices : smallDevice}
+            {size > 1050 ? largeDevices : smallDevice}
          </nav>
       </header>
    )

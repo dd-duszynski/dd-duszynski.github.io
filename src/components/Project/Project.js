@@ -1,62 +1,72 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { AppContext } from '../../context/context'
 import styles from './Project.module.scss'
 import H1 from '../UI/H1'
 import H2 from '../UI/H2'
 import Box from '../UI/Box'
 import Paragraph from '../UI/Paragraph'
-import TechnologyItem from '../Technologies/TechnologyItem/TechnologyItem'
-// import { AiFillHtml5 } from 'react-icons/ai';
-// import MaterialsItem from './MaterialsItem/MaterialsItem'
+import TechnologyRow from '../Technologies/TechnologyRow/TechnologyRow'
+import TechnologyModal from "../Technologies/TechnologyModal/TechnologyModal";
+import Modal from "../UI/Modal";
 
 const Project = ({ link }) => {
    const { textContent: { projects: { listOfProjects } } } = useContext(AppContext)
    const [project] = listOfProjects.filter(i => i.link === `/projects/${link}`)
+   const [mainPhoto, ...photos] = project.photos;
+   const [showModal, setShowModal] = useState(false);
+   const [modalContent, setModalContent] = useState(null);
+   const [choosenItem, setChoosenItem] = useState(null)
+   const choosenItemHandler = (item) => {
+      setChoosenItem(item)
+   }
+   const modalToggleHandler = (technology) => {
+      setModalContent(technology);
+      setShowModal(!showModal);
+   };
 
-   fetch('http://localhost:1337/projects', {
-      method: 'GET',
-      headers: {
-         'Content-Type': 'application/json',
-      },
-   })
-      .then(response => response.json())
-      .then(data => console.log(data));
+   const closeModal = () => setShowModal(false);
 
-   
+   const modal = (
+      <Modal show={showModal} onCancel={closeModal}>
+         <TechnologyModal
+            header={modalContent}
+            technology={`technologies.${modalContent}`}
+         />
+      </Modal>
+   );
    return (
-      <main className={styles.Project}>
-         <Box justify='space-between' align="center">
-            <H1 text={project.nazwa} />
-            <Paragraph
-               text={`{dev & design}`}
-            />
-         </Box>
-         <img className={styles.img} src={project.photos[0]} />
-         <Paragraph
-            text={project.opis}
-            breakLine
-         />
-         <Paragraph
-            text={project.opis}
-            breakLine
-         />
-         <H2 text="Wykorzystane technologie" />
-         <ul className={styles.technologyList}>
-            <Box justify='flex-start' align="center">
-               {/* {project.technologies.map(i => (
-                  <TechnologyItem
-                     key={i}
-                     name={i}
-                  />
-               )
-               )} */}
+      <>
+         {modal}
+         <main className={styles.Project}>
+            <Box justify='space-between' align="center">
+               <img className={styles.img} src={mainPhoto} />
             </Box>
-         </ul>
-         <H2 text='Ekrany' />
-         {project.photos.map(i => (
-            <img className={styles.img} src={i} />
-         ))}
-      </main>
+            <Box justify='space-between' align="flex-start" column>
+               <H1 text={project.nazwa} />
+               <Paragraph
+                  text={`Rola: Development & Design`}
+               />
+               <Paragraph
+                  text={`Opis: ${project.opis}`}
+               />
+            </Box>
+            <Box>
+               <TechnologyRow
+                  choosenItem={choosenItem}
+                  choosenItemHandler={choosenItemHandler}
+                  modalToggleHandler={modalToggleHandler}
+                  headerText="Technologie"
+                  technologies={project.technologies}
+               />
+            </Box>
+            <Box justify='flex-start' align="flex-start" column>
+               <H2 text='Ekrany' />
+               {photos.map(i => (
+                  <img className={styles.img} src={i} />
+               ))}
+            </Box>
+         </main>
+      </>
    )
 }
 

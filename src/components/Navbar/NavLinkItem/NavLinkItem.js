@@ -9,6 +9,7 @@ const NavLinkItem = ({ onClickHandler, linkTo, children, hash }) => {
          exact to={linkTo}
          onClick={onClickHandler}
          className={styles.navLink}
+         activeClassName={styles.navLinkActive}
       >
          {children}
       </NavLink>

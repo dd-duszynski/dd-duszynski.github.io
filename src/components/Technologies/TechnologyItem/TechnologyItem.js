@@ -5,7 +5,6 @@ import { AppContext } from '../../../context/context'
 
 const TechnologyItem = ({ name, choosenItemHandler, isChoosen, modalToggleHandler }) => {
    const { size, textContent } = useContext(AppContext)
-   console.log(textContent);
    const openModalHandler = (name) => {
       modalToggleHandler(name)
       choosenItemHandler(null)

@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import styles from './Logo.module.scss'
-const Logo = () => {
+const Logo = ({ isSidebarOpen, handleCloseSidebar }) => {
    return (
-      <Link to="/" className={styles.Logo}>
+      <Link
+         to="/"
+         className={styles.Logo}
+         onClick={isSidebarOpen && handleCloseSidebar}
+      >
          dd-
       </Link>
    )

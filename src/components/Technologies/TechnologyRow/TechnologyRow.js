@@ -8,7 +8,6 @@ import { GiPencilBrush } from "react-icons/gi";
 import { GoTools } from "react-icons/go";
 
 const TechnologyRow = ({
-   type,
    headerText,
    technologies,
    modalToggleHandler,
@@ -19,7 +18,7 @@ const TechnologyRow = ({
    return (
       <article className={styles.TechnologyRow}>
          <Box justify="flex-start" align="center" addClass={styles.box}>
-            <H2 text={`• ${headerText}`} />
+            <H2 text={headerText} />
          </Box>
          <ul className={styles.technologyList}>
             {technologies.map((item) => (

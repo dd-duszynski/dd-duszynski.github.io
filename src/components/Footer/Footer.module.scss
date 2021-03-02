@@ -12,10 +12,11 @@
 	grid-column: 2/3;
 	margin: 0 auto;
 	height: 68px;
+   width: 80% !important;
 	max-width: 380px !important;
 }
+
 // ponizej 600 px
-//box width 90%
 
 @media (min-width: $mediumDevice) {
 	.Footer_Large {
@@ -26,7 +27,7 @@
 	}
 
 	.container {
-      max-width: 1100px;
+      max-width: 1050px;
       width: 80%;
 		margin: 20px auto;
 		display: grid;
