@@ -58,11 +58,13 @@ const Navbar = () => {
                isSidebarOpen={isSidebarOpen}
             />
          </GlitchClip>
-         <HamburgerMenu
-            handleOpenSidebar={handleOpenSidebar}
-            handleCloseSidebar={handleCloseSidebar}
-            isSidebarOpen={isSidebarOpen}
-         />
+         <GlitchClip iterationCount="1">
+            <HamburgerMenu
+               handleOpenSidebar={handleOpenSidebar}
+               handleCloseSidebar={handleCloseSidebar}
+               isSidebarOpen={isSidebarOpen}
+            />
+         </GlitchClip>
       </>
    )
 

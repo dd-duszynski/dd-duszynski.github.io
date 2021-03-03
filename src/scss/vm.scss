@@ -39,7 +39,7 @@ $mediumDevice: 900px;
 
 @mixin grid {
 	display: grid;
-	grid-template-columns: 5% 90% 5%;
+	grid-template-columns: 7% 86% 7%;
 	@media (min-width: 600px) {
 		display: grid;
 		grid-template-columns: 10% 80% 10%;

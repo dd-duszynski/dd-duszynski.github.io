@@ -1,29 +1,4 @@
 @import '../../../scss/vm.scss';
-
-@keyframes rotateline1 {
-	0% {
-		transform: rotate(0deg);
-	}
-	50% {
-		transform: rotate(45deg);
-	}
-	100% {
-		transform: rotate(-45deg);
-	}
-}
-
-@keyframes rotateline3 {
-	0% {
-		transform: rotate(0deg);
-	}
-	50% {
-		transform: rotate(-45deg);
-	}
-	100% {
-		transform: rotate(45deg);
-	}
-}
-
 .btn,
 .btnIsClicked {
 	z-index: 3;
@@ -56,13 +31,22 @@
 		height: 1px;
 		border-bottom: 1px solid white;
    }
+   
+   &:hover{
+      .line1,
+      .line2,
+      .line3 {
+         border-bottom: 1px solid lightgreen;
+      }
+
+   }
 }
 
 .btn {
 	.line1,
 	.line2,
 	.line3 {
-		transition: all 0.3s ease;
+		transition: all 0.3s ease-in;
 	}
 }
 
@@ -72,17 +56,42 @@
 		position: absolute;
 		top: 30px;
 		left: 20px;
-		transition: all 0.5s ease;
+		transition: all 0.5s ease-in;
 	}
 	.line1 {
 		transform: rotate(-45deg);
-		animation: rotateline1 0.5s ease;
+		animation: rotateline1 0.5s ease-out;
 	}
 	.line3 {
 		transform: rotate(45deg);
-		animation: rotateline3 0.5s ease;
+		animation: rotateline3 0.5s ease-out;
 	}
 	.line2 {
 		opacity: 0;
+	}
+}
+
+
+@keyframes rotateline1 {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes rotateline3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(45deg);
 	}
 }

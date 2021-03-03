@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from "../../components/Layout/Layout"
 import ProjectComponent from "../../components/Project/Project"
@@ -6,6 +6,12 @@ import ProjectComponent from "../../components/Project/Project"
 
 const Projects = () => {
    const { link } = useParams();
+   useEffect(() => {
+      window.scroll({
+         top: 0,
+         behavior: 'smooth'
+      });
+   }, [])
 
    return (
       <Layout footerFixed>
