@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from "../../components/Layout/Layout"
 import ProjectComponent from "../../components/Project/Project"
 
 
-const Projects = () => {
+const Project = () => {
    const { link } = useParams();
    useEffect(() => {
       window.scroll({
@@ -20,4 +20,4 @@ const Projects = () => {
    )
 }
 
-export default Projects
+export default Project

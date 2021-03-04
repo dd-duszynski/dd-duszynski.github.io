@@ -37,7 +37,7 @@ const Project = ({ link }) => {
    return (
       <>
          {modal}
-         <main className={styles.Project}>
+         <main className={styles.Project} id="projects">
             <Box justify='space-between' align="center">
                <img className={styles.img} src={mainPhoto} />
             </Box>

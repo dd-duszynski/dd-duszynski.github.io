@@ -1,13 +1,18 @@
 import React from 'react'
+import { NavHashLink } from 'react-router-hash-link';
 import styles from './ScrollDown.module.scss'
 
 const ScrollDown = () => {
    return (
-      <div className={styles.ScrollDown}>
+      <NavHashLink
+         smooth
+         exact to={"/#projects"}
+         className={styles.ScrollDown}
+      >
          <span></span>
          <span></span>
          <span></span>
-      </div>
+      </NavHashLink>
    )
 }
 

@@ -16,6 +16,7 @@ const Navbar = () => {
    } = useContext(AppContext);
 
    const { navigation } = textContent
+   const [mainPage, ...restNavItem] = navigation
    const isHash = i => i.indexOf("#") > 0;
 
    const largeDevices = (
@@ -25,7 +26,7 @@ const Navbar = () => {
          </GlitchClip>
          <GlitchClip iterationCount="1">
             <ul className={styles.links}>
-               {navigation.map(item => {
+               {restNavItem.map(item => {
                   if (isHash(item[1])) {
                      return (
                         <li key={item[0]} className={styles.link}>

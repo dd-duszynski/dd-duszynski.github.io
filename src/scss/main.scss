@@ -15,8 +15,10 @@ body {
    width: 100%;
    overflow-x: hidden;
    ::selection {
-      color: lightgreen;
-      background: darkslategray;
+      color: $bgColor;
+      background: #fff;
+      // color: lightgreen;
+      // background: darkslategray;
     }
 }
 
@@ -28,20 +30,20 @@ a {
 	text-decoration: none;
 }
 
-/* scrollbar - width */
 ::-webkit-scrollbar {
-   width: 6px;
+   width: 8px;
  }
  
- /* scrollbar - Track */
  ::-webkit-scrollbar-track {
-   // box-shadow: inset 0 0 2px lightgray;
-   border-radius: 5px;
+   border-radius: 8px;
    background: $bgColor;
 }
 
-/* scrollbar - Handle */
 ::-webkit-scrollbar-thumb {
    background: gray;
-   border-radius: 5px;
+   border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: darkgray;
  }

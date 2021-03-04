@@ -10,7 +10,6 @@ const About = ({ text }) => {
    const { textContent } = useContext(AppContext);
    const { technologies } = textContent;
 
-
    return (
       <section className={styles.About}>
          <Box

@@ -6,9 +6,11 @@ import NavLinkItem from "../Navbar/NavLinkItem/NavLinkItem"
 const Sidebar = () => {
    const { isSidebarOpen, handleCloseSidebar, textContent, handleLanguageChange, language } = useContext(AppContext)
    const { navigation } = textContent
+   const [mainPage, ...restNavItem] = navigation
    const btnPLCSS = language === "PL" && styles.active;
    const btnENCSS = language === "EN" && styles.active;
    const isHash = i => i.indexOf("#") > 0;
+
    return (
       <aside
          className={
@@ -18,7 +20,7 @@ const Sidebar = () => {
          }
       >
          <section className={styles.linksContainer}>
-            {navigation.map((item) => {
+            {restNavItem.map((item) => {
                if (isHash(item[1])) {
                   return (
                      <NavLinkItem

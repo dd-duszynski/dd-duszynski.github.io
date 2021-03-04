@@ -15,18 +15,20 @@ import kanban3 from '../assets/kanban3.JPG'
 
 const textContent = {
    navigation: [
+      ["Strona Główna", "/"],
       ["O mnie", "/about"],
       ["Projekty", "/#projects"],
       ["Piaskownica", "/playground"],
       ["Kontakt", "/#contact"]
    ],
    hero: [
-      "Witaj. Nazywam się Damian.",
-      "Jestem Frontend Developerem oraz entuzjastą UX/UI.",
-      "Znajdziesz tu moje projekty, materiały do nauki oraz opis technologii, których używam."
+      "Witaj. Nazywam się Damian Duszyński.",
+      "Jestem Frontend Developerem oraz entuzjastą UX/UI. Znajdziesz tu opis moich projektów i technologii, których używam.",
+      "Zapraszam do",
+      "kontaktu",
    ],
    projects: {
-      title: "Projekty:",
+      title: "Projekty",
       listOfProjects: [
          {
             nazwa: "Kanbanator",
@@ -35,16 +37,16 @@ const textContent = {
             photo: kanbanatorHero,
             photos: [kanbanatorHero, kanban1, kanban2, kanban3],
             link: '/projects/kanbanator',
-            technologies: ['HTML','CSS', 'JavaScript','React', 'Redux','Material UI' ,'Node', 'MySQL']
+            technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Material UI', 'Node', 'MySQL']
          },
          {
             nazwa: "PrintXL",
             rodzaj: "dev & design",
             opis: "Redesign strony internetowej na potrzeby drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do specyfikacji technicznych.",
             photo: pxlHero,
-            photos: [pxlHero, pxl1,pxl2, pxl3, pxl4, pxl5],
+            photos: [pxlHero, pxl1, pxl2, pxl3, pxl4, pxl5],
             link: '/projects/pxl',
-            technologies: ['HTML','CSS', 'JavaScript','React', 'Redux','Material UI' ,'Node', 'MySQL']
+            technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Material UI', 'Node', 'MySQL']
          },
          {
             nazwa: "BigFive",
@@ -53,12 +55,12 @@ const textContent = {
             photo: bigFiveHero,
             photos: [bigFiveHero, bigFive1, bigFive2, bigFive3],
             link: '/projects/big-five',
-            technologies: ['HTML','CSS', 'JavaScript','React', 'Redux','Material UI' ,'Node', 'MySQL']
+            technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Material UI', 'Node', 'MySQL']
          },
       ],
    },
    technologies: {
-      header: "Narzędzia i technologie:",
+      header: "Narzędzia i technologie",
       subheaders: ["Development", "Design", "Pozostałe"],
       seeMore: 'Dowiedz się więcej'
    },

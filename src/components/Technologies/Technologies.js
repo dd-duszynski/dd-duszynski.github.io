@@ -42,7 +42,7 @@ const Technologies = () => {
                   choosenItem={choosenItem}
                   choosenItemHandler={choosenItemHandler}
                   modalToggleHandler={modalToggleHandler}
-                  headerText={technologies.subheaders[0]}
+                  headerText={`• ${technologies.subheaders[0]}`}
                   technologies={[
                      "JavaScript",
                      "HTML",
@@ -62,7 +62,7 @@ const Technologies = () => {
                   choosenItem={choosenItem}
                   choosenItemHandler={choosenItemHandler}
                   modalToggleHandler={modalToggleHandler}
-                  headerText={technologies.subheaders[1]}
+                  headerText={`• ${technologies.subheaders[1]}`}
                   technologies={[
                      "UX/UI",
                      "Adobe XD",
@@ -77,7 +77,7 @@ const Technologies = () => {
                   choosenItem={choosenItem}
                   choosenItemHandler={choosenItemHandler}
                   modalToggleHandler={modalToggleHandler}
-                  headerText={technologies.subheaders[2]}
+                  headerText={`• ${technologies.subheaders[2]}`}
                   technologies={[
                      "Scrum",
                      "Kanban",

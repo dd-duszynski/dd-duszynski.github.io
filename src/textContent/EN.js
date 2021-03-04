@@ -15,15 +15,17 @@ import kanban3 from '../assets/kanban3.JPG'
 
 const textContent = {
    navigation: [
+      ["Main Page", "/"],
       ["Projects", "/#projects"],
       ["Materials", "/materials"],
       ["Playground", "/playground"],
       ["About Me", "/about"]
    ],
    hero: [
-      "Hello, I'm Damian.",
-      "Frontend Developer and UX enthusiast.",
-      "I would like to present my works, snippets and technologies that I used."
+      "Hello, I'm Damian Duszyński.",
+      "I am a Frontend Developer and UX / UI enthusiast. You will find here a description of my projects and technologies that I use.",
+      "Please do not hesitate to", 
+      "contact me."
    ],
    projects: {
       title: "Projekty",

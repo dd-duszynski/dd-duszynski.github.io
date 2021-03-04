@@ -29,7 +29,7 @@ const Footer = () => {
                align="flex-start"
                column
             >
-               <H3 text="Kontakt:" addClass={styles.header} />
+               <H3 text="Kontakt:" addClass={styles.socialLinkHeader} />
                <FooterItem
                   text="linkedin.com/in/dd-duszynski"
                   url="https://www.linkedin.com/in/dd-duszynski"
@@ -57,7 +57,7 @@ const Footer = () => {
                align="flex-start"
                column
             >
-               <H3 text="Menu:" />
+               <H3 text="Menu:" addClass={styles.menuHeader}/>
                {textContent.navigation.map(item => {
                   if (isHash(item[1])) {
                      return (
