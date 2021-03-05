@@ -11,10 +11,8 @@ const About = () => {
    }, [])
 
    return (
-      <Layout footerFixed>
-         <AboutComponent
-            text="Jam jest Damion"
-         />
+      <Layout >
+         <AboutComponent />
       </Layout>
    )
 }

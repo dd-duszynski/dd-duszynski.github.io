@@ -3,20 +3,19 @@ import { Link } from 'react-router-dom'
 import styles from './SingleProject.module.scss'
 import H2 from '../../UI/H2'
 import Box from '../../UI/Box'
-import Paragraph from '../../UI/Paragraph'
 import Aside from '../../UI/Aside'
-import html from '../../../assets/icon_html.svg'
-import css from '../../../assets/icon_css.svg'
-import gatsby from '../../../assets/icon_gatsby.svg'
+// import html from '../../../assets/icon_html.svg'
+// import css from '../../../assets/icon_css.svg'
+// import gatsby from '../../../assets/icon_gatsby.svg'
 
 const SingleProject = ({ nazwa, rodzaj, opis, photo, link }) => {
-   const arrOfImages = [html, css, gatsby]
+   // const arrOfImages = [html, css, gatsby]
 
    return (
       <article className={styles.SingleProject}>
          <Link to={link} className={styles.link}>
             <Box align="center" justify="space-between" addClass={styles.box}>
-               <H2 text={`• ${nazwa}`}/>
+               <H2 text={nazwa}/>
                <Aside>{rodzaj}</Aside>
             </Box>
                {/* <div className={styles.overlay}>
@@ -36,7 +35,7 @@ const SingleProject = ({ nazwa, rodzaj, opis, photo, link }) => {
                      })}
                   </div>
                </div> */}
-               <img src={photo} className={styles.projectImg} />
+               <img src={photo} className={styles.projectImg} alt="project"/>
          </Link>
       </article>
    )

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './CardHeader.module.scss'
 import Paragraph from './Paragraph'
 
-const CardHeader = ({ children, topHeader, bottomHeader, last }) => {
+const CardHeader = ({ topHeader, bottomHeader, last, paragraphs }) => {
    return (
       <div className={styles.CardHeader}>
          <div className={styles.card}>
@@ -16,7 +16,9 @@ const CardHeader = ({ children, topHeader, bottomHeader, last }) => {
                bold
             />
          </div>
-         {children}
+         {paragraphs.map(item => (
+            <Paragraph text={`• ${item}`} />
+         ))}
          <div className={styles.dot1} />
          <div className={styles.dot2} />
          {

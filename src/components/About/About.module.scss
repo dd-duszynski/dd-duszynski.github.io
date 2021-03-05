@@ -8,24 +8,38 @@
    grid-column: 2/3;
    min-height: calc(100vh - 80px - 169px);
 }
+
 .box {
    margin-bottom: 20px;
 }
-.career{
+
+.career {
    margin-bottom: 20px;
    position: relative;
 }
+
 .h1 {
    margin-bottom: 12px;
 }
-.mainParagraph{
+
+.mainParagraph {
    margin-top: 16px;
 }
-.timeline {
+
+.timelineExperience,
+.timelineEducation {
    position: absolute;
    height: calc(100% - 200px);
    left: 13px;
    top: 86px;
    width: 1px;
    background-color: #fff;
+}
+
+.timelineExperience {
+   height: calc(100% - 180px);
+}
+
+.timelineEducation {
+   height: calc(100% - 100px);
 }

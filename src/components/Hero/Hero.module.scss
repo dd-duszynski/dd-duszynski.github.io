@@ -24,12 +24,15 @@
 
 .inlineParagraph {
    display: inline-block;
+   margin-bottom: 0;
 }
 
 .glitchContainer {
    &:hover {
       .link {
-         text-decoration: underline;
+         color: lightgreen;
+         // text-decoration: underline;
+         // text-decoration: underline;
       }
    }
 }
@@ -38,7 +41,7 @@
    color: #fff;
    font-size: 16px;
    margin-left: 1ch;
-
+   line-height: 22px;
 }
 
 .background {

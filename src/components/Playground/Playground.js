@@ -1,4 +1,4 @@
-import React, {lazy} from "react";
+import React from "react";
 import styles from "./Playground.module.scss";
 import Paragraph from "../UI/Paragraph";
 import H1 from "../UI/H1";

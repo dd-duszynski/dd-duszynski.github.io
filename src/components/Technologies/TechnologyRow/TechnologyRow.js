@@ -1,11 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from "./TechnologyRow.module.scss";
 import Box from "../../UI/Box";
 import H2 from "../../UI/H2";
 import TechnologyItem from "../TechnologyItem/TechnologyItem";
-import { BiCodeAlt } from "react-icons/bi";
-import { GiPencilBrush } from "react-icons/gi";
-import { GoTools } from "react-icons/go";
 
 const TechnologyRow = ({
    headerText,

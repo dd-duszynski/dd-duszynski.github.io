@@ -3,8 +3,8 @@ import GlitchClip from 'react-glitch-effect/core/Clip';
 import { AppContext } from "../../context/context"
 import NavLinkItem from "./NavLinkItem/NavLinkItem"
 import styles from "./Navbar.module.scss"
-import Logo from "./Logo/Logo"
-import HamburgerMenu from "./HamburgerMenu/HamburgerMenu"
+import Logo from "../UI/Logo"
+import HamburgerMenu from "../UI/HamburgerMenu"
 
 const Navbar = () => {
    const {
