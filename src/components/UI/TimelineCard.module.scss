@@ -1,58 +1,69 @@
 @import "../../scss/vm.scss";
 
-.CardHeader {
+.TimelineCard {
    margin-bottom: 20px;
    position: relative;
-   padding-left: 35px;
+   padding-left: 30px;
+   &:hover {
+      .dot1 {
+         background-color: #fff;
+         border: 2px solid #fff;
+      }
+      .dot2 {
+         background-color: #fff;
+         border: 2px solid $bgColor;
+      }
+   }
 }
-.container{
-   // width: 330px;
-   
-}
+
 .card {
    display: inline-block;
    width: auto;
    background-color: #fff;
    border-radius: 8px;
-   margin-bottom: 12px;
    padding: 2px 12px;
    color: $bgColor;
-   &:hover {
-      cursor: pointer;
+   ::selection {
+      background: $bgColor;
+      color: #fff;
    }
 }
+
 .line {
    width: auto;
    height: 1px;
    background-color: $bgColor;
    margin: 5px 0;
 }
+
 .dot1 {
    position: absolute;
-   width: 18px;
-   height: 18px;
+   width: 17px;
+   height: 17px;
    border-radius: 50%;
-   background-color: #fff;
-   left: 5px;
+   left: 0px;
    top: 28px;
    z-index: 2;
+   background-color: $bgColor;
+   border: 2px solid #fff;
 }
+
 .dot2 {
    position: absolute;
-   width: 10px;
-   height: 10px;
+   width: 9px;
+   height: 9px;
    border-radius: 50%;
-   background-color: #fff;
-   left: 9px;
+   left: 4px;
    top: 32px;
-   border: 3px solid $bgColor;
    z-index: 2;
+   background-color: $bgColor;
 }
+
 .lastElement {
    position: absolute;
    top: 32px;
    height: 100px;
    width: 20px;
-   left: 4px;
+   left: 0px;
    background-color: $bgColor;
 }

@@ -62,7 +62,7 @@ const Project = ({ link }) => {
             <Box justify='flex-start' align="flex-start" column>
                <H2 text='Ekrany' />
                {photos.map(i => (
-                  <img className={styles.img} src={i} alt="screen"/>
+                  <img className={styles.img} src={i} alt="screen" />
                ))}
             </Box>
          </main>

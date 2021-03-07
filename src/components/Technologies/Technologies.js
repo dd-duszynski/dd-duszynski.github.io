@@ -64,7 +64,6 @@ const Technologies = () => {
                   modalToggleHandler={modalToggleHandler}
                   headerText={technologies.subheaders[1]}
                   technologies={[
-                     "UX/UI",
                      "Adobe XD",
                      "Adobe Photoshop",
                      "Adobe Illustrator",
@@ -72,16 +71,16 @@ const Technologies = () => {
                      "Affinity Designer",
                      "Affinity Publisher",
                   ]}
-               />
+                  />
                <TechnologyRow
                   choosenItem={choosenItem}
                   choosenItemHandler={choosenItemHandler}
                   modalToggleHandler={modalToggleHandler}
                   headerText={technologies.subheaders[2]}
                   technologies={[
+                     "UX/UI",
                      "Scrum",
                      "Kanban",
-                     "Jira",
                      "Trello",
                      "Excel",
                   ]}

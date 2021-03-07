@@ -18,11 +18,10 @@ const textContent = {
       ["Main Page", "/"],
       ["About Me", "/about"],
       ["Projects", "/#projects"],
-      // ["Playground", "/playground"],
       ["Contact", "/#contact"]
    ],
    hero: [
-      "Hello, I'm Damian Duszyński.",
+      "Hello, my name is Damian.",
       "I am a Frontend Developer and UX / UI enthusiast. You will find here a description of my projects and technologies that I use.",
       "Please do not hesitate to",
       "contact me"
@@ -76,64 +75,77 @@ const textContent = {
    },
    about: {
       par1: "My name is Damian Duszyński. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI and web technologies.",
-      par2: "I'm looking for a new opportunities to work with digital products that give real value and a great experience to users.",
-      par3: "I am also a huge fan of football, especially the Italian Serie A (AC Milan).",
+      par2: "I am looking for new opportunities to work with digital products that solve real problems and offer users a great experience. I am also a huge fan of football and cycling.",
       expHeader: "Experience",
       eduHeader: 'Education',
       experience: [
          {
             topHeader: "Jul 2019 - Present",
-            bottomHeader: "R&D / Frontend Developer & R&D - PrintXL",
+            bottomHeader: "Frontend Developer [PrintXL]",
             paragraphs: [
-               "Creation and development of a company website based on the Gatsby framework and Headless CMS Contentful",
-               "Creation and development of a system based on Excel for the company's production management. The system includes panels for employees and managers used by over 50 people",
-               "Creation and implementation of new products with market analysis, calculation of production costs, and selection of optimal materials and finishes."
+               "Creation and development of a website for large-format digital printing house based on the Gatsby framework and CMS Contentful",
+               "Stack: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)",
+            ]
+         },
+         {
+            topHeader: "Jul 2019 - Present",
+            bottomHeader: "Research & Development Manager [PrintXL]",
+            paragraphs: [
+               "Creation and development of the company's production management system. The system consists of panels for employees and a dashboard for managers.",
+               "Creation and implementation of new products along with market analysis, cost calculation and selection of optimal materials and finishes.",
+               "Preparation of website traffic analysis reports for the sales department.",
+               "Constant cooperation with the management and sales, planning, logistics and production departments."
             ]
          },
          {
             topHeader: "Jun 2018 - Jul 2019",
-            bottomHeader: "DTP Department Manager - PrintXL",
+            bottomHeader: "DTP Department Manager [PrintXL]",
             paragraphs: [
-               "Work management and development of a seven-person department",
-               "Creating a group of scripts using JavaScript in Adobe programs, which automated and standardized the process of checking and preparing files for production of large-format printing."
+               "Work management and development of a seven-person department.",
+               "Creating a group of scripts using JavaScript in Adobe programs that automated and standardized the process of preparing files for production.",
+               "Responsibility for the smooth flow of orders by the DTP department."
             ]
          },
          {
             topHeader: "Mar 2013 - Jun 2018",
-            bottomHeader: "DTP Specialist - PrintXL",
+            bottomHeader: "DTP Specialist [PrintXL]",
             paragraphs: [
-               "Comprehensive preparation of graphic materials for large-format digital printing",
-               "Verifying the correctness of files sent by the client."
+               "Verification of the correctness of files sent by the client.",
+               "Comprehensive preparation of graphic materials for production.",
+               "Creation of product specifications and instructions for customers.",
+               "Creating color profiles for printing machines using the X-Rite I1 spectrophotometer.",
             ]
          },
          {
             topHeader: "Oct 2012 - Dec 2013",
-            bottomHeader: "Graphic Designer - AllElectronics",
+            bottomHeader: "Graphic Designer [AllElectronics]",
             paragraphs: [
-               "Creating infographics, icons, illustrations, and photos for the needs of online auctions."
+               "Creating infographics, illustrations, and icons for online auctions."
             ]
          },
       ],
       education: [
          {
             topHeader: "Feb 2019 - Sep 2019",
-            bottomHeader: "Coders Lab - IT school",
+            bottomHeader: "Digital UX [Coders Lab]",
             paragraphs: [
-               "Digital UX (320 hours)"
+               "Digital User Experience - stationary Bootcamp (320 hours).",
+               "Thematic Scope: Agile Methodology / Architecture of Information / Creating Personas / Design Sprint / Nielsen Heuristics / Prototyping / Usability Testing / User Flow / UX Strategy / Visual Design"
             ]
          },
          {
             topHeader: "Jun 2018 - Dec 2018",
-            bottomHeader: "Coders Lab - IT school",
+            bottomHeader: "JavaScript Developer: React [Coders Lab]",
             paragraphs: [
-               "JavaScript Developer: React (320 hours)"
+               "JavaScript Developer: React - stationary bootcamp (320 hours).",
+               "Thematic Scope: HTML / CSS / Sass / RWD / JavaScript / ECMAScript 6 / React / Git"
             ]
          },
          {
             topHeader: "Oct 2007 - Sep 2012",
-            bottomHeader: "UAM, Poznań",
+            bottomHeader: "Geography [UAM, Poznań]",
             paragraphs: [
-               "Master of Science in Geography"
+               "Master of Science in Geography, specializing in Environmental Management."
             ]
          },
       ]

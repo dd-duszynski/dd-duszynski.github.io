@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './CardHeader.module.scss'
+import styles from './TimelineCard.module.scss'
 import Paragraph from './Paragraph'
 
-const CardHeader = ({ topHeader, bottomHeader, last, paragraphs }) => {
+const TimelineCard = ({ topHeader, bottomHeader, isLast, paragraphs }) => {
    return (
-      <div className={styles.CardHeader}>
+      <div className={styles.TimelineCard}>
          <div className={styles.card}>
             <Paragraph
                text={topHeader}
@@ -15,17 +15,17 @@ const CardHeader = ({ topHeader, bottomHeader, last, paragraphs }) => {
                text={bottomHeader}
                bold
             />
+            <div className={styles.dot1} />
+            <div className={styles.dot2} />
          </div>
          {paragraphs.map(item => (
             <Paragraph text={`• ${item}`} />
          ))}
-         <div className={styles.dot1} />
-         <div className={styles.dot2} />
          {
-            last && <div className={styles.lastElement} />
+            isLast && <div className={styles.lastElement} />
          }
       </div>
    )
 }
 
-export default CardHeader
+export default TimelineCard

@@ -27,14 +27,16 @@ const TechnologyItem = ({ name, choosenItemHandler, isChoosen, modalToggleHandle
       >
          <div className={styles.container}>
             <div className={styles.front}>
-               <SwitchIcon name={name} />
+               <div className={styles.icon}>
+                  <SwitchIcon name={name} />
+               </div>
                <span className={styles.title}>
                   {name}
                </span>
 
             </div>
             <div className={styles.back} >
-               <span className={styles.title}>
+               <span className={styles.backTitle}>
                   {textContent.technologies.seeMore}
                </span>
             </div>

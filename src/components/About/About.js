@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styles from "./About.module.scss";
-import H1 from "../UI/H1";
-import CardHeader from "../UI/CardHeader";
+import H1 from "../UI/H2";
+import TimelineCard from "../UI/TimelineCard";
 import Paragraph from "../UI/Paragraph";
 import { AppContext } from "../../context/context";
 import Box from "../UI/Box";
@@ -18,17 +18,16 @@ const About = () => {
             addClass={styles.box}
             column
          >
+            <H1 text="O mnie:" addClass={styles.h1} />
             <Paragraph
-               bold
+               // bold
                text={about.par1}
-               addClass={styles.mainParagraph}
             />
-            <Paragraph bold text={about.par2} addClass={styles.mainParagraph} />
-            <Paragraph bold text={about.par3} addClass={styles.mainParagraph} />
+            <Paragraph
+               text={about.par2}
+            />
          </Box>
-
          {/* Experience */}
-         
          <Box
             justify="flex-start"
             align="flex-start"
@@ -38,11 +37,11 @@ const About = () => {
             <H1 text={about.expHeader} addClass={styles.h1} />
             <div className={styles.timelineExperience} />
             {about.experience.map((item, index, arr) => (
-               <CardHeader
+               <TimelineCard
                   topHeader={item.topHeader}
                   bottomHeader={item.bottomHeader}
                   paragraphs={item.paragraphs}
-                  last={index + 1 === arr.length}
+                  isLast={index + 1 === arr.length}
                />
             ))}
          </Box>
@@ -57,11 +56,11 @@ const About = () => {
             <H1 text={about.eduHeader} addClass={styles.h1} />
             <div className={styles.timelineEducation} />
             {about.education.map((item, index, arr) => (
-               <CardHeader
+               <TimelineCard
                   topHeader={item.topHeader}
                   bottomHeader={item.bottomHeader}
                   paragraphs={item.paragraphs}
-                  last={index + 1 === arr.length}
+                  isLast={index + 1 === arr.length}
                />
             ))}
          </Box>

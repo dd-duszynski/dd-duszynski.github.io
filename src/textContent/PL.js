@@ -18,12 +18,11 @@ const textContent = {
       ["Strona Główna", "/"],
       ["O mnie", "/about"],
       ["Projekty", "/#projects"],
-      // ["Piaskownica", "/playground"],
       ["Kontakt", "/#contact"]
    ],
    hero: [
-      "Cześć. Nazywam się Damian Duszyński.",
-      "Jestem Frontend Developerem oraz entuzjastą UX/UI. Znajdziesz tu opis moich projektów i technologii, których używam.",
+      "Cześć, nazywam się Damian.",
+      "Jestem Frontend Developerem oraz pasjonatem UX/UI. Znajdziesz tu opis moich projektów i technologii, których używam.",
       "Zapraszam do",
       "kontaktu",
    ],
@@ -75,70 +74,81 @@ const textContent = {
       messagePlaceholder: "Treść wiadomości..."
    },
    about: {
-      par1: "Nazywam się Damian Duszyński. Jestem w pełni zmotywowanym Frontend Developerem z wielką pasją do UX/UI i technologii internetowych.",
-      par2: "Szukam nowych możliwości pracy z produktami cyfrowymi, które niosą realną wartość i świetne doświadczenia dla użytkowników.",
-      par3: "Prywatnie wielbiciel piłki nożnej i kolarstwa.",
-      expHeader: "Doświadczenie",
-      eduHeader: 'Edukacja',
+      par1: "Nazywam się Damian Duszyński. Jestem zmotywowanym Frontend Developerem, a także pasjonatem UX/UI i technologii internetowych.",
+      par2: "Szukam nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy oraz oferują użytkownikom pozytywne doświadczenia. Prywatnie jestem fanem piłki nożnej i jazdy na rowerze.",
+      expHeader: "Doświadczenie zawodowe:",
+      eduHeader: 'Edukacja:',
       experience: [
          {
-            topHeader: "Lip 2019 - Obecnie",
-            bottomHeader: "R&D / Frontend Developer - PrintXL",
+            topHeader: "Lip 2019 -> Obecnie",
+            bottomHeader: "Frontend Developer [PrintXL]",
             paragraphs: [
-               "Creation and development of a company website based on the Gatsby framework and Headless CMS Contentful",
-               "Creation and development of a system based on Excel for the company's production management. The system includes panels for employees and managers used by over 50 people",
-               "Creation and implementation of new products with market analysis, calculation of production costs, and selection of optimal materials and finishes."
+               "Stworzenie i rozwijanie strony internetowej dla wielkoformatowej drukarni cyfrowej opartej o framework Gatsby i CMS Contentful.",
+               "Wykorzystane technologie: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)",
             ]
          },
          {
-            topHeader: "Cze 2018 - Lip 2019",
-            bottomHeader: "Manager Działu DTP - PrintXL",
+            topHeader: "Lip 2019 -> Obecnie",
+            bottomHeader: "Research & Development Manager [PrintXL]",
             paragraphs: [
-               "Work management and development of a seven-person department",
-               "Creating a group of scripts using JavaScript in Adobe programs, which automated and standardized the process of checking and preparing files for production of large-format printing."
+               "Stworzenie i rozwijanie systemu do zarządzania produkcją firmy. System składa się z paneli dla pracowników oraz dashboardu dla menedżerów.",
+               "Tworzenie i wdrażanie nowych produktów wraz z analizą rynku, kalkulacją kosztów oraz doborem optymalnych materiałów i wykończeń.",
+               "Przygotowywanie raportów z analizy ruchu na stronie dla działu sprzedaży.",
+               "Stała współpraca z zarządem oraz działami sprzedaży, planowania, logistyki i produkcji."
             ]
          },
          {
-            topHeader: "Mar 2013 - Cze 2018",
-            bottomHeader: "Specjalista DTP - PrintXL",
+            topHeader: "Cze 2018 -> Lip 2019",
+            bottomHeader: "Manager Działu DTP [PrintXL]",
             paragraphs: [
-               "Comprehensive preparation of graphic materials for large-format digital printing",
-               "Verifying the correctness of files sent by the client."
+               "Zarządzanie pracą i rozwojem siedmioosobowego działu.",
+               "Stworzenie grupy skryptów wykorzystujących JavaScript w programach Adobe, które zautomatyzowały i ujednoliciły proces przygotowania plików do produkcji.",
+               "Odpowiedzialność za płynny przepływ zleceń przez dział DTP."
             ]
          },
          {
-            topHeader: "Paź 2012 - Gru 2013",
-            bottomHeader: "Graphic Designer - AllElectronics",
+            topHeader: "Mar 2013 -> Cze 2018",
+            bottomHeader: "Specjalista DTP [PrintXL]",
             paragraphs: [
-               "Creating infographics, icons, illustrations, and photos for the needs of online auctions."
+               "Weryfikacja poprawności plików przesłanych przez klienta.",
+               "Kompleksowe przygotowywanie materiałów graficznych do produkcji.",
+               "Opracowywanie specyfikacji produktów oraz instrukcji dla klientów.",
+               "Tworzenie profili kolorystycznych dla maszyn drukujących z wykorzystaniem spektrofotometru X-Rite I1.",
+            ]
+         },
+         {
+            topHeader: "Paź 2012 -> Gru 2013",
+            bottomHeader: "Graphic Designer [AllElectronics]",
+            paragraphs: [
+               "Tworzenie infografik, ilustracji oraz ikon na potrzeby aukcji internetowych."
             ]
          },
       ],
       education: [
          {
-            topHeader: "Lut 2019 - Wrz 2019",
-            bottomHeader: "Coders Lab - Szkoła IT",
+            topHeader: "Lut 2019 -> Wrz 2019",
+            bottomHeader: "Digital UX [Coders Lab]",
             paragraphs: [
-               "Digital UX (320 godzin)"
+               "Stacjonarny bootcamp Digital User Experience (320 godzin).",
+               "Zakres materiału: Architektura Informacji / Design Sprint / Heurystyki Nielsena / Metodologia Agile / Projektowanie wizualne / Prototypowanie / Strategia UX / Testy użyteczności / Tworzenie Person / User Flow"
             ]
          },
          {
-            topHeader: "Cze 2018 - Gru 2018",
-            bottomHeader: "Coders Lab - Szkoła IT",
+            topHeader: "Cze 2018 -> Gru 2018",
+            bottomHeader: "JavaScript Developer: React [Coders Lab]",
             paragraphs: [
-               "JavaScript Developer: React (320 godzin)"
+               "Stacjonarny bootcamp JavaScript Developer: React (320 godzin).",
+               "Zakres materiału: HTML / CSS / Sass / RWD / JavaScript / ECMAScript 6 / React / Git"
             ]
          },
          {
-            topHeader: "Paź 2007 - Wrz 2012",
-            bottomHeader: "UAM, Poznań",
+            topHeader: "Paź 2007 -> Wrz 2012",
+            bottomHeader: "Geografia [UAM, Poznań]",
             paragraphs: [
-               "Geografia, studia magisterskie"
+               "Studia magisterskie o specjalizacji: Kształtowanie Środowiska Przyrodniczego",
             ]
          },
       ]
-
-
    }
 }
 
