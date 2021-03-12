@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
-
 // variables
 $bgColor: #242424;
 $bgColorGray: #353535;
@@ -12,7 +10,6 @@ $fs4: 12px;
 $fsParagraph: 14px;
 
 $mediumDevice: 900px;
-
 
 // mixins
 @mixin roboto300 {

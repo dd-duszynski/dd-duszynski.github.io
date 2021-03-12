@@ -2,18 +2,16 @@
 
 .TechnologyItem {
    width: 90%;
-   max-width: 90px;
-   height: 90px;
+   max-width: 96px;
+   height: 96px;
    margin-bottom: 20px;
-   background-color: transparent;
-   perspective: 600px;
    margin-right: 10px;
+   perspective: 600px;
    svg {
       width: 30px;
       height: 30px;
       color: #ddd;
    }
-
    &:hover {
       cursor: pointer;
    }
@@ -22,14 +20,6 @@
 .TechnologyItemClicked {
    .container {
       transform: rotateY(180deg);
-   }
-
-   .front {
-      opacity: 0;
-   }
-
-   .back {
-      opacity: 1;
    }
 }
 
@@ -44,11 +34,11 @@
    justify-content: center;
    align-items: center;
    position: relative;
-   transition: transform 0.8s, opacity 2s;
+   transition: transform 0.5s;
    transform-style: preserve-3d;
 }
 
-.front {
+.front, .back {
    position: absolute;
    width: 100%;
    height: 100%;
@@ -57,36 +47,21 @@
    justify-content: center;
    align-items: center;
    backface-visibility: hidden;
-   padding: 6px;
+   padding: 4px;
 }
 
 .back {
-   opacity: 0;
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(20, 20, 20, 0.6);
    transform: rotateY(180deg);
-   border-radius: 8px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 6px;
 }
-.icon{
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 60%;
-}
+
 .title {
    width: 100%;
-   height: 40%;
    text-align: center;
    font-size: 12px;
    line-height: 16px;
+   margin-top: 8px;
 }
+
 .backTitle {
    text-align: center;
    font-size: 12px;
@@ -96,7 +71,7 @@
 
 @media (min-width: 600px) {
    .TechnologyItem {
-      width: 90px;
+      width: 96px;
       margin-bottom: 20px;
       margin-right: 20px;
       perspective: 1000px;
@@ -104,14 +79,6 @@
       &:hover {
          .container {
             transform: rotateY(180deg);
-         }
-
-         .front {
-            opacity: 0;
-         }
-
-         .back {
-            opacity: 1;
          }
       }
    }

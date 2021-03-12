@@ -21,7 +21,7 @@ const textContent = {
       ["Kontakt", "/#contact"]
    ],
    hero: [
-      "Cześć, nazywam się Damian.",
+      "Witaj, nazywam się Damian Duszyński.",
       "Jestem Frontend Developerem oraz pasjonatem UX/UI. Znajdziesz tu opis moich projektów i technologii, których używam.",
       "Zapraszam do",
       "kontaktu",

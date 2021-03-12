@@ -21,7 +21,7 @@ const textContent = {
       ["Contact", "/#contact"]
    ],
    hero: [
-      "Hello, my name is Damian.",
+      "Hello, my name is Damian Duszyński.",
       "I am a Frontend Developer and UX / UI enthusiast. You will find here a description of my projects and technologies that I use.",
       "Please do not hesitate to",
       "contact me"
@@ -75,7 +75,7 @@ const textContent = {
    },
    about: {
       par1: "My name is Damian Duszyński. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI and web technologies.",
-      par2: "I am looking for new opportunities to work with digital products that solve real problems and offer users a great experience. I am also a huge fan of football and cycling.",
+      par2: "I am looking for new opportunities to work with digital products that solve real problems and offer users a great experience. Privately, a huge fan of football and cycling. ",
       expHeader: "Experience",
       eduHeader: 'Education',
       experience: [
