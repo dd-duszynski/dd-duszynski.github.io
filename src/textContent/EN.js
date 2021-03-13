@@ -74,8 +74,8 @@ const textContent = {
       messagePlaceholder: "Message ..."
    },
    about: {
-      par1: "My name is Damian Duszyński. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI and web technologies.",
-      par2: "I am looking for new opportunities to work with digital products that solve real problems and offer users a great experience. Privately, a huge fan of football and cycling. ",
+      par1: "My name is Damian Duszyński. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI.",
+      par2: "I am looking for new opportunities to work with digital products that solve real problems and ensuring a great user experience. Privately, I am a fan of football, cycling and heavy guitar riffs.",
       expHeader: "Experience",
       eduHeader: 'Education',
       experience: [
@@ -91,36 +91,34 @@ const textContent = {
             topHeader: "Jul 2019 - Present",
             bottomHeader: "Research & Development Manager [PrintXL]",
             paragraphs: [
-               "Creation and development of the company's production management system. The system consists of panels for employees and a dashboard for managers.",
-               "Creation and implementation of new products along with market analysis, cost calculation and selection of optimal materials and finishes.",
-               "Preparation of website traffic analysis reports for the sales department.",
-               "Constant cooperation with the management and sales, planning, logistics and production departments."
+               "Co-creation and development of the production management system in the company. The system consists of panels for employees and a dashboard for managers.",
+               "Creation and implementation of new products with market analysis, cost calculation and selection of optimal materials and finishes.",
+               "Preparation of reports and constant cooperation with the management board and sales, planning, logistics and production departments."
             ]
          },
          {
             topHeader: "Jun 2018 - Jul 2019",
             bottomHeader: "DTP Department Manager [PrintXL]",
             paragraphs: [
-               "Work management and development of a seven-person department.",
-               "Creating a group of scripts using JavaScript in Adobe programs that automated and standardized the process of preparing files for production.",
-               "Responsibility for the smooth flow of orders by the DTP department."
+               "Managing the work and development of a seven-person department.",
+               "Responsibility for the smooth flow of orders by the DTP department.",
+               "Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing."
             ]
          },
          {
             topHeader: "Mar 2013 - Jun 2018",
             bottomHeader: "DTP Specialist [PrintXL]",
             paragraphs: [
-               "Verification of the correctness of files sent by the client.",
-               "Comprehensive preparation of graphic materials for production.",
-               "Creation of product specifications and instructions for customers.",
-               "Creating color profiles for printing machines using the X-Rite I1 spectrophotometer.",
+               "Verification of the correctness of files sent by the customer and their comprehensive preparation for production.",
+               "Development of product specifications and instructions for customers.",
+               "Create color profiles for printing machines using the X-Rite I1 spectrophotometer."
             ]
          },
          {
             topHeader: "Oct 2012 - Dec 2013",
             bottomHeader: "Graphic Designer [AllElectronics]",
             paragraphs: [
-               "Creating infographics, illustrations, and icons for online auctions."
+               "Creating graphics, illustrations and icons for online auctions."
             ]
          },
       ],

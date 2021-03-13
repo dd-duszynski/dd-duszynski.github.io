@@ -4,7 +4,7 @@ import ProjectsComponent from "../../components/Projects/Projects"
 
 const Projects = () => {
    return (
-      <Layout footerFixed>
+      <Layout>
          <ProjectsComponent />
       </Layout >
    )

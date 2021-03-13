@@ -74,8 +74,8 @@ const textContent = {
       messagePlaceholder: "Treść wiadomości..."
    },
    about: {
-      par1: "Nazywam się Damian Duszyński. Jestem zmotywowanym Frontend Developerem, a także pasjonatem UX/UI i technologii internetowych.",
-      par2: "Szukam nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy oraz oferują użytkownikom pozytywne doświadczenia. Prywatnie jestem fanem piłki nożnej i jazdy na rowerze.",
+      par1: "Nazywam się Damian Duszyński. Jestem Frontend Developerem, a także pasjonatem UX/UI.",
+      par2: "Szukam nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy dbając przy tym o świetne doświadczenia dla użytkowników. Prywatnie jestem fanem piłki nożnej, jazdy na rowerze i ciężkich gitarowych rifów.",
       expHeader: "Doświadczenie zawodowe:",
       eduHeader: 'Edukacja:',
       experience: [
@@ -83,18 +83,17 @@ const textContent = {
             topHeader: "Lip 2019 -> Obecnie",
             bottomHeader: "Frontend Developer [PrintXL]",
             paragraphs: [
-               "Stworzenie i rozwijanie strony internetowej dla wielkoformatowej drukarni cyfrowej opartej o framework Gatsby i CMS Contentful.",
-               "Wykorzystane technologie: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)",
+               "Stworzenie i rozwijanie strony internetowej dla wielkoformatowej drukarni cyfrowej opartej o framework Gatsby i system zarządzania treścią Contentful.",
+               "Wykorzystane technologie: HTML / SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS).",
             ]
          },
          {
             topHeader: "Lip 2019 -> Obecnie",
             bottomHeader: "Research & Development Manager [PrintXL]",
             paragraphs: [
-               "Stworzenie i rozwijanie systemu do zarządzania produkcją firmy. System składa się z paneli dla pracowników oraz dashboardu dla menedżerów.",
+               "Współtworzenie i rozwijanie systemu do zarządzania produkcją w firmie. System składa się z paneli dla pracowników oraz dashboardu dla menedżerów.",
                "Tworzenie i wdrażanie nowych produktów wraz z analizą rynku, kalkulacją kosztów oraz doborem optymalnych materiałów i wykończeń.",
-               "Przygotowywanie raportów z analizy ruchu na stronie dla działu sprzedaży.",
-               "Stała współpraca z zarządem oraz działami sprzedaży, planowania, logistyki i produkcji."
+               "Przygotowywanie raportów oraz stała współpraca z zarządem oraz działami sprzedaży, planowania, logistyki i produkcji."
             ]
          },
          {
@@ -102,16 +101,15 @@ const textContent = {
             bottomHeader: "Manager Działu DTP [PrintXL]",
             paragraphs: [
                "Zarządzanie pracą i rozwojem siedmioosobowego działu.",
-               "Stworzenie grupy skryptów wykorzystujących JavaScript w programach Adobe, które zautomatyzowały i ujednoliciły proces przygotowania plików do produkcji.",
-               "Odpowiedzialność za płynny przepływ zleceń przez dział DTP."
+               "Odpowiedzialność za płynny przepływ zleceń przez dział DTP.",
+               "Stworzenie grupy skryptów JavaScript dla programów Adobe, które zautomatyzowały i ujednoliciły proces przygotowania grafik do druku."
             ]
          },
          {
             topHeader: "Mar 2013 -> Cze 2018",
             bottomHeader: "Specjalista DTP [PrintXL]",
             paragraphs: [
-               "Weryfikacja poprawności plików przesłanych przez klienta.",
-               "Kompleksowe przygotowywanie materiałów graficznych do produkcji.",
+               "Weryfikacja poprawności plików przesłanych przez klienta oraz ich kompleksowe przygotowywanie do produkcji.",
                "Opracowywanie specyfikacji produktów oraz instrukcji dla klientów.",
                "Tworzenie profili kolorystycznych dla maszyn drukujących z wykorzystaniem spektrofotometru X-Rite I1.",
             ]
@@ -120,7 +118,7 @@ const textContent = {
             topHeader: "Paź 2012 -> Gru 2013",
             bottomHeader: "Graphic Designer [AllElectronics]",
             paragraphs: [
-               "Tworzenie infografik, ilustracji oraz ikon na potrzeby aukcji internetowych."
+               "Tworzenie grafik, ilustracji oraz ikon na potrzeby aukcji internetowych."
             ]
          },
       ],
@@ -151,6 +149,5 @@ const textContent = {
       ]
    }
 }
-
 
 export default textContent;

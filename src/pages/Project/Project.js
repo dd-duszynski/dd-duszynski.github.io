@@ -14,7 +14,7 @@ const Project = () => {
    }, [])
 
    return (
-      <Layout footerFixed>
+      <Layout>
          <ProjectComponent link={link} />
       </Layout >
    )

@@ -10,7 +10,7 @@
    background-color: $bgColor;
 }
 
-.container{
+.container {
    max-width: 1050px;
    width: 86%;
    margin: 0 auto;
@@ -20,16 +20,40 @@
    justify-content: space-between;
 }
 
-.links{
+.links {
    display: flex;
+   justify-content: space-between;
 }
 
-.link{
+.link {
+   color: white;
    margin-left: 35px;
+}
+.btnBox{
+   margin-left: 30px;
+
+}
+.btn {
+   outline: none;
+   font-size: 1.2rem;
+   background: none;
+   color: white;
+   @include roboto300;
+   padding: 6px 10px;
+   border-radius: 4px;
+   border-style: none;
+   &:hover {
+      cursor: pointer;
+      color: lightgreen;
+   }
+}
+.active {
+   @include roboto500;
+   color: green;
 }
 
 @media(min-width: 600px) {
    .container {
       width: 80%;
-	}
+   }
 }

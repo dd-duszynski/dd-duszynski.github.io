@@ -4,6 +4,7 @@ import { AppContext } from "../../context/context"
 import NavLinkItem from "./NavLinkItem/NavLinkItem"
 import styles from "./Navbar.module.scss"
 import Logo from "../UI/Logo"
+import Box from "../UI/Box"
 import HamburgerMenu from "../UI/HamburgerMenu"
 
 const Navbar = () => {
@@ -12,11 +13,16 @@ const Navbar = () => {
       handleOpenSidebar,
       handleCloseSidebar,
       isSidebarOpen,
-      textContent
+      textContent,
+      language,
+      handleLanguageChange
    } = useContext(AppContext);
 
    const { navigation } = textContent
    const [mainPage, ...restNavItem] = navigation
+   // no-unused-vars
+   const btnPLCSS = language === "PL" && styles.active;
+   const btnENCSS = language === "EN" && styles.active;
    const isHash = i => i.indexOf("#") > 0;
 
    const largeDevices = (
@@ -46,6 +52,21 @@ const Navbar = () => {
                   }
                })
                }
+               <Box addClass={styles.btnBox}>
+                  <button
+                     className={[styles.btn, btnPLCSS].join(' ')}
+                     onClick={() => handleLanguageChange('PL')}
+                  >
+                     PL
+                  </button>
+                  /
+                  <button
+                     className={[styles.btn, btnENCSS].join(' ')}
+                     onClick={() => handleLanguageChange('EN')}
+                  >
+                     EN
+                  </button>
+               </Box>
             </ul>
          </GlitchClip>
       </>
@@ -54,7 +75,7 @@ const Navbar = () => {
    const smallDevice = (
       <>
          <GlitchClip iterationCount="1">
-            <Logo  
+            <Logo
                handleCloseSidebar={handleCloseSidebar}
                isSidebarOpen={isSidebarOpen}
             />

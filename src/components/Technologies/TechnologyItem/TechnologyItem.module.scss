@@ -7,11 +7,13 @@
    margin-bottom: 20px;
    margin-right: 10px;
    perspective: 600px;
+
    svg {
       width: 30px;
       height: 30px;
       color: #ddd;
    }
+
    &:hover {
       cursor: pointer;
    }
@@ -36,9 +38,11 @@
    position: relative;
    transition: transform 0.5s;
    transform-style: preserve-3d;
+   transform: rotateY(0);
 }
 
-.front, .back {
+.front,
+.back {
    position: absolute;
    width: 100%;
    height: 100%;
@@ -46,6 +50,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   -webkit-backface-visibility: hidden;
    backface-visibility: hidden;
    padding: 4px;
 }

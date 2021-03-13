@@ -6,7 +6,8 @@
 	@include roboto300;
 	color: white;
 	font-size: 1.6rem;
-	line-height: 100px;
+   white-space: nowrap;
+   line-height: 80px;
 	&:hover {
 		color: lightgreen;
 	}

@@ -4,7 +4,7 @@ import MaterialsComp from "../../components/Materials/Materials"
 
 const Materials = () => {
    return (
-      <Layout footerFixed>
+      <Layout>
          <MaterialsComp />
       </Layout >
    )
