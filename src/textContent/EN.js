@@ -83,7 +83,7 @@ const textContent = {
             topHeader: "Jul 2019 - Present",
             bottomHeader: "Frontend Developer [PrintXL]",
             paragraphs: [
-               "Creation and development of a website for large-format digital printing house based on the Gatsby framework and CMS Contentful",
+               "Creation and development of a website for a large-format digital printing house based on the Gatsby framework and CMS Contentful",
                "Stack: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)",
             ]
          },
@@ -91,9 +91,9 @@ const textContent = {
             topHeader: "Jul 2019 - Present",
             bottomHeader: "Research & Development Manager [PrintXL]",
             paragraphs: [
-               "Co-creation and development of the production management system in the company. The system consists of panels for employees and a dashboard for managers.",
-               "Creation and implementation of new products with market analysis, cost calculation and selection of optimal materials and finishes.",
-               "Preparation of reports and constant cooperation with the management board and sales, planning, logistics and production departments."
+               "Co-creation and development of the production management system in the company based on SQL & MS Excel. The system consists of panels for employees and a dashboard for managers.",
+               "Creation and implementation of new products with market analysis, cost calculation, and selection of optimal materials and finishes.",
+               "Preparation of reports and constant cooperation with the management board and sales, planning, logistics, and production departments."
             ]
          },
          {
@@ -118,7 +118,7 @@ const textContent = {
             topHeader: "Oct 2012 - Dec 2013",
             bottomHeader: "Graphic Designer [AllElectronics]",
             paragraphs: [
-               "Creating graphics, illustrations and icons for online auctions."
+               "Creating graphics, illustrations, and icons for online auctions."
             ]
          },
       ],
