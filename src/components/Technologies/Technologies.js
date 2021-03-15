@@ -8,23 +8,23 @@ import TechnologyRow from "./TechnologyRow/TechnologyRow";
 import TechnologyModal from "./TechnologyModal/TechnologyModal";
 
 const Technologies = () => {
-   const { textContent } = useContext(AppContext);
+   const { textContent, handleModal, isModalOpen } = useContext(AppContext);
    const { technologies } = textContent;
-   const [showModal, setShowModal] = useState(false);
    const [modalContent, setModalContent] = useState(null);
    const [choosenItem, setChoosenItem] = useState(null)
+
    const choosenItemHandler = (item) => {
       setChoosenItem(item)
    }
+
    const modalToggleHandler = (technology) => {
       setModalContent(technology);
-      setShowModal(!showModal);
+      handleModal();
    };
 
-   const closeModal = () => setShowModal(false);
 
    const modal = (
-      <Modal show={showModal} onCancel={closeModal}>
+      <Modal show={isModalOpen} onCancel={handleModal}>
          <TechnologyModal
             header={modalContent}
             technology={`technologies.${modalContent}`}
@@ -71,7 +71,7 @@ const Technologies = () => {
                      "Affinity Designer",
                      "Affinity Publisher",
                   ]}
-                  />
+               />
                <TechnologyRow
                   choosenItem={choosenItem}
                   choosenItemHandler={choosenItemHandler}

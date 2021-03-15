@@ -7,6 +7,7 @@ const AppContext = React.createContext()
 const AppProvider = ({ children, lang }) => {
    const [size, setSize] = useState(null)
    const [isSidebarOpen, setSidebar] = useState(false)
+   const [isModalOpen, setModal] = useState(false)
    const [language, setLanguage] = useState(lang)
 
    useEffect(() => {
@@ -28,6 +29,9 @@ const AppProvider = ({ children, lang }) => {
    const handleCloseSidebar = () => {
       setSidebar(false)
    }
+   const handleModal = () => {
+      setModal(!isModalOpen)
+   }
    const handleLanguageChange = (lng) => {
       localStorage.setItem('lang', lng)
       setLanguage(lng)
@@ -44,7 +48,9 @@ const AppProvider = ({ children, lang }) => {
             language,
             handleCloseSidebar,
             handleOpenSidebar,
-            handleLanguageChange
+            handleLanguageChange,
+            isModalOpen,
+            handleModal
          }}
       >
          {children}

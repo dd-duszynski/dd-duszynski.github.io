@@ -13,45 +13,47 @@ $mediumDevice: 900px;
 
 // mixins
 @mixin roboto300 {
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 300;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 300;
 }
+
 @mixin roboto500 {
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 500;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 500;
 }
+
 @mixin sectionsHeader {
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 500;
-	font-size: 22px;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 500;
+   font-size: 22px;
 }
 
 @mixin sectionBasic {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	grid-column: 2/3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   grid-column: 2/3;
 }
 
 @mixin grid {
-	display: grid;
-	grid-template-columns: 7% 86% 7%;
-	@media (min-width: 600px) {
-		display: grid;
-		grid-template-columns: 10% 80% 10%;
-	}
-}
+   display: grid;
+   grid-template-columns: 7% 86% 7%;
 
-// RWD
+   @media (min-width: 600px) {
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+   }
+}
 
 
 // Custom devices ----------------------
 @mixin rwd($screen) {
-	@media (min-width: $screen+'px') {
-		@content;
-	}
+   @media (min-width: $screen+'px') {
+      @content;
+   }
 }
+
 // @include rwd(1400) {
 //    margin-bottom: 20px;
 //    margin-top: 20px;
@@ -59,10 +61,11 @@ $mediumDevice: 900px;
 
 // Medium devices ----------------------
 @mixin mediumMedia {
-	@media (min-width: #{$mediumDevice}) {
-		@content;
-	}
+   @media (min-width: #{$mediumDevice}) {
+      @content;
+   }
 }
+
 // @include medium {
 //    margin-left: 10px;
 // }

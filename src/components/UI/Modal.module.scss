@@ -12,8 +12,11 @@
    border-radius: 8px;
    border-radius: 8px;
    background-color: #353535;
-   p{
-      color: black;
-   }
 }
 
+@media (min-width: 600px){
+   .Modal {
+      left: calc(50% - 250px);
+      width: 500px;
+   }
+}

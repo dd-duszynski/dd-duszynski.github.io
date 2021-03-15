@@ -10,24 +10,29 @@ import TechnologyModal from "../Technologies/TechnologyModal/TechnologyModal";
 import Modal from "../UI/Modal";
 
 const Project = ({ link }) => {
-   const { textContent: { projects: { listOfProjects } } } = useContext(AppContext)
+   const {
+      textContent: { projects: { listOfProjects } },
+      handleModal,
+      isModalOpen
+   } = useContext(AppContext)
+
    const [project] = listOfProjects.filter(i => i.link === `/projects/${link}`)
    const [mainPhoto, ...photos] = project.photos;
-   const [showModal, setShowModal] = useState(false);
    const [modalContent, setModalContent] = useState(null);
    const [choosenItem, setChoosenItem] = useState(null);
+
    const choosenItemHandler = (item) => {
       setChoosenItem(item)
    }
+
    const modalToggleHandler = (technology) => {
       setModalContent(technology);
-      setShowModal(!showModal);
+      handleModal();
    };
 
-   const closeModal = () => setShowModal(false);
 
    const modal = (
-      <Modal show={showModal} onCancel={closeModal}>
+      <Modal show={isModalOpen} onCancel={handleModal}>
          <TechnologyModal
             header={modalContent}
             technology={`technologies.${modalContent}`}
@@ -39,7 +44,7 @@ const Project = ({ link }) => {
          {modal}
          <main className={styles.Project} id="projects">
             <Box justify='space-between' align="center">
-               <img className={styles.img} src={mainPhoto} alt="main img"/>
+               <img className={styles.img} src={mainPhoto} alt="main img" />
             </Box>
             <Box justify='space-between' align="flex-start" column>
                <H1 text={project.nazwa} />
