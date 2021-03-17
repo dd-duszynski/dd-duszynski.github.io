@@ -10,7 +10,6 @@ import styles from './Layout.module.scss'
 const Layout = ({ children }) => {
    const { isModalOpen } = useContext(AppContext);
    const css = isModalOpen ? [styles.Layout, styles.LayoutFixed].join(' ') : styles.Layout;
-
    return (
       <div className={css}>
          <Navbar />

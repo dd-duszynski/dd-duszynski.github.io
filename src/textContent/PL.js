@@ -61,7 +61,424 @@ const textContent = {
    technologies: {
       header: "Narzędzia i technologie",
       subheaders: ["Development", "Design", "Pozostałe"],
-      seeMore: 'Dowiedz się więcej'
+      seeMore: 'Dowiedz się więcej',
+      learnMore: "Polecane linki",
+      all: [
+         {
+            name: "JavaScript",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "HTML",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "CSS",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Sass",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Material UI",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "React",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Redux",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Gatsby",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Node",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "MySQL",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Git",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "VSC",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Figma",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Adobe XD",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Adobe Photoshop",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Adobe Illustrator",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Affinity Designer",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Affinity Publisher",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "UX/UI",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Scrum",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Kanban",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Trello",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         },
+         {
+            name: "Excel",
+            fullName: "",
+            description: "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+            links: [
+               ["MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS"],
+               ["CSS Tricks", "https://css-tricks.com/"]
+            ]
+         }
+      ]
+      // JavaScript: {
+      //    name:"JavaScript",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // HTML: {
+      //    name:"HTML",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // CSS: {
+      //    name:"CSS",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Sass: {
+      //    name:"Sass",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // MaterialUI: {
+      //    name:"Material UI",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // React: {
+      //    name:"React",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Redux: {
+      //    name:"Redux",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Gatsby: {
+      //    name:"Gatsby",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Node: {
+      //    name:"Node",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // MySQL: {
+      //    name:"MySQL",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Git: {
+      //    name:"Git",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // VSC: {
+      //    name:"VSC",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Figma: {
+      //    name:"Figma",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // AdobeXD: {
+      //    name:"Adobe XD",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // AdobePhotoshop: {
+      //    name:"Adobe Photoshop",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // AdobeIllustrator: {
+      //    name:"Adobe Illustrator",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // AffinityDesigner: {
+      //    name:"Affinity Designer",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // AffinityPublisher: {
+      //    name:"Affinity Publisher",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // UXUI: {
+      //    name:"UX/UI",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Scrum: {
+      //    name:"Scrum",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Kanban: {
+      //    name:"Kanban",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Trello: {
+      //    name:"Trello",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // },
+      // Excel: {
+      //    name:"MS Excel",
+      //    fullName: "",
+      //    description:"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+      //    links:[
+      //       ["MDN Web Docs","https://developer.mozilla.org/pl/docs/Web/CSS"],
+      //       ["CSS Tricks","https://css-tricks.com/"]
+      //    ]
+      // }
    },
    contact: {
       header: "Kontakt",

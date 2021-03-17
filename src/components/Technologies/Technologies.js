@@ -23,11 +23,11 @@ const Technologies = () => {
    };
 
 
+   // <Modal show={true} onCancel={handleModal}>
    const modal = (
       <Modal show={isModalOpen} onCancel={handleModal}>
          <TechnologyModal
-            header={modalContent}
-            technology={`technologies.${modalContent}`}
+            name={modalContent}
          />
       </Modal>
    );
@@ -47,6 +47,7 @@ const Technologies = () => {
                      "JavaScript",
                      "HTML",
                      "CSS",
+                     "Sass",
                      "Material UI",
                      "React",
                      "Redux",
@@ -54,7 +55,6 @@ const Technologies = () => {
                      "Node",
                      "MySQL",
                      "Git",
-                     "Github",
                      "VSC",
                   ]}
                />
@@ -64,10 +64,10 @@ const Technologies = () => {
                   modalToggleHandler={modalToggleHandler}
                   headerText={technologies.subheaders[1]}
                   technologies={[
+                     "Figma",
                      "Adobe XD",
                      "Adobe Photoshop",
                      "Adobe Illustrator",
-                     "Figma",
                      "Affinity Designer",
                      "Affinity Publisher",
                   ]}

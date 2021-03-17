@@ -1,11 +1,11 @@
 import React from 'react'
-import { AiFillHtml5, AiFillGithub } from 'react-icons/ai';
+import { AiFillHtml5 } from 'react-icons/ai';
 import { DiCss3, DiJavascript } from 'react-icons/di';
 import { GrGatsbyjs, GrNode, GrMysql } from 'react-icons/gr';
 import { FaReact, FaGitAlt } from 'react-icons/fa';
-import { SiRedux, SiMaterialUi, SiMysql } from 'react-icons/si';
+import { SiRedux, SiMaterialUi } from 'react-icons/si';
 import { BsKanban } from 'react-icons/bs';
-import { DiScrum, DiTrello } from 'react-icons/di';
+import { DiScrum, DiTrello, DiSass } from 'react-icons/di';
 import { GiPencilBrush } from 'react-icons/gi';
 import { CgFigma } from 'react-icons/cg';
 import { SiAdobexd, SiAdobephotoshop, SiAdobeillustrator, SiAffinitydesigner, SiAffinitypublisher, SiVisualstudiocode, SiMicrosoftexcel } from 'react-icons/si';
@@ -21,6 +21,9 @@ const SwitchIcon = ({ name }) => {
          break
       case 'CSS':
          icon = <DiCss3 />
+         break
+      case 'Sass':
+         icon = <DiSass />
          break
       case 'Material UI':
          icon = <SiMaterialUi />
@@ -42,9 +45,6 @@ const SwitchIcon = ({ name }) => {
          break
       case 'Git':
          icon = <FaGitAlt />
-         break
-      case 'Github':
-         icon = <AiFillGithub />
          break
       case 'VSC':
          icon = <SiVisualstudiocode />
