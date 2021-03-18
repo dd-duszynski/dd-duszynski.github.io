@@ -4,9 +4,12 @@ import styles from './Backdrop.module.scss'
 
 
 const Backdrop = (props) => {
+   const backdrop = props.show && (
+      <div className={styles.Backdrop} onClick={props.onClick}></div>
+   )
+
    return ReactDOM.createPortal(
-      <div className={styles.Backdrop} onClick={props.onClick}></div>,
-      document.getElementById('backdrop-hook')
+      backdrop, document.getElementById('backdrop-hook')
    )
 }
 

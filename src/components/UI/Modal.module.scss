@@ -1,22 +1,64 @@
 @import '../../scss/vm.scss';
 
 .Modal {
-	z-index: 100;
-	position: fixed;
-	top: 15vh;
+   z-index: 100;
+   position: fixed;
+   top: 15vh;
    height: 70vh;
-	left: 5vw;
+   left: 5vw;
    width: 90vw;
-	background: white;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
    border-radius: 8px;
    border-radius: 8px;
    background-color: #353535;
+   animation: showModal .2s;
 }
 
-@media (min-width: 600px){
+.ModalHidden {
+   animation: hideModal .5s;
+}
+
+@media (min-width: 600px) {
    .Modal {
       left: calc(50% - 250px);
       width: 500px;
+   }
+}
+
+@keyframes showModal {
+   0% {
+      opacity: 0;
+      transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1);
+      -webkit-transform: scale(1);
+   }
+}
+
+@keyframes hideModal {
+   0% {
+      z-index: 100;
+      position: fixed;
+      top: 15vh;
+      height: 70vh;
+      left: 5vw;
+      width: 90vw;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+      border-radius: 8px;
+      border-radius: 8px;
+      background-color: #353535;
+      animation: showModal .2s;
+      transform: scale(1);
+      -webkit-transform: scale(1);
+   }
+
+   100% {
+      opacity: 0;
+      transform: scale(0);
+      -webkit-transform: scale(0);
    }
 }

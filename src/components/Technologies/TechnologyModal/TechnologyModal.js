@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import styles from './TechnologyModal.module.scss'
 import Box from '../../UI/Box'
 import H1 from '../../UI/H1'
@@ -6,11 +6,12 @@ import H2 from '../../UI/H2'
 import Paragraph from '../../UI/Paragraph'
 import SwitchIcon from '../TechnologyItem/SwitchIcon'
 import { BiLinkExternal } from 'react-icons/bi'
-import {AppContext} from '../../../context/context'
+import { GrYoutube } from 'react-icons/gr'
+import { AppContext } from '../../../context/context'
 
 const TechnologyModal = ({ name }) => {
    console.log(name);
-   const {textContent: {technologies}} = useContext(AppContext)
+   const { textContent: { technologies } } = useContext(AppContext)
    const [choosenContent] = technologies.all.filter(i => i.name === name)
    return (
       <div className={styles.TechnologyModal}>
@@ -41,7 +42,11 @@ const TechnologyModal = ({ name }) => {
                className={styles.link}
                key={i[1]}
             >
-               <BiLinkExternal className={styles.icon} />
+               {
+                  i[2] === "yt" ?
+                     <GrYoutube className={styles.icon} /> :
+                     <BiLinkExternal className={styles.icon} />
+               }
                <Paragraph text={i[0]} />
             </a>
          ))}
