@@ -12,6 +12,7 @@ import Modal from "../UI/Modal";
 const Project = ({ link }) => {
    const {
       textContent: { projects: { listOfProjects } },
+      textContent: {technologies} ,
       handleModal,
       isModalOpen
    } = useContext(AppContext)
@@ -29,16 +30,15 @@ const Project = ({ link }) => {
       setModalContent(technology);
       handleModal();
    };
-
-
+   
+   const projectTechnologies = technologies.all.filter(t => t.projects.findIndex(i => i === link) >= 0)
+   
    const modal = (
       <Modal show={isModalOpen} onCancel={handleModal}>
-         <TechnologyModal
-            header={modalContent}
-            technology={`technologies.${modalContent}`}
-         />
+         <TechnologyModal name={modalContent} context={projectTechnologies}/>
       </Modal>
    );
+
    return (
       <>
          {modal}
@@ -61,7 +61,7 @@ const Project = ({ link }) => {
                   choosenItemHandler={choosenItemHandler}
                   modalToggleHandler={modalToggleHandler}
                   headerText="Technologie"
-                  technologies={project.technologies}
+                  technologies={projectTechnologies}
                />
             </Box>
             <Box justify='flex-start' align="flex-start" column>

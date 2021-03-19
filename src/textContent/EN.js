@@ -61,7 +61,376 @@ const textContent = {
    technologies: {
       header: "Narzędzia i technologie",
       subheaders: ["Development", "Design", "Pozostałe"],
-      seeMore: 'Find out more'
+      seeMore: 'Find out more',
+      learnMore: "Polecane linki",
+		all: [
+			{
+				name: "JavaScript",
+				type: "development",
+				fullName: "",
+				description:
+					"Skryptowy język programowania wykorzystywany głównie do tworzenia stron internetowych, jak również używany poza przeglądarką dzięki np. Node.js i Deno.js. Jest językiem opartym na prototypach, wielu paradygmatach, dynamicznej składni, zorientowanym obiektowo.",
+				links: [
+					[
+						"Mozilla Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/JavaScript",
+					],
+					["JAVASCRIPT.INFO", "https://javascript.info/"],
+					[
+						"[Traversy Media] JavaScript Crash Course For Beginners",
+						"https://www.youtube.com/watch?v=hdI2bqOjy3c",
+						"yt",
+					],
+				],
+            projects:['big-five']
+			},
+			{
+				name: "HTML",
+				type: "development",
+				fullName: "HyperText Markup Language",
+				description:
+					"Hipertekstowy język znaczników. Pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom tekstu – formując hiperłącza, akapity, nagłówki, listy – oraz osadza w tekście dokumentu obiekty plikowe np. multimedia bądź elementy baz danych np. interaktywne formularze danych.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/HTML",
+					],
+					[
+						"HTML Crash Course For Absolute Beginners [Traversy Media]",
+						"https://www.youtube.com/watch?v=UB1O30fR-EE",
+						"yt",
+					],
+				],
+            projects:['big-five']
+			},
+			{
+				name: "CSS",
+				type: "development",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+					[
+						"Traversy Media - CSS Crash Course For Absolute Beginners",
+						"https://www.youtube.com/watch?v=yfoY53QXEnI",
+						"yt",
+					],
+				],
+            projects:['big-five']
+			},
+			{
+				name: "Sass",
+				fullName: "Syntactically Awesome Style Sheets",
+				description:
+					"SASS to pre procesor CSS-a. Rozszerza możliwości CSS o zmienne, funkcje, mixiny i wiele innych.",
+				links: [
+					["Sass - Official Website", "https://sass-lang.com/"],
+					[
+						"[Traversy Media] - Sass Crash Course",
+						"https://www.youtube.com/watch?v=nu5mdN2JIwM",
+						"yt",
+					],
+				],
+            projects:["kanbanator", "pxl"]
+			},
+			{
+				name: "Material UI",
+				type: "development",
+				fullName: "",
+				description:
+					"React'owe komponenty dla szybszego i łatwiejszego tworzenia stron internetowych. Umożliwia  Material Design.",
+				links: [["MATERIAL-UI - Official", "https://material-ui.com/"]],
+            projects:["kanbanator"]
+			},
+			{
+				name: "React",
+				type: "development",
+				fullName: "",
+				description:
+					"Javascriptowa biblioteka służąca do tworzenia interfejsów użytkownika.",
+				links: [
+					["React - Official", "https://pl.reactjs.org/"],
+					[
+						"Traversy Media - React JS Crash Course 2021",
+						"https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+						"yt",
+					],
+				],
+            projects:["kanbanator", "pxl"]
+			},
+			{
+				name: "Redux",
+				fullName: "",
+				description:
+					"Kontener przewidywalnego stanu dla aplikacji JS. Redux pomaga pisać aplikacje, które zachowują się spójnie, działają w różnych środowiskach (klient, serwer i natywne) i są łatwe do przetestowania.",
+				links: [
+					["Redux - Official", "https://redux.js.org/"],
+					[
+						"Traversy Media - React JS Crash Course 2021",
+						"https://www.youtube.com/watch?v=93p3LxR9xfM",
+						"yt",
+					],
+				],
+            projects:["kanbanator"]
+			},
+			{
+				name: "Gatsby",
+				type: "development",
+				fullName: "",
+				description:
+					"Generator stron statycznych rozszerza możliwości Reacta.",
+				links: [
+					["Gatsby - Official Website", "https://www.gatsbyjs.com/"],
+					[
+						"Traversy Media - Gatsby JS Crash Course",
+						"https://www.youtube.com/watch?v=6YhqQ2ZW1sc",
+						"yt",
+					],
+					[
+						"Andrew Mead - Gatsby JS - The Great Gatsby Bootcamp [Full Tutorial]",
+						"https://www.youtube.com/watch?v=8t0vNu2fCCM",
+						"yt",
+					],
+				],
+            projects:["pxl"]
+			},
+			{
+				name: "Node",
+				type: "development",
+				fullName: "",
+				description:
+					"Node.js is a free, open-sourced, cross-platform JavaScript run-time environment that lets developers write command line tools and server-side scripts outside of a browser.",
+				links: [
+					["Node - Official", "https://nodejs.dev/learn"],
+					[
+						"Traversy Media - Node.js Crash Course",
+						"https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+						"yt",
+					],
+				],
+            projects:[]
+			},
+			{
+				name: "MySQL",
+				type: "development",
+				fullName: "",
+				description:
+					"Wolnodostępny, otwartoźródłowy system zarządzania relacyjnymi bazami danych.",
+				links: [
+					["MySQL - Official", "https://www.mysql.com/"],
+					[
+						"Programming with Mosh - MySQL Tutorial for Beginners",
+						"https://www.youtube.com/watch?v=7S_tz1z_5bA",
+						"yt",
+					],
+				],
+            projects:[]
+			},
+			{
+				name: "Git",
+				type: "development",
+				fullName: "",
+				description:
+					"Git to darmowy, rozproszony system kontroli wersji o otwartym kodzie źródłowym, zaprojektowany do obsługi wszystkiego, od małych po bardzo duże projekty, z szybkością i wydajnością.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					[
+						"Traversy Media - Git & GitHub Crash Course For Beginners",
+						"https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+						"yt",
+					],
+				],
+            projects:[]
+			},
+			{
+				name: "VSC",
+				type: "development",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Figma",
+				type: "design",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Adobe XD",
+				type: "design",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Adobe Photoshop",
+				type: "design",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Adobe Illustrator",
+				type: "design",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Affinity Designer",
+				type: "design",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Affinity Publisher",
+				type: "design",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "UX/UI",
+				type: "other",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Scrum",
+				type: "other",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Kanban",
+				type: "other",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Trello",
+				type: "other",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+			{
+				name: "Excel",
+				type: "other",
+				fullName: "",
+				description:
+					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+				links: [
+					[
+						"MDN Web Docs",
+						"https://developer.mozilla.org/pl/docs/Web/CSS",
+					],
+					["CSS Tricks", "https://css-tricks.com/"],
+				],
+            projects:[]
+			},
+		],
    },
    contact: {
       header: "Contact",
