@@ -3,7 +3,7 @@
 .Hero {
    grid-column: 1/4;
    position: relative;
-   height: calc(100vh - 190px);
+   height: calc(100vh - 210px);
    align-items: center;
    @include grid;
 
