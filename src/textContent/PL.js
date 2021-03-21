@@ -69,7 +69,7 @@ const textContent = {
             fullName: "",
             type: "development",
             description:
-               "Bardzo uniwersalny skryptowy język programowania wykorzystywany głównie do tworzenia serwisów internetowych, jednak dzięki Node.js używany jest również poza przeglądarkami. Jest językiem zorientowany obiektowo, opartym na prototypach, wielu paradygmatach i dynamicznej składni. JavaScript umożliwia developerom tworzenie dynamicznie wypełniających się treścią, interaktywnych i nowocześnie wyglądających serwisów.",
+               "Bardzo uniwersalny skryptowy język programowania wykorzystywany głównie do tworzenia aplikacji internetowych, jednak dzięki Node.js używany jest również poza przeglądarkami. Jest językiem zorientowany obiektowo, opartym na prototypach, wielu paradygmatach i dynamicznej składni. JavaScript umożliwia developerom tworzenie interaktywnych, dynamicznych i nowocześnie wyglądających stron.",
             links: [
                ["JAVASCRIPT.INFO", "https://javascript.info/"],
                [
@@ -89,7 +89,7 @@ const textContent = {
             fullName: "HyperText Markup Language",
             type: "development",
             description:
-               "Hipertekstowy język znaczników. Pozwala opisać strukturę informacji zawartych wewnątrz strony. Nadaje jej odpowiednie znaczenie semantyczne tworząc hiperłącza (linki), akapity, nagłówki czy listy. Osadza w tekście dokumentu również pliki multimedialne np. filmy i zdjęcia. Każda przeglądarka ma zdefiniowany domyślny wygląd tych elementów, a do ich customowego stylowania używa się CSS.",
+               "HTML to hipertekstowy język znaczników. Pozwala opisać strukturę informacji zawartych wewnątrz strony. Nadaje jej odpowiednie znaczenie semantyczne tworząc akapity, nagłówki, listy czy hiperłącza (linki). Osadza w tekście dokumentu również pliki multimedialne np. filmy i zdjęcia. Każda przeglądarka ma zdefiniowany domyślny wygląd tych elementów, a do zmiany domyślnego wyglądu używa się CSS.",
             links: [
                [
                   "MDN Web Docs",
@@ -108,7 +108,7 @@ const textContent = {
             fullName: "Cascading Style Sheets",
             type: "development",
             description:
-               "CSS to kod służący do definiowania wyglądu strony internetowej. Jest używany m.in. do pozycjonowania elementów, a także ustalania ich kolorów czy wielkości. Pozwala na zmianę tych właściwości w zależności od wielkości i orientacji urządzenia na jakim są wyświetlane, a nawet sposobu w jaki mają się wydrukować. W połączeniu z językiem JavaScript umożliwia tworzenie bardzo zaawansowanych i interaktywnych animacji.",
+               "CSS to kod służący do definiowania wyglądu strony internetowej. Jest używany m.in. do tworzenia animacji, pozycjonowania elementów, a także ustalania ich wielkości i kolorów. Pozwala na zmianę tych właściwości w zależności od rozdzielczości i orientacji urządzenia na jakim są wyświetlane, a nawet sposobu w jaki mają się wydrukować. W połączeniu z językiem JavaScript umożliwia tworzenie bardzo zaawansowanych interaktywnych aplikacji.",
             links: [
                ["CSS Tricks", "https://css-tricks.com/"],
                [
@@ -128,7 +128,7 @@ const textContent = {
             fullName: "Syntactically Awesome Style Sheets",
             type: "development",
             description:
-               "SASS to pre-procesor CSS, który rozszerza jego możliwości o korzystanie ze zmiennych, zagnieżdzania reguł, funkcji, mixinów i wielu innych funkcjonalności, które znacznie ułatwiają developerom prace. Kod Sass jest finalnie kompilowany do zwykłego CSS'a.",
+               "SASS to pre-procesor CSS, który rozszerza jego możliwości o korzystanie ze zmiennych, zagnieżdzanie reguł, tworzenie funkcji, mixinów i wielu innych funkcjonalności, które znacznie ułatwiają developerom prace. Kod Sass jest finalnie kompilowany do zwykłego CSS'a.",
             links: [
                ["Sass - Official Website", "https://sass-lang.com/"],
                [
@@ -144,7 +144,7 @@ const textContent = {
             type: "development",
             fullName: "",
             description:
-               "Javascriptowa deklaratywna biblioteka stworzona w 2013 roku przez programistów Facebooka. Umożliwia tworzenie bardzo złożonych interfejsów, dzieląc je na małe, reużywalne komponenty, które posiadają własny stan. Obecnie wykorzystywana jest zarówno po stronie przeglądarki, serwera dzięki Node.js, jak również w aplikacjach mobilnych dzięki React Native. Wykorzystuje Virtual DOM, czyli technikę, która aktualizuje zmiany tylko tam, gdzie faktycznie wystąpiły, co pozwala płynnie rerenderować interfejs.",
+               "Deklaratywna biblioteka stworzona przez programistów Facebooka w 2013 roku. Umożliwia tworzenie bardzo złożonych interfejsów, dzieląc je na małe, reużywalne komponenty, które mogą posiadać własny stan. Obecnie wykorzystywana jest po stronie przeglądarki, serwera dzięki Node.js, jak również w aplikacjach mobilnych dzięki React Native. Korzysta z techniki Virtual DOM, która aktualizuje zmiany tylko tam, gdzie faktycznie wystąpiły, co pozwala płynnie rerenderować interfejs.",
             links: [
                ["React - Official", "https://pl.reactjs.org/"],
                [
@@ -160,7 +160,7 @@ const textContent = {
             fullName: "",
             type: "development",
             description:
-               "React'owy framework UI opierający się na Design Systemie stworzonym przez Google - Material Design. Udostępnia zbiór gotowych do użycia komponentów UI, takich jak przyciski, elementy formularzy, rozwijane listy, modale i wiele innych. Pozwala szybko zbudować spójny wizualnie interfejs użytkownika, który oparty jest na sprawdzonym przez miliony użytkowników Design Systemie.",
+               "React'owy framework UI opierający się na stworzonym przez Google - Material Design. Udostępnia zbiór gotowych do użycia komponentów, takich jak przyciski, elementy formularzy, rozwijane listy i wiele innych. Pozwala szybko zbudować spójny wizualnie interfejs użytkownika, który oparty jest na sprawdzonym przez miliony użytkowników Design Systemie.",
             links: [["MATERIAL-UI - Official Website", "https://material-ui.com/"], ["Traversy Media - Material UI React Tutorial", "https://www.youtube.com/watch?v=vyJU9efvUtQ", "yt"]],
             projects: ["kanbanator"]
          },
@@ -169,7 +169,7 @@ const textContent = {
             fullName: "",
             type: "development",
             description:
-               "Redux to przewidywalny i scentralizowany manager stanu dla aplikacji. Jednym z głównych założeń jest jednokierunkowy przepływ danych, który zakłada, że wpływają one do komponentu, który nie powinien ich mutować. W dużym uproszczeniu za zmianę stanu odpowiada reducer, wywołany przez akcje, która informuje go zmianie jaką musi wykonać. Akcja może zostać wywołana np. przez wciśnięcie przycisku. Redux pomaga pisać aplikacje, które zachowują się spójnie, są łatwe do przetestowania, a także działają w różnych środowiskach (przeglądarka, serwer, natywnie).",
+               "Redux to otwarta biblioteka do zarządzania stanem aplikacji w przewidywalny i łatwy do przetestowania sposób. Głównym założeniem jest Single source of truth - stan całej aplikacji jest przechowywany w jednym miejscu zwanym 'store'. Kolejne założenie to jednokierunkowy przepływ danych, mówiący o tym, że stan jest tylko do odczytu. Za zmianę stanu odpowiada 'reducer', wywoływany przez 'akcje', która opisuje zmianę do wykonania. Podejście to daje pewność, że stan nie zostanie zmieniony w niekontrolowany sposób.",
             links: [
                ["Redux - Official", "https://redux.js.org/"],
                [
@@ -185,7 +185,7 @@ const textContent = {
             type: "development",
             fullName: "",
             description:
-               "Gatsby to framework rozszerzający możliwości Reacta. Pozwala na generowanie zoptymalizowanych pod katem szybkości i SEO statycznych stron internetowych, które umożliwiają robotom wyszukiwarek odczytanie i zaindeksowanie całej treści strony. Gatsby oferuje również wiele wtyczek pomagających developerom np. w pobieraniu danych z systemu CMS czy tworzeniu responsywnych i zoptymalizowanych obrazków.",
+               "Gatsby to framework rozszerzający możliwości Reacta. Pozwala na generowanie statycznych stron internetowych zoptymalizowanych pod katem szybkości i SEO. Umożliwia robotom wyszukiwarek odczytanie i zaindeksowanie całej treści strony, co było problemem 'czystego' Reacta. Gatsby oferuje również wiele wtyczek pomagających developerom m.in. w pobieraniu danych z systemów CMS, tworzeniu responsywnych i zoptymalizowanych obrazków czy integracji z usługami marketingowymi, takimi jak Google Analytics.",
             links: [
                ["Gatsby - Official Website", "https://www.gatsbyjs.com/"],
                ["Gatsby JS - dlaczego warto stworzyć stronę w oparciu o ten framework?", "https://smartbees.pl/blog/dlaczego-warto-stworzyc-strone-w-oparciu-o-gatsby-js"],
@@ -202,7 +202,7 @@ const textContent = {
             type: "development",
             fullName: "",
             description:
-               "Node.js is a free, open-sourced, cross-platform JavaScript run-time environment that lets developers write command line tools and server-side scripts outside of a browser.",
+               "Node.js to wieloplatformowe środowisko uruchomieniowe, które pozwoliło korzystać z JavaScript w środowisku innym niż przeglądarka. Przyczynił się do stworzenia paradygmatu 'JavaScript everywhere'. Node.js używa opartego na zdarzeniach, nieblokującego modelu wejścia/wyjścia. Napisany został w języku C++ w oparciu o silnik V8 używany w Google Chrome. Dzięki swojej wydajności może obsłużyć wiele zapytań jednocześnie i stanowi dobre rozwiązanie dla aplikacji działających na różnych urządzeniach, intensywnie korzystających z wielu danych.",
             links: [
                ["Node - Official", "https://nodejs.dev/learn"],
                [
@@ -218,7 +218,7 @@ const textContent = {
             type: "development",
             fullName: "",
             description:
-               "Wolnodostępny, otwartoźródłowy system zarządzania relacyjnymi bazami danych.",
+               "MySQL jest bardzo popularnym, otwartoźródłowym systemem do zarządzania relacyjnymi bazami danych, które są zbiorem przedstawionym w formie tabel. Każda tabela jest połączona z inną przynajmniej jednym atrybutem. Takie relacje są cechą charakterystyczną relacyjnych baz danych i pozwalają na łączenie tabel na wiele sposobów. Ta możliwość znacznie ułatwia tworzenie oraz zarządanie ogromnymi zbiorami danych z dużą ilością relacji.",
             links: [
                ["MySQL - Official", "https://www.mysql.com/"],
                [
@@ -234,7 +234,7 @@ const textContent = {
             type: "development",
             fullName: "",
             description:
-               "Git to darmowy, rozproszony system kontroli wersji o otwartym kodzie źródłowym, zaprojektowany do obsługi wszystkiego, od małych po bardzo duże projekty, z szybkością i wydajnością.",
+               "Git to system kontroli wersji o otwartym kodzie źródłowym. Oprogramowanie to służy do śledzenia zmian w kodzie źródłowym programu. Umożliwia korzystanie z historii zapisanych zmian i powrotu do wcześniejszej wersji. Daje możliwość rozgałęziania projektu (branching) na potrzeby rozwijania nowych funkcjonalności oraz przechowywania kodu w zdalnym repozytorium, co znacznie ułatwia pracę zespołową.",
             links: [
                [
                   "MDN Web Docs",
@@ -250,16 +250,18 @@ const textContent = {
          },
          {
             name: "VSC",
+            fullName: "Visual Studio Code",
             type: "development",
-            fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Darmowy edytor kodu źródłowego dla wielu języków programowania. Zwiększa czytelność oraz pracę z kodem poprzez kolorowanie składni, automatyczne uzupełnianie kodu, debugowanie czy zarządzanie wersjami za pośrednictwem GIT. W zależności od potrzeb umożliwia instalowanie dodatkowych rozszerzeń zwiększających funkcjonalność aplikacji.",
             links: [
                [
-                  "MDN Web Docs",
-                  "https://developer.mozilla.org/pl/docs/Web/CSS",
+                  "Visual Studio Code - Official Website",
+                  "https://code.visualstudio.com/",
                ],
                ["CSS Tricks", "https://css-tricks.com/"],
+               ["[Adrian Twarog] VS Code Extensions you absolutely need in 2021", "https://www.youtube.com/watch?v=qWNj3tfVjWI", "yt"],
+               ["[Academing] Visual Studio Code Tutorial for Beginners - Introduction", "https://www.youtube.com/watch?v=VqCgcpAypFQ", "yt"],
             ],
             projects: []
          },
@@ -268,13 +270,11 @@ const textContent = {
             type: "design",
             fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Nowoczesne i cięszące się rosnącą popularnością narzędzie do tworzenia prototypów stron internetowych i aplikacji mobilnych. Umożliwia tworzenie interaktywnych widoków, a także współpracę w trybie online. Ceniony za szybkość działania oraz funkcjonalność.",
             links: [
-               [
-                  "MDN Web Docs",
-                  "https://developer.mozilla.org/pl/docs/Web/CSS",
-               ],
-               ["CSS Tricks", "https://css-tricks.com/"],
+               ["Figma Official Website", "https://www.figma.com/"],
+               ["[DesignCourse] The Figma 2021 Crash Course by Example", "https://www.youtube.com/watch?v=Gu1so3pz4bA", "yt"],
+               ["[freeCodeCamp.org] UI / UX Design Tutorial – Wireframe, Mockup & Design in Figma", "https://www.youtube.com/watch?v=c9Wg6Cb_YlU", "yt"]
             ],
             projects: []
          },
@@ -283,7 +283,7 @@ const textContent = {
             type: "design",
             fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Narzędzie ze stajni Adobe, podobnie jak Figma służy do tworzenia interaktywnych prototypów aplikacji mobilnych oraz stron internetowych. Przeznaczone jest szczególnie dla projektantów User Experience, projektantów interfejsów (UI) oraz grafików.",
             links: [
                [
                   "MDN Web Docs",
@@ -298,11 +298,10 @@ const textContent = {
             type: "design",
             fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Program graficzny będący flagowym produktem firmy Adobe. Głównie wykorzystywany do tworzenia i obróbki grafiki rastrowej. Udostępnia mnóstwo funkcjonalności od edycji zdjęć, retuszowania i tworzenia kompozycji do malowania cyfrowego, animacji i projektowania grafiki.",
             links: [
                [
-                  "MDN Web Docs",
-                  "https://developer.mozilla.org/pl/docs/Web/CSS",
+                  "MDN Web Docs", "https://developer.mozilla.org/pl/docs/Web/CSS",
                ],
                ["CSS Tricks", "https://css-tricks.com/"],
             ],
@@ -313,7 +312,7 @@ const textContent = {
             type: "design",
             fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Najpopularniejszy na rynku program do tworzenia grafiki wektorowej, której największą zaletą jest bezstratne skalowanie, a więc utrzymanie idealnej ostrości nawet przy wielokrotnym powiększeniu. Program umożliwia tworzenie illustracji, logo, ikon, opakowań czy billboardów.",
             links: [
                [
                   "MDN Web Docs",
@@ -328,11 +327,11 @@ const textContent = {
             type: "design",
             fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Designer to stosunkowo młody produkt Affinity. Program służy do tworzenia grafiki wektorowej, przygotowany specjalnie dla projektantów. Możliwościami nie odbiega od Illustrator'a, jednak atrakcyjna cena i wiele ciekawych rozwiązań, stawiają go w roli głównego konkurenta.",
             links: [
                [
-                  "MDN Web Docs",
-                  "https://developer.mozilla.org/pl/docs/Web/CSS",
+                  "Affinity - oficjalna strona produktu",
+                  "https://affinity.serif.com/en-us/designer/",
                ],
                ["CSS Tricks", "https://css-tricks.com/"],
             ],
@@ -343,37 +342,48 @@ const textContent = {
             type: "design",
             fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Aplikacja jest częścią linii produktów Affinity. Publisher kładzie nacisk głównie na pracę DTP i przygotowanie materiałów do druku. Od czasopism, książek, broszur po plakaty. To płynie działająca i intuicyjna aplikacja umożliwiająca tworzenie kreatywnych publikacji.",
             links: [
                [
-                  "MDN Web Docs",
-                  "https://developer.mozilla.org/pl/docs/Web/CSS",
+                  "Affinity - oficjalna strona produktu",
+                  "https://affinity.serif.com/en-us/publisher/",
                ],
                ["CSS Tricks", "https://css-tricks.com/"],
             ],
             projects: []
          },
          {
-            name: "UX/UI",
+            name: "UX Design",
             type: "other",
-            fullName: "",
+            fullName: "User Experience Design",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "User experience odnosi się do projektowania wrażeń użytkownika we wszystkich punktach styku z produktem. Szczególną uwagę zwraca się na takie aspekty jak: użyteczność, intuicyjność, łatwość obsługi i ogólną satysfakcje. Jest to projektowanie zorientowane na użytkownika. UX jest bardzo szeroką i interdyscyplinarną dziedziną. W całym procesie ważną rolę odgrywa m.in. tworzenie prototypów, badanie użyteczności, tworzenie zrozumiałej architektury informacj, ciągłe weryfikowanie obranej ścieżki, a także dbanie o potrzeby biznesowe.",
             links: [
                [
-                  "MDN Web Docs",
-                  "https://developer.mozilla.org/pl/docs/Web/CSS",
+                  "UX Magazine", "https://uxmag.com/",
+               ]
+            ],
+            projects: []
+         },
+         {
+            name: "UI Design",
+            fullName: "User Interface Design",
+            type: "other",
+            description:
+               "Interfejs to płaszczyzna, na której dochodzi do interakcji między użytkownikiem, a produktem. Celem projektowania UI jest uczynienie interakcji tak prostej, jak to tylko możliwe, pod względem realizacji celów. Najlepsze interfejsy są dla niego tak łatwe w użyciu, że sprawiają wrażenie niewidocznych.",
+            links: [
+               [
+                  "UX Magazine", "https://uxmag.com/",
                ],
-               ["CSS Tricks", "https://css-tricks.com/"],
             ],
             projects: []
          },
          {
             name: "Scrum",
-            type: "other",
             fullName: "",
+            type: "other",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Scrum",
             links: [
                [
                   "MDN Web Docs",
@@ -388,7 +398,7 @@ const textContent = {
             type: "other",
             fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Kanban",
             links: [
                [
                   "MDN Web Docs",
@@ -403,7 +413,7 @@ const textContent = {
             type: "other",
             fullName: "",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Trello to narzędzie do zarządzania projektami, które pozwala na uporządkowanie ich w formie bardzo czytelnych tablic. Aplikacja jednym rzutem oka informuje o tym, kto i nad czym pracuje, a także na jakim etapie znajduje się dane zadanie. Umożliwia instalowanie przydatnych wtyczek m.in. integrujących z innymi narzędziami takimi jak Slack czy Excel",
             links: [
                [
                   "MDN Web Docs",
@@ -414,17 +424,17 @@ const textContent = {
             projects: []
          },
          {
-            name: "Excel",
+            name: "MS Excel",
             type: "other",
-            fullName: "",
+            fullName: "Microsoft Excel",
             description:
-               "CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+               "Wiodące na rynku oprogramowanie stosowane do wykonywania obliczeń zestawionych w formie tabelarycznej. Posiada liczne funkcje matematyczne, finansowe i bazodanowe, a także półautomatyczne powielanie tworzonych formuł. Jest również bardzo przydatny w generowaniu wykresów, w licznych wariantach. ",
             links: [
                [
-                  "MDN Web Docs",
-                  "https://developer.mozilla.org/pl/docs/Web/CSS",
+                  "Microsoft Official Website",
+                  "https://www.microsoft.com/pl-pl/microsoft-365/excel",
                ],
-               ["CSS Tricks", "https://css-tricks.com/"],
+               ["[freeCodeCamp.org] Microsoft Excel Tutorial for Beginners", "https://www.youtube.com/watch?v=Vl0H-qTclOg", "yt"],
             ],
             projects: []
          },
@@ -442,9 +452,9 @@ const textContent = {
    },
    about: {
       par1:
-         "Nazywam się Damian Duszyński. Jestem Frontend Developerem, a także pasjonatem UX/UI.",
+         "Nazywam się Damian Duszyński. Jestem Frontend Developerem, a także pasjonatem UX/UI i technologii webowych.",
       par2:
-         "Szukam nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy dbając przy tym o świetne doświadczenia dla użytkowników. Prywatnie jestem fanem piłki nożnej, jazdy na rowerze i ciężkich gitarowych rifów.",
+         "Szukam nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy dbając przy tym o świetne doświadczenia dla użytkowników. Prywatnie fan piłki nożnej i jazdy na rowerze.",
       expHeader: "Doświadczenie zawodowe:",
       eduHeader: "Edukacja:",
       experience: [

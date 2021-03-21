@@ -405,7 +405,7 @@ const textContent = {
 				type: "other",
 				fullName: "",
 				description:
-					"CSS to kod służący do nadawania stronie jej wyglądu. Jest używany m.in. do pozycjonowania elementów, ustalania kolorów tła i fontów, a także wielkości zdjęć. Ponadto pozwala na zmianę widoku w zależności od wielkości urządzenia, jego orientacji czy nawet sposobu w jaki się wydrukuje. W połączeniu z językiem JavaScript pozwala tworzyć bardzo zaawansowane interaktywne animacje.",
+					"Trello is a collaboration tool that organizes your projects into boards. In one glance, Trello tells you what's being worked on, who's working on what, and where something is in a process. Trello is a tool in the Project Management category of a tech stack.",
 				links: [
 					[
 						"MDN Web Docs",
@@ -443,8 +443,8 @@ const textContent = {
       messagePlaceholder: "Message ..."
    },
    about: {
-      par1: "My name is Damian Duszyński. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI.",
-      par2: "I am looking for new opportunities to work with digital products that solve real problems and ensuring a great user experience. Privately, I am a fan of football, cycling and heavy guitar riffs.",
+      par1: "My name is Damian Duszyński. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI and web technologies.",
+      par2: "I am looking  for new opportunities to work with digital products that solve real problems and ensuring a great user experience. Privately, a fan of football, and cycling.",
       expHeader: "Experience",
       eduHeader: 'Education',
       experience: [

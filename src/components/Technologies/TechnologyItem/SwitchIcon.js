@@ -8,6 +8,7 @@ import { BsKanban } from 'react-icons/bs';
 import { DiScrum, DiTrello, DiSass } from 'react-icons/di';
 import { GiPencilBrush } from 'react-icons/gi';
 import { CgFigma } from 'react-icons/cg';
+import { MdDevices } from 'react-icons/md';
 import { SiAdobexd, SiAdobephotoshop, SiAdobeillustrator, SiAffinitydesigner, SiAffinitypublisher, SiVisualstudiocode, SiMicrosoftexcel } from 'react-icons/si';
 
 const SwitchIcon = ({ name }) => {
@@ -50,7 +51,10 @@ const SwitchIcon = ({ name }) => {
          icon = <SiVisualstudiocode />
          break
       // Design
-      case 'UX/UI':
+      case 'UX':
+         icon = <MdDevices />
+         break
+      case 'UI':
          icon = <GiPencilBrush />
          break
       case 'Adobe XD':

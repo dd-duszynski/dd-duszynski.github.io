@@ -8,93 +8,64 @@ import TechnologyRow from "./TechnologyRow/TechnologyRow";
 import TechnologyModal from "./TechnologyModal/TechnologyModal";
 
 const Technologies = () => {
-	const { textContent, handleModal, isModalOpen } = useContext(AppContext);
-	const { technologies } = textContent;
-	const [modalContent, setModalContent] = useState(null);
-	const [choosenItem, setChoosenItem] = useState(null);
+   const { textContent, handleModal, isModalOpen } = useContext(AppContext);
+   const { technologies } = textContent;
+   const [modalContent, setModalContent] = useState(null);
+   const [choosenItem, setChoosenItem] = useState(null);
 
-	const choosenItemHandler = (item) => {
-		setChoosenItem(item);
-	};
+   const choosenItemHandler = (item) => {
+      setChoosenItem(item);
+   };
 
-	const modalToggleHandler = (technology) => {
-		setModalContent(technology);
-		handleModal();
-	};
+   const modalToggleHandler = (technology) => {
+      setModalContent(technology);
+      handleModal();
+   };
 
-	// <Modal show={true} onCancel={handleModal}>
-	const modal = (
-		<Modal show={isModalOpen} onCancel={handleModal}>
-			<TechnologyModal name={modalContent} context={technologies.all}/>
-		</Modal>
-	);
+   // <Modal show={true} onCancel={handleModal}>
+   const modal = (
+      <Modal show={isModalOpen} onCancel={handleModal}>
+         <TechnologyModal name={modalContent} context={technologies.all} />
+      </Modal>
+   );
 
-	return (
-		<>
-			{modal}
-			<section className={styles.Technologies} id="tools">
-				<Box justify="center" align="flex-start" column>
-					<H1 text={technologies.header} addClass={styles.h1} />
-					<TechnologyRow
-						choosenItem={choosenItem}
-						choosenItemHandler={choosenItemHandler}
-						modalToggleHandler={modalToggleHandler}
-						headerText={technologies.subheaders[0]}
-						// technologies={[
-						//    "JavaScript",
-						//    "HTML",
-						//    "CSS",
-						//    "Sass",
-						//    "Material UI",
-						//    "React",
-						//    "Redux",
-						//    "Gatsby",
-						//    "Node",
-						//    "MySQL",
-						//    "Git",
-						//    "VSC",
-						// ]}
-						technologies={technologies.all.filter(
-							(i) => i.type === "development"
-						)}
-					/>
-					<TechnologyRow
-						choosenItem={choosenItem}
-						choosenItemHandler={choosenItemHandler}
-						modalToggleHandler={modalToggleHandler}
-						headerText={technologies.subheaders[1]}
-						technologies={technologies.all.filter(
-							(i) => i.type === "design"
-						)}
-						// technologies={[
-						//    "Figma",
-						//    "Adobe XD",
-						//    "Adobe Photoshop",
-						//    "Adobe Illustrator",
-						//    "Affinity Designer",
-						//    "Affinity Publisher",
-						// ]}
-					/>
-					<TechnologyRow
-						choosenItem={choosenItem}
-						choosenItemHandler={choosenItemHandler}
-						modalToggleHandler={modalToggleHandler}
-						headerText={technologies.subheaders[2]}
-						technologies={technologies.all.filter(
-							(i) => i.type === "other"
-						)}
-						// technologies={[
-						//    "UX/UI",
-						//    "Scrum",
-						//    "Kanban",
-						//    "Trello",
-						//    "Excel",
-						// ]}
-					/>
-				</Box>
-			</section>
-		</>
-	);
+   return (
+      <>
+         {modal}
+         <section className={styles.Technologies} id="tools">
+            <Box justify="center" align="flex-start" column>
+               <H1 text={technologies.header} addClass={styles.h1} />
+               <TechnologyRow
+                  choosenItem={choosenItem}
+                  choosenItemHandler={choosenItemHandler}
+                  modalToggleHandler={modalToggleHandler}
+                  headerText={technologies.subheaders[0]}
+                  technologies={technologies.all.filter(
+                     (i) => i.type === "development"
+                  )}
+               />
+               <TechnologyRow
+                  choosenItem={choosenItem}
+                  choosenItemHandler={choosenItemHandler}
+                  modalToggleHandler={modalToggleHandler}
+                  headerText={technologies.subheaders[1]}
+                  technologies={technologies.all.filter(
+                     (i) => i.type === "design"
+                  )}
+               />
+               <TechnologyRow
+                  choosenItem={choosenItem}
+                  choosenItemHandler={choosenItemHandler}
+                  modalToggleHandler={modalToggleHandler}
+                  headerText={technologies.subheaders[2]}
+                  technologies={technologies.all.filter(
+                     (i) => i.type === "other"
+                  )}
+               />
+            </Box>
+         </section>
+      </>
+   );
 };
 
 export default Technologies;
