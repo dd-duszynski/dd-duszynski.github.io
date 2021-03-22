@@ -1,17 +1,18 @@
+import pxlHero from "../assets/pxlHero.png";
 import pxl1 from "../assets/pxl1.JPG";
 import pxl2 from "../assets/pxl2.JPG";
 import pxl3 from "../assets/pxl3.JPG";
 import pxl4 from "../assets/pxl4.JPG";
 import pxl5 from "../assets/pxl5.JPG";
+import bigFiveHero from "../assets/bigFiveHero.png";
 import bigFive1 from "../assets/bigFive1.JPG";
 import bigFive2 from "../assets/bigFive2.JPG";
-import bigFive3 from "../assets/bigFive3.png";
-import bigFiveHero from "../assets/bigFiveHero.png";
-import pxlHero from "../assets/pxlHero.png";
+import bigFive3 from "../assets/bigFive3.JPG";
+import bigFive4 from "../assets/bigFive4.JPG";
 import kanbanatorHero from "../assets/kanbanatorHero.png";
-import kanban1 from "../assets/kanban1.JPG";
-import kanban2 from "../assets/kanban2.JPG";
-import kanban3 from "../assets/kanban3.JPG";
+import kanbanator1 from "../assets/kanbanator1.JPG";
+import kanbanator2 from "../assets/kanbanator2.JPG";
+import kanbanator3 from "../assets/kanbanator3.JPG";
 
 const textContent = {
    navigation: [
@@ -34,7 +35,6 @@ const textContent = {
             rodzaj: "dev & design",
             opis:
                "Redesign strony internetowej na potrzeby drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do specyfikacji technicznych.",
-            photo: pxlHero,
             photos: [pxlHero, pxl1, pxl2, pxl3, pxl4, pxl5],
             link: "/projects/pxl",
          },
@@ -43,8 +43,7 @@ const textContent = {
             rodzaj: "dev",
             opis:
                "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-            photo: kanbanatorHero,
-            photos: [kanbanatorHero, kanban1, kanban2, kanban3],
+            photos: [kanbanatorHero, kanbanator1, kanbanator2, kanbanator3],
             link: "/projects/kanbanator",
          },
          {
@@ -52,8 +51,7 @@ const textContent = {
             rodzaj: "dev & design",
             opis:
                "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
-            photo: bigFiveHero,
-            photos: [bigFiveHero, bigFive1, bigFive2, bigFive3],
+            photos: [bigFiveHero, bigFive1, bigFive2, bigFive3, bigFive4],
             link: "/projects/big-five",
          },
       ],
@@ -71,9 +69,10 @@ const textContent = {
             description:
                "Bardzo uniwersalny skryptowy język programowania wykorzystywany głównie do tworzenia aplikacji internetowych, jednak dzięki Node.js używany jest również poza przeglądarkami. Jest językiem zorientowany obiektowo, opartym na prototypach, wielu paradygmatach i dynamicznej składni. JavaScript umożliwia developerom tworzenie interaktywnych, dynamicznych i nowocześnie wyglądających stron.",
             links: [
+               ["Kurs JS [PL]", "https://kursjs.pl/"],
                ["JAVASCRIPT.INFO", "https://javascript.info/"],
                [
-                  "Mozilla Web Docs",
+                  "Mozilla - MDN Web Docs",
                   "https://developer.mozilla.org/pl/docs/Web/JavaScript",
                ],
                [
@@ -92,7 +91,7 @@ const textContent = {
                "HTML to hipertekstowy język znaczników. Pozwala opisać strukturę informacji zawartych wewnątrz strony. Nadaje jej odpowiednie znaczenie semantyczne tworząc akapity, nagłówki, listy czy hiperłącza (linki). Osadza w tekście dokumentu również pliki multimedialne np. filmy i zdjęcia. Każda przeglądarka ma zdefiniowany domyślny wygląd tych elementów, a do zmiany domyślnego wyglądu używa się CSS.",
             links: [
                [
-                  "MDN Web Docs",
+                  "Mozilla - MDN Web Docs",
                   "https://developer.mozilla.org/pl/docs/Web/HTML",
                ],
                [
@@ -110,11 +109,11 @@ const textContent = {
             description:
                "CSS to kod służący do definiowania wyglądu strony internetowej. Jest używany m.in. do tworzenia animacji, pozycjonowania elementów, a także ustalania ich wielkości i kolorów. Pozwala na zmianę tych właściwości w zależności od rozdzielczości i orientacji urządzenia na jakim są wyświetlane, a nawet sposobu w jaki mają się wydrukować. W połączeniu z językiem JavaScript umożliwia tworzenie bardzo zaawansowanych interaktywnych aplikacji.",
             links: [
-               ["CSS Tricks", "https://css-tricks.com/"],
                [
-                  "MDN Web Docs",
+                  "Mozilla - MDN Web Docs",
                   "https://developer.mozilla.org/pl/docs/Web/CSS",
                ],
+               ["CSS Tricks", "https://css-tricks.com/"],
                [
                   "Traversy Media - CSS Crash Course For Absolute Beginners",
                   "https://www.youtube.com/watch?v=yfoY53QXEnI",
