@@ -1,0 +1,138 @@
+@import "../../../scss/vm.scss";
+
+.SingleProject {
+   position: relative;
+   width: 100%;
+   margin-bottom: 8vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.link {
+   display: block;
+   width: 100%;
+   text-decoration: none;
+   color: white;
+}
+
+.box {
+   margin-bottom: 4vh;
+}
+
+.projectImg {
+   opacity: 0.8;
+   max-width: 100%;
+   width: 100%;
+   height: auto;
+}
+
+.link:hover {
+   .projectImg {
+      opacity: 1;
+   }
+}
+
+@media(min-width: 801px) {
+
+   .overlay,
+   .info {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+   }
+
+   .info {
+      height: 34px;
+      width: 34px;
+      border-radius: 50%;
+      background-color: $bgColor;
+      border: 1px solid #eee;
+      transition: all 0.3s;
+
+      &::after {
+         content: "i";
+         color: #fff;
+         position: absolute;
+         top: 6px;
+         right: 12px;
+         font-size: 16px;
+         @include roboto500;
+      }
+   }
+
+   .overlay {
+      width: 300px;
+      height: 100%;
+      padding: 10px 16px;
+      opacity: 0;
+      transition: all 0.3s;
+   }
+
+   .paragraph {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      margin-top: 0;
+      padding: 0;
+      opacity: 0;
+      z-index: 1;
+      color: white !important;
+   }
+
+   .line {
+      opacity: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #eee;
+      margin-top: 4px;
+      margin-bottom: 10px;
+   }
+
+   .iconsContainer {
+      transition: all 0.5s;
+      opacity: 0;
+
+      svg {
+         height: 28px;
+         width: 28px;
+         margin-right: 10px;
+         color: #eee;
+      }
+   }
+
+   .link:hover {
+      .overlay {
+         opacity: 1;
+      }
+
+      .info {
+         height: 100%;
+         width: 300px;
+         border-radius: 18px;
+         border: 1px solid gray;
+         background-color: $bgColorGray;
+
+         &::after {
+            content: "";
+         }
+      }
+
+      .line {
+         opacity: 1;
+      }
+
+      .paragraph {
+         opacity: 1;
+      }
+
+      .iconsContainer {
+         opacity: 1;
+      }
+
+      .projectImg {
+         opacity: 0.3;
+         transition: opacity 0.3s;
+      }
+   }
+}
