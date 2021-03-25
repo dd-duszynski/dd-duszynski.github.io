@@ -4,52 +4,52 @@ import SwitchIcon from "./SwitchIcon";
 import { AppContext } from "../../../context/context";
 
 const TechnologyItem = ({
-	name,
-	choosenItemHandler,
-	isChoosen,
-	modalToggleHandler,
+   name,
+   choosenItemHandler,
+   isChoosen,
+   modalToggleHandler,
 }) => {
-	const { size, textContent } = useContext(AppContext);
-	const openModalHandler = (name) => {
-		modalToggleHandler(name);
-		choosenItemHandler(null);
-	};
+   const { size, textContent } = useContext(AppContext);
+   const openModalHandler = (name) => {
+      modalToggleHandler(name);
+      choosenItemHandler(null);
+   };
 
-	const clickedHandler = () => {
-		if (size < 600 && isChoosen === true) {
-			openModalHandler(name);
-		} else if (size < 600 && !isChoosen) {
-			choosenItemHandler(name);
-		} else if (size >= 600) {
-			modalToggleHandler(name);
-		}
-	};
+   const clickedHandler = () => {
+      if (size < 600 && isChoosen === true) {
+         openModalHandler(name);
+      } else if (size < 600 && !isChoosen) {
+         choosenItemHandler(name);
+      } else if (size >= 600) {
+         modalToggleHandler(name);
+      }
+   };
 
-	return (
-		<li
-			className={
-				isChoosen
-					? [
-							styles.TechnologyItem,
-							styles.TechnologyItemClicked,
-					  ].join(" ")
-					: styles.TechnologyItem
-			}
-			onClick={clickedHandler}
-		>
-			<div className={styles.container}>
-				<div className={styles.front}>
-					<SwitchIcon name={name} />
-					<span className={styles.title}>{name}</span>
-				</div>
-				<div className={styles.back}>
-					<span className={styles.backTitle}>
-						{textContent.technologies.seeMore}
-					</span>
-				</div>
-			</div>
-		</li>
-	);
+   return (
+      <li
+         className={
+            isChoosen
+               ? [
+                  styles.TechnologyItem,
+                  styles.TechnologyItemClicked,
+               ].join(" ")
+               : styles.TechnologyItem
+         }
+         onClick={clickedHandler}
+      >
+         <div className={styles.container}>
+            <div className={styles.front}>
+               <SwitchIcon name={name} />
+               <span className={styles.title}>{name}</span>
+            </div>
+            <div className={styles.back}>
+               <span className={styles.backTitle}>
+                  {textContent.technologies.seeMore}
+               </span>
+            </div>
+         </div>
+      </li>
+   );
 };
 
 export default TechnologyItem;
