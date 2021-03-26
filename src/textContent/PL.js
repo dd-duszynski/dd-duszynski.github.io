@@ -38,7 +38,7 @@ const textContent = {
 				title: "PrintXL",
 				role: "Development & Design",
 				shortDescription:
-					"Redesign strony dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji dla klienta.",
+					"Redesign strony dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji.",
 				description:
 					[
                   "Redesign strony dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji dla klienta.",
@@ -52,7 +52,7 @@ const textContent = {
 				title: "Kanbanator",
 				role: "Development & Design",
 				shortDescription:
-					"Projekt ułatwiający zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
+					"Projekt ułatwiający zarządzanie projektami w metodyce Kanban. Umożliwia m.in. założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
 				description:
 					[
                   "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
@@ -66,7 +66,7 @@ const textContent = {
 				title: "BigFive",
 				role: "Development & Design",
 				shortDescription:
-					"Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
+					"Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu najsilniejszych lig świata.",
 				description:
 					[
                   "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",

@@ -41,27 +41,31 @@ const SingleProject = (item) => {
                      >
                         <Paragraph
                            bold
-                           addClass={styles.paragraph}
+                           addClass={[styles.paragraph, styles.bold].join(' ')}
                            text={projects.roleInfo}
                         />
                         <Paragraph
                            addClass={styles.paragraph}
                            text={role}
                         />
-                        <div className={styles.line} />
+                        <div className={styles.line}>
+                           <hr />
+                        </div>
                         <Paragraph
                            bold
-                           addClass={styles.paragraph}
+                           addClass={[styles.paragraph, styles.bold].join(' ')}
                            text={projects.descriptionInfo}
                         />
                         <Paragraph
                            addClass={styles.paragraph}
                            text={shortDescription}
                         />
-                        <div className={styles.line} />
+                          <div className={styles.line}>
+                           <hr />
+                        </div>
                         <Paragraph
                            bold
-                           addClass={styles.paragraph}
+                           addClass={[styles.paragraph, styles.bold].join(' ')}
                            text={projects.technologyInfo}
                         />
                         <div className={styles.iconsContainer}>

@@ -47,20 +47,26 @@ const Project = ({ link }) => {
 		<>
 			{modal}
 			<main className={styles.Project} id="projects">
+         <Box >
 				<img
 					className={styles.mainPhoto}
 					src={mainPhoto}
 					alt="main img"
 				/>
+
+         </Box>
 				<Box justify="space-between" align="flex-start" column>
-					<H1 text={project.title} addClass={styles.title} />
+					<H1 text={project.title} addClass={styles.h1} />
 					<Box
 						justify="flex-start"
 						align="flex-start"
 						column
 						addClass={styles.paragraphBox}
 					>
-						<H2 text={projects.roleInfo} addClass={styles.title} />
+						<H2 
+                     text={projects.roleInfo} 
+                     addClass={styles.h2} 
+                  />
 						<Paragraph text={project.role} />
 					</Box>
 					<Box
@@ -71,13 +77,16 @@ const Project = ({ link }) => {
 					>
 						<H2
 							text={projects.descriptionInfo}
-							addClass={styles.title}
+							addClass={styles.h2}
 						/>
 						{project.description.map((item) => (
 							<Paragraph text={item} />
 						))}
 					</Box>
 				</Box>
+            <Box>
+               <img src={"https://itcraftapps.com/wp-content/uploads/2019/09/pixoo-app-hi-fi-wireframes.jpg"} alt="" className={styles.mainPhoto}/>
+            </Box>
 				<Box>
 					<TechnologyRow
 						choosenItem={choosenItem}
@@ -88,7 +97,10 @@ const Project = ({ link }) => {
 					/>
 				</Box>
 				<Box justify="flex-start" align="flex-start" column>
-					<H2 text={projects.screens} addClass={styles.title} />
+					<H2 
+                  text={projects.screens} 
+                  addClass={styles.h2} 
+               />
 					<Slider elements={photos} />
 				</Box>
 			</main>

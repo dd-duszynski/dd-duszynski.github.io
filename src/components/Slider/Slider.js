@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { AppContext } from "../../context/context";
 import styles from "./Slider.module.scss";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 
 const Slider = ({ elements }) => {
 	const [currentImgIndex, setCurrentImgIndex] = useState(0);
+	const { isModalOpen } = useContext(AppContext);
 	const elementsLength = elements.length;
 
-   useEffect(() => {
-      const keyPressHandler = (e) => {
-         if (e.keyCode === 37) {
-            handlePrevElement()
-         } else if (e.keyCode === 39) {
-            handleNextElement()
-         } else if (e.keyCode === 27) {
-            // handleModal()
-         }
-      }
-      document.addEventListener('keydown', keyPressHandler)
-      return () => document.removeEventListener('keydown', keyPressHandler)
-   })
+	useEffect(() => {
+		const keyPressHandler = (e) => {
+			if (!isModalOpen && e.keyCode === 37) {
+				handlePrevElement();
+			} else if ( !isModalOpen && e.keyCode === 39) {
+				handleNextElement();
+			}
+		};
+		document.addEventListener("keydown", keyPressHandler);
+		return () => document.removeEventListener("keydown", keyPressHandler);
+	});
 
 	const handlePrevElement = () => {
 		if (currentImgIndex === 0) {

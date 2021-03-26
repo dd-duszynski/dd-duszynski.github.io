@@ -18,8 +18,8 @@
 .leftArrow,
 .rightArrow {
 	position: absolute;
-	top: 10%;
-	height: 80%;
+	top: 15%;
+	height: 70%;
 	width: 30px;
    display: flex;
    justify-content: center;
@@ -45,8 +45,8 @@
 	align-items: center;
 }
 .dot {
-	height: 14px;
-	width: 14px;
+	height: 12px;
+	width: 12px;
 	border-radius: 50%;
 	background-color: #fff;
 	margin-right: 10px;
@@ -57,8 +57,8 @@
 }
 .dotActive {
 	margin-right: 10px;
-	height: 16px;
-	width: 16px;
+	height: 14px;
+	width: 14px;
 	border-radius: 50%;
 	background-color: lightgreen;
 	border: 1px solid white;
