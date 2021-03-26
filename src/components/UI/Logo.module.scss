@@ -1,8 +1,11 @@
+@import "../../scss/vm.scss";
+
 .Logo {
 	font-family: "Gloria Hallelujah", cursive;
 	color: white;
 	font-size: 26px;
-
+   @include noneSelection;
+   
 	&:hover {
 		color: lightgreen;
 	}

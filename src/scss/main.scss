@@ -30,6 +30,12 @@ a {
    text-decoration: none;
 }
 
+img, button, label, input, ::placeholder{
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
 ::-webkit-scrollbar {
    width: 8px;
  }

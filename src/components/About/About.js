@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from "./About.module.scss";
-import H1 from "../UI/H2";
+import H2 from "../UI/H2";
 import TimelineCard from "../UI/TimelineCard";
 import Paragraph from "../UI/Paragraph";
 import { AppContext } from "../../context/context";
@@ -18,7 +18,7 @@ const About = () => {
             addClass={styles.box}
             column
          >
-            <H1 text="O mnie:" addClass={styles.h1} />
+            <H2 text="O mnie:" addClass={styles.h1} />
             <Paragraph
                // bold
                text={about.par1}
@@ -34,7 +34,7 @@ const About = () => {
             addClass={styles.career}
             column
          >
-            <H1 text={about.expHeader} addClass={styles.h1} />
+            <H2 text={about.expHeader} addClass={styles.h1} />
             <div className={styles.timelineExperience} />
             {about.experience.map((item, index, arr) => (
                <TimelineCard
@@ -53,7 +53,7 @@ const About = () => {
             addClass={styles.career}
             column
          >
-            <H1 text={about.eduHeader} addClass={styles.h1} />
+            <H2 text={about.eduHeader} addClass={styles.h1} />
             <div className={styles.timelineEducation} />
             {about.education.map((item, index, arr) => (
                <TimelineCard

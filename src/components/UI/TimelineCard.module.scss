@@ -5,6 +5,14 @@
    position: relative;
    padding-left: 30px;
    &:hover {
+      .card{
+         background-color: $bgColor;
+         color: #fff;
+         border: 1px solid #fff;
+      }
+      .line {
+         background-color: #fff;
+      }
       .dot1 {
          background-color: #fff;
          border: 2px solid #fff;
@@ -20,9 +28,11 @@
    display: inline-block;
    width: auto;
    background-color: #fff;
+   border: 1px solid #fff;
+   color: $bgColor;
    border-radius: 8px;
    padding: 2px 12px;
-   color: $bgColor;
+   margin-bottom: 6px;
    ::selection {
       background: $bgColor;
       color: #fff;

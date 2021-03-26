@@ -1,9 +1,7 @@
 import React from 'react'
-import { AiFillHtml5 } from 'react-icons/ai';
-import { DiCss3, DiJavascript } from 'react-icons/di';
 import { GrGatsbyjs, GrNode, GrMysql } from 'react-icons/gr';
 import { FaReact, FaGitAlt } from 'react-icons/fa';
-import { SiRedux, SiMaterialUi } from 'react-icons/si';
+import { SiRedux, SiMaterialUi, SiJavascript,SiHtml5, SiCss3 } from 'react-icons/si';
 import { BsKanban } from 'react-icons/bs';
 import { DiScrum, DiTrello, DiSass } from 'react-icons/di';
 import { GiPencilBrush } from 'react-icons/gi';
@@ -15,13 +13,13 @@ const SwitchIcon = ({ name }) => {
    let icon;
    switch (name) {
       case 'JavaScript':
-         icon = <DiJavascript />
+         icon = <SiJavascript />
          break
       case 'HTML':
-         icon = <AiFillHtml5 />
+         icon = <SiHtml5 />
          break
       case 'CSS':
-         icon = <DiCss3 />
+         icon = <SiCss3 />
          break
       case 'Sass':
          icon = <DiSass />

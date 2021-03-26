@@ -6,19 +6,19 @@ import { AppContext } from "../../context/context";
 import Box from "../UI/Box";
 
 const Projects = () => {
-   const {
-      textContent: { projects },
-   } = useContext(AppContext);
-   return (
-      <section className={styles.Projects} id="projects">
-         <Box justify="center" align="flex-start" column>
-            <H1 text={projects.title} addClass={styles.h1} />
-            {projects.listOfProjects.map((item, index) => {
-               return <SingleProjectCard key={index} {...item} />;
-            })}
-         </Box>
-      </section>
-   );
+	const {
+		textContent: { projects },
+	} = useContext(AppContext);
+	return (
+		<section className={styles.Projects} id="projects">
+			<Box justify="center" align="flex-start" column>
+				<H1 text={projects.title} addClass={styles.h1} />
+				{projects.listOfProjects.map((item, index) => {
+					return <SingleProjectCard key={index} {...item} />;
+				})}
+			</Box>
+		</section>
+	);
 };
 
 export default Projects;

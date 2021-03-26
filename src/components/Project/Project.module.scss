@@ -1,17 +1,23 @@
-@import '../../scss/vm.scss';
+@import "../../scss/vm.scss";
 
 .Project {
-   grid-column: 2/3;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   
+	grid-column: 2/3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-
-.img{
+.mainPhoto{
    width: 100%;
-   border-radius: 8px;
-   margin-bottom: 12px;
+   margin-bottom: 14px;
+}
+.title {
+	margin-bottom: 10px;
 }
 
+.paragraphBox {
+	margin-bottom: 14px;
+}
+.Slider{
+   width: 100%;
+}

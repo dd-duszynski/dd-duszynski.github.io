@@ -46,6 +46,12 @@ $mediumDevice: 900px;
    }
 }
 
+@mixin noneSelection {
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
 
 // Custom devices ----------------------
 @mixin rwd($screen) {

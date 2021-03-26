@@ -11,7 +11,7 @@ import SwitchIcon from "../../Technologies/TechnologyItem/SwitchIcon";
 // https://codepen.io/vladracoare/pen/RwPrayL
 
 const SingleProject = (item) => {
-   const { title, role, description, photos, link } = item
+   const { title, role, shortDescription, photos, link } = item
    const {
       textContent: { technologies, projects },
       size
@@ -56,7 +56,7 @@ const SingleProject = (item) => {
                         />
                         <Paragraph
                            addClass={styles.paragraph}
-                           text={description}
+                           text={shortDescription}
                         />
                         <div className={styles.line} />
                         <Paragraph
