@@ -9,16 +9,22 @@
    min-height: calc(100vh - 80px - 169px);
 }
 
-.box {
-   margin-bottom: 20px;
+.introductionBox {
+   margin-bottom: 30px;
 }
 
-.career {
-   margin-bottom: 20px;
+.paragraph1 {
+   margin-bottom: 14px;
+}
+
+.experienceBox,
+.educationBox {
+   margin-bottom: 30px;
    position: relative;
 }
 
-.h1 {
+.h1,
+.h2 {
    margin-bottom: 12px;
 }
 
@@ -43,3 +49,4 @@
 .timelineEducation {
    height: calc(100% - 160px);
 }
+

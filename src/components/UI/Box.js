@@ -4,11 +4,11 @@ import styles from './Box.module.scss'
 const Box = ({ children, justify, align, column, addClass, noWrap, onClick }) => {
    const justifyContent = justify ? justify : 'center';
    const alignItems = align ? align : 'center';
-   const isFlexColumn = column ? "column" : 'row';
+   const isFlexColumn = column && "column";
 
    return (
       <div
-         className={[styles.Box, addClass].join(' ')}
+         className={[addClass, styles.Box ].join(' ')}
          onClick={onClick}
          style={{
             justifyContent: justifyContent,

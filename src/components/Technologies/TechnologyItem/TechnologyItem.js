@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from "./TechnologyItem.module.scss";
-import SwitchIcon from "./SwitchIcon";
+import SwitchIcon from "../../UI/SwitchIcon";
 import { AppContext } from "../../../context/context";
 
 const TechnologyItem = ({
@@ -16,11 +16,11 @@ const TechnologyItem = ({
    };
 
    const clickedHandler = () => {
-      if (size < 600 && isChoosen === true) {
+      if (size < 1000 && isChoosen === true) {
          openModalHandler(name);
-      } else if (size < 600 && !isChoosen) {
+      } else if (size < 1000 && !isChoosen) {
          choosenItemHandler(name);
-      } else if (size >= 600) {
+      } else if (size >= 1000) {
          modalToggleHandler(name);
       }
    };

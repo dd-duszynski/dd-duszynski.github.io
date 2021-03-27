@@ -19,8 +19,8 @@ const Navbar = () => {
    } = useContext(AppContext);
 
    const { navigation } = textContent
+   // eslint-disable-next-line
    const [mainPage, ...restNavItem] = navigation
-   // no-unused-vars
    const btnPLCSS = language === "PL" && styles.active;
    const btnENCSS = language === "EN" && styles.active;
    const isHash = i => i.indexOf("#") > 0;

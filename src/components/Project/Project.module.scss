@@ -11,16 +11,70 @@
    width: 100%;
    margin-bottom: 14px;
 }
-.h1 {
-	margin-bottom: 14px;
+.screen{
+   width: 100%;
+   margin-top: 14px;
+   margin-bottom: 24px;
+}
+.header {
+   margin: 12px 0;
 }
 .h2 {
 	margin-bottom: 3px;
 }
 
 .paragraphBox {
-	margin-bottom: 18px;
+	margin-bottom: 14px;
 }
 .Slider{
    width: 100%;
+}
+.linkBox{
+   flex-direction: column;
+}
+.externalLink {
+   color: white;
+   display: flex;
+   align-items: center;
+   &:nth-child(1){
+      margin-bottom: 8px;
+      margin-right: 0;
+   }
+   &:hover {
+      color: lightgreen;
+   }
+}
+
+.paragraphLink {
+   margin-top: 3px;
+   margin-bottom: 3px;
+}
+.icon {
+   margin-left: 8px;
+   min-width: 22px;
+   min-height: 22px;
+}
+
+.line {
+   width: 100%;
+   margin-bottom: 12px;
+
+   hr {
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none
+   }
+}
+
+@media(min-width: 600px){
+   .linkBox{
+      flex-direction: row;
+   }
+   .externalLink {
+      align-items: center;
+      &:nth-child(1){
+         margin-bottom: 0;
+         margin-right: 30px;
+      }
+   }
 }

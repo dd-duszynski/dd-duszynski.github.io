@@ -1,18 +1,9 @@
 import pxlHero from "../assets/pxlHero.png";
-import pxl1 from "../assets/pxl1.JPG";
-import pxl2 from "../assets/pxl2.JPG";
-import pxl3 from "../assets/pxl3.JPG";
-import pxl4 from "../assets/pxl4.JPG";
-import pxl5 from "../assets/pxl5.JPG";
+import pxl1 from "../assets/pxl_rwd_1.png";
 import bigFiveHero from "../assets/bigFiveHero.png";
-import bigFive1 from "../assets/bigFive1.JPG";
-import bigFive2 from "../assets/bigFive2.JPG";
-import bigFive3 from "../assets/bigFive3.JPG";
-import bigFive4 from "../assets/bigFive4.JPG";
+import bigFive1 from "../assets/bigFive_rwd_1.png";
 import kanbanatorHero from "../assets/kanbanatorHero.png";
-import kanbanator1 from "../assets/kanbanator1.JPG";
-import kanbanator2 from "../assets/kanbanator2.JPG";
-import kanbanator3 from "../assets/kanbanator3.JPG";
+import kanbanator1 from "../assets/kanbanator_rwd_1.png";
 
 const textContent = {
 	navigation: [
@@ -31,26 +22,30 @@ const textContent = {
 		title: "Projekty",
 		roleInfo: "Rola: ",
 		descriptionInfo: "Opis: ",
-		technologyInfo: "Wykorzystane technologie: ",
+		technologyInfo: "Narzędzia i technologie: ",
+		prototypes: "Prototypy: ",
 		screens: "Ekrany: ",
+      homeLink: "Wróć na stronę główną",
 		listOfProjects: [
 			{
 				title: "PrintXL",
-				role: "Development & Design",
+				role: "Design & Development",
 				shortDescription:
 					"Redesign strony dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji.",
 				description:
 					[
-                  "Redesign strony dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji dla klienta.",
+                  "Redesign strony internetowej dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji dla klienta.",
                   "Redesign strony dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji dla klienta.",
                   "Redesign strony dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji dla klienta.",
             ],
-				photos: [pxlHero, pxl1, pxl2, pxl3, pxl4, pxl5],
+				photos: [pxlHero, pxl1],
 				link: "/projects/pxl",
+            externalLink: 'http://printxl.pl',
+            repository: "https://github.com/dd-duszynski/pxlGatsby"
 			},
 			{
 				title: "Kanbanator",
-				role: "Development & Design",
+				role: "Design & Development",
 				shortDescription:
 					"Projekt ułatwiający zarządzanie projektami w metodyce Kanban. Umożliwia m.in. założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
 				description:
@@ -59,12 +54,14 @@ const textContent = {
                   "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
                   "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
                ],
-				photos: [kanbanatorHero, kanbanator1, kanbanator2, kanbanator3],
+				photos: [kanbanatorHero, kanbanator1],
 				link: "/projects/kanbanator",
+            externalLink: 'https://dd-duszynski.github.io/bigfive/#/',
+            repository: "https://github.com/dd-duszynski/kanbanator"
 			},
 			{
 				title: "BigFive",
-				role: "Development & Design",
+				role: "Design & Development",
 				shortDescription:
 					"Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu najsilniejszych lig świata.",
 				description:
@@ -73,8 +70,10 @@ const textContent = {
                   "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
                   "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
             ],
-				photos: [bigFiveHero, bigFive1, bigFive2, bigFive3, bigFive4],
+				photos: [bigFiveHero, bigFive1],
 				link: "/projects/big-five",
+            externalLink: 'https://dd-duszynski.github.io/bigfive/#/',
+            repository: "https://github.com/dd-duszynski/bigfive"
 			},
 		],
 	},
@@ -514,12 +513,13 @@ const textContent = {
 		messagePlaceholder: "Treść wiadomości...",
 	},
 	about: {
-		par1:
-			"Nazywam się Damian Duszyński. Jestem Frontend Developerem, a także pasjonatem UX/UI i technologii webowych.",
-		par2:
-			"Szukam nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy dbając przy tym o świetne doświadczenia dla użytkowników. Prywatnie fan piłki nożnej i jazdy na rowerze.",
-		expHeader: "Doświadczenie zawodowe:",
-		eduHeader: "Edukacja:",
+      header: "O mnie",
+		paragraph1:
+			"Witaj, nazywam się Damian Duszyński. Obecnie mieszkam i pracuję w Poznaniu. Jestem Frontend Developerem, a także pasjonatem UX/UI i technologii webowych.",
+		paragraph2:
+			"Poszukuję nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy dbając przy tym o świetne doświadczenia dla użytkowników. Prywatnie jestem fanem piłki nożnej i jazdy na rowerze.",
+		expHeader: "Doświadczenie zawodowe",
+		eduHeader: "Edukacja",
 		experience: [
 			{
 				topHeader: "Lip 2019 -> Obecnie",

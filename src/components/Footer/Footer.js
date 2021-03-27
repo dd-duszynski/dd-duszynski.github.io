@@ -5,7 +5,7 @@ import styles from './Footer.module.scss'
 import FooterItem from './FooterItem/FooterItem'
 import Box from '../UI/Box'
 import ToTheTop from '../UI/ToTheTop'
-import H3 from '../UI/H3'
+import H4 from '../UI/H4'
 import gitFull from '../../assets/git_full.svg'
 import gitOutline from '../../assets/git_outline.svg'
 import linkedinFull from '../../assets/linkedin_full.svg'
@@ -29,7 +29,7 @@ const Footer = () => {
                align="flex-start"
                column
             >
-               <H3 text="Kontakt:" addClass={styles.socialLinkHeader} />
+               <H4 text="Kontakt:" addClass={styles.socialLinkHeader} />
                <FooterItem
                   text="linkedin.com/in/dd-duszynski"
                   url="https://www.linkedin.com/in/dd-duszynski"
@@ -57,7 +57,7 @@ const Footer = () => {
                align="flex-start"
                column
             >
-               <H3 text="Menu:" addClass={styles.menuHeader}/>
+               <H4 text="Menu:" addClass={styles.menuHeader}/>
                {textContent.navigation.map(item => {
                   if (isHash(item[1])) {
                      return (

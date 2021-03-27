@@ -1,7 +1,7 @@
 import React from 'react'
 import { GrGatsbyjs, GrNode, GrMysql } from 'react-icons/gr';
 import { FaReact, FaGitAlt } from 'react-icons/fa';
-import { SiRedux, SiMaterialUi, SiJavascript,SiHtml5, SiCss3 } from 'react-icons/si';
+import { SiRedux, SiMaterialUi, SiJavascript, SiHtml5, SiCss3 } from 'react-icons/si';
 import { BsKanban } from 'react-icons/bs';
 import { DiScrum, DiTrello, DiSass } from 'react-icons/di';
 import { GiPencilBrush } from 'react-icons/gi';
@@ -49,10 +49,10 @@ const SwitchIcon = ({ name }) => {
          icon = <SiVisualstudiocode />
          break
       // Design
-      case 'UX':
+      case 'UX Design':
          icon = <MdDevices />
          break
-      case 'UI':
+      case 'UI Design':
          icon = <GiPencilBrush />
          break
       case 'Adobe XD':

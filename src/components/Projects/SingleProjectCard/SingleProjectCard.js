@@ -1,17 +1,15 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../../context/context";
 import styles from "././SingleProjectCard.module.scss";
 import H2 from "../../UI/H2";
+import H4 from "../../UI/H4";
 import Box from "../../UI/Box";
-import Paragraph from "../../UI/Paragraph";
-import SwitchIcon from "../../Technologies/TechnologyItem/SwitchIcon";
-
-// Inspiracja
-// https://codepen.io/vladracoare/pen/RwPrayL
+import CardOverlay from "../../UI/CardOverlay";
 
 const SingleProject = (item) => {
    const { title, role, shortDescription, photos, link } = item
+   const [isHover, setIsHover] = useState(false)
    const {
       textContent: { technologies, projects },
       size
@@ -21,65 +19,34 @@ const SingleProject = (item) => {
    );
    return (
       <article className={styles.SingleProject}>
-         <Link to={link} className={styles.link}>
+         <Link
+            to={link}
+            className={styles.link}
+            onMouseEnter={() => setIsHover(true)}
+            onMouseLeave={() => setIsHover(false)}
+         >
             <Box
-               align="center"
+               align="baseline"
                justify="space-between"
                addClass={styles.box}
             >
                <H2 text={title} />
+               {size <= 1000 ? <H4 addClass={styles.h4} text={`{${role}}`} /> : null}
             </Box>
             {
-               size > 800 ? (
-                  <>
-                     <div className={styles.info} />
-                     <Box
-                        addClass={styles.overlay}
-                        column
-                        align="flex-start"
-                        justify="flex-start"
-                     >
-                        <Paragraph
-                           bold
-                           addClass={[styles.paragraph, styles.bold].join(' ')}
-                           text={projects.roleInfo}
-                        />
-                        <Paragraph
-                           addClass={styles.paragraph}
-                           text={role}
-                        />
-                        <div className={styles.line}>
-                           <hr />
-                        </div>
-                        <Paragraph
-                           bold
-                           addClass={[styles.paragraph, styles.bold].join(' ')}
-                           text={projects.descriptionInfo}
-                        />
-                        <Paragraph
-                           addClass={styles.paragraph}
-                           text={shortDescription}
-                        />
-                          <div className={styles.line}>
-                           <hr />
-                        </div>
-                        <Paragraph
-                           bold
-                           addClass={[styles.paragraph, styles.bold].join(' ')}
-                           text={projects.technologyInfo}
-                        />
-                        <div className={styles.iconsContainer}>
-                           {arrOfTechnologies.map((i) => (
-                              <SwitchIcon name={i.name} />
-                           ))}
-                        </div>
-                     </Box>
-                  </>
+               size > 1000 ? (
+                  <CardOverlay
+                     isHover={isHover}
+                     projects={projects}
+                     role={role}
+                     shortDescription={shortDescription}
+                     technologies={arrOfTechnologies}
+                  />
                ) : null
             }
             <img
                src={photos[0]}
-               className={styles.projectImg}
+               className={isHover ? styles.projectImgHide : styles.projectImg}
                alt="project"
             />
          </Link>

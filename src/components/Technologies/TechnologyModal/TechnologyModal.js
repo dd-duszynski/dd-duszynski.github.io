@@ -4,7 +4,7 @@ import Box from "../../UI/Box";
 import H1 from "../../UI/H1";
 import H2 from "../../UI/H2";
 import Paragraph from "../../UI/Paragraph";
-import SwitchIcon from "../TechnologyItem/SwitchIcon";
+import SwitchIcon from "../../UI/SwitchIcon";
 import { BiLinkExternal } from "react-icons/bi";
 import { GrYoutube } from "react-icons/gr";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
