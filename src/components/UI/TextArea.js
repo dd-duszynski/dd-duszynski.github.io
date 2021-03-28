@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./TextArea.module.scss";
 
-const TextArea = ({ value, onChange, placeholder, name, labelText }) => {
+const TextArea = ({ value, onChange, placeholder, labelText }) => {
 	return (
 		<>
 			<label className={styles.TextAreaLabel} htmlFor="msg">
@@ -11,7 +11,6 @@ const TextArea = ({ value, onChange, placeholder, name, labelText }) => {
 				className={styles.textArea}
 				required
 				id="msg"
-				name={name}
 				draggable="false"
 				rows="4"
 				value={value || ""}

@@ -511,6 +511,8 @@ const textContent = {
       namePlaceholder: "John",
       emailPlaceholder: "john@gmail.com",
       messagePlaceholder: "Message ...",
+      thxMessage1: "Thanks for the message. ",
+      thxMessage2: "I will reply as soon as possible."
    },
    about: {
       header: "About me",
@@ -590,6 +592,10 @@ const textContent = {
          },
       ],
    },
+   footer: {
+      contact: "Contact",
+      toTheTop: "Scroll to Top",
+   }
 };
 
 export default textContent;

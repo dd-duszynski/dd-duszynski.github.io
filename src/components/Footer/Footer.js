@@ -2,17 +2,17 @@ import React, { useContext } from 'react'
 import { NavLink } from "react-router-dom"
 import { NavHashLink } from 'react-router-hash-link';
 import styles from './Footer.module.scss'
+import { AppContext } from '../../context/context'
 import FooterItem from './FooterItem/FooterItem'
 import Box from '../UI/Box'
 import ToTheTop from '../UI/ToTheTop'
-import H4 from '../UI/H4'
+import H3 from '../UI/H3'
 import gitFull from '../../assets/git_full.svg'
 import gitOutline from '../../assets/git_outline.svg'
 import linkedinFull from '../../assets/linkedin_full.svg'
 import linkedinOutline from '../../assets/linkedin_outline.svg'
 import mailFull from '../../assets/mail_full.svg'
 import mailOutline from '../../assets/mail_outline.svg'
-import { AppContext } from '../../context/context'
 import Paragraph from '../UI/Paragraph';
 
 const Footer = () => {
@@ -29,7 +29,7 @@ const Footer = () => {
                align="flex-start"
                column
             >
-               <H4 text="Kontakt:" addClass={styles.socialLinkHeader} />
+               <H3 text={textContent.footer.contact} addClass={styles.socialLinkHeader} />
                <FooterItem
                   text="linkedin.com/in/dd-duszynski"
                   url="https://www.linkedin.com/in/dd-duszynski"
@@ -57,7 +57,7 @@ const Footer = () => {
                align="flex-start"
                column
             >
-               <H4 text="Menu:" addClass={styles.menuHeader}/>
+               <H3 text="Menu:" addClass={styles.menuHeader} />
                {textContent.navigation.map(item => {
                   if (isHash(item[1])) {
                      return (

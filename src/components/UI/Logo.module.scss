@@ -2,10 +2,15 @@
 
 .Logo {
    font-family: "Gloria Hallelujah", cursive;
-   font-size: 28px;
+   font-size: 30px;
    color: #fff;
-	@include noneSelection;
-   &:hover {
-      color: lightgreen;
+   @include noneSelection;
+}
+
+@media(min-width:1000px) {
+   .Logo {
+      &:hover {
+         color: lightgreen;
+      }
    }
 }

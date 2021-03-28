@@ -511,6 +511,8 @@ const textContent = {
 		namePlaceholder: "Jan",
 		emailPlaceholder: "jan@gmail.com",
 		messagePlaceholder: "Treść wiadomości...",
+      thxMessage1:'Dzięki za wiadomość.',
+      thxMessage2:'Odpiszę najszybciej jak to możliwe.',
 	},
 	about: {
       header: "O mnie",
@@ -590,6 +592,10 @@ const textContent = {
 			},
 		],
 	},
+   footer:{
+      contact: "Kontakt",
+      toTheTop: "Przewiń na górę",
+   }
 };
 
 export default textContent;

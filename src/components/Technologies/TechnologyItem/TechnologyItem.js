@@ -15,7 +15,7 @@ const TechnologyItem = ({
       choosenItemHandler(null);
    };
 
-   const clickedHandler = () => {
+   const clickHandler = () => {
       if (size < 1000 && isChoosen === true) {
          openModalHandler(name);
       } else if (size < 1000 && !isChoosen) {
@@ -31,11 +31,11 @@ const TechnologyItem = ({
             isChoosen
                ? [
                   styles.TechnologyItem,
-                  styles.TechnologyItemClicked,
+                  styles.TechnologyItemChoosen,
                ].join(" ")
                : styles.TechnologyItem
          }
-         onClick={clickedHandler}
+         onClick={clickHandler}
       >
          <div className={styles.container}>
             <div className={styles.front}>
