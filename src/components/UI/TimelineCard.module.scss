@@ -5,12 +5,25 @@
    position: relative;
    padding-left: 30px;
    &:hover {
+      .card{
+         background-color: $bgColor;
+         border: 1px solid lightgreen;
+      }
+      .line{
+         background-color: lightgreen;
+      }
+      .topHeader,
+      .bottomHeader{
+         color: lightgreen;
+      }
       .dot1 {
-         background-color: #fff;
-         border: 2px solid #fff;
+         background-color: lightgreen;
+         // background-color: #fff;
+         border: 2px solid lightgreen;;
       }
       .dot2 {
-         background-color: #fff;
+         background-color: lightgreen;;
+         // background-color: #fff;
          border: 2px solid $bgColor;
       }
    }
@@ -60,11 +73,20 @@
    z-index: 2;
    background-color: $bgColor;
 }
-
+.paragraphWithDot{
+   padding-left: 16px;
+   position: relative;
+   &::before{
+      content: "•";
+      position:absolute;
+      top: 0;
+      left: 0;
+   }
+}
 .lastElement {
    position: absolute;
    top: 32px;
-   height: 100px;
+   height: 120px;
    width: 20px;
    left: 0px;
    background-color: $bgColor;

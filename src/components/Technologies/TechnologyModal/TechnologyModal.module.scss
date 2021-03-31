@@ -46,10 +46,12 @@
 .descriptionBox{
    overflow-y: auto;
    max-height: calc(100% - 160px);
+   padding-right: 10px;
 }
 .paragraph {
    margin-top: 10px;
    font-size: 14px;
+
 }
 
 .h2 {

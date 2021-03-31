@@ -84,7 +84,12 @@ const TechnologyModal = ({ name, context }) => {
             <IoMdClose className={styles.closeBtn} onClick={handleModal} />
          </Box>
          <div className={styles.line} />
-         <Box column align="flex-start" justify="flex-start" addClass={styles.descriptionBox}>
+         <Box
+            column
+            align="flex-start"
+            justify="flex-start"
+            addClass={styles.descriptionBox}
+         >
             <Paragraph
                text={choosenContent.description}
                addClass={styles.paragraph}

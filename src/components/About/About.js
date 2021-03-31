@@ -43,6 +43,7 @@ const About = () => {
             <div className={styles.timelineExperience} />
             {about.experience.map((item, index, arr) => (
                <TimelineCard
+                  key={index}
                   topHeader={item.topHeader}
                   bottomHeader={item.bottomHeader}
                   paragraphs={item.paragraphs}
@@ -62,6 +63,7 @@ const About = () => {
             <div className={styles.timelineEducation} />
             {about.education.map((item, index, arr) => (
                <TimelineCard
+                  key={index}
                   topHeader={item.topHeader}
                   bottomHeader={item.bottomHeader}
                   paragraphs={item.paragraphs}

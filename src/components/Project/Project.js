@@ -11,7 +11,7 @@ import TechnologyRow from "../Technologies/TechnologyRow/TechnologyRow";
 import TechnologyModal from "../Technologies/TechnologyModal/TechnologyModal";
 import Modal from "../UI/Modal";
 import BackToHomeLink from "../UI/BackToHomeLink";
-
+import proto from "../../assets/pxl_proto_1.png"
 const Project = ({ link }) => {
    const {
       textContent: { projects, technologies },
@@ -46,6 +46,7 @@ const Project = ({ link }) => {
          </Modal>
          <main className={styles.Project} id="projects">
             <Box justify="space-between" align="flex-start" column>
+               {/* Main Photo */}
                <Box >
                   <img
                      className={styles.mainPhoto}
@@ -53,6 +54,7 @@ const Project = ({ link }) => {
                      alt="main img"
                   />
                </Box>
+               {/* Main Header */}
                <Box justify="space-between" addClass={styles.header} >
                   <H1 text={project.title} />
                   <Box align="flex-end" justify="flex-end" addClass={styles.linkBox}>
@@ -79,6 +81,7 @@ const Project = ({ link }) => {
                <div className={styles.line}>
                   <hr />
                </div>
+               {/* Role */}
                <Box
                   justify="flex-start"
                   align="flex-start"
@@ -91,7 +94,7 @@ const Project = ({ link }) => {
                   />
                   <Paragraph text={project.role} />
                </Box>
-
+               {/* Description */}
                <Box
                   justify="flex-start"
                   align="flex-start"
@@ -103,9 +106,18 @@ const Project = ({ link }) => {
                      addClass={styles.h2}
                   />
                   {project.description.map((item) => (
-                     <Paragraph text={item} />
+                     <Paragraph text={item} key={item} addClass={styles.paragraph} />
                   ))}
                </Box>
+               {/* Prototypes */}
+               <Box column align="flex-start">
+                  <H2
+                     text={projects.prototypes}
+                     addClass={styles.h2}
+                  />
+                  <img src={proto} alt="" className={styles.screen} />
+               </Box>
+               {/* Tools & Technology */}
                <Box>
                   <TechnologyRow
                      choosenItem={choosenItem}
@@ -115,15 +127,22 @@ const Project = ({ link }) => {
                      technologies={arrOfTechnologies}
                   />
                </Box>
-               <Box column align="flex-start">
+               {/* Description2 */}
+               <Box
+                  justify="flex-start"
+                  align="flex-start"
+                  column
+                  addClass={styles.paragraphBox}
+               >
                   <H2
-                     text={projects.prototypes}
+                     text={projects.description2Info}
                      addClass={styles.h2}
                   />
-                  <img src="https://cdn.dribbble.com/users/985308/screenshots/5005829/wireframe-design_4x.jpg?compress=1&resize=400x300" alt="" className={styles.screen} />
+                  {project.description2.map((item) => (
+                     <Paragraph text={item} key={item} addClass={styles.paragraph} />
+                  ))}
                </Box>
-
-
+               {/* Screens */}
                <Box column align="flex-start">
                   <H2
                      text={projects.screens}
@@ -132,6 +151,7 @@ const Project = ({ link }) => {
                   <img src={photos[0]} alt="" className={styles.screen} />
                   <img src={photos[0]} alt="" className={styles.screen} />
                </Box>
+               {/* Back To Home Page */}
                <Box justify="flex-start">
                   <BackToHomeLink text={projects.homeLink} />
                </Box>
