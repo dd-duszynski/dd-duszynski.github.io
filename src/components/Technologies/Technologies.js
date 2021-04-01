@@ -9,7 +9,7 @@ import TechnologyModal from "./TechnologyModal/TechnologyModal";
 
 const Technologies = () => {
    const { textContent, handleModal, isModalOpen } = useContext(AppContext);
-   const { technologies } = textContent;
+   const { technologies, listOfTechnologies } = textContent;
    const [modalContent, setModalContent] = useState(null);
    const [choosenItem, setChoosenItem] = useState(null);
 
@@ -25,7 +25,7 @@ const Technologies = () => {
    // <Modal show={true} onCancel={handleModal}>
    const modal = (
       <Modal show={isModalOpen} onCancel={handleModal}>
-         <TechnologyModal name={modalContent} context={technologies.all} />
+         <TechnologyModal name={modalContent} context={listOfTechnologies} />
       </Modal>
    );
 
@@ -40,7 +40,7 @@ const Technologies = () => {
                   choosenItemHandler={choosenItemHandler}
                   modalToggleHandler={modalToggleHandler}
                   headerText={technologies.subheaders[0]}
-                  technologies={technologies.all.filter(
+                  technologies={listOfTechnologies.filter(
                      (i) => i.type === "development"
                   )}
                />
@@ -49,7 +49,7 @@ const Technologies = () => {
                   choosenItemHandler={choosenItemHandler}
                   modalToggleHandler={modalToggleHandler}
                   headerText={technologies.subheaders[1]}
-                  technologies={technologies.all.filter(
+                  technologies={listOfTechnologies.filter(
                      (i) => i.type === "design"
                   )}
                />
@@ -58,7 +58,7 @@ const Technologies = () => {
                   choosenItemHandler={choosenItemHandler}
                   modalToggleHandler={modalToggleHandler}
                   headerText={technologies.subheaders[2]}
-                  technologies={technologies.all.filter(
+                  technologies={listOfTechnologies.filter(
                      (i) => i.type === "other"
                   )}
                />

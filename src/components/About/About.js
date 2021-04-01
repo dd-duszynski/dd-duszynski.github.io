@@ -10,7 +10,7 @@ import BackToHomeLink from "../UI/BackToHomeLink";
 
 const About = () => {
    const { textContent } = useContext(AppContext);
-   const { about, projects } = textContent;
+   const { about, projects, experience, education } = textContent;
 
    return (
       <section className={styles.About}>
@@ -41,7 +41,7 @@ const About = () => {
          >
             <H2 text={about.expHeader} addClass={styles.h2} />
             <div className={styles.timelineExperience} />
-            {about.experience.map((item, index, arr) => (
+            {experience.map((item, index, arr) => (
                <TimelineCard
                   key={index}
                   topHeader={item.topHeader}
@@ -61,7 +61,7 @@ const About = () => {
          >
             <H2 text={about.eduHeader} addClass={styles.h2} />
             <div className={styles.timelineEducation} />
-            {about.education.map((item, index, arr) => (
+            {education.map((item, index, arr) => (
                <TimelineCard
                   key={index}
                   topHeader={item.topHeader}

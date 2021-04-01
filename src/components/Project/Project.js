@@ -11,18 +11,18 @@ import TechnologyRow from "../Technologies/TechnologyRow/TechnologyRow";
 import TechnologyModal from "../Technologies/TechnologyModal/TechnologyModal";
 import Modal from "../UI/Modal";
 import BackToHomeLink from "../UI/BackToHomeLink";
-import proto from "../../assets/pxl_proto_1.png"
+
 const Project = ({ link }) => {
    const {
-      textContent: { projects, technologies },
+      textContent: { projects, technologies, listOfProjects, listOfTechnologies },
       handleModal,
       isModalOpen,
    } = useContext(AppContext);
 
-   const [project] = projects.listOfProjects.filter(
+   const [project] = listOfProjects.filter(
       (i) => i.link === `/projects/${link}`
    );
-   const [mainPhoto, ...photos] = project.photos;
+   const [mainPhoto, smartphonePhoto, ...otherPhotos] = project.photos;
    const [modalContent, setModalContent] = useState(null);
    const [choosenItem, setChoosenItem] = useState(null);
 
@@ -35,7 +35,7 @@ const Project = ({ link }) => {
       handleModal();
    };
 
-   const arrOfTechnologies = technologies.all.filter(
+   const arrOfTechnologies = listOfTechnologies.filter(
       (i) => i.projects.findIndex((item) => item === project.title) >= 0
    );
 
@@ -109,13 +109,16 @@ const Project = ({ link }) => {
                      <Paragraph text={item} key={item} addClass={styles.paragraph} />
                   ))}
                </Box>
-               {/* Prototypes */}
+
+               {/* Screens */}
                <Box column align="flex-start">
                   <H2
-                     text={projects.prototypes}
+                     text={projects.screens}
                      addClass={styles.h2}
                   />
-                  <img src={proto} alt="" className={styles.screen} />
+                  {otherPhotos.map((i, id) => (
+                     <img src={i} key={id} alt="" className={styles.screen} />
+                  ))}
                </Box>
                {/* Tools & Technology */}
                <Box>
@@ -142,14 +145,13 @@ const Project = ({ link }) => {
                      <Paragraph text={item} key={item} addClass={styles.paragraph} />
                   ))}
                </Box>
-               {/* Screens */}
+               {/* Smartphone Photos */}
                <Box column align="flex-start">
                   <H2
-                     text={projects.screens}
+                     text={projects.prototypes}
                      addClass={styles.h2}
                   />
-                  <img src={photos[0]} alt="" className={styles.screen} />
-                  <img src={photos[0]} alt="" className={styles.screen} />
+                  <img src={smartphonePhoto} alt="" className={styles.screen} />
                </Box>
                {/* Back To Home Page */}
                <Box justify="flex-start">

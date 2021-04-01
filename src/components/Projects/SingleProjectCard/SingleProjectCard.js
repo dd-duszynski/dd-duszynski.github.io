@@ -11,10 +11,10 @@ const SingleProject = (item) => {
    const { title, role, shortDescription, photos, link } = item
    const [isHover, setIsHover] = useState(false)
    const {
-      textContent: { technologies, projects },
+      textContent: { projects, listOfTechnologies },
       size
    } = useContext(AppContext);
-   const arrOfTechnologies = technologies.all.filter(
+   const arrOfTechnologies = listOfTechnologies.filter(
       (i) => i.projects.findIndex((item) => item === title) >= 0
    );
    return (
