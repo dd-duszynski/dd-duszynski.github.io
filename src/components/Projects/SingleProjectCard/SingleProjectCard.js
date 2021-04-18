@@ -8,50 +8,50 @@ import Box from "../../UI/Box";
 import CardOverlay from "../../UI/CardOverlay";
 
 const SingleProject = (item) => {
-   const { title, role, shortDescription, photos, link } = item
-   const [isHover, setIsHover] = useState(false)
-   const {
-      textContent: { projects, listOfTechnologies },
-      size
-   } = useContext(AppContext);
-   const arrOfTechnologies = listOfTechnologies.filter(
-      (i) => i.projects.findIndex((item) => item === title) >= 0
-   );
-   return (
-      <article className={styles.SingleProject}>
-         <Link
-            to={link}
-            className={styles.link}
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-         >
-            <Box
-               align="baseline"
-               justify="space-between"
-               addClass={styles.box}
-            >
-               <H2 text={title} />
-               {size <= 1000 ? <H4 addClass={styles.h4} text={`{${role}}`} /> : null}
-            </Box>
-            {
-               size > 1000 ? (
-                  <CardOverlay
-                     isHover={isHover}
-                     projects={projects}
-                     role={role}
-                     shortDescription={shortDescription}
-                     technologies={arrOfTechnologies}
-                  />
-               ) : null
-            }
-            <img
-               src={photos[0]}
-               className={isHover ? styles.projectImgHide : styles.projectImg}
-               alt="project"
-            />
-         </Link>
-      </article>
-   );
+	const { title, role, shortDescription, photos, link } = item;
+	const [isHover, setIsHover] = useState(false);
+
+	const {
+		textContent: { projects, listOfTechnologies },
+		size,
+	} = useContext(AppContext);
+
+	const arrOfTechnologies = listOfTechnologies.filter(
+		(i) => i.projects.findIndex((item) => item === title) >= 0
+	);
+	return (
+		<article className={styles.SingleProject}>
+			<Link to={link} className={styles.link}>
+				<Box
+					align="baseline"
+					justify="space-between"
+					addClass={styles.box}
+				>
+					<H2 text={title} />
+					{size <= 1000 ? (
+						<H4 addClass={styles.h4} text={`{${role}}`} />
+					) : null}
+				</Box>
+				<img
+					src={photos[0]}
+					className={
+						isHover ? styles.projectImgHide : styles.projectImg
+					}
+					alt="project"
+				/>
+				{size > 1000 ? (
+					<CardOverlay
+						isHover={isHover}
+						setIsHover={setIsHover}
+						projects={projects}
+						role={role}
+						shortDescription={shortDescription}
+						technologies={arrOfTechnologies}
+					/>
+				) : null}
+			</Link>
+		</article>
+	);
 };
 
 export default SingleProject;

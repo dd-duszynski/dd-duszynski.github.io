@@ -25,7 +25,6 @@ const textContent = {
       roleInfo: "Role: ",
       descriptionInfo: "Description: ",
       technologyInfo: "Technologies: ",
-      prototypes: "Prototypes: ",
       screens: "Screens: ",
       homeLink: "Back to homepage",
    },
@@ -89,8 +88,8 @@ const textContent = {
             ],
          photos: [bigFiveHero, bigFive1],
          link: "/projects/big-five",
-         externalLink: 'https://dd-duszynski.github.io/bigfive/#/',
-         repository: "https://github.com/dd-duszynski/bigfive"
+         externalLink: 'https://dd-duszynski.github.io/big-five/',
+         repository: "https://github.com/dd-duszynski/big-five"
       },
    ],
    technologies: {

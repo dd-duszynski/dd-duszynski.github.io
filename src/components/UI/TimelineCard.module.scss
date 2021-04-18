@@ -1,104 +1,97 @@
 @import "../../scss/vm.scss";
 
 .TimelineCard {
-   margin-bottom: 20px;
-   position: relative;
-   padding-left: 30px;
+	margin-bottom: 20px;
+	position: relative;
+	padding-left: 30px;
 
-   &:hover {
-      .card {
-         background-color: $bgColor;
-         border: 1px solid lightgreen;
-      }
+	&:hover {
+		.card {
+			background-color: $bgColor;
+			border: 1px solid lightgreen;
+		}
 
-      .line {
-         background-color: lightgreen;
-      }
+		.line {
+			background-color: lightgreen;
+		}
 
-      .topHeader,
-      .bottomHeader {
-         color: lightgreen;
-      }
+		.topHeader,
+		.bottomHeader {
+			color: lightgreen;
+		}
 
-      .dot1 {
-         background-color: lightgreen;
-         // background-color: #fff;
-         border: 2px solid lightgreen;
-         ;
-      }
+		.dot1 {
+			background-color: lightgreen;
+			// background-color: #fff;
+			border: 2px solid lightgreen;
+		}
 
-      .dot2 {
-         background-color: lightgreen;
-         ;
-         // background-color: #fff;
-         border: 2px solid $bgColor;
-      }
-   }
+		.dot2 {
+			background-color: lightgreen;
+			// background-color: #fff;
+			border: 2px solid $bgColor;
+		}
+	}
 }
 
 .card {
-   display: inline-block;
-   width: auto;
-   background-color: #fff;
-   border: 1px solid #fff;
-   color: $bgColor;
-   border-radius: 8px;
-   padding: 5px 12px;
-   margin-bottom: 6px;
-
-   ::selection {
-      background: $bgColor;
-      color: #fff;
-   }
+	display: inline-block;
+	width: auto;
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: $bgColor;
+	border-radius: 8px;
+	padding: 5px 12px;
+	margin-bottom: 6px;
 }
 
 .line {
-   width: auto;
-   height: 1px;
-   background-color: $bgColor;
-   margin: 5px 0;
+	width: auto;
+	height: 1px;
+	background-color: $bgColor;
+	margin: 5px 0;
 }
 
 .dot1 {
-   position: absolute;
-   width: 17px;
-   height: 17px;
-   border-radius: 50%;
-   left: 0px;
-   top: 28px;
-   z-index: 2;
-   background-color: $bgColor;
-   border: 2px solid #fff;
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	left: 0px;
+	top: 28px;
+	z-index: 2;
+	background-color: $bgColor;
+	border: 2px solid #fff;
 }
 
 .dot2 {
-   position: absolute;
-   width: 9px;
-   height: 9px;
-   border-radius: 50%;
-   left: 4px;
-   top: 32px;
-   z-index: 2;
-   background-color: $bgColor;
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	left: 4px;
+	top: 32px;
+	z-index: 2;
+	background-color: $bgColor;
 }
 
 .paragraphWithDot {
-   padding-left: 16px;
-   position: relative;
+	padding-left: 16px;
+	position: relative;
 
-   &::before {
-      content: "•";
-      position: absolute;
-      top: 0;
-      left: 0;
-   }
+	&::before {
+		content: "•";
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 .lastElement {
-   position: absolute;
-   top: 32px;
-   height: 120px;
-   width: 20px;
-   left: 0px;
-   background-color: $bgColor;
+	position: absolute;
+	top: 32px;
+	height: 120px;
+	width: 20px;
+	left: 0px;
+	background-color: $bgColor;
 }

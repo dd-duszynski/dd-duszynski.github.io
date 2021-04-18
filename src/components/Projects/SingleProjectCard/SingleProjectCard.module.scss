@@ -1,39 +1,39 @@
 @import "../../../scss/vm.scss";
 
 .SingleProject {
-   position: relative;
-   width: 100%;
-   margin-bottom: 8vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+	position: relative;
+	width: 100%;
+	margin-bottom: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .link {
-   display: block;
-   width: 100%;
-   text-decoration: none;
-   color: white;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
 }
 
 .box {
-   margin-bottom: 4vh;
+	margin-bottom: 4vh;
 }
 
 .projectImg {
-   opacity: 1;
-   transition: opacity 0.2s;
-   max-width: 100%;
-   width: 100%;
-   height: auto;
+	opacity: 1;
+	transition: opacity 0.2s;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
 }
 
 .projectImgHide {
-   @extend .projectImg;
-   opacity: 0.3;
+	@extend .projectImg;
+	opacity: 0.3;
 }
 
-.h4{
-   max-width: 60%;
-   text-align: right;
+.h4 {
+	max-width: 60%;
+	text-align: right;
 }

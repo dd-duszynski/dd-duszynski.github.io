@@ -19,7 +19,6 @@ const AppProvider = ({ children, lang }) => {
       }
       return () => {
          window.removeEventListener("resize", () => { })
-         window.removeEventListener("scroll", () => { })
       }
    }, [])
 
