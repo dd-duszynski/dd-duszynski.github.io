@@ -561,9 +561,9 @@ const textContent = {
       thxMessage2: "I will reply as soon as possible."
    },
    about: {
-      header: "About me",
+      header: "About me:",
       paragraph1:
-         "Hello. My name is Damian Duszyński. I currently live and work in Poznań. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI and web technologies.",
+         "My name is Damian Duszyński. I currently live and work in Poznań. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI and web technologies.",
       paragraph2:
          "I am looking  for new opportunities to work with digital products that solve real problems and ensuring a great user experience. Privately, I'm a fan of football and cycling.",
       expHeader: "Experience: ",

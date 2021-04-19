@@ -552,11 +552,11 @@ const textContent = {
 		thxMessage2: "Odpiszę najszybciej jak to możliwe.",
 	},
 	about: {
-		header: "O mnie",
+		header: "O mnie:",
 		paragraph1:
-			"Witaj, nazywam się Damian Duszyński. Mieszkam i pracuję w Poznaniu. Jestem Frontend Developerem, a także pasjonatem projektowania UX/UI i technologii webowych.",
+			"Nazywam się Damian Duszyński. Mieszkam i pracuję w Poznaniu. Jestem Frontend Developerem, a także pasjonatem projektowania UX/UI i technologii webowych.",
 		paragraph2:
-			"Poszukuję nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy dbając przy tym o świetne doświadczenia dla użytkowników. Prywatnie fan piłki nożnej i jazdy na rowerze.",
+			"Poszukuję nowych możliwości pracy z produktami cyfrowymi, które rozwiązują realne problemy dbając przy tym o świetne doświadczenia dla użytkowników. Prywatnie jestem fanem piłki nożnej i jazdy na rowerze.",
 		expHeader: "Doświadczenie zawodowe:",
 		eduHeader: "Edukacja:",
 	},

@@ -32,13 +32,18 @@ const SingleProject = (item) => {
 						<H4 addClass={styles.h4} text={`{${role}}`} />
 					) : null}
 				</Box>
-				<img
-					src={photos[0]}
-					className={
-						isHover ? styles.projectImgHide : styles.projectImg
-					}
-					alt="project"
-				/>
+            <Box
+               addClass={styles.imgBox}
+            >
+               <img
+                  src={photos[0]}
+                  className={
+                     isHover ? styles.projectImgHide : styles.projectImg
+                  }
+                  alt="project"
+               />
+
+            </Box>
 				{size > 1000 ? (
 					<CardOverlay
 						isHover={isHover}
