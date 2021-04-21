@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Helmet } from "react-helmet";
 import styles from "./About.module.scss";
 import H1 from "../UI/H1";
 import H2 from "../UI/H2";
@@ -11,9 +12,16 @@ import BackToHomeLink from "../UI/BackToHomeLink";
 const About = () => {
    const { textContent } = useContext(AppContext);
    const { about, projects, experience, education } = textContent;
-
    return (
       <section className={styles.About}>
+         <Helmet>
+            <meta charSet="utf-8" />
+            <title>
+               {`${about.header} | Damian Duszyński`}
+            </title>
+            <meta name="description" content={about.paragraph1} />
+            <link rel="canonical" href="https://dd-duszynski.pl/about" />
+         </Helmet>
          {/* Introduction */}
          <Box
             justify="flex-start"
@@ -21,7 +29,7 @@ const About = () => {
             addClass={styles.introductionBox}
             column
          >
-            <H1 text={about.header} addClass={styles.h1} />
+            <H1 text={`${about.header}:`} addClass={styles.h1} />
             <Paragraph
                bold
                text={about.paragraph1}

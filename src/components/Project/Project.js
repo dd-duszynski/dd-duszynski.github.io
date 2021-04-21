@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { Helmet } from "react-helmet";
 import { BiLinkExternal } from "react-icons/bi";
 import { SiGithub } from "react-icons/si";
 import { AppContext } from "../../context/context";
@@ -45,6 +46,14 @@ const Project = ({ link }) => {
 
    return (
       <>
+         <Helmet>
+            <meta charSet="utf-8" />
+            <title>
+               {`${project.title} | Damian Duszyński`}
+            </title>
+            <meta name="description" content={project.shortDescription} />
+            <link rel="canonical" href={`https://dd-duszynski.pl${project.link}`} />
+         </Helmet>
          <Modal show={isModalOpen} onCancel={handleModal}>
             <TechnologyModal
                name={modalContent}
@@ -125,15 +134,18 @@ const Project = ({ link }) => {
                {/* Screens */}
                <Box column align="flex-start">
                   <H2 text={projects.screens} addClass={styles.h2} />
-                  {otherPhotos.map((i, id) => (
-                     <img
-                        src={i}
-                        key={id}
-                        alt=""
-                        className={styles.screen}
-                     />
-                  ))}
+                  <img
+                     src={otherPhotos[0]}
+                     alt=""
+                     className={styles.screen}
+                  />
+                  <img
+                     src={smartphonePhoto}
+                     alt=""
+                     className={styles.screen}
+                  />
                </Box>
+
                {/* Tools & Technology */}
                <Box>
                   <TechnologyRow
@@ -166,7 +178,7 @@ const Project = ({ link }) => {
                {/* Smartphone Photos */}
                <Box column align="flex-start">
                   <img
-                     src={smartphonePhoto}
+                     src={otherPhotos[1]}
                      alt=""
                      className={styles.screen}
                   />

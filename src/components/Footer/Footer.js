@@ -7,12 +7,12 @@ import FooterItem from './FooterItem/FooterItem'
 import Box from '../UI/Box'
 import ToTheTop from '../UI/ToTheTop'
 import H3 from '../UI/H3'
-import gitFull from '../../assets/git_full.svg'
-import gitOutline from '../../assets/git_outline.svg'
-import linkedinFull from '../../assets/linkedin_full.svg'
-import linkedinOutline from '../../assets/linkedin_outline.svg'
-import mailFull from '../../assets/mail_full.svg'
-import mailOutline from '../../assets/mail_outline.svg'
+import gitFull from '../../assets/icons/git_full.svg'
+import gitOutline from '../../assets/icons/git_outline.svg'
+import linkedinFull from '../../assets/icons/linkedin_full.svg'
+import linkedinOutline from '../../assets/icons/linkedin_outline.svg'
+import mailFull from '../../assets/icons/mail_full.svg'
+import mailOutline from '../../assets/icons/mail_outline.svg'
 import Paragraph from '../UI/Paragraph';
 
 const Footer = () => {

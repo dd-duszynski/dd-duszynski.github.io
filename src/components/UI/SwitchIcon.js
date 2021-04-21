@@ -6,8 +6,10 @@ import { BsKanban } from 'react-icons/bs';
 import { DiScrum, DiTrello, DiSass } from 'react-icons/di';
 import { GiPencilBrush } from 'react-icons/gi';
 import { CgFigma } from 'react-icons/cg';
+import Express from '../../assets/icons/express.svg';
+import Illustrator from '../../assets/icons/illustrator.svg';
 import { MdDevices } from 'react-icons/md';
-import { SiAdobexd, SiAdobephotoshop, SiAdobeillustrator, SiAffinitydesigner, SiAffinitypublisher, SiVisualstudiocode, SiMicrosoftexcel } from 'react-icons/si';
+import { SiAdobexd, SiAdobephotoshop, SiAffinitydesigner, SiAffinitypublisher, SiVisualstudiocode, SiMicrosoftexcel } from 'react-icons/si';
 
 const SwitchIcon = ({ name }) => {
    let icon;
@@ -39,6 +41,9 @@ const SwitchIcon = ({ name }) => {
       case 'Node':
          icon = <GrNode />
          break
+      case 'Express':
+         icon = <img src={Express} />
+         break
       case 'MySQL':
          icon = <GrMysql />
          break
@@ -62,7 +67,7 @@ const SwitchIcon = ({ name }) => {
          icon = <SiAdobephotoshop />
          break
       case 'Adobe Illustrator':
-         icon = <SiAdobeillustrator />
+         icon = <img src={Illustrator} />
          break
       case 'Figma':
          icon = <CgFigma />

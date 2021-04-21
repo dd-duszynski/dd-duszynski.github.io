@@ -1,11 +1,11 @@
-import pxlHero from "../assets/pxlHero.png";
-import pxl0 from "../assets/pxl_rwd_0.png";
-import pxl1 from "../assets/pxl_rwd_1.png";
-import pxl2 from "../assets/pxl_rwd_2.png";
-import bigFiveHero from "../assets/bigFiveHero.png";
-import bigFive1 from "../assets/bigFive_rwd_1.png";
-import kanbanatorHero from "../assets/kanbanatorHero.png";
-import kanbanator1 from "../assets/kanbanator_rwd_1.png";
+import pxlHero from "../assets/img/pxlHero.png";
+import pxl0 from "../assets/img/pxl_rwd_0.png";
+import pxl1 from "../assets/img/pxl_rwd_1.png";
+import pxl2 from "../assets/img/pxl_rwd_2.png";
+import bigFiveHero from "../assets/img/bigFiveHero.png";
+import bigFive1 from "../assets/img/bigFive_rwd_1.png";
+import kanbanatorHero from "../assets/img/kanbanatorHero.png";
+import kanbanator1 from "../assets/img/kanbanator_rwd_1.png";
 
 const textContent = {
    navigation: [
@@ -15,8 +15,8 @@ const textContent = {
       ["Contact", "/#contact"],
    ],
    hero: [
-      "Hello, my name is Damian Duszyński.",
-      "I am a Frontend Developer and UX / UI enthusiast. You will find here a description of my projects and technologies that I use.",
+      "Hello, my name is Damian.",
+      "I am a Frontend Developer and UX/UI enthusiast. You will find here a description of my projects and technologies that I use.",
       "Feel free to",
       "contact me",
    ],
@@ -30,67 +30,64 @@ const textContent = {
    },
    listOfProjects: [
       {
-         title: "PrintXL",
+         title: "PXL",
          role: "Design & Development",
          shortDescription:
-            "Redesign strony dla cyfrowej drukarni wielkoformatowej. Głównym celem było przedstawienie bogatej oferty i łatwiejszy dostęp do instrukcji.",
+            "Website redesign for digital large format printing house. The main goal was to present a wide range of products, as well as to facilitate contact and access to DTP instructions.",
          description:
             [
-               "Pracę nad projektem rozpocząłem od przeprowadzenia wywiadów i ankiet na klientach i pracownikach firmy, aby ustalić co uważają za najbardziej newralgiczny punkt na ówczesnej stronie, a także jakie są jej braki i zalety. Dzięki temu zdefiniowałem kilkanaście problemów, które podzieliłem według częstotliwości ich występowania i nadałem im stosowny priorytet.",
-               "Do najczęściej wymienianich kwesti należał: utrudniony dostęp do zapoznania się z pełną ofertą firmy, brak instrukcji przygotowania plików graficznych do druku, a także mało atrakcyjny wygląd strony.",
-               "Zdefiniowanie tych problemów pozwoliło mi skupić swoją uwagę na najważniejszych aspektach w trakcie tworzenia prototypów.",
+               "I started working on the project by conducting interviews and surveys on clients and employees of the company to determine what they consider to be the most sensitive point on the website at that time, as well as what its shortcomings and advantages are. Thanks to this, I defined a dozen problems, which I divided according to the frequency of their occurrence and I have given them a proper priority. ",
+               "The most frequently mentioned issues were: hindered access to the full offer of the company, lack of instructions for preparing graphic files for printing, and the unattractive appearance of the website.",
+               "Defining these problems allowed me to focus my attention on the most important aspects in prototyping.",
             ],
          description2:
             [
-               "Do przeprowadzeniu testów użyteczności i stworzeniu architektury informacji oraz nawigacji strony, przystąpiłem do budowania bardziej szczegółowego widoku strony. ",
-               "Do najczęściej wymienianich kwesti należał: utrudniony dostęp do zapoznania się z pełną ofertą firmy, brak instrukcji przygotowania plików graficznych do druku, a także mało atrakcyjny wygląd strony.",
-               "Zdefiniowanie tych problemów pozwoliło mi skupić swoją uwagę na najważniejszych aspektach w trakcie budowania prototypu.",
+               "To conduct usability tests and create the information architecture and website navigation, I started building a more detailed view of the website.",
+               "The most frequently mentioned issues were: hindered access to the full offer of the company, lack of instructions for preparing graphic files for printing, and the unattractive appearance of the website.",
+               "Defining these problems allowed me to focus my attention on the most important aspects during the prototype building.",
             ],
          photos: [pxlHero, pxl0, pxl1, pxl2],
          link: "/projects/pxl",
-         externalLink: 'http://printxl.pl',
+         externalLink: 'http://PXL.pl',
          repository: "https://github.com/dd-duszynski/pxlGatsby"
-      },
-      {
-         title: "Kanbanator",
-         role: "Design & Development",
-         shortDescription:
-            "Projekt ułatwiający zarządzanie projektami w metodyce Kanban. Umożliwia m.in. założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-         description:
-            [
-               "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-               "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-               "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-            ],
-         description2:
-            [
-               "xxx",
-            ],
-         photos: [kanbanatorHero, kanbanator1],
-         link: "/projects/kanbanator",
-         externalLink: 'https://dd-duszynski.github.io/bigfive/#/',
-         repository: "https://github.com/dd-duszynski/kanbanator"
       },
       {
          title: "BigFive",
          role: "Design & Development",
          shortDescription:
-            "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu najsilniejszych lig świata.",
+            "The project stems from a passion for soccer and the idea of creating a website that allows you to view the results and statistics of the five strongest leagues in the world.",
          description:
             [
-               "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
-               "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
-               "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
+               "The project stems from a passion for football and the idea of creating a website that allows you to view the results and statistics of the five biggest leagues in the world.",
+               "The results are taken from the publicly available database www.football-data.org. First of all, I focused on presenting tabular data in an attractive form, and sorting the data.",
             ],
          description2:
             [
-               "xxx",
+               "",
             ],
          photos: [bigFiveHero, bigFive1],
          link: "/projects/big-five",
          externalLink: 'https://dd-duszynski.github.io/big-five/',
          repository: "https://github.com/dd-duszynski/big-five"
       },
+      // {
+      //    title: "Kanbanator",
+      //    role: "Design & Development",
+      //    shortDescription:
+      //       "Projekt ułatwiający zarządzanie projektami w metodyce Kanban. Umożliwia m.in. założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
+      //    description:
+      //       [
+      //          "!! W trakcie realizacji - szczegółowy opis pojawi się już wkrótce !!",
+      //       ],
+      //    description2:
+      //       [
+      //          "",
+      //       ],
+      //    photos: [kanbanatorHero, kanbanator1],
+      //    link: "/projects/kanbanator",
+      //    externalLink: '',
+      //    repository: "https://github.com/dd-duszynski/kanbanator"
+      // }
    ],
    technologies: {
       header: "Tools & technology:",
@@ -114,7 +111,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "Kanbanator", "BigFive"],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "HTML",
@@ -133,7 +130,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "Kanbanator", "BigFive"],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "CSS",
@@ -153,7 +150,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "Kanbanator", "BigFive"],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "Sass",
@@ -169,7 +166,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "BigFive"],
+         projects: ["PXL", "BigFive"],
       },
       {
          name: "React",
@@ -185,7 +182,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "Kanbanator", "BigFive"],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "Material UI",
@@ -240,7 +237,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL"],
+         projects: ["PXL"],
       },
       {
          name: "Node",
@@ -256,7 +253,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "Kanbanator"],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "Express",
@@ -272,7 +269,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "Kanbanator"],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "MySQL",
@@ -304,7 +301,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "Kanbanator", "BigFive"],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "VSC",
@@ -328,7 +325,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: ["PrintXL", "Kanbanator", "BigFive"],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "UX Design",
@@ -561,18 +558,18 @@ const textContent = {
       thxMessage2: "I will reply as soon as possible."
    },
    about: {
-      header: "About me:",
+      header: "About me",
       paragraph1:
          "My name is Damian Duszyński. I currently live and work in Poznań. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI and web technologies.",
       paragraph2:
-         "I am looking  for new opportunities to work with digital products that solve real problems and ensuring a great user experience. Privately, I'm a fan of football and cycling.",
+         "I'm looking  for new opportunities to work with digital products that solve real problems and ensuring a great user experience. Privately, a fan of ⚽ football, and 🚴cycling.",
       expHeader: "Experience: ",
       eduHeader: "Education: ",
    },
    experience: [
       {
          topHeader: "Jul 2019 -> Present",
-         bottomHeader: "Frontend Developer [PrintXL]",
+         bottomHeader: "Frontend Developer [PXL]",
          paragraphs: [
             "Creation and development of a website for a large-format digital printing house based on the Gatsby framework and CMS Contentful",
             "Stack: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)",
@@ -580,7 +577,7 @@ const textContent = {
       },
       {
          topHeader: "Jul 2019 -> Present",
-         bottomHeader: "Research & Development Manager [PrintXL]",
+         bottomHeader: "Research & Development Manager [PXL]",
          paragraphs: [
             "Co-creation and development of the production management system in the company based on C# / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.",
             "Creation and implementation of new products with market analysis, cost calculation, and selection of optimal materials.",
@@ -589,7 +586,7 @@ const textContent = {
       },
       {
          topHeader: "Jun 2018 -> Jul 2019",
-         bottomHeader: "DTP Department Manager [PrintXL]",
+         bottomHeader: "DTP Department Manager [PXL]",
          paragraphs: [
             "Managing the work and development of a seven-person department.",
             "Responsibility for the smooth flow of orders by the DTP department.",
@@ -598,7 +595,7 @@ const textContent = {
       },
       {
          topHeader: "Mar 2013 -> Jun 2018",
-         bottomHeader: "DTP Specialist [PrintXL]",
+         bottomHeader: "DTP Specialist [PXL]",
          paragraphs: [
             "Verification of the correctness of files sent by the customer and their comprehensive preparation for production.",
             "Development of product specifications and instructions for customers.",
