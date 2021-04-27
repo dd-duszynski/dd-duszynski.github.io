@@ -3,9 +3,9 @@ import pxl0 from "../assets/img/pxl_rwd_0.png";
 import pxl1 from "../assets/img/pxl_rwd_1.png";
 import pxl2 from "../assets/img/pxl_rwd_2.png";
 import bigFiveHero from "../assets/img/bigFiveHero.png";
+import bigFive0 from "../assets/img/bigFive_rwd_0.png";
 import bigFive1 from "../assets/img/bigFive_rwd_1.png";
-import kanbanatorHero from "../assets/img/kanbanatorHero.png";
-import kanbanator1 from "../assets/img/kanbanator_rwd_1.png";
+import bigFive2 from "../assets/img/bigFive_rwd_2.png";
 
 const textContent = {
    navigation: [
@@ -33,61 +33,41 @@ const textContent = {
          title: "PXL",
          role: "Design & Development",
          shortDescription:
-            "Website redesign for digital large format printing house. The main goal was to present a wide range of products, as well as to facilitate contact and access to DTP instructions.",
-         description:
-            [
-               "I started working on the project by conducting interviews and surveys on clients and employees of the company to determine what they consider to be the most sensitive point on the website at that time, as well as what its shortcomings and advantages are. Thanks to this, I defined a dozen problems, which I divided according to the frequency of their occurrence and I have given them a proper priority. ",
-               "The most frequently mentioned issues were: hindered access to the full offer of the company, lack of instructions for preparing graphic files for printing, and the unattractive appearance of the website.",
-               "Defining these problems allowed me to focus my attention on the most important aspects in prototyping.",
-            ],
-         description2:
-            [
-               "To conduct usability tests and create the information architecture and website navigation, I started building a more detailed view of the website.",
-               "The most frequently mentioned issues were: hindered access to the full offer of the company, lack of instructions for preparing graphic files for printing, and the unattractive appearance of the website.",
-               "Defining these problems allowed me to focus my attention on the most important aspects during the prototype building.",
-            ],
+            "Redesign of the website for a digital large-format printing house. The website was prepared in four language versions. Its main purpose was to facilitate contact, present a wide range of products and materials, as well as quick access to file preparation instructions.",
+         description: [
+            "I started working on the project by conducting interviews and surveys on clients and employees of the company to determine what they consider to be the most sensitive point on the website at that time, as well as what its advantages and disadvantages are. Thanks to this, I defined a dozen problems, which I divided according to their frequency of occurrence and I have given them a proper priority.",
+            "The most frequently mentioned issues were: difficult access to the full offer of the company, no DTP instructions on how to prepare graphic files for printing, and an unattractive appearance.",
+            "Defining these problems allowed me to focus my attention on the most important aspects while creating prototypes that I made in Adobe XD. While working on them, I conducted several usability tests, after which we decided to introduce many corrections, especially in the area of information architecture and website navigation. ",
+         ],
+         description2: [
+            "To create the website, I used the Gatsby framework, which extends React's capabilities by generating static HTML and CSS pages. This method facilitates the indexing of the site by Google robots, which has a positive impact on SEO. almost all content and multimedia resources. Contentful to headless CMS, which provides editors with a content management interface, and at the same time provides developers with APIs for building applications. In the case of Gatsby, the connection is made using GraphQL, which is very easy to use by the built-in Explorer (IDE) allowing you to quickly click on an appropriate and precise request. ",
+            "I used the scss (SASS) syntax to build the appearance, which I really appreciate for the ability to create variables and mixins. The website also uses services such as Sendgrid - which allows you to send e-mails directly from the website, and reCaptcha - to verify that users are not robots. website, I wrote a simple server in Node.js / Express.js, which is hosted on the Heroku platform. ",
+            "The effect of this work has been satisfactory so far. The three times greater number of inquiries received directly from the website, as well as the positive opinions of customers and the sales department, for whom quick access to information significantly facilitates their work, can prove it. The site will be still tested, iteratively expanded with new functionalities and screens.",
+         ],
          photos: [pxlHero, pxl0, pxl1, pxl2],
          link: "/projects/pxl",
-         externalLink: 'http://PXL.pl',
-         repository: "https://github.com/dd-duszynski/pxlGatsby"
+         externalLink: "http://printxl.pl",
+         repository: "https://github.com/dd-duszynski/pxlGatsby",
       },
       {
          title: "BigFive",
          role: "Design & Development",
          shortDescription:
-            "The project stems from a passion for soccer and the idea of creating a website that allows you to view the results and statistics of the five strongest leagues in the world.",
-         description:
-            [
-               "The project stems from a passion for football and the idea of creating a website that allows you to view the results and statistics of the five biggest leagues in the world.",
-               "The results are taken from the publicly available database www.football-data.org. First of all, I focused on presenting tabular data in an attractive form, and sorting the data.",
-            ],
-         description2:
-            [
-               "",
-            ],
-         photos: [bigFiveHero, bigFive1],
+            "The project stems from a passion for football and the idea of creating a website that allows you to view the results and statistics of the five strongest leagues in the world.",
+         description: [
+            "The project results from a passion for football and the idea of ​​creating a website that allows you to view the results and statistics of the five largest leagues in the world. Inspired by such portals as flashscore.pl, I decided to face this challenge and started looking for api with data that would be appropriate for this idea This is how I found www.football-data.org, which allowed me to move on to the next stage, which was creating the first prototypes in Adobe XD, and then usability tests carried out on a few football fans I know. time to write code. ",
+            "First of all, I focused on the responsive presentation of tabular data in a readable form, both on large displays and on smartphones. The application also allows you to sort them and dynamically switch color themes and the language version. pagination that allows you to switch between subpages. ",
+         ],
+         description2: [
+            "The application is fully responsive, and I wrote the styles using the .scss (SASS) syntax. The JavaScript framework used is React, written with the use of hooks, and I download the data thanks to the Fetch API. I dynamically change the language and color versions of all components, avoiding the problem called 'prop drilling'. These functions are available in the 'Settings' tab. ",
+            "Since the free account at www.football-data.org only allows 10 requests per minute, there was a problem with CORS errors, which I decided to solve by creating a server written in Node.js and its Express.js framework. This program periodically downloads data from api using the node-fetch library and saves them to JSON files, which it serves when requested from the frontend layer. ",
+            "It is a training application, which it is currently expanding with the possibility of creating interactive data visualizations, which is possible with the D3.js library.",
+         ],
+         photos: [bigFiveHero, bigFive0, bigFive1, bigFive2],
          link: "/projects/big-five",
-         externalLink: 'https://dd-duszynski.github.io/big-five/',
-         repository: "https://github.com/dd-duszynski/big-five"
+         externalLink: "https://dd-duszynski.github.io/big-five/",
+         repository: "https://github.com/dd-duszynski/big-five",
       },
-      // {
-      //    title: "Kanbanator",
-      //    role: "Design & Development",
-      //    shortDescription:
-      //       "Projekt ułatwiający zarządzanie projektami w metodyce Kanban. Umożliwia m.in. założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-      //    description:
-      //       [
-      //          "!! W trakcie realizacji - szczegółowy opis pojawi się już wkrótce !!",
-      //       ],
-      //    description2:
-      //       [
-      //          "",
-      //       ],
-      //    photos: [kanbanatorHero, kanbanator1],
-      //    link: "/projects/kanbanator",
-      //    externalLink: '',
-      //    repository: "https://github.com/dd-duszynski/kanbanator"
-      // }
    ],
    technologies: {
       header: "Tools & technology:",
@@ -95,456 +75,434 @@ const textContent = {
       seeMore: "Find out more",
       learnMore: "Recommended links",
    },
-   listOfTechnologies: [
-      {
-         name: "JavaScript",
-         fullName: "",
-         type: "development",
-         description:
-            "Jeden z najbardziej popularnych i uniwersalnych jezyków programowania. Wykorzystywany jest głównie do tworzenia stron i aplikacji internetowych, jednak dzięki Node.js używany jest również poza przeglądarkami. JS jest językiem zorientowanym obiektowo, opartym na prototypach, wielu paradygmatach i dynamicznej składni. Umożliwia developerom tworzenie interaktywnych, dynamicznie wypełniających się treścią i nowocześnie wyglądających stron.",
-         links: [
-            ["Kurs Javascript dla superbohaterów {PL}", "https://kursjs.pl/"],
-            ["JAVASCRIPT.INFO {EN}", "https://javascript.info/"],
-            [
-               "[Traversy Media] - JavaScript Crash Course For Beginners {EN}",
-               "https://www.youtube.com/watch?v=hdI2bqOjy3c",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
-      {
-         name: "HTML",
-         fullName: "HyperText Markup Language",
-         type: "development",
-         description:
-            "HTML to hipertekstowy język znaczników. Pozwala opisać strukturę informacji zawartych wewnątrz strony, nadając jej odpowiednie znaczenie semantyczne. Tworzy akapity, nagłówki, listy czy hiperłącza (linki). Pozwala również osadzać w dokumencie pliki multimedialne, jak filmy czy zdjęcia. Każda przeglądarka ma domyślnie zdefiniowany wygląd tych elementów, a do jego zmiany używa się CSS.",
-         links: [
-            [
-               "Mozilla - MDN Web Docs {EN}",
-               "https://developer.mozilla.org/pl/docs/Web/HTML",
-            ],
-            [
-               "[Traversy Media] - HTML Crash Course For Absolute Beginners  {EN}",
-               "https://www.youtube.com/watch?v=UB1O30fR-EE",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
-      {
-         name: "CSS",
-         fullName: "Cascading Style Sheets",
-         type: "development",
-         description:
-            "CSS to kod służący do definiowania wyglądu strony internetowej. Jest używany m.in. do pozycjonowania elementów, ustalania ich wielkości i kolorów, a także ich animowania. Pozwala na zmianę tych właściwości w zależności od rozdzielczości i orientacji urządzenia na jakim są wyświetlane, a nawet sposobu w jaki mają się wydrukować. CSS w połączeniu z językiem JavaScript umożliwia tworzenie zaawansowanych wizualnie i w pełni interaktywnych stron.",
-         links: [
-            [
-               "Mozilla - MDN Web Docs {EN}",
-               "https://developer.mozilla.org/pl/docs/Web/CSS",
-            ],
-            ["CSS Tricks {EN}", "https://css-tricks.com/"],
-            [
-               "[Traversy Media] - CSS Crash Course For Absolute Beginners {EN}",
-               "https://www.youtube.com/watch?v=yfoY53QXEnI",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
-      {
-         name: "Sass",
-         fullName: "Syntactically Awesome Style Sheets",
-         type: "development",
-         description:
-            "Sass to pre-procesor CSS, który rozszerza jego możliwości m.in. o możliwość wykorzystania zmiennych, zagnieżdzania reguł, tworzenia funkcji czy mixinów. Funkcjonalności te potrafia znacznie ułatwić developerom prace, dlatego Sass od lat cieszy się dużą popularnością.",
-         links: [
-            ["Oficjalna strona {EN}", "https://sass-lang.com/"],
-            [
-               "[Traversy Media] - Sass Crash Course {EN}",
-               "https://www.youtube.com/watch?v=nu5mdN2JIwM",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "BigFive"],
-      },
-      {
-         name: "React",
-         type: "development",
-         fullName: "",
-         description:
-            "Niezwykle popularna deklaratywna biblioteka stworzona przez programistów Facebooka. Umożliwia tworzenie bardzo złożonych interfejsów, dzieląc je na mniejsze, reużywalne komponenty, które mogą posiadać własny stan. Obecnie React wykorzystywany jest zarówno po stronie przeglądarki, serwera dzięki Node.js, jak również w aplikacjach mobilnych, dzięki React Native. Korzysta z techniki Virtual DOM, która aktualizuje zmiany tylko tam, gdzie faktycznie wystąpiły, co pozwala płynnie rerenderować interfejs użytkownika.",
-         links: [
-            ["Oficjalna strona {PL}", "https://pl.reactjs.org/"],
-            [
-               "[Traversy Media] - React JS Crash Course 2021 {EN}",
-               "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
-      {
-         name: "Material UI",
-         fullName: "",
-         type: "development",
-         description:
-            "React'owy framework UI opierający się na stworzonym przez Google - Material Design. Udostępnia zbiór gotowych do użycia komponentów, takich jak przyciski, elementy formularzy, rozwijane listy i wiele innych. Pozwala szybko zbudować spójny wizualnie interfejs, który oparty jest na Design Systemie sprawdzonym przez miliony użytkowników produktów Google.",
-         links: [
-            [
-               "Oficjalna strona {EN}",
-               "https://material-ui.com/",
-            ],
-            [
-               "[Traversy Media] - Material UI React Tutorial {EN}",
-               "https://www.youtube.com/watch?v=vyJU9efvUtQ",
-               "yt",
-            ],
-         ],
-         projects: ["Kanbanator"],
-      },
-      {
-         name: "Redux",
-         fullName: "",
-         type: "development",
-         description:
-            "Redux to otwarta biblioteka do zarządzania stanem aplikacji w przewidywalny i łatwy do przetestowania sposób. Jednym z głównych założeń jest Single source of truth zakładający, że stan całej aplikacji jest przechowywany w jednym miejscu zwanym 'store'. Ponadto jednokierunkowy przepływ danych, mówiący o tym, że stan jest tylko do odczytu, natomiast za jego zmianę odpowiada 'reducer', który jest wywoływany przez tzw 'akcje'. Akcja jest obiektem, który opisuje zmianę do wykonania. Takie podejście daje pewność, że stan nie zostanie zmieniony w niekontrolowany sposób.",
-         links: [
-            ["Oficjalna strona {EN}", "https://redux.js.org/"],
-            [
-               "[Traversy Media] - React JS Crash Course 2021 {EN}",
-               "https://www.youtube.com/watch?v=93p3LxR9xfM",
-               "yt",
-            ],
-         ],
-         projects: ["Kanbanator"],
-      },
-      {
-         name: "Gatsby",
-         type: "development",
-         fullName: "",
-         description:
-            "Gatsby to framework rozszerzający możliwości Reacta. Pozwala na generowanie statycznych stron internetowych zoptymalizowanych pod katem szybkości i SEO. Wygenerowane statyczne strony umożliwiają robotom wyszukiwarek odczytanie i zaindeksowanie całej treści strony, co było problemem 'czystego' Reacta. Gatsby oferuje również wiele wtyczek pomagających developerom m.in. w pobieraniu danych z systemów CMS, tworzeniu responsywnych i zoptymalizowanych obrazków czy integracji z usługami marketingowymi, takimi jak Google Analytics.",
-         links: [
-            ["Oficjalna strona {EN}", "https://www.gatsbyjs.com/"],
-            [
-               "Gatsby JS - dlaczego warto stworzyć stronę w oparciu o ten framework? {PL}",
-               "https://smartbees.pl/blog/dlaczego-warto-stworzyc-strone-w-oparciu-o-gatsby-js",
-            ],
-            [
-               "[Traversy Media] - Gatsby JS Crash Course {EN}",
-               "https://www.youtube.com/watch?v=6YhqQ2ZW1sc",
-               "yt",
-            ],
-         ],
-         projects: ["PXL"],
-      },
-      {
-         name: "Node",
-         type: "development",
-         fullName: "",
-         description:
-            "Node.js to wieloplatformowe środowisko uruchomieniowe, które pozwoliło korzystać z JavaScript w środowisku innym niż przeglądarka. Przyczynił się do stworzenia paradygmatu 'JavaScript everywhere'. Node.js używa opartego na zdarzeniach, nieblokującego modelu wejścia/wyjścia (I/O). Napisany został w języku C++ w oparciu o silnik V8 używany w Google Chrome. Stanowi dobre rozwiązanie dla aplikacji działających na różnych urządzeniach i intensywnie korzystających z wielu danych.",
-         links: [
-            ["Oficjalna strona {EN}", "https://nodejs.dev/learn"],
-            [
-               "[Traversy Media] - Node.js Crash Course {EN}",
-               "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
-      {
-         name: "Express",
-         type: "development",
-         fullName: "",
-         description:
-            "Jak podają twórcy Express.js jest szybkim i minimalistycznym frameworkiem dla Node.js, który znacznie upraszcza tworzenie aplikacji serwerowej, jego konfigurację, a także obsługę żądań HTTP dla różnych ścieżek. Podstawowym założeniem jest wykorzystanie tzw. middleware, czyli oprogramowania pośredniczącego, pozwalającego przetwarzać prośbę klienta na wielu płaszczyznach zanim zwróci oczekiwany rezultat. Są to bardzo często biblioteki kompatybilne z Express.js do pracy z plikami, ciasteczkami, sesjami czy parametrami URL.",
-         links: [
-            ["Oficjalna strona {EN}", "https://expressjs.com/"],
-            [
-               "[Traversy Media] - Express JS Crash Course {EN}",
-               "https://www.youtube.com/watch?v=L72fhGm1tfE",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
-      {
-         name: "MySQL",
-         type: "development",
-         fullName: "",
-         description:
-            "MySQL jest bardzo popularnym systemem do zarządzania relacyjnymi bazami danych. Bazy te są zbiorem przedstawionym w formie tabel, gdzie każda z nich jest połączona z inną przynajmniej jednym atrybutem. Nazywamy to relacjami, które są charakterystyczną cechą dla relacyjnych baz danych. MySQL udostępnia szerego metod i funkcji, które bardzo ułatwiają pracę z tymi danymi.",
-         links: [
-            ["Oficjalna strona {EN}", "https://www.mysql.com/"],
-            [
-               "[Programming with Mosh] - MySQL Tutorial for Beginners {EN}",
-               "https://www.youtube.com/watch?v=7S_tz1z_5bA",
-               "yt",
-            ],
-         ],
-         projects: ["Kanbanator"],
-      },
-      {
-         name: "Git",
-         type: "development",
-         fullName: "",
-         description:
-            "Git to system kontroli wersji, oprogramowanie służące do śledzenia zmian w kodzie źródłowym programu. Umożliwia korzystanie z historii zapisanych zmian i w razie potrzeby powrotu do wcześniejszych wersji. Daje możliwość rozgałęziania projektu na potrzeby rozwijania nowych funkcjonalności oraz przechowywania kodu w zdalnym repozytorium, co znacznie ułatwia pracę zespołową.",
-         links: [
-            ["Oficjalna strona {EN}", "https://git-scm.com/"],
-            [
-               "[Traversy Media] - Git & GitHub Crash Course For Beginners {EN}",
-               "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
-      {
-         name: "VSC",
-         fullName: "Visual Studio Code",
-         type: "development",
-         description:
-            "Darmowy edytor kodu źródłowego dla wielu języków programowania. Zwiększa czytelność oraz ułatwia pracę z kodem poprzez kolorowanie składni, automatyczne uzupełnianie, system podpowiedzi, możliwość debugowania(szukania błędów) czy zarządzanie wersjami za pośrednictwem GIT. Umożliwia instalowanie dodatkowych rozszerzeń zwiększających podstawowe funkcjonalności aplikacji.",
-         links: [
-            [
-               "Oficjalna strona {EN}",
-               "https://code.visualstudio.com/",
-            ],
-            [
-               "[Academing] Visual Studio Code Tutorial for Beginners - Introduction {EN}",
-               "https://www.youtube.com/watch?v=VqCgcpAypFQ",
-               "yt",
-            ],
-            [
-               "[Adrian Twarog] VS Code Extensions you absolutely need in 2021 {EN}",
-               "https://www.youtube.com/watch?v=qWNj3tfVjWI",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
-      {
-         name: "UX Design",
-         type: "design",
-         fullName: "User Experience Design",
-         description:
-            "User experience odnosi się do projektowania wrażeń użytkownika we wszystkich punktach styku z produktem. Szczególną uwagę zwraca się na takie aspekty jak: użyteczność, intuicyjność, łatwość obsługi i ogólną satysfakcje. UX jest bardzo szeroką i interdyscyplinarną dziedziną. W całym procesie ważną rolę odgrywa badanie potrzeb, tworzenie prototypów, testowanie użyteczności, tworzenie zrozumiałej architektury informacj, ciągłe weryfikowanie obranej ścieżki, a także dbanie o potrzeby biznesowe.",
-         links: [["UX Magazine {EN}", "https://uxmag.com/"]],
-         projects: [],
-      },
-      {
-         name: "UI Design",
-         fullName: "User Interface Design",
-         type: "design",
-         description:
-            "Interfejs to płaszczyzna, na której dochodzi do interakcji między użytkownikiem, a produktem. Celem projektowania UI jest uczynienie interakcji tak prostej, jak to tylko możliwe, pod względem realizacji celów. Mówi się, że najlepsze interfejsy są tak łatwe w użyciu, że sprawiają wrażenie niewidocznych. W projektowaniu UI bardzo pomocne mogą okazać się heurystyki Nielsena, które są zbiorem ogólnych reguł użyteczności (link poniżej).",
-         links: [
-            ["Smashing Magazine {EN}", "https://www.smashingmagazine.com/"],
-            ["awwards. {EN}", "https://www.awwwards.com/"],
-            [
-               "Heurystyki Nielsena {EN}",
-               "https://www.nngroup.com/articles/ten-usability-heuristics/#poster",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Figma",
-         type: "design",
-         fullName: "",
-         description:
-            "Nowoczesne i cięszące się rosnącą popularnością narzędzie do tworzenia prototypów stron internetowych i aplikacji. Umożliwia tworzenie interaktywnych widoków, a także współpracę w trybie online. Figma jest ceniona za szybkość działania, prostotę oraz funkcjonalność.",
-         links: [
-            ["Oficjalna strona {EN}", "https://www.figma.com/"],
-            [
-               "[DesignCourse] The Figma 2021 Crash Course by Example {EN}",
-               "https://www.youtube.com/watch?v=Gu1so3pz4bA",
-               "yt",
-            ],
-            [
-               "[freeCodeCamp.org] UI / UX Design Tutorial – Wireframe, Mockup & Design in Figma {EN}",
-               "https://www.youtube.com/watch?v=c9Wg6Cb_YlU",
-               "yt",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Adobe XD",
-         type: "design",
-         fullName: "",
-         description:
-            "Narzędzie ze stajni Adobe, podobnie jak Figma służy do tworzenia interaktywnych prototypów stron internetowych i aplikacji. XD jest przeznaczone szczególnie dla projektantów UX/UI. Daje możliwość pracy zespołowej, integracji z innymi narzędziami Adobe oraz posiada bardzo przyjazny interfejs.",
-         links: [
-            [
-               "Oficjalna strona {PL}",
-               "https://www.adobe.com/pl/products/xd.html",
-            ],
-            [
-               "[DesignCourse] Adobe XD Crash Course {EN}",
-               "https://www.youtube.com/watch?v=3rQ-eTmWah0",
-               "yt",
-            ],
-            [
-               "[Envato Tuts+] UX Design Course with Adobe XD {EN}",
-               "https://www.youtube.com/watch?v=68w2VwalD5w",
-               "yt",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Adobe Photoshop",
-         type: "design",
-         fullName: "",
-         description:
-            "Program graficzny będący flagowym produktem firmy Adobe. Głównie wykorzystywany do tworzenia i obróbki grafiki rastrowej (potocznie bitmapy). Udostępnia cały szereg funkcjonalności od podstawowej edycji zdjęć, retuszowania i tworzenia fotomanipulacji do malowania cyfrowego.",
-         links: [
-            [
-               "Oficjalna strona {PL}",
-               "https://www.adobe.com/pl/products/illustrator.html",
-            ],
-            [
-               "[Envato Tuts+] Adobe Illustrator for Beginners {EN}",
-               "https://www.youtube.com/watch?v=Ib8UBwu3yGA",
-               "yt",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Adobe Illustrator",
-         type: "design",
-         fullName: "",
-         description:
-            "Najpopularniejszy na rynku program do tworzenia grafiki wektorowej, której największą zaletą jest bezstratne skalowanie, a więc utrzymanie idealnej ostrości nawet przy wielokrotnym powiększeniu. Program umożliwia tworzenie illustracji, logo, ikon, opakowań czy billboardów.",
-         links: [
-            [
-               "Oficjalna strona {PL}",
-               "https://www.adobe.com/pl/products/illustrator.html",
-            ],
-            [
-               "[Envato Tuts+] Adobe Illustrator for Beginners {EN}",
-               "https://www.youtube.com/watch?v=Ib8UBwu3yGA",
-               "yt",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Affinity Designer",
-         fullName: "",
-         type: "design",
-         description:
-            "Designer to stosunkowo młody produkt, który służy do tworzenia grafiki wektorowej. Został przygotowany specjalnie dla projektantów. Możliwościami nie odbiega od Illustrator'a, jednak jeo atrakcyjna cena i wiele ciekawych rozwiązań, stawiają go w roli głównego konkurenta.",
-         links: [
-            [
-               "Oficjalna strona {PL}",
-               "https://affinity.serif.com/en-us/designer/",
-            ],
-            [
-               "[Envato Tuts+] Affinity Designer Quick Start {EN}",
-               "https://www.youtube.com/watch?v=Gd7FmjUxFnE",
-               "yt",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Affinity Publisher",
-         fullName: "",
-         type: "design",
-         description:
-            "Aplikacja jest częścią linii produktów Affinity. Publisher kładzie nacisk głównie na pracę DTP i przygotowanie materiałów do druku. Od czasopism, książek, broszur po plakaty. To płynie działająca i intuicyjna aplikacja umożliwiająca tworzenie kreatywnych publikacji.",
-         links: [
-            [
-               "Oficjalna strona {PL}",
-               "https://affinity.serif.com/en-us/publisher/",
-            ],
-            [
-               "[Affinity Revolution] Tutorial For Beginners {EN}",
-               "https://www.youtube.com/watch?v=py6fqmvlaqY",
-               "yt",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Scrum",
-         fullName: "",
-         type: "other",
-         description:
-            "Scrum to jedna z najpopularniejszych metodyk zwinnych, która umożliwia m.in. tworzenie nowych produktów i usług. Opiera się na iteracyjnym i przyrostowym dostarczaniu wartości. Wykorzystywany jest w pracy nad projektami opartymi o metodyki zwinne, zgodne z manifestem Agile. Praca nad produktem podzielona jest na iteracje, zwane sprintami. Realizacja projektu według Scrum skupia się na dostarczaniu kolejnych, coraz bardziej dopracowanych wyników projektu, samoorganizacji zespołu projektowego, a także włączaniu się w proces wytwórczy przyszłych użytkowników.",
-         links: [
-            [
-               "Oficjalna strona {EN}",
-               "https://www.scrum.org/resources/what-is-scrum",
-            ],
-            [
-               "Oficjalny przewodnik {PL}",
-               "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Polish.pdf",
-            ],
-            [
-               "Scrum vs Kanban – krótki przewodnik po metodykach zwinnych {PL}",
-               "https://www.sparkbit.pl/pl/scrum-vs-kanban-krotki-przewodnik-metodykach-zwinnych/",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Kanban",
-         type: "other",
-         fullName: "",
-         description:
-            "Metoda ta została opracowana już w latach pięćdziesiątych do sterowania produkcją, jednak obecnie została zaadaptowana na potrzeby skutecznego wytwarzania oprogramowania. Opiera się na takich zasadach jak wizualizacja postępów prac, ograniczeniu ilości zadań do wykonania oraz na systematycznej analizie i optymalizacji procesów. Kanban w odróżnieniu od Scrum nie nakazuje pracować w określonych limitach czasu, tworzenia zespołów wielofunkcyjnych, a także nie określa z góry takich ról jak np. Product Owner.",
-         links: [
-            [
-               "Kanban vs. scrum: which agile are you? {EN}",
-               "https://www.atlassian.com/agile/kanban/kanban-vs-scrum",
-            ],
-            [
-               "Scrum vs Kanban – krótki przewodnik po metodykach zwinnych {PL}",
-               "https://www.sparkbit.pl/pl/scrum-vs-kanban-krotki-przewodnik-metodykach-zwinnych/",
-            ],
-         ],
-         projects: [],
-      },
-      {
-         name: "Trello",
-         type: "other",
-         fullName: "",
-         description:
-            "Trello to narzędzie do zarządzania projektami, które pozwala na uporządkowanie ich w formie bardzo czytelnych tablic. Aplikacja jednym rzutem oka informuje o tym, kto i nad czym pracuje, a także na jakim etapie znajduje się dane zadanie. Umożliwia instalowanie przydatnych wtyczek m.in. integrujących z innymi narzędziami takimi jak Slack czy Jira.",
-         links: [
-            ["Oficjalna strona {PL}", "https://trello.com/pl"],
-            ["[Kimberly Ann Jimenez] How To Use TRELLO for Beginners + Workflow Examples {EN}", "https://www.youtube.com/watch?v=6drUzoeHZkg"],
-         ],
-         projects: [],
-      },
-      {
-         name: "MS Excel",
-         type: "other",
-         fullName: "Microsoft Excel",
-         description:
-            "Wiodące na rynku oprogramowanie stosowane do wykonywania obliczeń zestawionych w formie tabelarycznej. Posiada liczne funkcje matematyczne, finansowe i bazodanowe, a także półautomatyczne powielanie tworzonych formuł. Jest również bardzo przydatny w generowaniu wykresów, w licznych wariantach. ",
-         links: [
-            [
-               "Oficjalna strona {PL}",
-               "https://www.microsoft.com/pl-pl/microsoft-365/excel",
-            ],
-            [
-               "[freeCodeCamp.org] Microsoft Excel Tutorial for Beginners {EN}",
-               "https://www.youtube.com/watch?v=Vl0H-qTclOg",
-               "yt",
-            ],
-         ],
-         projects: [],
-      },
-   ],
+	listOfTechnologies: [
+		{
+			name: "HTML",
+			fullName: "HyperText Markup Language",
+			type: "development",
+			description:
+				"HTML is a hypertext markup language. It allows you to describe the structure of the information contained within the page, giving it the appropriate semantic meaning. Creates paragraphs, headings, lists and hyperlinks (links). It also allows you to embed multimedia files in the document, such as movies or photos. the appearance of these elements is defined and CSS is used to change it. ",
+			links: [
+				[
+					"Mozilla - MDN Web Docs ",
+					"https://developer.mozilla.org/pl/docs/Web/HTML",
+				],
+				[
+					"[Traversy Media] - HTML Crash Course For Absolute Beginners",
+					"https://www.youtube.com/watch?v=UB1O30fR-EE",
+					"yt",
+				],
+			],
+			projects: ["PXL", "Kanbanator", "BigFive"],
+		},
+		{
+			name: "CSS",
+			fullName: "Cascading Style Sheets",
+			type: "development",
+			description:
+				"CSS is a code used to define the appearance of a website. It is used, among others, for positioning elements, setting their size and colors, as well as animating them. It allows you to change these properties depending on the resolution and orientation of the device on which they are displayed, and even the way they are to be printed. CSS combined with JavaScript language allows you to create visually advanced and fully interactive pages. ",
+			links: [
+				[
+					"Mozilla - MDN Web Docs ",
+					"https://developer.mozilla.org/pl/docs/Web/CSS",
+				],
+				["CSS Tricks ", "https://css-tricks.com/"],
+				[
+					"[Traversy Media] - CSS Crash Course For Absolute Beginners",
+					"https://www.youtube.com/watch?v=yfoY53QXEnI",
+					"yt",
+				],
+			],
+			projects: ["PXL", "Kanbanator", "BigFive"],
+		},
+		{
+			name: "Sass",
+			fullName: "Syntactically Awesome Style Sheets",
+			type: "development",
+			description:
+				"Sass is a CSS pre-processor that extends its capabilities, including the possibility of using variables, nesting rules, creating functions or mixins. These functionalities can significantly facilitate the work of developers, which is why Sass has been very popular for years.",
+			links: [
+				["Official page", "https://sass-lang.com/"],
+				[
+					"[Traversy Media] - Sass Crash Course ",
+					"https://www.youtube.com/watch?v=nu5mdN2JIwM",
+					"yt",
+				],
+			],
+			projects: ["PXL", "BigFive"],
+		},
+		{
+			name: "JavaScript",
+			fullName: "",
+			type: "development",
+			description:
+				"One of the most popular and universal programming languages. It is mainly used to create websites and web applications, but thanks to Node.js it is also used outside browsers. JS is an object-oriented language, based on prototypes, many paradigms and dynamic syntax, interactive, dynamically filled with content and modern looking pages. ",
+			links: [
+				["JAVASCRIPT.INFO ", "https://javascript.info/"],
+				[
+					"[Traversy Media] - JavaScript Crash Course For Beginners ",
+					"https://www.youtube.com/watch?v=hdI2bqOjy3c",
+					"yt",
+				],
+			],
+			projects: ["PXL", "Kanbanator", "BigFive"],
+		},
+		{
+			name: "React",
+			type: "development",
+			fullName: "",
+			description:
+				"Extremely popular declarative library created by Facebook developers. It allows you to create very complex interfaces, dividing them into smaller, reusable components that can have their own state. Currently, React is used both on the browser and server side thanks to Node.js, as well as in mobile applications , thanks to React Native. It uses the Virtual DOM technique, which only updates changes where they actually occurred, allowing you to smoothly re-render the user interface.",
+			links: [
+				["Official page", "https://reactjs.org/"],
+				[
+					"[Traversy Media] - React JS Crash Course 2021 ",
+					"https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+					"yt",
+				],
+			],
+			projects: ["PXL", "Kanbanator", "BigFive"],
+		},
+		{
+			name: "Material UI",
+			fullName: "",
+			type: "development",
+			description:
+				"React UI framework based on the Material Design created by Google. It provides a set of ready-to-use components such as buttons, form elements, drop-down lists and many more. It allows you to quickly build a visually consistent interface that is based on the proven Design System. by millions of users of Google products. ",
+			links: [
+				["Official page", "https://material-ui.com/"],
+				[
+					"[Traversy Media] - Material UI React Tutorial ",
+					"https://www.youtube.com/watch?v=vyJU9efvUtQ",
+					"yt",
+				],
+			],
+			projects: ["Kanbanator"],
+		},
+		{
+			name: "Redux",
+			fullName: "",
+			type: "development",
+			description:
+				"Redux is an open library for managing the state of applications in a predictable and easy-to-test manner. One of the main assumptions is Single source of truth, which assumes that the state of the entire application is stored in one place called the 'store'. Moreover, one-way data flow tells about this. that the state is read-only, but the 'reducer' is responsible for its change, which is triggered by the so-called 'actions'. An action is an object that describes the change to be performed.",
+			links: [
+				["Official page", "https://redux.js.org/"],
+				[
+					"[Traversy Media] - React JS Crash Course 2021 ",
+					"https://www.youtube.com/watch?v=93p3LxR9xfM",
+					"yt",
+				],
+			],
+			projects: ["Kanbanator"],
+		},
+		{
+			name: "Gatsby",
+			type: "development",
+			fullName: "",
+			description:
+				"Gatsby is a framework that extends React's capabilities. It allows you to generate static websites optimized for speed and SEO. The generated static pages allow search engine robots to read and index the entire content of the page, which was a problem with 'pure' React. Gatsby also offers many plugins to help developers m etc. in downloading data from CMS systems, creating responsive and optimized images or integrating with marketing services such as Google Analytics. ",
+			links: [
+				["Official page", "https://www.gatsbyjs.com/"],
+				[
+					"[Traversy Media] - Gatsby JS Crash Course ",
+					"https://www.youtube.com/watch?v=6YhqQ2ZW1sc",
+					"yt",
+				],
+			],
+			projects: ["PXL"],
+		},
+		{
+			name: "Node",
+			type: "development",
+			fullName: "",
+			description:
+				"Node.js is a cross-platform runtime which has allowed JavaScript to be used in a non-browser environment. Contributed to the 'JavaScript everywhere' paradigm. Node.js uses an event-based, non-blocking input / output (I / O) model. it was written in C ++ based on the V8 engine used in Google Chrome. It is a good solution for cross-device and data-intensive applications.",
+			links: [
+				["Official page", "https://nodejs.dev/learn"],
+				[
+					"[Traversy Media] - Node.js Crash Course ",
+					"https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+					"yt",
+				],
+			],
+			projects: ["PXL", "Kanbanator", "BigFive"],
+		},
+		{
+			name: "Express",
+			type: "development",
+			fullName: "",
+			description:
+				"According to the creators of Express.js, it is a fast and minimalistic framework for Node.js, which greatly simplifies the creation of a server application, its configuration, and the handling of HTTP requests for various paths. a client's request on many levels before it returns the expected result. These are very often Express.js compatible libraries for working with files, cookies, sessions or URL parameters.",
+			links: [
+				["Official page", "https://expressjs.com/"],
+				[
+					"[Traversy Media] - Express JS Crash Course ",
+					"https://www.youtube.com/watch?v=L72fhGm1tfE",
+					"yt",
+				],
+			],
+			projects: ["PXL", "Kanbanator", "BigFive"],
+		},
+		{
+			name: "MySQL",
+			type: "development",
+			fullName: "",
+			description:
+				"MySQL is a very popular system for managing relational databases. These databases are a collection presented in the form of tables, each of which is linked to a different attribute of at least one. This is called relationships, which are characteristic of relational databases. MySQL provides a number of methods. and functions that make working with this data much easier.",
+			links: [
+				["Official page", "https://www.mysql.com/"],
+				[
+					"[Programming with Mosh] - MySQL Tutorial for Beginners ",
+					"https://www.youtube.com/watch?v=7S_tz1z_5bA",
+					"yt",
+				],
+			],
+			projects: ["Kanbanator"],
+		},
+		{
+			name: "Git",
+			type: "development",
+			fullName: "",
+			description:
+				"Git is a version control system, software for tracking changes in the source code of a program. It allows you to use the history of saved changes and, if necessary, return to previous versions. team work. ",
+			links: [
+				["Official page", "https://git-scm.com/"],
+				[
+					"[Traversy Media] - Git & GitHub Crash Course For Beginners ",
+					"https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+					"yt",
+				],
+			],
+			projects: ["PXL", "Kanbanator", "BigFive"],
+		},
+		{
+			name: "VSC",
+			fullName: "Visual Studio Code",
+			type: "development",
+			description:
+				"Free source code editor for many programming languages. Increases readability and facilitates working with the code through syntax highlighting, auto-completion, hint system, debugging (error checking) or version management via GIT. It allows you to install additional extensions increasing the basic functionality of the application.",
+			links: [
+				["Official page", "https://code.visualstudio.com/"],
+				[
+					"[Academing] Visual Studio Code Tutorial for Beginners - Introduction ",
+					"https://www.youtube.com/watch?v=VqCgcpAypFQ",
+					"yt",
+				],
+				[
+					"[Adrian Twarog] VS Code Extensions you absolutely need in 2021 ",
+					"https://www.youtube.com/watch?v=qWNj3tfVjWI",
+					"yt",
+				],
+			],
+			projects: ["PXL", "Kanbanator", "BigFive"],
+		},
+		{
+			name: "UX Design",
+			type: "design",
+			fullName: "User Experience Design",
+			description:
+				"User experience refers to the design of the user experience at all points of contact with the product. Particular attention is paid to aspects such as: usability, intuitiveness, ease of use and overall satisfaction. UX is a very broad and interdisciplinary field. Research plays an important role in the whole process. needs, creating prototypes, usability testing, creating an understandable information architecture, constantly verifying the chosen path, as well as taking care of business needs.",
+			links: [["UX Magazine ", "https://uxmag.com/"]],
+			projects: ["PXL", "BigFive"],
+		},
+		{
+			name: "UI Design",
+			fullName: "User Interface Design",
+			type: "design",
+			description:
+				"The interface is the plane where the interaction between the user and the product takes place. The goal of UI design is to make the interaction as simple as possible in terms of achieving the goals. It is said that the best interfaces are so easy to use as to give the impression of Nielsen heuristics, which are a set of general usability rules (link below), can be very helpful in UI design. ",
+			links: [
+				["Smashing Magazine ", "https://www.smashingmagazine.com/"],
+				["awwards. ", "https://www.awwwards.com/"],
+				[
+					"Heurystyki Nielsena ",
+					"https://www.nngroup.com/articles/ten-usability-heuristics/#poster",
+				],
+			],
+			projects: ["PXL", "BigFive"],
+		},
+		{
+			name: "Figma",
+			type: "design",
+			fullName: "",
+			description:
+				"A modern and increasingly popular tool for prototyping websites and applications. It enables the creation of interactive views as well as online collaboration. Figma is valued for its speed, simplicity and functionality.",
+			links: [
+				["Official page", "https://www.figma.com/"],
+				[
+					"[DesignCourse] The Figma 2021 Crash Course by Example ",
+					"https://www.youtube.com/watch?v=Gu1so3pz4bA",
+					"yt",
+				],
+				[
+					"[freeCodeCamp.org] UI / UX Design Tutorial – Wireframe, Mockup & Design in Figma ",
+					"https://www.youtube.com/watch?v=c9Wg6Cb_YlU",
+					"yt",
+				],
+			],
+			projects: [],
+		},
+		{
+			name: "Adobe XD",
+			type: "design",
+			fullName: "",
+			description:
+				"The tool from the Adobe stable, just like Figma, is used to create interactive prototypes of websites and applications. XD is designed especially for UX/UI designers. It gives the possibility of teamwork, integration with other Adobe tools and has a very friendly interface.",
+			links: [
+				["Official page", "https://www.adobe.com/products/xd.html"],
+				[
+					"[DesignCourse] Adobe XD Crash Course ",
+					"https://www.youtube.com/watch?v=3rQ-eTmWah0",
+					"yt",
+				],
+				[
+					"[Envato Tuts+] UX Design Course with Adobe XD ",
+					"https://www.youtube.com/watch?v=68w2VwalD5w",
+					"yt",
+				],
+			],
+			projects: ["PXL", "BigFive"],
+		},
+		{
+			name: "Adobe Photoshop",
+			type: "design",
+			fullName: "",
+			description:
+				"Graphics program which is the flagship product of Adobe. Mainly used for creating and processing raster graphics (colloquially bitmaps). It provides a whole range of functionalities from basic photo editing, retouching and creating photomanipulation to digital painting.",
+			links: [
+				[
+					"Official page",
+					"https://www.adobe.com/products/illustrator.html",
+				],
+				[
+					"[Envato Tuts+] Adobe Illustrator for Beginners ",
+					"https://www.youtube.com/watch?v=Ib8UBwu3yGA",
+					"yt",
+				],
+			],
+			projects: [],
+		},
+		{
+			name: "Adobe Illustrator",
+			type: "design",
+			fullName: "",
+			description:
+				"The most popular vector graphics program on the market, the greatest advantage of which is lossless scaling, which means maintaining perfect sharpness even with multiple magnification. The program allows you to create illustrations, logos, icons, packaging and billboards.",
+			links: [
+				[
+					"Official page",
+					"https://www.adobe.com/products/illustrator.html",
+				],
+				[
+					"[Envato Tuts+] Adobe Illustrator for Beginners ",
+					"https://www.youtube.com/watch?v=Ib8UBwu3yGA",
+					"yt",
+				],
+			],
+			projects: [],
+		},
+		{
+			name: "Affinity Designer",
+			fullName: "",
+			type: "design",
+			description:
+				"Designer is a relatively young product, which is used to create vector graphics. It was prepared especially for designers. Its possibilities do not differ from Illustrator, but its attractive price and many interesting solutions make it the main competitor.",
+			links: [
+				["Official page", "https://affinity.serif.com/en-us/designer/"],
+				[
+					"[Envato Tuts+] Affinity Designer Quick Start ",
+					"https://www.youtube.com/watch?v=Gd7FmjUxFnE",
+					"yt",
+				],
+			],
+			projects: [],
+		},
+		{
+			name: "Affinity Publisher",
+			fullName: "",
+			type: "design",
+			description:
+				"The application is part of the Affinity product line. Publisher focuses mainly on desktop publishing and the preparation of materials for printing. From magazines, books, brochures to posters. It is a smooth and intuitive application that allows you to create creative publications.",
+			links: [
+				[
+					"Official page",
+					"https://affinity.serif.com/en-us/publisher/",
+				],
+				[
+					"[Affinity Revolution] Tutorial For Beginners ",
+					"https://www.youtube.com/watch?v=py6fqmvlaqY",
+					"yt",
+				],
+			],
+			projects: [],
+		},
+		{
+			name: "Scrum",
+			fullName: "",
+			type: "other",
+			description:
+				"Scrum is one of the most popular agile methodologies, which enables, among other things, the creation of new products and services. It is based on iterative and incremental value delivery. It is used in the work on projects based on agile methodologies, in accordance with the Agile manifesto. Work on the product is split up. is for iterations, called sprints. Implementation of the project according to Scrum focuses on delivering more and more refined project results, self-organization of the project team, as well as involving future users in the development process. ",
+			links: [
+				[
+					"Official page",
+					"https://www.scrum.org/resources/what-is-scrum",
+				],
+				[
+					"Official guide",
+					"https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf",
+				],
+			],
+			projects: [],
+		},
+		{
+			name: "Kanban",
+			type: "other",
+			fullName: "",
+			description:
+				"This method was developed in the 1950s to control production, but now it has been adapted to the needs of effective software development. It is based on principles such as visualization of work progress, reduction of the number of tasks to be performed, and systematic analysis and optimization of processes. Kanban as opposed to Scrum does not require working within specific time limits, creating multifunctional teams, and does not pre-define roles such as, for example, Product Owner.",
+			links: [
+				[
+					"Kanban vs. scrum: which agile are you? ",
+					"https://www.atlassian.com/agile/kanban/kanban-vs-scrum",
+				],
+			],
+			projects: ["PXL", "BigFive"],
+		},
+		{
+			name: "Trello",
+			type: "other",
+			fullName: "",
+			description:
+				"Trello is a project management tool that allows you to organize them in the form of very readable boards. The application at a glance informs about who and what is working on, and at what stage a given task is. . integrating with other tools such as Slack or Jira.",
+			links: [
+				["Official page", "https://trello.com/pl"],
+				[
+					"[Kimberly Ann Jimenez] How To Use TRELLO for Beginners + Workflow Examples ",
+					"https://www.youtube.com/watch?v=6drUzoeHZkg",
+				],
+			],
+			projects: [],
+		},
+		{
+			name: "MS Excel",
+			type: "other",
+			fullName: "Microsoft Excel",
+			description:
+				"Market-leading software used to perform calculations compiled in tabular form. It has numerous mathematical, financial and database functions, as well as semi-automatic duplication of created formulas. It is also very useful in generating graphs, in numerous variants.",
+			links: [
+				[
+					"Official page",
+					"https://www.microsoft.com/pl-pl/microsoft-365/excel",
+				],
+				[
+					"[freeCodeCamp.org] Microsoft Excel Tutorial for Beginners ",
+					"https://www.youtube.com/watch?v=Vl0H-qTclOg",
+					"yt",
+				],
+			],
+			projects: [],
+		},
+	],
    contact: {
       header: "Contact",
       nameLabel: "Name",
@@ -579,7 +537,7 @@ const textContent = {
          topHeader: "Jul 2019 -> Present",
          bottomHeader: "Research & Development Manager [PXL]",
          paragraphs: [
-            "Co-creation and development of the production management system in the company based on C# / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.",
+            "Co-creation and development of the production management system in the company based on Node.js / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.",
             "Creation and implementation of new products with market analysis, cost calculation, and selection of optimal materials.",
             "Preparation of reports and constant cooperation with the management, sales, planning, logistics, and production departments.",
          ],
@@ -588,9 +546,9 @@ const textContent = {
          topHeader: "Jun 2018 -> Jul 2019",
          bottomHeader: "DTP Department Manager [PXL]",
          paragraphs: [
+            "Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing.",
             "Managing the work and development of a seven-person department.",
             "Responsibility for the smooth flow of orders by the DTP department.",
-            "Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing.",
          ],
       },
       {

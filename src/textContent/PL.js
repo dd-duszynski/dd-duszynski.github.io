@@ -6,8 +6,6 @@ import bigFiveHero from "../assets/img/bigFiveHero.png";
 import bigFive0 from "../assets/img/bigFive_rwd_0.png";
 import bigFive1 from "../assets/img/bigFive_rwd_1.png";
 import bigFive2 from "../assets/img/bigFive_rwd_2.png";
-import kanbanatorHero from "../assets/img/kanbanatorHero.png";
-import kanbanator1 from "../assets/img/kanbanator_rwd_1.png";
 
 const textContent = {
    navigation: [
@@ -36,20 +34,20 @@ const textContent = {
          title: "PXL",
          role: "Design & Development",
          shortDescription:
-            "Redesign strony internetowej dla cyfrowej drukarni wielkoformatowej. Podstawowym celem było przedstawienie bogatej oferty produktów, a także ułatwienie kontaktu i dostępu do instrukcji DTP.",
+            "Redesign strony internetowej dla cyfrowej drukarni wielkoformatowej. Witryna została przygotowana w czterech wersjach językowych. Podstawowym jej celem było ułatwienie kontaktu, zaprezentowanie bogatej oferty produktów i materiałów, a także szybki dostęp do instrukcji przygotowania plików.",
          description: [
-            "Pracę nad projektem rozpocząłem od przeprowadzenia wywiadów i ankiet na klientach i pracownikach firmy, aby ustalić co uważają za najbardziej newralgiczny punkt na ówczesnej stronie, a także jakie są jej braki i zalety. Dzięki temu zdefiniowałem kilkanaście problemów, które podzieliłem według częstotliwości ich występowania i nadałem im stosowny priorytet.",
-            "Do najczęściej wymienianich kwesti należał: utrudniony dostęp do zapoznania się z pełną ofertą firmy, brak instrukcji przygotowania plików graficznych do druku, a także mało atrakcyjny wygląd strony.",
-            "Zdefiniowanie tych problemów pozwoliło mi skupić swoją uwagę na najważniejszych aspektach w trakcie tworzenia prototypów.",
+            "Pracę nad projektem rozpocząłem od przeprowadzenia wywiadów i ankiet na klientach i pracownikach firmy, aby ustalić co uważają za najbardziej newralgiczny punkt na ówczesnej stronie, a także jakie są jej  zalety i wady. Dzięki temu zdefiniowałem kilkanaście problemów, które podzieliłem według częstotliwości ich występowania i nadałem im stosowny priorytet.",
+            "Do najczęściej wymienianich kwesti należało: utrudniony dostęp do zapoznania się z pełną ofertą firmy, brak instrukcji przygotowania plików graficznych do druku, a także mało atrakcyjny wygląd.",
+            "Zdefiniowanie tych problemów pozwoliło mi skupić swoją uwagę na najważniejszych aspektach w trakcie tworzenia prototypów, które wykonałem w programie Adobe XD. W trakcie pracy nad nimi przeprowadziłem kilkanaście testów użyteczności, po których zdecydowaliśmy się wprowadzić wiele poprawek, zwłaszcza w obszarze architektury informacji oraz nawigacji strony.",
          ],
          description2: [
-            "Do przeprowadzeniu testów użyteczności i stworzeniu architektury informacji oraz nawigacji strony, przystąpiłem do budowania bardziej szczegółowego widoku strony. ",
-            "Do najczęściej wymienianich kwesti należał: utrudniony dostęp do zapoznania się z pełną ofertą firmy, brak instrukcji przygotowania plików graficznych do druku, a także mało atrakcyjny wygląd strony.",
-            "Zdefiniowanie tych problemów pozwoliło mi skupić swoją uwagę na najważniejszych aspektach w trakcie budowania prototypu.",
+            "Do stworzenia strony wykorzystałem framework Gatsby, który rozszerza możliwości Reacta o generowanie statycznych stron HTML i CSS. Metoda ta ułatwia indeksowanie witryny przez roboty Google, co ma pozytywny wpływ SEO. Natomiast do zarządzania treścią wybrałem bardzo ceniony CMS - Contentful, w którym zgromadzone są niemal wszystkie treści, a także zasoby multimedialne. Contentful to headless CMS, który udostępnia edytorom interfejs do zarządzania treścią, a jednocześnie dostarcza programistom API do budowania aplikacji. W przypadku Gatsby połączenie odbywa się za pomocą GraphQL, którego obługę bardzo ułatwia wbudowany Explorer (IDE) pozwalający szybko wyklikać odpowiednie i precyzyjne żądanie.",
+            "Do budowania wyglądu wykorzystałem składnię scss (SASS), którą bardzo cenię za możliwość tworzenia zmiennych oraz mixinów. Strona ponadto wykorzystuje takie usługi jak Sendgrid - umożliwiający wysyłanie maili bezpośrednio ze strony oraz reCaptcha - weryfikująca czy użytkownicy nie są robotami. Do połączenia tych usług ze stroną napisałem prosty serwer w Node.js/Express.js, który jest postawiony na platformie Heroku.",
+            "Efekt tej pracy jest jak dotychczas zadowalający. Świadczyć może o tym trzykrotnie większa ilość otrzymywanych zapytań ofertowych bezpośrednio ze strony, a także pozytywne opinie klientów i działu sprzedaży, którym szybki dostęp do informacji znacznie ułatwia pracę. Strona wciąż będzie testowana, iteracyjnie rozbudowywana o nowe funkcjonalności i ekrany.",
          ],
          photos: [pxlHero, pxl0, pxl1, pxl2],
          link: "/projects/pxl",
-         externalLink: "http://PXL.pl",
+         externalLink: "http://printxl.pl",
          repository: "https://github.com/dd-duszynski/pxlGatsby",
       },
       {
@@ -58,31 +56,19 @@ const textContent = {
          shortDescription:
             "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu najsilniejszych lig świata.",
          description: [
-            "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata.",
-            "Wyniki pobierane są z ogólno dostepnej bazy danych www.football-data.org. Przede wszystkim skupiłem się na prezentacji danych tabelarycznych w atrakcyjnej formie, a także sortowaniu danych.",
+            "Projekt wynika z pasji do piłki nożnej i pomysłu stworzenia strony, która umożliwia przeglądanie wyników i statystyk pięciu największych lig świata. Zainspirowany takimi portalami jak flashscore.pl postanowiłem zmierzyć się z tym wyzwaniem i rozpocząłem poszukiwanie api z danymi, które byłyby odpowiednie do tego pomysłu. Tak właśnie trafiłem na www.football-data.org, który pozwolił mi przejść do kolejnego etapu, czyli stworzenia pierwszych prototypów w programie Adobe XD, a następnie testów użyteczności przeprowadzonych na kilku znajomych fanach piłki nożnej. Po zebraniu opini i wprowadzeniu niezbędnych poprawek nadszedł czas na pisanie kodu.",
+            "Przede wszystkim skupiłem się na responsywnej prezentacji danych tabelarycznych w czytelnej formie, zarówno na dużych wyświetlaczach, jak również na smartphonach. Aplikacja umożliwia ponadto ich sortowanie i dynamiczne przełączenie motywów kolorystycznych, jak i wersji językowej. W sekcji z najlepszymi strzelcami dla zwiększenia czytelności dołączyłem funkcjonalność paginacji, która pozwala na przełączanie się pomiędzy kolejnymi podstronami.",
          ],
-         description2: [""],
+         description2: [
+            "Aplikacja jest w pełni responsywna, a style napisałem korzystając ze składni .scss (SASS). Wykorzystany framework JavaScriptowy to React, pisany z wykorzystaniem tzw. hooków, natomiast dane pobieram dzięki Fetch API. Ważną rolę w aplikacji odgrywa również React Context, dzięki któremu dynamicznie zmieniam wersje językowe i kolorystyczne we wszystkich komponentach, unikając problemu zwanego 'prop drilling'. Funkcje te są dostępne w zakładce 'Ustawienia'.",
+            "Ponieważ darmowe konto na www.football-data.org, umożliwia jedynie 10 żądań na minutę, pojawił się problem z błędami CORS, które postanowiłem rozwiązać tworząc serwer napisany w Node.js i jego frameworku Express.js. Program ten cyklicznie pobiera dane z api korzystając z biblioteki node-fetch i zapisuje je do plików JSON, które serwuje w przypadku żądania z warstwy frontendowej.",
+            "Jest to aplikacja szkoleniowa, którą aktualnie rozbudowuje o możliwość tworzenia interaktywnych wizualizacji danych, jakie umożliwia biblioteka D3.js."
+         ],
          photos: [bigFiveHero, bigFive0, bigFive1, bigFive2],
          link: "/projects/big-five",
          externalLink: "https://dd-duszynski.github.io/big-five/",
          repository: "https://github.com/dd-duszynski/big-five",
       },
-      // {
-      //    title: "Kanbanator",
-      //    role: "Design & Development",
-      //    shortDescription:
-      //       "!! W trakcie realizacji !! Projekt ułatwiający zarządzanie projektami w metodyce Kanban. Umożliwia m.in. założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-      //    description: [
-      //       "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-      //       "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-      //       "Projekt ułatwia zarządzanie projektami w metodyce Kanban. Umożliwia założenie własnego konta, tworzenia tablic i grupowania w nich zadań.",
-      //    ],
-      //    description2: ["xxx"],
-      //    photos: [kanbanatorHero, kanbanator1],
-      //    link: "/projects/kanbanator",
-      //    externalLink: "https://dd-duszynski.github.io/bigfive/#/",
-      //    repository: "https://github.com/dd-duszynski/kanbanator",
-      // },
    ],
    technologies: {
       header: "Narzędzia i technologie:",
@@ -91,26 +77,6 @@ const textContent = {
       learnMore: "Polecane linki",
    },
    listOfTechnologies: [
-      {
-         name: "JavaScript",
-         fullName: "",
-         type: "development",
-         description:
-            "Jeden z najbardziej popularnych i uniwersalnych jezyków programowania. Wykorzystywany jest głównie do tworzenia stron i aplikacji internetowych, jednak dzięki Node.js używany jest również poza przeglądarkami. JS jest językiem zorientowanym obiektowo, opartym na prototypach, wielu paradygmatach i dynamicznej składni. Umożliwia developerom tworzenie interaktywnych, dynamicznie wypełniających się treścią i nowocześnie wyglądających stron.",
-         links: [
-            [
-               "Kurs Javascript dla superbohaterów {PL}",
-               "https://kursjs.pl/",
-            ],
-            ["JAVASCRIPT.INFO {EN}", "https://javascript.info/"],
-            [
-               "[Traversy Media] - JavaScript Crash Course For Beginners {EN}",
-               "https://www.youtube.com/watch?v=hdI2bqOjy3c",
-               "yt",
-            ],
-         ],
-         projects: ["PXL", "Kanbanator", "BigFive"],
-      },
       {
          name: "HTML",
          fullName: "HyperText Markup Language",
@@ -165,6 +131,26 @@ const textContent = {
             ],
          ],
          projects: ["PXL", "BigFive"],
+      },
+      {
+         name: "JavaScript",
+         fullName: "",
+         type: "development",
+         description:
+            "Jeden z najbardziej popularnych i uniwersalnych jezyków programowania. Wykorzystywany jest głównie do tworzenia stron i aplikacji internetowych, jednak dzięki Node.js używany jest również poza przeglądarkami. JS jest językiem zorientowanym obiektowo, opartym na prototypach, wielu paradygmatach i dynamicznej składni. Umożliwia developerom tworzenie interaktywnych, dynamicznie wypełniających się treścią i nowocześnie wyglądających stron.",
+         links: [
+            [
+               "Kurs Javascript dla superbohaterów {PL}",
+               "https://kursjs.pl/",
+            ],
+            ["JAVASCRIPT.INFO {EN}", "https://javascript.info/"],
+            [
+               "[Traversy Media] - JavaScript Crash Course For Beginners {EN}",
+               "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+               "yt",
+            ],
+         ],
+         projects: ["PXL", "Kanbanator", "BigFive"],
       },
       {
          name: "React",
@@ -271,7 +257,7 @@ const textContent = {
          type: "development",
          fullName: "",
          description:
-            "MySQL jest bardzo popularnym systemem do zarządzania relacyjnymi bazami danych. Bazy te są zbiorem przedstawionym w formie tabel, gdzie każda z nich jest połączona z inną przynajmniej jednym atrybutem. Nazywamy to relacjami, które są charakterystyczną cechą dla relacyjnych baz danych. MySQL udostępnia szerego metod i funkcji, które bardzo ułatwiają pracę z tymi danymi.",
+            "MySQL jest bardzo popularnym systemem do zarządzania relacyjnymi bazami danych. Bazy te są zbiorem przedstawionym w formie tabel, gdzie każda z nich jest połączona z inną przynajmniej jednym atrybutem. Nazywamy to relacjami, które są charakterystyczną cechą dla relacyjnych baz danych. MySQL udostępnia szereg metod i funkcji, które bardzo ułatwiają pracę z tymi danymi.",
          links: [
             ["Oficjalna strona {EN}", "https://www.mysql.com/"],
             [
@@ -324,9 +310,9 @@ const textContent = {
          type: "design",
          fullName: "User Experience Design",
          description:
-            "User experience odnosi się do projektowania wrażeń użytkownika we wszystkich punktach styku z produktem. Szczególną uwagę zwraca się na takie aspekty jak: użyteczność, intuicyjność, łatwość obsługi i ogólną satysfakcje. UX jest bardzo szeroką i interdyscyplinarną dziedziną. W całym procesie ważną rolę odgrywa badanie potrzeb, tworzenie prototypów, testowanie użyteczności, tworzenie zrozumiałej architektury informacj, ciągłe weryfikowanie obranej ścieżki, a także dbanie o potrzeby biznesowe.",
+            "User experience odnosi się do projektowania wrażeń użytkownika we wszystkich punktach styku z produktem. Szczególną uwagę zwraca się na takie aspekty jak: użyteczność, intuicyjność, łatwość obsługi i ogólną satysfakcje. UX jest bardzo szeroką i interdyscyplinarną dziedziną. W całym procesie ważną rolę odgrywa badanie potrzeb, tworzenie prototypów, testowanie użyteczności, tworzenie zrozumiałej architektury informacje, ciągłe weryfikowanie obranej ścieżki, a także dbanie o potrzeby biznesowe.",
          links: [["UX Magazine {EN}", "https://uxmag.com/"]],
-         projects: [],
+         projects: ["PXL", "BigFive"],
       },
       {
          name: "UI Design",
@@ -342,14 +328,14 @@ const textContent = {
                "https://www.nngroup.com/articles/ten-usability-heuristics/#poster",
             ],
          ],
-         projects: [],
+         projects: ["PXL", "BigFive"],
       },
       {
          name: "Figma",
          type: "design",
          fullName: "",
          description:
-            "Nowoczesne i cięszące się rosnącą popularnością narzędzie do tworzenia prototypów stron internetowych i aplikacji. Umożliwia tworzenie interaktywnych widoków, a także współpracę w trybie online. Figma jest ceniona za szybkość działania, prostotę oraz funkcjonalność.",
+            "Nowoczesne i cieszące się rosnącą popularnością narzędzie do tworzenia prototypów stron internetowych i aplikacji. Umożliwia tworzenie interaktywnych widoków, a także współpracę w trybie online. Figma jest ceniona za szybkość działania, prostotę oraz funkcjonalność.",
          links: [
             ["Oficjalna strona {EN}", "https://www.figma.com/"],
             [
@@ -387,7 +373,7 @@ const textContent = {
                "yt",
             ],
          ],
-         projects: [],
+         projects: ["PXL", "BigFive"],
       },
       {
          name: "Adobe Photoshop",
@@ -413,7 +399,7 @@ const textContent = {
          type: "design",
          fullName: "",
          description:
-            "Najpopularniejszy na rynku program do tworzenia grafiki wektorowej, której największą zaletą jest bezstratne skalowanie, a więc utrzymanie idealnej ostrości nawet przy wielokrotnym powiększeniu. Program umożliwia tworzenie illustracji, logo, ikon, opakowań czy billboardów.",
+            "Najpopularniejszy na rynku program do tworzenia grafiki wektorowej, której największą zaletą jest bezstratne skalowanie, a więc utrzymanie idealnej ostrości nawet przy wielokrotnym powiększeniu. Program umożliwia tworzenie ilustracji, logo, ikon, opakowań czy billboardów.",
          links: [
             [
                "Oficjalna strona {PL}",
@@ -432,7 +418,7 @@ const textContent = {
          fullName: "",
          type: "design",
          description:
-            "Designer to stosunkowo młody produkt, który służy do tworzenia grafiki wektorowej. Został przygotowany specjalnie dla projektantów. Możliwościami nie odbiega od Illustrator'a, jednak jeo atrakcyjna cena i wiele ciekawych rozwiązań, stawiają go w roli głównego konkurenta.",
+            "Designer to stosunkowo młody produkt, który służy do tworzenia grafiki wektorowej. Został przygotowany specjalnie dla projektantów. Możliwościami nie odbiega od Illustrator'a, jednak jego atrakcyjna cena i wiele ciekawych rozwiązań, stawiają go w roli głównego konkurenta.",
          links: [
             [
                "Oficjalna strona {PL}",
@@ -503,7 +489,7 @@ const textContent = {
                "https://www.sparkbit.pl/pl/scrum-vs-kanban-krotki-przewodnik-metodykach-zwinnych/",
             ],
          ],
-         projects: [],
+         projects: ["PXL", "BigFive"],
       },
       {
          name: "Trello",
@@ -574,7 +560,7 @@ const textContent = {
          topHeader: "Lip 2019 -> Obecnie",
          bottomHeader: "Research & Development Manager [PXL]",
          paragraphs: [
-            "Współtworzenie i rozwijanie systemu do zarządzania produkcją w firmie opartego o C# / SQL / MS Excel. System składa się z paneli dla liderów każdego działu oraz dashboardu dla managerów.",
+            "Współtworzenie i rozwijanie systemu do zarządzania produkcją w firmie opartego o Node.js / SQL / MS Excel. System składa się z paneli dla liderów każdego działu oraz dashboardu dla managerów.",
             "Tworzenie i wdrażanie nowych produktów wraz z analizą rynku, kalkulacją kosztów oraz doborem optymalnych materiałów.",
             "Przygotowywanie raportów oraz stała współpraca z zarządem, działami sprzedaży, planowania, logistyki i produkcji.",
          ],
@@ -583,9 +569,9 @@ const textContent = {
          topHeader: "Cze 2018 -> Lip 2019",
          bottomHeader: "Manager Działu DTP [PXL]",
          paragraphs: [
+            "Stworzenie grupy skryptów JavaScript dla programów Adobe, które zautomatyzowały i ujednoliciły proces przygotowania grafik do druku.",
             "Zarządzanie pracą i rozwojem siedmioosobowego działu.",
             "Odpowiedzialność za płynny przepływ zleceń przez dział DTP.",
-            "Stworzenie grupy skryptów JavaScript dla programów Adobe, które zautomatyzowały i ujednoliciły proces przygotowania grafik do druku.",
          ],
       },
       {

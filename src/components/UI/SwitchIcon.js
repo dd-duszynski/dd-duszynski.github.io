@@ -42,7 +42,7 @@ const SwitchIcon = ({ name }) => {
          icon = <GrNode />
          break
       case 'Express':
-         icon = <img src={Express} />
+         icon = <img src={Express} alt="express"/>
          break
       case 'MySQL':
          icon = <GrMysql />
@@ -67,7 +67,7 @@ const SwitchIcon = ({ name }) => {
          icon = <SiAdobephotoshop />
          break
       case 'Adobe Illustrator':
-         icon = <img src={Illustrator} />
+         icon = <img src={Illustrator} alt="illustrator"/>
          break
       case 'Figma':
          icon = <CgFigma />
