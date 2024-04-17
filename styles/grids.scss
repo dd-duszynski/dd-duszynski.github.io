@@ -1,0 +1,18 @@
+$grid-columns: 12;
+
+$grid-gaps: ("0":0,
+  "1":10px,
+  "2":20px,
+  "3":30px,
+);
+
+@each $key,
+$val in $grid-gaps {
+  .gap-#{$key}>* {
+    padding: $val;
+  }
+}
+
+.col-sm {
+  color: red
+}

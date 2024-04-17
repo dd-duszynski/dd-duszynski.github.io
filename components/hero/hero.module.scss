@@ -1,0 +1,70 @@
+@import '../../styles/main.scss';
+
+.hero {
+  grid-column: 1/4;
+  position: relative;
+  height: calc(100vh - 210px);
+  align-items: center;
+  @include grid;
+  margin-bottom: 12rem;
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+.box {
+  grid-column: 2/3;
+  height: 100%;
+  z-index: 2;
+
+  &:hover {
+    .link {
+      color: lightgreen;
+    }
+  }
+}
+
+.paragraph {
+  max-width: 70ch;
+  width: 100%;
+}
+
+.inlineParagraph {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.link {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-left: 1ch;
+  line-height: 2.2rem;
+}
+
+.background {
+  opacity: 0.08;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-position: 20% 0%;
+  background-size: cover;
+  background-image: linear-gradient(180deg,
+      $bgColor 0%,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0) 60%,
+      $bgColor 100%),
+    url(../../public/images/HeroImg.jpg);
+}
+
+@media (min-width: 600px) {
+  .hero {
+    height: calc(100vh - 150px);
+  }
+
+  .box {
+    max-width: 100%;
+  }
+}

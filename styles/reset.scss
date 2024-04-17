@@ -1,0 +1,69 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include roboto300;
+  background-color: $bgColor;
+  color: white;
+  line-height: 1.5;
+  overflow-x: hidden;
+  width: 100%;
+
+  ::selection {
+    background: #fff;
+    color: $bgColor;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-align: left;
+  text-decoration: none;
+}
+
+img,
+button,
+label,
+input,
+::placeholder {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $bgColor;
+  border-radius: .8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: .8rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}
+
+.gridCenter {
+  grid-column: 2/3;
+}

@@ -1,0 +1,9 @@
+@import '../../styles/main.scss';
+
+.Box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-inline-size: 100rem;
+}
