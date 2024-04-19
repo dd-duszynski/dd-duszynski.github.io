@@ -1,0 +1,77 @@
+@import '../../styles/main.scss';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  z-index: 3;
+  background-color: $bgColor;
+}
+
+.container {
+  max-width: 100rem;
+  width: 86%;
+  margin: 0 auto;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  a {
+    display: block;
+  }
+}
+
+.link {
+  color: white;
+  margin-left: 3.5rem;
+}
+
+.btnBox {
+  margin-left: 3rem;
+}
+
+.btn {
+  @include roboto300;
+  outline: none;
+  font-size: 1.1rem;
+  background: none;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+    color: lightgreen;
+  }
+}
+
+.active {
+  @include roboto500;
+
+  &::before {
+    content: '{';
+    position: absolute;
+    left: 0.2rem;
+  }
+
+  &::after {
+    content: '}';
+    position: absolute;
+    right: 0.3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}

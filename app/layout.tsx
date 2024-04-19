@@ -1,9 +1,22 @@
+import { Navbar } from '@/components/navbar/navbar';
+import { AppProvider } from '@/context/context';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Gloria_Hallelujah, Roboto_Mono } from 'next/font/google';
 import '../styles/main.scss';
 import '../styles/reset.scss';
 
-const inter = Inter({ subsets: ['latin'] });
+const robotoMonoFont = Roboto_Mono({
+  style: ['normal', 'italic'],
+  weight: ['300', '500'],
+  subsets: ['latin'],
+  variable: '--font-roboto-mono',
+});
+
+const gloriaHallelujahFont = Gloria_Hallelujah({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-gloria-hallelujah',
+});
 
 export const metadata: Metadata = {
   title: 'Damian Duszyński',
@@ -16,8 +29,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html
+      className={`${robotoMonoFont.variable} ${gloriaHallelujahFont.variable}`}
+      lang='en'
+    >
+      <body>
+        <AppProvider lang={'EN'}>
+          <Navbar />
+          {children}
+        </AppProvider>
+      </body>
     </html>
   );
 }

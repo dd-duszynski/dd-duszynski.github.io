@@ -1,0 +1,108 @@
+@import '../../styles/main.scss';
+
+.btn,
+.btnIsClicked {
+  z-index: 3;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  width: 3rem;
+  background-color: #fff;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  box-sizing: content-box;
+  padding: 2rem .5rem 2rem 2rem;
+  @include noneSelection;
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 3rem;
+    height: .1rem;
+    border-bottom: .1rem solid #fff;
+    opacity: 1;
+  }
+}
+
+.btn {
+
+  .line1,
+  .line2,
+  .line3 {
+    transition: all 0.3s ease-in;
+  }
+}
+
+.btnIsClicked {
+
+  .line1,
+  .line3 {
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    transition: all 0.5s ease-in;
+  }
+
+  .line1 {
+    transform: rotate(-45deg);
+    animation: rotateline1 0.5s ease-out;
+  }
+
+  .line3 {
+    transform: rotate(45deg);
+    animation: rotateline3 0.5s ease-out;
+  }
+
+  .line2 {
+    opacity: 0;
+  }
+}
+
+
+@keyframes rotateline1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotateline3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@media(min-width:1000px) {
+
+  .btn,
+  .btnIsClicked {
+    &:hover {
+
+      .line1,
+      .line2,
+      .line3 {
+        border-bottom: .1rem solid lightgreen;
+      }
+    }
+  }
+}

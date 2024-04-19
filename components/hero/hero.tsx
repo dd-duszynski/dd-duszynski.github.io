@@ -1,9 +1,8 @@
+import classNames from 'classnames';
 import Link from 'next/link';
-// import Box from '../../atoms/box';
-// import Paragraph from '../../atoms/paragraph';
-// import ScrollDown from '../../atoms/scroll-down';
 import Box from '../box/box';
 import Paragraph from '../paragraph/paragraph';
+import ScrollDown from '../scroll-down/scroll-down';
 import styles from './hero.module.scss';
 
 export const Hero = () => {
@@ -28,7 +27,7 @@ export const Hero = () => {
             breakLine
           />
           <Paragraph
-            // addClass={classNames(styles.inlineParagraph)}
+            addClass={classNames(styles.inlineParagraph)}
             text='Feel free to'
           />
           <Link href={'/#contact'} className={styles.link}>
@@ -36,7 +35,7 @@ export const Hero = () => {
           </Link>
           .
         </div>
-        {/* <ScrollDown /> */}
+        <ScrollDown />
       </Box>
     </section>
   );

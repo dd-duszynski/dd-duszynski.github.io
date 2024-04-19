@@ -1,0 +1,17 @@
+@import '../../styles/main.scss';
+
+.logo {
+  font-family: var(--font-gloria-hallelujah);
+  font-size: 3.5rem;
+  color: #fff;
+
+  @include noneSelection;
+}
+
+@media (min-width: 1000px) {
+  .logo {
+    &:hover {
+      color: lightgreen;
+    }
+  }
+}
