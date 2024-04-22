@@ -14,9 +14,9 @@ export const Navbar = () => {
     isSidebarOpen,
     language,
     size,
-    handleCloseSidebar,
-    handleLanguageChange,
-    handleOpenSidebar,
+    closeSidebar,
+    languageChange,
+    openSidebar,
   } = useContext<AppContextInterface>(AppContext);
 
   const {
@@ -48,7 +48,7 @@ export const Navbar = () => {
           <Dropdown
             items={['EN', 'PL']}
             buttonText={language}
-            onChange={handleLanguageChange}
+            onChange={languageChange}
           />
         </Box> */}
       </ul>
@@ -57,13 +57,10 @@ export const Navbar = () => {
 
   const smallDevice = (
     <>
-      <Logo
-        handleCloseSidebar={handleCloseSidebar}
-        isSidebarOpen={isSidebarOpen}
-      />
+      <Logo closeSidebar={closeSidebar} isSidebarOpen={isSidebarOpen} />
       <HamburgerMenu
-        handleOpenSidebar={handleOpenSidebar}
-        handleCloseSidebar={handleCloseSidebar}
+        openSidebar={openSidebar}
+        closeSidebar={closeSidebar}
         isSidebarOpen={isSidebarOpen}
       />
     </>

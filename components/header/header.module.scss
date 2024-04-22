@@ -1,0 +1,32 @@
+.header {
+  &:first-child {
+    font-weight: 500;
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+
+.hoverActive {
+  &:hover {
+    color: lightgreen;
+  }
+}

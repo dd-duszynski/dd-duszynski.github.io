@@ -15,10 +15,10 @@ export interface AppContextInterface {
   isSidebarOpen: boolean;
   language: string;
   size: number;
-  handleCloseSidebar: () => void;
-  handleLanguageChange: (lng: string) => void;
-  handleModal: () => void;
-  handleOpenSidebar: () => void;
+  closeSidebar: () => void;
+  languageChange: (lng: string) => void;
+  toggleModal: () => void;
+  openSidebar: () => void;
 }
 
 const AppContext = createContext<AppContextInterface>({
@@ -27,10 +27,10 @@ const AppContext = createContext<AppContextInterface>({
   isSidebarOpen: false,
   language: 'EN',
   size: 0,
-  handleCloseSidebar: () => {},
-  handleLanguageChange: (lng: string) => {},
-  handleModal: () => {},
-  handleOpenSidebar: () => {},
+  closeSidebar: () => {},
+  languageChange: (lng: string) => {},
+  openSidebar: () => {},
+  toggleModal: () => {},
 });
 
 const AppProvider = ({ children, lang }: AppProviderProps) => {
@@ -51,19 +51,19 @@ const AppProvider = ({ children, lang }: AppProviderProps) => {
     };
   }, []);
 
-  const handleOpenSidebar = () => {
+  const openSidebar = () => {
     setSidebar(true);
   };
 
-  const handleCloseSidebar = () => {
+  const closeSidebar = () => {
     setSidebar(false);
   };
 
-  const handleModal = () => {
+  const toggleModal = () => {
     setModal(!isModalOpen);
   };
 
-  const handleLanguageChange = (lng: string) => {
+  const languageChange = (lng: string) => {
     localStorage.setItem('lang', lng);
     setLanguage(lng);
   };
@@ -78,10 +78,10 @@ const AppProvider = ({ children, lang }: AppProviderProps) => {
         isSidebarOpen,
         language,
         size,
-        handleCloseSidebar,
-        handleLanguageChange,
-        handleModal,
-        handleOpenSidebar,
+        closeSidebar,
+        languageChange,
+        toggleModal,
+        openSidebar,
       }}
     >
       {children}

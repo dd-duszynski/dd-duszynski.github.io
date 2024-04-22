@@ -3,10 +3,10 @@ import styles from './logo.module.scss';
 
 interface LogoProps {
   isSidebarOpen?: Boolean;
-  handleCloseSidebar?: () => void;
+  closeSidebar?: () => void;
 }
 
-const Logo = ({ isSidebarOpen, handleCloseSidebar }: LogoProps) => {
+const Logo = ({ isSidebarOpen, closeSidebar }: LogoProps) => {
   const clickHandler = () => {
     window.scroll({
       top: 0,
@@ -18,7 +18,7 @@ const Logo = ({ isSidebarOpen, handleCloseSidebar }: LogoProps) => {
     <Link
       href='/'
       className={styles.logo}
-      onClick={isSidebarOpen ? handleCloseSidebar : clickHandler}
+      onClick={isSidebarOpen ? closeSidebar : clickHandler}
     >
       dd-
     </Link>

@@ -1,0 +1,17 @@
+@import '../../styles/main.scss';
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.h1 {
+  margin-bottom: 1vh;
+}
