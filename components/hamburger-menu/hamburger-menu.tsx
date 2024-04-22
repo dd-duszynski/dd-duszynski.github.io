@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import styles from './hamburger-menu.module.scss';
 
 interface HamburgerMenuProps {
@@ -17,9 +18,9 @@ const HamburgerMenu = ({
       className={isSidebarOpen ? styles.btnIsClicked : styles.btn}
       onClick={isSidebarOpen ? handleCloseSidebar : handleOpenSidebar}
     >
-      <div className={styles.line1} />
-      <div className={styles.line2} />
-      <div className={styles.line3} />
+      <div className={classNames(styles.line, styles.line1)} />
+      <div className={classNames(styles.line, styles.line2)} />
+      <div className={classNames(styles.line, styles.line3)} />
     </button>
   );
 };
