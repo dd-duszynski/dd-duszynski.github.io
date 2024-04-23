@@ -1,0 +1,27 @@
+@import '../../styles/main.scss';
+
+.textAreaLabel {
+  font-size: 1.4rem;
+}
+
+.textArea {
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+
+  &::placeholder {
+    font-size: 1.2rem;
+    color: $placeholder;
+  }
+
+  resize: none;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: 0.1rem solid lightgray;
+  @include roboto300;
+  outline: none;
+
+  &:focus {
+    border-bottom: 0.1rem solid lightgreen;
+  }
+}

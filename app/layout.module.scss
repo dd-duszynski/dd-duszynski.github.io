@@ -1,0 +1,15 @@
+@import '../styles/main.scss';
+
+.layout {
+  @include grid;
+  width: 100%;
+  position: relative;
+  margin-top: 8rem;
+  margin-bottom: 6.8rem;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../styles/main.scss";
+
+.inputLabel {
+  font-size: 1.4rem;
+}
+
+.input {
+  font-size: 1.3rem;
+  margin-top: .6rem;
+  background: none;
+  color: white;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  @include roboto300;
+  outline: none;
+
+  &:focus {
+    border-bottom: 1px solid lightgreen;
+  }
+
+  &::placeholder {
+    font-size: 1.2rem;
+    color: $placeholder;
+  }
+}

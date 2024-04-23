@@ -2,10 +2,12 @@
 
 import { AppContext } from '@/context/context';
 import { useContext, useState } from 'react';
-import styles from './technologies.module.scss';
 import Box from '../box/box';
 import Header from '../header/header';
+import Modal from '../modal/modal';
+import TechnologyModal from '../technology-modal/technology-modal';
 import TechnologyRow from '../technology-row/technology-row';
+import styles from './technologies.module.scss';
 
 const Technologies = () => {
   const { content, isModalOpen, toggleModal } = useContext(AppContext);
@@ -24,9 +26,9 @@ const Technologies = () => {
 
   return (
     <>
-      {/* <Modal show={isModalOpen} onCancel={toggleModal}>
+      <Modal show={isModalOpen} onCancel={toggleModal}>
         <TechnologyModal name={modalContent} context={listOfTechnologies} />
-      </Modal> */}
+      </Modal>
       <section className={styles.technologies} id='tools'>
         <Box justify='center' align='flex-start' direction='column'>
           <Header type='h1' text={technologies.header} addClass={styles.h1} />

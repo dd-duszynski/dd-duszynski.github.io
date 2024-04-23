@@ -1,9 +1,12 @@
+import { Footer } from '@/components/footer/footer';
 import { Navbar } from '@/components/navbar/navbar';
+import { Sidebar } from '@/components/sidebar/sidebar';
 import { AppProvider } from '@/context/context';
 import type { Metadata } from 'next';
 import { Gloria_Hallelujah, Roboto_Mono } from 'next/font/google';
 import '../styles/main.scss';
 import '../styles/reset.scss';
+import styles from './layout.module.scss';
 
 const robotoMonoFont = Roboto_Mono({
   style: ['normal', 'italic'],
@@ -35,8 +38,13 @@ export default function RootLayout({
     >
       <body>
         <AppProvider lang={'EN'}>
-          <Navbar />
-          {children}
+          <main className={styles.layout}>
+            <Navbar />
+            <Sidebar />
+            {children}
+            <Footer />
+            <div id='modal' />
+          </main>
         </AppProvider>
       </body>
     </html>
