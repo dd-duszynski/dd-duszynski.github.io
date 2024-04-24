@@ -32,8 +32,6 @@
     max-width: 100rem;
     width: 80%;
     margin: 2rem auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
   }
 
   .innerBox {
@@ -57,6 +55,7 @@
 
   .copyright {
     font-size: 12px !important;
+    width: 100%;
 
     &::first-letter {
       font-size: 1.6rem;
@@ -65,7 +64,7 @@
 
   .socialLinkHeader {
     margin-left: 4.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1.1rem;
   }
 
   .menuHeader {

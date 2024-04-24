@@ -1,12 +1,39 @@
 @import '../../styles/main.scss';
 
 .contact {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
   grid-column: 2/3;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: 5rem;
+}
+
+.h1 {
+  margin-bottom: 1vh;
+}
+
+.contactIconsBox {
+  width: 49%;
+  gap: 3rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.halfWidthForm {
+  width: 49%;
+}
+
+.fullWidthForm {
+  width: 100%;
 }
 
 .listContainer {
@@ -23,7 +50,7 @@
   flex-direction: column;
   width: 80%;
   max-width: 40rem;
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 .thxMessage {
@@ -36,4 +63,10 @@
   width: 4rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.line {
+  height: 80%;
+  width: 1px;
+  background-color: #ddd;
 }

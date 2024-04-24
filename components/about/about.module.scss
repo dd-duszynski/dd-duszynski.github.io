@@ -1,0 +1,51 @@
+@import '../../styles/main.scss';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column: 2/3;
+  min-height: calc(100vh - 80px - 169px);
+}
+
+.introductionBox {
+  margin-bottom: 3rem;
+}
+
+.paragraph1 {
+  margin-bottom: 1.43rem;
+}
+
+.experienceBox,
+.educationBox {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.h1,
+.h2 {
+  margin-bottom: 1.2rem;
+}
+
+.mainParagraph {
+  margin-bottom: 1rem;
+}
+
+.timelineExperience,
+.timelineEducation {
+  position: absolute;
+  height: calc(100% - 20rem);
+  left: 0.8rem;
+  top: 8rem;
+  width: 0.1rem;
+  background-color: #fff;
+}
+
+.timelineExperience {
+  height: calc(100% - 16rem);
+}
+
+.timelineEducation {
+  height: calc(100% - 16rem);
+}

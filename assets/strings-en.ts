@@ -10,7 +10,7 @@ const stringsEN: IStrings = {
   ],
   hero: [
     'Hello, my name is Damian.',
-    'I am a Frontend Developer and UX/UI enthusiast. You will find here a description of my projects and technologies that I use.',
+    'I am a Front-end Developer and UX/UI enthusiast. You will find here a description of my projects and technologies that I use.',
     'Feel free to',
     'contact me',
   ],
@@ -465,50 +465,70 @@ const stringsEN: IStrings = {
   },
   about: {
     header: 'About me',
+    // TODO: paragraph1 => paragraphs
     paragraph1:
-      "My name is Damian Duszyński. I currently live and work in Poznań. I'm committed and self-motivated Front-end Developer with a great passion for UX/UI and web technologies.",
+      "Hi, my name is Damian. I'm a Front-end Developer interested in UX/UI design and modern web technologies, including AI. I enjoy a quiet life in the countryside, where I can develop my passions in peace. My ultimate goal is to become a Fullstack Software Engineer and work on a project that solves real problems and ensures a great user experience.",
     paragraph2:
-      "I'm looking  for new opportunities to work with digital products that solve real problems and ensuring a great user experience. Privately, a fan of ⚽ football, and 🚴cycling.",
+      "Privately, I'm a fan of ☕ black coffee, ⚽ football, 🐕 dogs, and 🛸 sci-fi movies.",
     expHeader: 'Experience: ',
   },
   experience: [
     {
-      topHeader: 'Jul 2021 -> Present',
-      bottomHeader: 'Frontend Developer [Sonalake]',
+      topHeader: 'Sep 2022 -> Present',
+      bottomHeader: 'Front-end Developer [Fabrity]',
       paragraphs: [
-        'Development of software for the medical/optical industry',
-        "Work in the 'Central UX' team responsible for the consistent design, app performance, and creating and documenting components for other teams",
-        'Stack: Typescript / React / Redux Saga / React Testing Library / SCSS Modules / SonarCloud / ESLint / StyleLint / Prettier',
-        'Scaled Agile Framework',
+        'Work on the security, development and redesign of information exchange platform for the European Union Agency.',
+        'Work on the development and redesign of a low-code platform that allows users creating applications that improve and optimize business processes in their organizations.',
+        'Skills: Typescript / React / React Testing Library / SCSS Modules / SonarCloud / ESLint / StyleLint / Prettier',
+      ],
+    },
+    {
+      topHeader: 'Jul 2021 -> Aug 2022',
+      bottomHeader: 'Front-end Developer [Sonalake]',
+      paragraphs: [
+        'Development of software for the optical industry',
+        'Work in the "Central UX" team responsible for the consistent design, app performance, and creating, documenting, and maintaining components for other teams',
+        'Work structure based on the Scaled Agile Framework',
+        'Skills: Typescript / React / Redux Saga / React Testing Library / SCSS Modules / SonarCloud / ESLint / StyleLint / Prettier',
+      ],
+    },
+    {
+      topHeader: 'Jul 2020 -> Jun 2021',
+      bottomHeader: 'Front-end Developer [PrintXL]',
+      paragraphs: [
+        'Creation and development of a website for a large-format digital printing house based on the Gatsby framework and Headless CMS Contentful',
+        'Skills: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)',
+        'Co-creation and development of the production management system in the company based on Node.js / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.',
+        'Skills: Node.js / SQL / MS Excel',
       ],
     },
     {
       topHeader: 'Jul 2019 -> Jun 2021',
       bottomHeader: 'Research & Development Manager [PrintXL]',
       paragraphs: [
-        'Creation and development of a website for a large-format digital printing house based on the Gatsby framework and CMS Contentful',
-        'Stack: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)',
-        'Co-creation and development of the production management system in the company based on Node.js / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.',
-        'Creation and implementation of new products with market analysis, cost calculation, and selection of optimal materials.',
+        'Creation and implementation of new products with market analysis, cost calculation, and optimal materials selection.',
         'Preparation of reports and constant cooperation with the management, sales, planning, logistics, and production departments.',
+        'Skills: MS Excel / Digital Printing / Research and Development (R&D) / Business Analysis / Project Management / Kanban / Customer Requirements',
       ],
     },
     {
       topHeader: 'Jun 2018 -> Jul 2019',
       bottomHeader: 'DTP Department Manager [PrintXL]',
       paragraphs: [
-        'Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing.',
         'Managing the work and development of a seven-person department.',
         'Responsibility for the smooth flow of orders by the DTP department.',
+        'Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing.',
+        'Skills: DTP / MS Excel / Graphic Design / Digital Printing / Team Leadership / Project Management / Adobe Illustrator / Adobe Photoshop / JavaScript / Customer Requirements',
       ],
     },
     {
       topHeader: 'Mar 2013 -> Jun 2018',
-      bottomHeader: 'DTP Graphic Designer [PrintXL]',
+      bottomHeader: 'DTP Specialist [PrintXL]',
       paragraphs: [
         'Verification of the correctness of files sent by the customer and their comprehensive preparation for production.',
         'Development of product specifications and instructions for customers.',
         'Create color profiles for printing machines using the X-Rite I1 spectrophotometer.',
+        'Skills: DTP / Digital Printing / Adobe Illustrator / Adobe Photoshop',
       ],
     },
     {
@@ -516,6 +536,7 @@ const stringsEN: IStrings = {
       bottomHeader: 'Graphic Designer [AllElectronics]',
       paragraphs: [
         'Creating graphics, illustrations, and icons for online auctions.',
+        'Skills: Graphic Design / Adobe Illustrator / Adobe Photoshop',
       ],
     },
   ],

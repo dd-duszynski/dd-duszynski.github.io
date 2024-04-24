@@ -29,16 +29,15 @@ export const FooterItem = ({
   };
   return (
     <Link
-      href={url}
-      target='_blank'
-      rel='noopener noreferrer'
       className={styles.footerItem}
+      href={url}
+      rel='noopener noreferrer'
+      target='_blank'
       onMouseEnter={isIconHoverHandler}
       onMouseLeave={isIconHoverHandler}
     >
       <Image
         src={isIconHover ? activeIcon : icon}
-        // className={styles.image}
         alt={description}
         // TODO wysokosc na małych urzadzeniach powinna byc 50
         width={biggerIcon ? 50 : 35}

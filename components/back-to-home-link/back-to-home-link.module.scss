@@ -1,0 +1,17 @@
+.homeLink {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+  margin: 1.4rem 0 2.8rem;
+
+  svg {
+    margin-right: 0.8rem;
+    min-height: 2rem;
+    min-width: 2rem;
+  }
+
+  &:hover {
+    color: lightgreen;
+  }
+}
