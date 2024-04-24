@@ -10,8 +10,8 @@ import TechnologyRow from '../technology-row/technology-row';
 import styles from './technologies.module.scss';
 
 const Technologies = () => {
-  const { content, isModalOpen, toggleModal } = useContext(AppContext);
-  const { technologies, listOfTechnologies } = content;
+  const { strings, isModalOpen, toggleModal } = useContext(AppContext);
+  const { technologies, listOfTechnologies } = strings;
   const [modalContent, setModalContent] = useState<string>('');
   const [choosenItem, setChoosenItem] = useState<string | null>(null);
 

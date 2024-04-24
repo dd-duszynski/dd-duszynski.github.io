@@ -1,4 +1,6 @@
-const stringsEN = {
+import { IStrings } from '@/models/strings';
+
+const stringsEN: IStrings = {
   navigation: [
     ['Main Page', '/'],
     ['Posts', '/posts'],

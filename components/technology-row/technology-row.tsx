@@ -1,23 +1,22 @@
+import { IListOfTechnology } from '@/models/strings';
 import React from 'react';
-// import { ListOfTechnologiesType } from '../../../content/content-model';
 import Box from '../box/box';
 import Header from '../header/header';
 import TechnologyItem from '../technology-item/technology-item';
 import styles from './technology-row.module.scss';
 
 interface TechnologyRowProps {
-  headerText: string;
-  // technologies: ListOfTechnologiesType[];
-  technologies: any[];
   choosenItem: string | null;
-  modalToggleHandler: (technology: string) => void;
+  headerText: string;
+  technologies: IListOfTechnology[];
   choosenItemHandler: (item: string | null) => void;
+  modalToggleHandler: (technology: string) => void;
 }
 
 const TechnologyRow: React.FC<TechnologyRowProps> = ({
+  choosenItem,
   headerText,
   technologies,
-  choosenItem,
   modalToggleHandler,
   choosenItemHandler,
 }) => {
@@ -27,9 +26,7 @@ const TechnologyRow: React.FC<TechnologyRowProps> = ({
         {headerText && <Header type='h2' text={headerText} />}
       </Box>
       <ul className={styles.technologyList}>
-        {/* TODO */}
-        {/* {technologies.map((item: ListOfTechnologiesType) => ( */}
-        {technologies.map((item: any) => (
+        {technologies.map((item: IListOfTechnology) => (
           <TechnologyItem
             key={item.name}
             name={item.name}

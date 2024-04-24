@@ -17,7 +17,7 @@ const TechnologyItem = ({
   choosenItemHandler,
   modalToggleHandler,
 }: TechnologyItemProps) => {
-  const { size, content } = useContext(AppContext);
+  const { size, strings } = useContext(AppContext);
   const openModalHandler = (name: string) => {
     modalToggleHandler(name);
     choosenItemHandler(null);
@@ -48,7 +48,7 @@ const TechnologyItem = ({
         </div>
         <div className={styles.back}>
           <span className={styles.backTitle}>
-            {content.technologies.seeMore}
+            {strings.technologies.seeMore}
           </span>
         </div>
       </div>

@@ -1,14 +1,13 @@
 'use client';
 
+import { AppContext } from '@/context/context';
+import { IListOfTechnology } from '@/models/strings';
+import Link from 'next/link';
 import { useContext, useEffect, useState } from 'react';
 import { BiLinkExternal } from 'react-icons/bi';
 import { GrYoutube } from 'react-icons/gr';
 import { IoMdClose } from 'react-icons/io';
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
-// import { ListOfTechnologiesType } from '../../../content/content-model';
-// import { AppContext } from '../../../context/context';
-import { AppContext } from '@/context/context';
-import Link from 'next/link';
 import Box from '../box/box';
 import Header from '../header/header';
 import Paragraph from '../paragraph/paragraph';
@@ -17,15 +16,10 @@ import styles from './technology-modal.module.scss';
 
 interface TechnologyModalProps {
   name: string;
-  // context: ListOfTechnologiesType[];
-  context: any[];
+  context: IListOfTechnology[];
 }
 
-const findNextAndPrevIndex = (
-  name: string,
-  arr: any[]
-  // arr: ListOfTechnologiesType[]
-) => {
+const findNextAndPrevIndex = (name: string, arr: IListOfTechnology[]) => {
   const arrLength = arr.length;
   const currentTech = arr.findIndex((i) => i.name === name);
   let nextIndex, prevIndex;

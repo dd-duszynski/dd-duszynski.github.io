@@ -9,7 +9,7 @@ import Box from '../box/box';
 
 export const ScrollToTopButton = () => {
   const {
-    content: { footer },
+    strings: { footer },
   } = useContext(AppContext);
 
   const smothScroll = () => {

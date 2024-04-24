@@ -9,19 +9,12 @@ import NavLinkItem from '../nav-link-item/nav-link-item';
 import styles from './navbar.module.scss';
 
 export const Navbar = () => {
-  const {
-    content,
-    isSidebarOpen,
-    language,
-    size,
-    closeSidebar,
-    languageChange,
-    openSidebar,
-  } = useContext<AppContextInterface>(AppContext);
+  const { strings, isSidebarOpen, size, closeSidebar, openSidebar } =
+    useContext<AppContextInterface>(AppContext);
 
   const {
     navigation: [_mainPage, ...restNavItem],
-  } = content;
+  } = strings;
 
   const isHash = (i: string) => i.indexOf('#') > 0;
 

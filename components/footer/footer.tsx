@@ -17,7 +17,7 @@ import { ScrollToTopButton } from '../scroll-to-top-button/scroll-to-top-button'
 import styles from './footer.module.scss';
 
 export const Footer = () => {
-  const { size, content } = useContext(AppContext);
+  const { size, strings } = useContext(AppContext);
 
   const isHash = (i: string) => i.indexOf('#') > 0;
 
@@ -32,7 +32,7 @@ export const Footer = () => {
         >
           <Header
             type='h3'
-            text={content.footer.contact}
+            text={strings.footer.contact}
             addClass={styles.socialLinkHeader}
           />
           <FooterItem
@@ -60,10 +60,10 @@ export const Footer = () => {
         <Box justify='space-between' align='flex-start' direction='column'>
           <Header
             type='h3'
-            text={content.footer.menu}
+            text={strings.footer.menu}
             addClass={styles.menuHeader}
           />
-          {content.navigation.map((item) => {
+          {strings.navigation.map((item) => {
             if (isHash(item[1])) {
               return (
                 <Link

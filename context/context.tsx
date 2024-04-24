@@ -1,8 +1,9 @@
 'use client';
 
-import React, { createContext, useEffect, useState } from 'react';
 import stringsEN from '@/assets/strings-en';
 import stringsPL from '@/assets/strings-pl';
+import { IStrings } from '@/models/strings';
+import React, { createContext, useEffect, useState } from 'react';
 
 interface AppProviderProps {
   children: React.ReactNode;
@@ -10,11 +11,11 @@ interface AppProviderProps {
 }
 
 export interface AppContextInterface {
-  content: any; // TODO
   isModalOpen: boolean;
   isSidebarOpen: boolean;
   language: string;
   size: number;
+  strings: IStrings;
   closeSidebar: () => void;
   languageChange: (lng: string) => void;
   toggleModal: () => void;
@@ -22,11 +23,11 @@ export interface AppContextInterface {
 }
 
 const AppContext = createContext<AppContextInterface>({
-  content: stringsEN,
   isModalOpen: false,
   isSidebarOpen: false,
   language: 'EN',
   size: 0,
+  strings: stringsEN,
   closeSidebar: () => {},
   languageChange: (lng: string) => {},
   openSidebar: () => {},
@@ -68,20 +69,20 @@ const AppProvider = ({ children, lang }: AppProviderProps) => {
     setLanguage(lng);
   };
 
-  const content = language === 'PL' ? stringsPL : stringsEN;
+  const strings = language === 'PL' ? stringsPL : stringsEN;
 
   return (
     <AppContext.Provider
       value={{
-        content,
         isModalOpen,
         isSidebarOpen,
         language,
         size,
+        strings,
         closeSidebar,
         languageChange,
-        toggleModal,
         openSidebar,
+        toggleModal,
       }}
     >
       {children}

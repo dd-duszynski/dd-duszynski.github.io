@@ -18,7 +18,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const {
-    content: { contact },
+    strings: { contact },
   } = useContext(AppContext);
 
   useEffect(() => {

@@ -7,9 +7,9 @@ import NavLinkItem from '../nav-link-item/nav-link-item';
 import styles from './sidebar.module.scss';
 
 export const Sidebar = () => {
-  const { content, isSidebarOpen, language, closeSidebar, languageChange } =
+  const { isSidebarOpen, language, strings, closeSidebar, languageChange } =
     useContext(AppContext);
-  const { navigation } = content;
+  const { navigation } = strings;
   // const [mainPage, ...restNavItem] = navigation
   const btnPLCSS = language === 'PL' && styles.active;
   const btnENCSS = language === 'EN' && styles.active;
