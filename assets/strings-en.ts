@@ -567,7 +567,7 @@ const stringsEN: IStrings = {
         'The effect of this work has been satisfactory so far. The three times greater number of inquiries received directly from the website, as well as the positive opinions of customers and the sales department, for whom quick access to information significantly facilitates their work, can prove it. The site will be still tested, iteratively expanded with new functionalities and screens.',
       ],
       photos: [pxlHero, pxl0, pxl1, pxl2],
-      link: '/projects/pxl',
+      link: '/project/pxl',
       externalLink: 'http://printxl.pl',
       repository: 'https://github.com/dd-duszynski/pxlGatsby',
     },

@@ -1,0 +1,117 @@
+@import '../../styles/main.scss';
+
+.projectCardOverlay,
+.info,
+.overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.projectCardOverlay {
+  height: 100%;
+  width: 10rem;
+}
+
+.info {
+  z-index: 1;
+  height: 3.4rem;
+  width: 3.4rem;
+  border-radius: 1.8rem;
+  background-color: $bgColor;
+  border: 0.1rem solid gray;
+  transition: all 0.3s;
+
+  &::after {
+    content: 'i';
+    color: #fff;
+    position: absolute;
+    top: 0.6rem;
+    right: 1.2rem;
+    font-size: 1.6rem;
+    @include roboto500;
+  }
+}
+
+.overlay {
+  width: 40rem;
+  height: 100%;
+  padding: 10px 1.6rem;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 0;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: 1;
+  color: white !important;
+}
+
+.bold {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.line {
+  opacity: 0;
+  width: 100%;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+
+  hr {
+    height: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+  }
+}
+
+.iconsContainer {
+  opacity: 0;
+  margin-top: 0.4rem;
+
+  svg,
+  img,
+  span {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.8rem;
+    margin-bottom: 1rem;
+    color: #eee;
+  }
+}
+
+// isVisible -------------------
+
+.infoVisible {
+  height: 100%;
+  width: 40rem;
+  border-radius: 1.8rem;
+  border: 0.1rem solid gray;
+  background-color: $bgColorGray;
+
+  &::after {
+    content: '';
+  }
+}
+
+.overlayVisible {
+  opacity: 1;
+  z-index: 1;
+
+  .line {
+    opacity: 1;
+  }
+
+  .paragraph {
+    opacity: 1;
+  }
+
+  .iconsContainer {
+    opacity: 1;
+  }
+}
