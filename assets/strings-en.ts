@@ -1,4 +1,8 @@
 import { IStrings } from '@/models/strings';
+import pxlHero from '../public/images/pxlHero.png';
+import pxl0 from '../public/images/pxl_rwd_0.png';
+import pxl1 from '../public/images/pxl_rwd_1.png';
+import pxl2 from '../public/images/pxl_rwd_2.png';
 
 const stringsEN: IStrings = {
   navigation: [
@@ -467,7 +471,7 @@ const stringsEN: IStrings = {
     header: 'About me',
     // TODO: paragraph1 => paragraphs
     paragraph1:
-      "Hi, my name is Damian. I'm a Front-end Developer interested in UX/UI design and modern web technologies, including AI. I enjoy a quiet life in the countryside, where I can develop my passions in peace. My ultimate goal is to become a Fullstack Software Engineer and work on a project that solves real problems and ensures a great user experience.",
+      "Hi, my name is Damian. I'm a Front-end Developer interested in UX/UI design and modern web technologies, including AI. I enjoy a quiet life in the countryside, where I can peacefully develop my passions. My ultimate goal is to become a Fullstack Software Engineer and work on a project that solves real problems and ensures a great user experience.",
     paragraph2:
       "Privately, I'm a fan of ☕ black coffee, ⚽ football, 🐕 dogs, and 🛸 sci-fi movies.",
     expHeader: 'Experience: ',
@@ -545,6 +549,49 @@ const stringsEN: IStrings = {
     menu: 'Menu',
     toTheTop: 'Scroll to Top',
   },
+  listOfProjects: [
+    {
+      title: 'PXL',
+      slug: 'pxl',
+      role: 'Design & Development',
+      shortDescription:
+        'Redesign of the website for a digital large-format printing house. The website was prepared in four language versions. Its main purpose was to facilitate contact, present a wide range of products and materials, as well as quick access to file preparation instructions.',
+      description: [
+        'I started working on the project by conducting interviews and surveys on clients and employees of the company to determine what they consider to be the most sensitive point on the website at that time, as well as what its advantages and disadvantages are. Thanks to this, I defined a dozen problems, which I divided according to their frequency of occurrence and I have given them a proper priority.',
+        'The most frequently mentioned issues were: difficult access to the full offer of the company, no DTP instructions on how to prepare graphic files for printing, and an unattractive appearance.',
+        'Defining these problems allowed me to focus my attention on the most important aspects while creating prototypes that I made in Adobe XD. While working on them, I conducted several usability tests, after which we decided to introduce many corrections, especially in the area of information architecture and website navigation. ',
+      ],
+      description2: [
+        "To create the website, I used the Gatsby framework, which extends React's capabilities by generating static HTML and CSS pages. This method facilitates the indexing of the site by Google robots, which has a positive impact on SEO. almost all content and multimedia resources. Contentful to headless CMS, which provides editors with a content management interface, and at the same time provides developers with APIs for building applications. In the case of Gatsby, the connection is made using GraphQL, which is very easy to use by the built-in Explorer (IDE) allowing you to quickly click on an appropriate and precise request. ",
+        'I used the scss (SASS) syntax to build the appearance, which I really appreciate for the ability to create variables and mixins. The website also uses services such as Sendgrid - which allows you to send e-mails directly from the website, and reCaptcha - to verify that users are not robots. website, I wrote a simple server in Node.js / Express.js, which is hosted on the Heroku platform. ',
+        'The effect of this work has been satisfactory so far. The three times greater number of inquiries received directly from the website, as well as the positive opinions of customers and the sales department, for whom quick access to information significantly facilitates their work, can prove it. The site will be still tested, iteratively expanded with new functionalities and screens.',
+      ],
+      photos: [pxlHero, pxl0, pxl1, pxl2],
+      link: '/projects/pxl',
+      externalLink: 'http://printxl.pl',
+      repository: 'https://github.com/dd-duszynski/pxlGatsby',
+    },
+    // {
+    // 	title: 'BigFive',
+    // 	slug: 'big-five',
+    // 	role: 'Design & Development',
+    // 	shortDescription:
+    // 		'The project stems from a passion for football and the idea of creating a website that allows you to view the results and statistics of the five strongest leagues in the world.',
+    // 	description: [
+    // 		'The project results from a passion for football and the idea of ​​creating a website that allows you to view the results and statistics of the five largest leagues in the world. Inspired by such portals as flashscore.pl, I decided to face this challenge and started looking for api with data that would be appropriate for this idea This is how I found www.football-data.org, which allowed me to move on to the next stage, which was creating the first prototypes in Adobe XD, and then usability tests carried out on a few football fans I know. time to write code. ',
+    // 		'First of all, I focused on the responsive presentation of tabular data in a readable form, both on large displays and on smartphones. The application also allows you to sort them and dynamically switch color themes and the language version. pagination that allows you to switch between subpages. ',
+    // 	],
+    // 	description2: [
+    // 		"The application is fully responsive, and I wrote the styles using the .scss (SASS) syntax. The JavaScript framework used is React, written with the use of hooks, and I download the data thanks to the Fetch API. I dynamically change the language and color versions of all components, avoiding the problem called 'prop drilling'. These functions are available in the 'Settings' tab. ",
+    // 		'Since the free account at www.football-data.org only allows 10 requests per minute, there was a problem with CORS errors, which I decided to solve by creating a server written in Node.js and its Express.js framework. This program periodically downloads data from api using the node-fetch library and saves them to JSON files, which it serves when requested from the frontend layer. ',
+    // 		'It is a training application, which it is currently expanding with the possibility of creating interactive data visualizations, which is possible with the D3.js library.',
+    // 	],
+    // 	photos: [bigFiveHero, bigFive0, bigFive1, bigFive2],
+    // 	link: '/projects/big-five',
+    // 	externalLink: 'https://dd-duszynski.github.io/big-five/',
+    // 	repository: 'https://github.com/dd-duszynski/big-five',
+    // },
+  ],
 };
 
 export default stringsEN;

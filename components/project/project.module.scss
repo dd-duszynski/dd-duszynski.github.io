@@ -1,0 +1,121 @@
+@import '../../styles/main.scss';
+
+.project {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+}
+
+.mainPhoto {
+  width: 100%;
+  margin-bottom: 1.4rem;
+}
+
+.screen {
+  width: 100%;
+  margin: 1.4rem 0;
+}
+
+.header {
+  margin: 1.2rem 0;
+}
+
+.h2 {
+  margin-bottom: 0.3rem;
+}
+
+.paragraphBox {
+  margin-bottom: 1.4rem;
+}
+
+.paragraph {
+  margin-bottom: 1.2rem;
+}
+
+.Slider {
+  width: 100%;
+}
+
+.linkBox {
+  flex-direction: column;
+}
+
+.externalLink {
+  background-color: white;
+  padding: 7px 1.4rem;
+  border-radius: 1rem;
+  color: $bgColor;
+  display: flex;
+  align-items: center;
+
+  &:nth-child(1) {
+    margin-bottom: 0.8rem;
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: black;
+  }
+}
+
+.github {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: 1rem;
+  border: 0.1rem solid white;
+
+  &:nth-child(1) {
+    margin-bottom: 0.8rem;
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: lightgreen;
+  }
+}
+
+.paragraphLink {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.icon {
+  margin-left: 0.8rem;
+  min-width: 2.2rem;
+  min-height: 2.2rem;
+}
+
+.externalLinkIcon {
+  margin-left: 0.8rem;
+  min-width: 2.2rem;
+  min-height: 2.2rem;
+}
+
+.line {
+  width: 100%;
+  margin-bottom: 1.2rem;
+
+  hr {
+    height: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .linkBox {
+    flex-direction: row;
+  }
+
+  .externalLink,
+  .github {
+    align-items: center;
+
+    &:nth-child(1) {
+      margin-bottom: 0;
+      margin-right: 3rem;
+    }
+  }
+}

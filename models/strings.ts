@@ -9,6 +9,7 @@ export interface IStrings {
   about: IAbout;
   experience: IExperience[];
   footer: IFooter;
+  listOfProjects: ListOfProjectsType[];
 }
 
 export interface IPosts {
@@ -73,4 +74,17 @@ export interface IFooter {
   contact: string;
   menu: string;
   toTheTop: string;
+}
+
+export interface ListOfProjectsType {
+  title: string;
+  slug: string;
+  role: string;
+  shortDescription: string;
+  description: string[];
+  description2: string[];
+  photos: any[];
+  link: string;
+  externalLink: string;
+  repository: string;
 }
