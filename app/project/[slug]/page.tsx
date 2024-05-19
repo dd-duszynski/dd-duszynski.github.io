@@ -1,8 +1,8 @@
-import stringsEN from '@/assets/strings-en';
+import strings from '@/assets/strings';
 import { Project } from '@/components/project/project';
 
 async function getData(slug: string) {
-  return stringsEN.listOfProjects.find((project) => project.slug === slug);
+  return strings.listOfProjects.find((project) => project.slug === slug);
 }
 
 export default async function ProjectPage({ params }: any) {

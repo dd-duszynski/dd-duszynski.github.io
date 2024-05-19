@@ -37,7 +37,7 @@ export default function RootLayout({
       lang='en'
     >
       <body>
-        <AppProvider lang={'EN'}>
+        <AppProvider>
           <main className={styles.layout}>
             <Navbar />
             <Sidebar />

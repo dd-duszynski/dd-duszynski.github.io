@@ -4,7 +4,7 @@ import pxl0 from '../public/images/pxl_rwd_0.png';
 import pxl1 from '../public/images/pxl_rwd_1.png';
 import pxl2 from '../public/images/pxl_rwd_2.png';
 
-const stringsEN: IStrings = {
+const strings: IStrings = {
   navigation: [
     ['Main Page', '/'],
     // ['Posts', '/posts'],
@@ -100,7 +100,7 @@ const stringsEN: IStrings = {
       fullName: '',
       type: 'development',
       description:
-        'One of the most popular and universal programming languages. It is mainly used to create websites and web applications, but thanks to Node.js it is also used outside browsers. JS is an object-oriented language, based on prototypes, many paradigms and dynamic syntax, interactive, dynamically filled with stringsEN and modern looking pages. ',
+        'One of the most popular and universal programming languages. It is mainly used to create websites and web applications, but thanks to Node.js it is also used outside browsers. JS is an object-oriented language, based on prototypes, many paradigms and dynamic syntax. ',
       links: [
         ['JAVASCRIPT.INFO ', 'https://javascript.info/'],
         [
@@ -591,4 +591,4 @@ const stringsEN: IStrings = {
   ],
 };
 
-export default stringsEN;
+export default strings;

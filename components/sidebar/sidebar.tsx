@@ -1,18 +1,14 @@
 'use client';
 
 import { AppContext } from '@/context/context';
-import classNames from 'classnames';
 import { useContext } from 'react';
 import NavLinkItem from '../nav-link-item/nav-link-item';
 import styles from './sidebar.module.scss';
 
 export const Sidebar = () => {
-  const { isSidebarOpen, language, strings, closeSidebar, languageChange } =
-    useContext(AppContext);
+  const { isSidebarOpen, strings, closeSidebar } = useContext(AppContext);
   const { navigation } = strings;
   // const [mainPage, ...restNavItem] = navigation
-  const btnPLCSS = language === 'PL' && styles.active;
-  const btnENCSS = language === 'EN' && styles.active;
   const isHash = (i: string) => i.indexOf('#') > 0;
 
   return (
@@ -48,20 +44,6 @@ export const Sidebar = () => {
             );
           }
         })}
-        <div>
-          <button
-            className={classNames(styles.btn, btnPLCSS)}
-            onClick={() => languageChange('PL')}
-          >
-            PL
-          </button>
-          <button
-            className={classNames(styles.btn, btnENCSS)}
-            onClick={() => languageChange('EN')}
-          >
-            EN
-          </button>
-        </div>
       </section>
     </aside>
   );

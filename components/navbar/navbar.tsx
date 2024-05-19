@@ -37,13 +37,6 @@ export const Navbar = () => {
             );
           }
         })}
-        {/* <Box as={'li'} addClass={styles.link}>
-          <Dropdown
-            items={['EN', 'PL']}
-            buttonText={language}
-            onChange={languageChange}
-          />
-        </Box> */}
       </ul>
     </>
   );
