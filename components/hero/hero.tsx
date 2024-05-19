@@ -18,12 +18,12 @@ export const Hero = () => {
         <div>
           <Paragraph
             addClass={styles.paragraph}
-            text='Hello, my name is Damian.'
+            text='Hello, my name is Damian Duszyński.'
             breakLine
           />
           <Paragraph
             addClass={styles.paragraph}
-            text='I am a Frontend Developer and UX/UI enthusiast. You will find here a description of my projects and technologies that I use.'
+            text='I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript. You will find here a description of my projects and technologies that I use.'
             breakLine
           />
           <Paragraph
@@ -35,7 +35,7 @@ export const Hero = () => {
           </Link>
           .
         </div>
-        <ScrollDown />
+        <ScrollDown href='/#projects' />
       </Box>
     </section>
   );

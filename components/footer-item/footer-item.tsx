@@ -10,18 +10,16 @@ interface FooterItem {
   activeIcon: string;
   description: string;
   icon: string;
+  text: string;
   url: string;
-  text?: string;
-  biggerIcon?: boolean;
 }
 
 export const FooterItem = ({
   activeIcon,
   description,
   icon,
-  url,
   text,
-  biggerIcon,
+  url,
 }: FooterItem) => {
   const [isIconHover, setIsIconHover] = useState(false);
   const isIconHoverHandler = () => {
@@ -39,11 +37,10 @@ export const FooterItem = ({
       <Image
         src={isIconHover ? activeIcon : icon}
         alt={description}
-        // TODO wysokosc na małych urzadzeniach powinna byc 50
-        width={biggerIcon ? 50 : 35}
-        height={biggerIcon ? 50 : 35}
+        width={50}
+        height={50}
       />
-      {text && <Paragraph text={text} addClass={styles.paragraph} />}
+      <Paragraph text={text} addClass={styles.paragraph} />
     </Link>
   );
 };

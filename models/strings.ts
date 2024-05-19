@@ -59,9 +59,8 @@ export interface IContact {
 
 export interface IAbout {
   header: string;
-  paragraph1: string;
-  paragraph2: string;
-  expHeader: string;
+  paragraphs: string[];
+  experience: string;
 }
 
 export interface IExperience {

@@ -7,14 +7,15 @@ import pxl2 from '../public/images/pxl_rwd_2.png';
 const stringsEN: IStrings = {
   navigation: [
     ['Main Page', '/'],
-    ['Posts', '/posts'],
+    // ['Posts', '/posts'],
     ['About Me', '/about'],
     ['Projects', '/#projects'],
     ['Contact', '/#contact'],
   ],
   hero: [
-    'Hello, my name is Damian.',
-    'I am a Front-end Developer and UX/UI enthusiast. You will find here a description of my projects and technologies that I use.',
+    'Hello, my name is Damian Duszyński',
+    'I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript.',
+    'You will find here a description of my projects and technologies that I use.',
     'Feel free to',
     'contact me',
   ],
@@ -463,27 +464,24 @@ const stringsEN: IStrings = {
     namePlaceholder: 'John',
     emailPlaceholder: 'john@gmail.com',
     messagePlaceholder: 'Message ...',
-    thxMessage1: 'Thanks for the message. ',
-    thxMessage2: 'I will reply as soon as possible.',
-    errorMessage: 'Something went wrong. Please try again!',
   },
   about: {
     header: 'About me',
-    // TODO: paragraph1 => paragraphs
-    paragraph1:
-      "Hi, my name is Damian. I'm a Front-end Developer interested in UX/UI design and modern web technologies, including AI. I enjoy a quiet life in the countryside, where I can peacefully develop my passions. My ultimate goal is to become a Fullstack Software Engineer and work on a project that solves real problems and ensures a great user experience.",
-    paragraph2:
-      "Privately, I'm a fan of ☕ black coffee, ⚽ football, 🐕 dogs, and 🛸 sci-fi movies.",
-    expHeader: 'Experience: ',
+    paragraphs: [
+      "I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript. I'm currently exploring the Node.js ecosystem to evolve into a Full-stack Software Engineer, which is my main goal.",
+      "Privately, I enjoy a quiet life in the countryside, where I can peacefully develop my skills and passions. I'm a fan of ⚽ football, 🐕 dogs, ☕ black coffee and 🛸 sci-fi.",
+      "Feel free to connect with me if you share similar interests or if you're interested in collaborating on exciting projects.",
+    ],
+    experience: 'Experience: ',
   },
   experience: [
     {
       topHeader: 'Sep 2022 -> Present',
       bottomHeader: 'Front-end Developer [Fabrity]',
       paragraphs: [
-        'Work on the security, development and redesign of information exchange platform for the European Union Agency.',
-        'Work on the development and redesign of a low-code platform that allows users creating applications that improve and optimize business processes in their organizations.',
-        'Skills: Typescript / React / React Testing Library / SCSS Modules / SonarCloud / ESLint / StyleLint / Prettier',
+        'Work on the security, development, and redesign of the information exchange platform for the European Agency.',
+        'Work on developing and redesigning a low-code platform that allows users to create applications that improve and optimize business processes in their organizations.',
+        'Skills: TypeScript / React / Redux / Redux Thunk / SCSS Modules / Bootstrap / Sharepoint / Jest / Figma / Checkmarx / Scrum',
       ],
     },
     {
@@ -492,17 +490,16 @@ const stringsEN: IStrings = {
       paragraphs: [
         'Development of software for the optical industry',
         'Work in the "Central UX" team responsible for the consistent design, app performance, and creating, documenting, and maintaining components for other teams',
-        'Work structure based on the Scaled Agile Framework',
-        'Skills: Typescript / React / Redux Saga / React Testing Library / SCSS Modules / SonarCloud / ESLint / StyleLint / Prettier',
+        'Skills: Typescript / React / Redux Saga / React Testing Library / SCSS Modules / SonarCloud / Scaled Agile Framework',
       ],
     },
     {
       topHeader: 'Jul 2020 -> Jun 2021',
-      bottomHeader: 'Front-end Developer [PrintXL]',
+      bottomHeader: 'Software Developer [PrintXL]',
       paragraphs: [
-        'Creation and development of a website for a large-format digital printing house based on the Gatsby framework and Headless CMS Contentful',
+        'Creation and development of a website for a large-format digital printing house based on the Gatsby framework and Headless CMS Contentful.',
         'Skills: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)',
-        'Co-creation and development of the production management system in the company based on Node.js / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.',
+        'Co-creation of the production management system in the company based on Node.js / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.',
         'Skills: Node.js / SQL / MS Excel',
       ],
     },
@@ -512,7 +509,7 @@ const stringsEN: IStrings = {
       paragraphs: [
         'Creation and implementation of new products with market analysis, cost calculation, and optimal materials selection.',
         'Preparation of reports and constant cooperation with the management, sales, planning, logistics, and production departments.',
-        'Skills: MS Excel / Digital Printing / Research and Development (R&D) / Business Analysis / Project Management / Kanban / Customer Requirements',
+        'Skills: Project Management / Business Analysis / Digital Printing / Research and Development (R&D) / Kanban / Customer Requirements / MS Excel',
       ],
     },
     {
@@ -520,9 +517,9 @@ const stringsEN: IStrings = {
       bottomHeader: 'DTP Department Manager [PrintXL]',
       paragraphs: [
         'Managing the work and development of a seven-person department.',
-        'Responsibility for the smooth flow of orders by the DTP department.',
         'Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing.',
-        'Skills: DTP / MS Excel / Graphic Design / Digital Printing / Team Leadership / Project Management / Adobe Illustrator / Adobe Photoshop / JavaScript / Customer Requirements',
+        'Responsibility for the smooth flow of orders by the DTP department.',
+        'Skills: Team Management / Project Management / Digital Printing / Kanban / JavaScript',
       ],
     },
     {

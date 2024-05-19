@@ -12,61 +12,14 @@
   padding-top: 5rem;
 }
 
-.h1 {
-  margin-bottom: 1vh;
-}
-
 .contactIconsBox {
-  width: 49%;
   gap: 3rem;
+  height: 50rem;
 }
 
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.halfWidthForm {
-  width: 49%;
-}
-
-.fullWidthForm {
-  width: 100%;
-}
-
-.listContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 8rem 0 8rem;
-  width: 100%;
-}
-
-.singleFormItem {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  max-width: 40rem;
-  padding: 2rem 0;
-}
-
-.thxMessage {
-  height: 54.2rem;
-}
-
-.icon {
-  color: #fff;
-  height: 4rem;
-  width: 4rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.line {
-  height: 80%;
-  width: 1px;
-  background-color: #ddd;
+@media screen and (min-width: 900px) {
+  .contactIconsBox {
+    gap: 6rem;
+    height: 20rem;
+  }
 }

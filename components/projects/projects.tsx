@@ -4,6 +4,7 @@ import { AppContext } from '@/context/context';
 import { useContext } from 'react';
 import Box from '../box/box';
 import Header from '../header/header';
+import Paragraph from '../paragraph/paragraph';
 import { ProjectCard } from '../project-card/project-card';
 import styles from './projects.module.scss';
 
@@ -20,6 +21,7 @@ const Projects = () => {
           return <ProjectCard key={index} {...item} />;
         })}
       </Box>
+      <Paragraph text='more projects coming soon...' />
     </section>
   );
 };

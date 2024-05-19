@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import styles from './scroll-down.module.scss';
 
-const ScrollDown = () => {
+interface ScrollDownProps {
+  href: string;
+}
+
+const ScrollDown = ({ href }: ScrollDownProps) => {
   return (
-    <Link href={'/#posts'} className={styles.scrollDown}>
+    <Link href={href} className={styles.scrollDown}>
       <span></span>
       <span></span>
       <span></span>

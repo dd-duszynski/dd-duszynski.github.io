@@ -13,7 +13,7 @@ export const About = () => {
   const { strings } = useContext(AppContext);
   const { about, projects, experience } = strings;
   return (
-    <section className={styles.about}>
+    <section className={styles.aboutSection}>
       <Box
         addClass={styles.introductionBox}
         align='flex-start'
@@ -21,25 +21,46 @@ export const About = () => {
         justify='flex-start'
       >
         <Header type='h1' text={`${about.header}:`} addClass={styles.h1} />
-        <Paragraph text={about.paragraph1} addClass={styles.paragraph1} />
-        <Paragraph text={about.paragraph2} />
+        {strings.about.paragraphs.map((paragraph, index) => (
+          <Paragraph addClass={styles.paragraph} key={index} text={paragraph} />
+        ))}
       </Box>
+
+      <Box
+        addClass={styles.experienceBox}
+        align='flex-start'
+        direction='column'
+        justify='flex-start'
+      >
+        <Header type='h2' text='What can I offer?' addClass={styles.h2} />
+        {[
+          '• 👩🏽‍💻 High work ethic',
+          '• 🤝 Strong cooperation attitude',
+          '• 🎨 UX and UI sensibility',
+          '• 📊 Ability to analyze business requirements and customer needs',
+          '• 💸 Experience in working with clients, sales department, and advertising agencies',
+          '• 💪🏻 Self-driven, problem-solving oriented, independent professionalism',
+        ].map((paragraph, index) => (
+          <Paragraph key={index} text={paragraph} />
+        ))}
+      </Box>
+
       {/* Experience */}
       <Box
-        justify='flex-start'
-        align='flex-start'
         addClass={styles.experienceBox}
+        align='flex-start'
         direction='column'
+        justify='flex-start'
       >
-        <Header type='h2' text={about.expHeader} addClass={styles.h2} />
+        <Header type='h1' text={about.experience} addClass={styles.h2} />
         <div className={styles.timelineExperience} />
         {experience.map((item, index, arr) => (
           <TimelineCard
-            key={index}
-            topHeader={item.topHeader}
             bottomHeader={item.bottomHeader}
-            paragraphs={item.paragraphs}
             isLast={index + 1 === arr.length}
+            key={index}
+            paragraphs={item.paragraphs}
+            topHeader={item.topHeader}
           />
         ))}
       </Box>

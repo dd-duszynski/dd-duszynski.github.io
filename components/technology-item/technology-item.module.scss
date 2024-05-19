@@ -22,18 +22,19 @@
 }
 
 .container {
-  border: 1px solid gray;
-  border-radius: 0.8rem;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.8rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #292929;
+  border-radius: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid gray;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   position: relative;
-  transition: transform 0.5s;
-  transition: transform 0.5s;
   transform-style: preserve-3d;
+  transition: transform 0.5s;
+  transition: transform 0.5s;
+  width: 100%;
 }
 
 .front,

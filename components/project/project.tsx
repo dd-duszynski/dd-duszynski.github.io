@@ -53,40 +53,36 @@ export const Project = ({ project }: ProjectType) => {
       <main className={styles.project} id='projects'>
         <Box justify='space-between' align='flex-start' direction='column'>
           {/* Main Photo */}
-          <Box>
+          <Box addClass={styles.photoBox}>
             <Image
               className={styles.mainPhoto}
               src={mainPhoto}
               alt='main img'
+              fill
             />
-            {/* <img
-              className={styles.mainPhoto}
-              src={mainPhoto}
-              alt="main img"
-            /> */}
           </Box>
           {/* Main Header */}
           <Box justify='space-between' addClass={styles.header}>
             <Header type='h1' text={project.title} />
             <Box align='flex-end' justify='flex-end' addClass={styles.linkBox}>
               <a
-                target='_blank'
-                rel='noopener noreferrer'
-                href={project.externalLink}
                 className={styles.externalLink}
+                href={project.externalLink}
+                rel='noopener noreferrer'
+                target='_blank'
               >
                 <Paragraph text='Link' />
                 <BiLinkExternal className={styles.externalLinkIcon} />
               </a>
-              <a
+              {/* <a
                 target='_blank'
                 rel='noopener noreferrer'
                 href={project.repository}
-                className={styles.github}
+                className={styles.externalLink}
               >
                 <Paragraph text='Github' />
-                <SiGithub className={styles.icon} />
-              </a>
+                <SiGithub className={styles.externalLinkIcon} />
+              </a> */}
             </Box>
           </Box>
           <div className={styles.line}>
@@ -122,18 +118,22 @@ export const Project = ({ project }: ProjectType) => {
           {/* Screens */}
           <Box direction='column' align='flex-start'>
             <Header type='h2' text={projects.screens} addClass={styles.h2} />
-            <Image src={otherPhotos[0]} alt='' className={styles.screen} />
-            <Image src={smartphonePhoto} alt='' className={styles.screen} />
-            {/* <img
-              src={otherPhotos[0]}
-              alt=""
-              className={styles.screen}
-            />
-            <img
-              src={smartphonePhoto}
-              alt=""
-              className={styles.screen}
-            /> */}
+            <Box addClass={styles.photoBox}>
+              <Image
+                alt=''
+                className={styles.image}
+                fill
+                src={otherPhotos[0]}
+              />
+            </Box>
+            <Box addClass={styles.photoBox}>
+              <Image
+                alt=''
+                className={styles.image}
+                fill
+                src={smartphonePhoto}
+              />
+            </Box>
           </Box>
 
           {/* Tools & Technology */}
@@ -162,16 +162,11 @@ export const Project = ({ project }: ProjectType) => {
               <Paragraph text={item} key={item} addClass={styles.paragraph} />
             ))}
           </Box>
-          {/* Smartphone Photos */}
-          <Box direction='column' align='flex-start'>
-            <Image src={otherPhotos[1]} alt='' className={styles.screen} />
-            {/* <img
-							src={otherPhotos[1]}
-							alt=''
-							className={styles.screen}
-						/> */}
+
+          <Box direction='column' align='flex-start' addClass={styles.photoBox}>
+            <Image alt='' className={styles.image} fill src={otherPhotos[1]} />
           </Box>
-          {/* Back To Home Page */}
+
           <Box justify='flex-start'>
             <BackToHomeLink text={projects.homeLink} />
           </Box>

@@ -2,11 +2,19 @@
 
 .footerItem {
   display: flex;
+  flex-direction: column;
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  width: 24rem;
+  height: 12rem;
+  background-color: #292929;
 
   &:hover {
+    transform: scale(1.02);
+
     .paragraph {
       color: lightgreen;
     }
@@ -14,13 +22,8 @@
 }
 
 .paragraph {
-  display: none;
-}
-
-@media (min-width: $mediumDevice) {
-  .paragraph {
-    display: block;
-    font-size: 1.2rem;
-    margin-left: 0.7rem;
-  }
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: center;
 }

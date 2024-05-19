@@ -1,73 +1,25 @@
 @import '../../styles/main.scss';
 
-.smallDeviceFooter {
+.footerLarge {
+  position: relative;
+  grid-column: 1/4;
   background-color: $bgColorGray;
   z-index: 2;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   height: fit-content;
-  @include grid;
-
-  .box {
-    grid-column: 2/3;
-    margin: 0 auto;
-    height: 6.8rem;
-    width: 80% !important;
-    max-width: 380px !important;
-  }
+  bottom: 0;
 }
 
-@media (min-width: $mediumDevice) {
-  .footerLarge {
-    position: relative;
-    grid-column: 1/4;
-    background-color: $bgColorGray;
-    z-index: 2;
-    height: fit-content;
-    bottom: 0;
-  }
+.container {
+  max-width: 100rem;
+  width: 80%;
+  margin: 2rem auto;
+}
 
-  .container {
-    max-width: 100rem;
-    width: 80%;
-    margin: 2rem auto;
-  }
+.copyright {
+  font-size: 12px !important;
+  width: 100%;
 
-  .innerBox {
-    width: auto !important;
-  }
-
-  .footerLink {
-    color: white;
-    text-align: left;
-    font-size: 1.2rem;
-    margin-bottom: 1.4rem;
-
-    &:hover {
-      color: lightgreen;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .copyright {
-    font-size: 12px !important;
-    width: 100%;
-
-    &::first-letter {
-      font-size: 1.6rem;
-    }
-  }
-
-  .socialLinkHeader {
-    margin-left: 4.2rem;
-    margin-bottom: 1.1rem;
-  }
-
-  .menuHeader {
-    margin-bottom: 1.1rem;
+  &::first-letter {
+    font-size: 1.6rem;
   }
 }

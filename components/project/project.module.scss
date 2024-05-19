@@ -6,14 +6,16 @@
   justify-content: center;
 }
 
-.mainPhoto {
+.photoBox {
+  height: 400px;
+  position: relative;
   width: 100%;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
 }
 
-.screen {
+.image {
+  object-fit: contain;
   width: 100%;
-  margin: 1.4rem 0;
 }
 
 .header {
@@ -49,30 +51,8 @@
   align-items: center;
 
   &:nth-child(1) {
-    margin-bottom: 0.8rem;
-    margin-right: 0;
-  }
-
-  &:hover {
-    color: black;
-  }
-}
-
-.github {
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 0.7rem 1.4rem;
-  border-radius: 1rem;
-  border: 0.1rem solid white;
-
-  &:nth-child(1) {
-    margin-bottom: 0.8rem;
-    margin-right: 0;
-  }
-
-  &:hover {
-    color: lightgreen;
+    margin-bottom: 0;
+    margin-right: 1.2rem;
   }
 }
 
@@ -104,18 +84,8 @@
   }
 }
 
-@media (min-width: 600px) {
-  .linkBox {
-    flex-direction: row;
-  }
-
-  .externalLink,
-  .github {
-    align-items: center;
-
-    &:nth-child(1) {
-      margin-bottom: 0;
-      margin-right: 3rem;
-    }
+@media (min-width: 800px) {
+  .photoBox {
+    height: 550px;
   }
 }
