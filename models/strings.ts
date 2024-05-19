@@ -52,9 +52,6 @@ export interface IContact {
   namePlaceholder: string;
   emailPlaceholder: string;
   messagePlaceholder: string;
-  thxMessage1: string;
-  thxMessage2: string;
-  errorMessage: string;
 }
 
 export interface IAbout {
