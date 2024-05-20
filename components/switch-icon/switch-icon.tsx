@@ -21,6 +21,7 @@ import {
 } from 'react-icons/si';
 import Express from '../../public/icons/express.svg';
 import Illustrator from '../../public/icons/illustrator.svg';
+import { SiNextdotjs } from 'react-icons/si';
 
 const SwitchIcon = ({ name }: { name: string }) => {
   let icon;
@@ -48,6 +49,9 @@ const SwitchIcon = ({ name }: { name: string }) => {
       break;
     case 'Gatsby':
       icon = <GrGatsbyjs />;
+      break;
+    case 'Next':
+      icon = <SiNextdotjs />;
       break;
     case 'Node':
       icon = <GrNode />;

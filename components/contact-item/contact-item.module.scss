@@ -1,0 +1,37 @@
+@import '../../styles/main.scss';
+
+.link {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  width: 24rem;
+  height: 12rem;
+  background-color: #292929;
+
+  svg {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    svg {
+      color: lightgreen;
+    }
+    .paragraph {
+      color: lightgreen;
+    }
+  }
+}
+
+.paragraph {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}

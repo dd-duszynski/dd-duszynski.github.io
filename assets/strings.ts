@@ -112,22 +112,6 @@ const strings: IStrings = {
       projects: ['PXL', 'Kanbanator', 'BigFive'],
     },
     {
-      name: 'React',
-      type: 'development',
-      fullName: '',
-      description:
-        'Extremely popular declarative library created by Facebook developers. It allows you to create very complex interfaces, dividing them into smaller, reusable components that can have their own state. Currently, React is used both on the browser and server side thanks to Node.js, as well as in mobile applications , thanks to React Native. It uses the Virtual DOM technique, which only updates changes where they actually occurred, allowing you to smoothly re-render the user interface.',
-      links: [
-        ['Official page', 'https://reactjs.org/'],
-        [
-          '[Traversy Media] - React JS Crash Course 2021 ',
-          'https://www.youtube.com/watch?v=w7ejDZ8SWv8',
-          'yt',
-        ],
-      ],
-      projects: ['PXL', 'Kanbanator', 'BigFive'],
-    },
-    {
       name: 'TypeScript',
       fullName: '',
       type: 'development',
@@ -144,6 +128,22 @@ const strings: IStrings = {
       projects: [''],
     },
     {
+      name: 'React',
+      type: 'development',
+      fullName: '',
+      description:
+        'Extremely popular declarative library created by Facebook developers. It allows you to create very complex interfaces, dividing them into smaller, reusable components that can have their own state. Currently, React is used both on the browser and server side thanks to Node.js, as well as in mobile applications , thanks to React Native. It uses the Virtual DOM technique, which only updates changes where they actually occurred, allowing you to smoothly re-render the user interface.',
+      links: [
+        ['Official page', 'https://reactjs.org/'],
+        [
+          '[Traversy Media] - React JS Crash Course 2021 ',
+          'https://www.youtube.com/watch?v=w7ejDZ8SWv8',
+          'yt',
+        ],
+      ],
+      projects: ['PXL', 'Kanbanator', 'BigFive'],
+    },
+    {
       name: 'Redux',
       fullName: '',
       type: 'development',
@@ -158,6 +158,22 @@ const strings: IStrings = {
         ],
       ],
       projects: ['Kanbanator'],
+    },
+    {
+      name: 'Next',
+      type: 'development',
+      fullName: '',
+      description:
+        'The React Framework for the Web. Used by some of the worlds largest companies, Next.js enables you to create high-quality web applications with the power of React components.',
+      links: [
+        ['Official page', 'https://nextjs.org/'],
+        [
+          '[JavaScript Mastery] - Next.js 14 Full Course 2024 ',
+          'https://youtu.be/wm5gMKuwSYk?si=L09tz2MKrt-sxRDC',
+          'yt',
+        ],
+      ],
+      projects: ['PXL', 'Kanbanator', 'BigFive'],
     },
     {
       name: 'Gatsby',
