@@ -10,6 +10,13 @@ export interface IStrings {
   experience: IExperience[];
   footer: IFooter;
   listOfProjects: ListOfProjectsType[];
+  notFoundPage: INotFoundPage;
+}
+
+export interface INotFoundPage {
+  title: string;
+  paragraph: string;
+  link: string;
 }
 
 export interface IPosts {

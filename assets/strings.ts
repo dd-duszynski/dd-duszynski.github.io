@@ -562,6 +562,12 @@ const strings: IStrings = {
     menu: 'Menu',
     toTheTop: 'Scroll to Top',
   },
+  notFoundPage: {
+    title: '404 - Page not found',
+    paragraph:
+      'The page you are looking for does not exist, has changed its name or is temporarily unavailable.',
+    link: 'Go to homepage',
+  },
   listOfProjects: [
     {
       title: 'PXL',

@@ -1,11 +1,10 @@
 'use client';
 
+import { AppContext } from '@/context/context';
+import { ListOfProjectsType } from '@/models/strings';
 import Image from 'next/image';
 import { useContext, useState } from 'react';
 import { BiLinkExternal } from 'react-icons/bi';
-import { SiGithub } from 'react-icons/si';
-import { AppContext } from '@/context/context';
-import { ListOfProjectsType } from '@/models/strings';
 import BackToHomeLink from '../back-to-home-link/back-to-home-link';
 import Box from '../box/box';
 import Header from '../header/header';
