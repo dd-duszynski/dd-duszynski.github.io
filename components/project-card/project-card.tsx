@@ -1,3 +1,5 @@
+'use client';
+
 import Box from '@/components/box/box';
 import Header from '@/components/header/header';
 import { IListOfTechnology, ListOfProjectsType } from '@/models/strings';

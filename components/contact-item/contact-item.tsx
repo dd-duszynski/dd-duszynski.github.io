@@ -17,6 +17,7 @@ export const ContactItem = ({ icon, text, url }: ContactItemProps) => {
       target='_blank'
     >
       {icon}
+      <div className={styles.line} />
       <Paragraph text={text} addClass={styles.paragraph} />
     </Link>
   );

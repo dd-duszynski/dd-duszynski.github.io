@@ -1,3 +1,4 @@
+import strings from '@/assets/strings';
 import classNames from 'classnames';
 import Link from 'next/link';
 import Box from '../box/box';
@@ -17,25 +18,30 @@ export const Hero = () => {
       >
         <div>
           <Paragraph
-            addClass={styles.paragraph}
-            text='Hello, my name is Damian Duszyński.'
-            breakLine
+            addClass={classNames(styles.inlineParagraph)}
+            text={strings.hero[0]}
           />
+          <Link href={'/about'} className={styles.link}>
+            {strings.hero[1]}
+          </Link>
+          .
+          <br />
+          <br />
           <Paragraph
             addClass={styles.paragraph}
-            text='I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript. You will find here a description of my projects and technologies that I use.'
+            text={strings.hero[2]}
             breakLine
           />
           <Paragraph
             addClass={classNames(styles.inlineParagraph)}
-            text='Feel free to'
+            text={strings.hero[3]}
           />
           <Link href={'/#contact'} className={styles.link}>
-            contact me
+            {strings.hero[4]}
           </Link>
           .
         </div>
-        <ScrollDown href='/#projects' />
+        <ScrollDown href='/#contact' />
       </Box>
     </section>
   );

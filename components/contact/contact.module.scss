@@ -9,17 +9,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 
 .contactIconsBox {
-  gap: 3rem;
-  height: 50rem;
+  gap: 6rem;
+  height: 58rem;
+  flex-direction: column !important;
 }
 
 @media screen and (min-width: 900px) {
   .contactIconsBox {
+    flex-direction: row !important;
     gap: 6rem;
-    height: 20rem;
+    height: 40rem;
+    flex-direction: row;
   }
 }

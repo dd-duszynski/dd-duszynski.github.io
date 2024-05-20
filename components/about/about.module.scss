@@ -15,6 +15,7 @@
 
 .paragraph {
   margin-bottom: 1.4rem;
+  // display: block;
 }
 
 .experienceBox {
@@ -22,8 +23,7 @@
   position: relative;
 }
 
-.h1,
-.h2 {
+.header {
   margin-bottom: 1.2rem;
 }
 
@@ -42,4 +42,29 @@
 
 .timelineExperience {
   height: calc(100% - 16rem);
+}
+
+.whatCanIOfferListItem {
+  margin-bottom: 0.4rem;
+  &::first-letter {
+    font-size: 2rem;
+  }
+}
+
+.avatar {
+  border-radius: 1rem;
+  margin: 0 0.8rem 0 0;
+  height: auto;
+  width: 14rem;
+  float: left;
+}
+
+@media screen and (max-width: 800px) {
+  .avatarBox {
+    display: inline;
+  }
+
+  .avatar {
+    width: 11rem;
+  }
 }

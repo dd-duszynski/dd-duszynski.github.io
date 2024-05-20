@@ -65,6 +65,8 @@ export interface IAbout {
   header: string;
   paragraphs: string[];
   experience: string;
+  whatCanIOffer: string;
+  whatCanIOfferList: string[];
 }
 
 export interface IExperience {

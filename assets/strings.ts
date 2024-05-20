@@ -13,9 +13,9 @@ const strings: IStrings = {
     ['Contact', '/#contact'],
   ],
   hero: [
-    'Hello, my name is Damian Duszyński',
-    'I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript.',
-    'You will find here a description of my projects and technologies that I use.',
+    'Hi, my name is Damian Duszyński. More about me ',
+    'here',
+    'I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript. You will find here a description of my projects and technologies that I use.',
     'Feel free to',
     'contact me',
   ],
@@ -489,6 +489,15 @@ const strings: IStrings = {
       "Feel free to connect with me if you share similar interests or if you're interested in collaborating on exciting projects.",
     ],
     experience: 'Experience: ',
+    whatCanIOffer: 'What can I offer?',
+    whatCanIOfferList: [
+      '👩🏽‍💻 High work ethic',
+      '🤝 Strong cooperation attitude',
+      '🎨 UX and UI sensibility',
+      '📊 Ability to analyze business requirements and customer needs',
+      '💸 Experience in working with clients, sales department, and advertising agencies',
+      '💪🏻 Self-driven, problem-solving oriented, independent professionalism',
+    ],
   },
   experience: [
     {

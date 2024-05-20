@@ -1,7 +1,4 @@
-'use client';
-
-import { AppContext } from '@/context/context';
-import { useContext } from 'react';
+import strings from '@/assets/strings';
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { IoMail } from 'react-icons/io5';
 import { TbBrandGithubFilled } from 'react-icons/tb';
@@ -11,23 +8,11 @@ import Header from '../header/header';
 import styles from './contact.module.scss';
 
 const ContactForm = () => {
-  const {
-    size,
-    strings: { contact },
-  } = useContext(AppContext);
-
-  const isMediumScreen = size > 900;
-
   return (
     <section className={styles.contact} id='contact'>
       <Box justify='center' align='flex-start' direction='column'>
-        <Header type='h1' text={contact.header} />
-        <Box
-          addClass={styles.contactIconsBox}
-          justify='center'
-          align='center'
-          direction={isMediumScreen ? 'row' : 'column'}
-        >
+        <Header type='h1' text={strings.contact.header} />
+        <Box addClass={styles.contactIconsBox} justify='center' align='center'>
           <ContactItem
             text='dd.duszynski@gmail.com'
             url='mailto:dd.duszynski@gmail.com'

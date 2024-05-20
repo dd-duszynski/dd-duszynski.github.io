@@ -1,21 +1,29 @@
 @import '../../styles/main.scss';
 
 .link {
+  align-items: center;
+  background-color: #292929;
+  border-radius: 0.8rem;
+  border: 1px solid gray;
+  color: white;
+  display: flex;
   display: flex;
   flex-direction: column;
-  color: white;
-  border: 1px solid gray;
-  display: flex;
-  align-items: center;
+  height: 13rem;
   justify-content: center;
-  border-radius: 0.8rem;
   width: 24rem;
-  height: 12rem;
-  background-color: #292929;
 
   svg {
     height: 3.6rem;
     width: 3.6rem;
+  }
+
+  .line {
+    background-color: gray;
+    display: block;
+    height: 0.1rem;
+    margin: 1rem 0;
+    width: 70%;
   }
 
   &:hover {
@@ -32,6 +40,5 @@
 .paragraph {
   display: block;
   font-size: 1.2rem;
-  margin-top: 0.5rem;
   text-align: center;
 }
