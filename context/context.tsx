@@ -1,7 +1,5 @@
 'use client';
 
-import strings from '@/assets/strings';
-import { IStrings } from '@/models/strings';
 import React, { createContext, useEffect, useState } from 'react';
 
 interface AppProviderProps {
@@ -12,7 +10,6 @@ export interface AppContextInterface {
   isModalOpen: boolean;
   isSidebarOpen: boolean;
   size: number;
-  strings: IStrings;
   closeSidebar: () => void;
   toggleModal: () => void;
   openSidebar: () => void;
@@ -22,7 +19,6 @@ const AppContext = createContext<AppContextInterface>({
   isModalOpen: false,
   isSidebarOpen: false,
   size: 0,
-  strings: strings,
   closeSidebar: () => {},
   openSidebar: () => {},
   toggleModal: () => {},
@@ -63,7 +59,6 @@ const AppProvider = ({ children }: AppProviderProps) => {
         isModalOpen,
         isSidebarOpen,
         size,
-        strings: strings,
         closeSidebar,
         openSidebar,
         toggleModal,

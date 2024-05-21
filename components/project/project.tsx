@@ -1,5 +1,6 @@
 'use client';
 
+import strings from '@/assets/strings';
 import { AppContext } from '@/context/context';
 import { ListOfProjectsType } from '@/models/strings';
 import Image from 'next/image';
@@ -19,11 +20,7 @@ interface ProjectType {
 }
 
 export const Project = ({ project }: ProjectType) => {
-  const {
-    strings: { projects, listOfTechnologies },
-    toggleModal,
-    isModalOpen,
-  } = useContext(AppContext);
+  const { toggleModal, isModalOpen } = useContext(AppContext);
 
   const [mainPhoto, smartphonePhoto, ...otherPhotos] = project.photos;
   const [modalContent, setModalContent] = useState<string | null>(null);
@@ -38,7 +35,7 @@ export const Project = ({ project }: ProjectType) => {
     toggleModal();
   };
 
-  const arrOfTechnologies = listOfTechnologies.filter(
+  const arrOfTechnologies = strings.listOfTechnologies.filter(
     (i) => i.projects.findIndex((item) => item === project.title) >= 0
   );
 
@@ -94,7 +91,11 @@ export const Project = ({ project }: ProjectType) => {
             direction='column'
             addClass={styles.paragraphBox}
           >
-            <Header type='h2' text={projects.roleInfo} addClass={styles.h2} />
+            <Header
+              type='h2'
+              text={strings.projects.roleInfo}
+              addClass={styles.h2}
+            />
             <Paragraph text={project.role} />
           </Box>
           {/* Description */}
@@ -106,7 +107,7 @@ export const Project = ({ project }: ProjectType) => {
           >
             <Header
               type='h2'
-              text={projects.descriptionInfo}
+              text={strings.projects.descriptionInfo}
               addClass={styles.h2}
             />
             {project.description.map((item) => (
@@ -116,7 +117,11 @@ export const Project = ({ project }: ProjectType) => {
 
           {/* Screens */}
           <Box direction='column' align='flex-start'>
-            <Header type='h2' text={projects.screens} addClass={styles.h2} />
+            <Header
+              type='h2'
+              text={strings.projects.screens}
+              addClass={styles.h2}
+            />
             <Box addClass={styles.photoBox}>
               <Image
                 alt=''
@@ -141,7 +146,7 @@ export const Project = ({ project }: ProjectType) => {
               choosenItem={choosenItem}
               choosenItemHandler={choosenItemHandler}
               modalToggleHandler={modalToggleHandler}
-              headerText={projects.technologyInfo}
+              headerText={strings.projects.technologyInfo}
               technologies={arrOfTechnologies}
             />
           </Box>
@@ -154,7 +159,7 @@ export const Project = ({ project }: ProjectType) => {
           >
             <Header
               type='h2'
-              text={projects.description2Info}
+              text={strings.projects.description2Info}
               addClass={styles.h2}
             />
             {project.description2.map((item) => (
@@ -167,7 +172,7 @@ export const Project = ({ project }: ProjectType) => {
           </Box>
 
           <Box justify='flex-start' addClass={styles.homeLinkBox}>
-            <BackToHomeLink text={projects.homeLink} />
+            <BackToHomeLink text={strings.projects.homeLink} />
           </Box>
         </Box>
       </main>

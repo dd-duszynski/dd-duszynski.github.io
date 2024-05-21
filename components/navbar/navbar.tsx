@@ -1,5 +1,6 @@
 'use client';
 
+import strings from '@/assets/strings';
 import Box from '@/components/box/box';
 import HamburgerMenu from '@/components/hamburger-menu/hamburger-menu';
 import Logo from '@/components/logo/logo';
@@ -9,7 +10,7 @@ import NavLinkItem from '../nav-link-item/nav-link-item';
 import styles from './navbar.module.scss';
 
 export const Navbar = () => {
-  const { strings, isSidebarOpen, size, closeSidebar, openSidebar } =
+  const { isSidebarOpen, size, closeSidebar, openSidebar } =
     useContext<AppContextInterface>(AppContext);
 
   const {

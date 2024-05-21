@@ -1,3 +1,4 @@
+import strings from '@/assets/strings';
 import { AppContext } from '@/context/context';
 import classNames from 'classnames';
 import { useContext } from 'react';
@@ -17,7 +18,7 @@ const TechnologyItem = ({
   choosenItemHandler,
   modalToggleHandler,
 }: TechnologyItemProps) => {
-  const { size, strings } = useContext(AppContext);
+  const { size } = useContext(AppContext);
   const openModalHandler = (name: string) => {
     modalToggleHandler(name);
     choosenItemHandler(null);

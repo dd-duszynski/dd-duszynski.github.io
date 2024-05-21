@@ -1,5 +1,6 @@
 'use client';
 
+import strings from '@/assets/strings';
 import Box from '@/components/box/box';
 import Header from '@/components/header/header';
 import { IListOfTechnology, ListOfProjectsType } from '@/models/strings';
@@ -13,13 +14,9 @@ import styles from '././project-card.module.scss';
 export const ProjectCard = (item: ListOfProjectsType) => {
   const { title, role, shortDescription, photos, link } = item;
   const [isHover, setIsHover] = useState(false);
+  const { size } = useContext(AppContext);
 
-  const {
-    strings: { projects, listOfTechnologies },
-    size,
-  } = useContext(AppContext);
-
-  const arrOfTechnologies = listOfTechnologies?.filter(
+  const arrOfTechnologies = strings.listOfTechnologies?.filter(
     (i: IListOfTechnology) =>
       i.projects.findIndex((item: string) => item === title) >= 0
   );
@@ -40,14 +37,14 @@ export const ProjectCard = (item: ListOfProjectsType) => {
             alt='project'
           />
         </Box>
-        {projects && arrOfTechnologies && size > 1000 && (
+        {strings.projects && arrOfTechnologies && size > 1000 && (
           <ProjectCardOverlay
             isHover={isHover}
-            setIsHover={setIsHover}
-            projects={projects}
+            projects={strings.projects}
             role={role}
             shortDescription={shortDescription}
             technologies={arrOfTechnologies}
+            setIsHover={setIsHover}
           />
         )}
       </Link>

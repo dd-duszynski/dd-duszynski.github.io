@@ -1,17 +1,12 @@
 'use client';
 
-import { useContext } from 'react';
+import strings from '@/assets/strings';
 import { BsArrow90DegUp } from 'react-icons/bs';
-import styles from './scroll-to-top-button.module.scss';
-import { AppContext } from '@/context/context';
-import Paragraph from '../paragraph/paragraph';
 import Box from '../box/box';
+import Paragraph from '../paragraph/paragraph';
+import styles from './scroll-to-top-button.module.scss';
 
 export const ScrollToTopButton = () => {
-  const {
-    strings: { footer },
-  } = useContext(AppContext);
-
   const smothScroll = () => {
     window.scroll({
       top: 0,
@@ -27,7 +22,7 @@ export const ScrollToTopButton = () => {
       onClick={smothScroll}
     >
       <BsArrow90DegUp className={styles.icon} />
-      <Paragraph text={footer.toTheTop} addClass={styles.paragraph} />
+      <Paragraph text={strings.footer.toTheTop} addClass={styles.paragraph} />
     </Box>
   );
 };
