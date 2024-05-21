@@ -1,10 +1,12 @@
 import Paragraph from '../paragraph/paragraph';
+import SwitchIcon from '../switch-icon/switch-icon';
 import styles from './timeline-card.module.scss';
 
 interface TimelineCardProps {
   bottomHeader: string;
   isLast: boolean;
   paragraphs: string[];
+  skills: string[];
   topHeader: string;
 }
 
@@ -13,6 +15,7 @@ const TimelineCard = ({
   isLast,
   paragraphs,
   topHeader,
+  skills,
 }: TimelineCardProps) => {
   return (
     <div className={styles.timelineCard}>
@@ -26,6 +29,11 @@ const TimelineCard = ({
       {paragraphs.map((item) => (
         <Paragraph text={item} key={item} addClass={styles.paragraphWithDot} />
       ))}
+      <div className={styles.iconsContainer}>
+        {skills.map((skill) => (
+          <SwitchIcon name={skill} key={skill} withTooltip />
+        ))}
+      </div>
       {isLast && <div className={styles.lastElement} />}
     </div>
   );

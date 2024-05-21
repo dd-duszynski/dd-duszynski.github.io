@@ -22,13 +22,11 @@
 
     .dot1 {
       background-color: lightgreen;
-      // background-color: #fff;
       border: 0.2rem solid lightgreen;
     }
 
     .dot2 {
       background-color: lightgreen;
-      // background-color: #fff;
       border: 0.2rem solid $bgColor;
     }
   }
@@ -94,4 +92,18 @@
   width: 2rem;
   left: 0;
   background-color: $bgColor;
+}
+
+.iconsContainer {
+  padding-left: 1.6rem;
+
+  svg,
+  img,
+  span {
+    height: 2.8rem;
+    width: 2.8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: #eee;
+  }
 }

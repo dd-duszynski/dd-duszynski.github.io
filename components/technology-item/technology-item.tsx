@@ -44,7 +44,7 @@ const TechnologyItem = ({
     >
       <div className={styles.container}>
         <div className={styles.front}>
-          <SwitchIcon name={name} />
+          <SwitchIcon name={name} withTooltip={false} />
           <span className={styles.title}>{name}</span>
         </div>
         <div className={styles.back}>

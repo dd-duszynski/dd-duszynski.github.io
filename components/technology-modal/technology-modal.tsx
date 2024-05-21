@@ -75,7 +75,7 @@ const TechnologyModal = ({ name, context }: TechnologyModalProps) => {
     <div className={styles.technologyModal}>
       <Box addClass={styles.header} justify='space-between'>
         <Box align='center'>
-          <SwitchIcon name={choosenTechnology} />
+          <SwitchIcon name={choosenTechnology} withTooltip={false} />
           <Box
             direction={choosenContent.fullName !== '' ? 'column' : 'row'}
             align={choosenContent.fullName !== '' ? 'flex-start' : 'center'}

@@ -437,6 +437,22 @@ const strings: IStrings = {
       projects: ['PXL', 'BigFive'],
     },
     {
+      name: 'Notion',
+      type: 'other',
+      fullName: '',
+      description:
+        'Notion is a single space where you can think, write, and plan. Capture thoughts, manage projects, or even run an entire company — and do it exactly the way you want. We want a quiet space to think, and we want all the information we need to be there when we need it.',
+      links: [
+        ['Official page', 'https://www.notion.so/'],
+        [
+          '[Notion] What is Notion?',
+          'https://www.youtube.com/watch?v=oTahLEX3NXo',
+          'yt',
+        ],
+      ],
+      projects: [],
+    },
+    {
       name: 'Trello',
       type: 'other',
       fullName: '',
@@ -506,7 +522,19 @@ const strings: IStrings = {
       paragraphs: [
         'Work on the security, development, and redesign of the information exchange platform for the European Agency.',
         'Work on developing and redesigning a low-code platform that allows users to create applications that improve and optimize business processes in their organizations.',
-        'Skills: TypeScript / React / Redux / Redux Thunk / SCSS Modules / Bootstrap / Sharepoint / Jest / Figma / Checkmarx / Scrum',
+        // 'Skills: TypeScript / React / Redux / Redux Thunk / SCSS Modules / Bootstrap / Sharepoint / Jest / Figma / Checkmarx / Scrum',
+      ],
+      skills: [
+        'TypeScript',
+        'React',
+        'Redux',
+        'Sass',
+        'Bootstrap',
+        'Sharepoint',
+        'Jest',
+        'Figma',
+        'Checkmarx',
+        'Scrum',
       ],
     },
     {
@@ -515,7 +543,16 @@ const strings: IStrings = {
       paragraphs: [
         'Development of software for the optical industry',
         'Work in the "Central UX" team responsible for the consistent design, app performance, and creating, documenting, and maintaining components for other teams',
-        'Skills: Typescript / React / Redux Saga / React Testing Library / SCSS Modules / SonarCloud / Scaled Agile Framework',
+        // 'Skills: Typescript / React / Redux Saga / React Testing Library / SCSS Modules / SonarCloud / Scaled Agile Framework',
+      ],
+      skills: [
+        'TypeScript',
+        'React',
+        'Redux',
+        'React Testing Library',
+        'Sass',
+        'SonarCloud',
+        'Scrum',
       ],
     },
     {
@@ -523,10 +560,11 @@ const strings: IStrings = {
       bottomHeader: 'Software Developer [PrintXL]',
       paragraphs: [
         'Creation and development of a website for a large-format digital printing house based on the Gatsby framework and Headless CMS Contentful.',
-        'Skills: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)',
+        // 'Skills: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)',
         'Co-creation of the production management system in the company based on Node.js / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.',
-        'Skills: Node.js / SQL / MS Excel',
+        // 'Skills: Node.js / SQL / MS Excel',
       ],
+      skills: ['Node', 'MySQL', 'Excel'],
     },
     {
       topHeader: 'Jul 2019 -> Jun 2021',
@@ -534,7 +572,15 @@ const strings: IStrings = {
       paragraphs: [
         'Creation and implementation of new products with market analysis, cost calculation, and optimal materials selection.',
         'Preparation of reports and constant cooperation with the management, sales, planning, logistics, and production departments.',
-        'Skills: Project Management / Business Analysis / Digital Printing / Research and Development (R&D) / Kanban / Customer Requirements / MS Excel',
+        // 'Skills: Project Management / Business Analysis / Digital Printing / Research and Development (R&D) / Kanban / Customer Requirements / MS Excel',
+      ],
+      skills: [
+        'Project Management',
+        'Business Analysis',
+        'Digital Printing',
+        'Research and Development',
+        'Kanban',
+        'Excel',
       ],
     },
     {
@@ -544,7 +590,14 @@ const strings: IStrings = {
         'Managing the work and development of a seven-person department.',
         'Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing.',
         'Responsibility for the smooth flow of orders by the DTP department.',
-        'Skills: Team Management / Project Management / Digital Printing / Kanban / JavaScript',
+        // 'Skills: Team Management / Project Management / Digital Printing / Kanban / JavaScript',
+      ],
+      skills: [
+        'Team Management',
+        'Project Management',
+        'Digital Printing',
+        'Kanban',
+        'JavaScript',
       ],
     },
     {
@@ -554,7 +607,14 @@ const strings: IStrings = {
         'Verification of the correctness of files sent by the customer and their comprehensive preparation for production.',
         'Development of product specifications and instructions for customers.',
         'Create color profiles for printing machines using the X-Rite I1 spectrophotometer.',
-        'Skills: DTP / Digital Printing / Adobe Illustrator / Adobe Photoshop',
+        // 'Skills: DTP / Digital Printing / Adobe Illustrator / Adobe Photoshop',
+      ],
+      skills: [
+        'DTP',
+        'Digital Printing',
+        'Graphic Design',
+        'Adobe Illustrator',
+        'Adobe Photoshop',
       ],
     },
     {
@@ -562,8 +622,9 @@ const strings: IStrings = {
       bottomHeader: 'Graphic Designer [AllElectronics]',
       paragraphs: [
         'Creating graphics, illustrations, and icons for online auctions.',
-        'Skills: Graphic Design / Adobe Illustrator / Adobe Photoshop',
+        // 'Skills: Graphic Design / Adobe Illustrator / Adobe Photoshop',
       ],
+      skills: ['Graphic Design', 'Adobe Illustrator', 'Adobe Photoshop'],
     },
   ],
   footer: {

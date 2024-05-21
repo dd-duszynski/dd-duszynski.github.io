@@ -23,7 +23,7 @@ const TechnologyRow: React.FC<TechnologyRowProps> = ({
   return (
     <article className={styles.technologyRow}>
       <Box justify='flex-start' align='center' addClass={styles.box}>
-        {headerText && <Header type='h2' text={headerText} />}
+        {headerText && <Header type='h3' text={headerText} />}
       </Box>
       <ul className={styles.technologyList}>
         {technologies.map((item: IListOfTechnology) => (

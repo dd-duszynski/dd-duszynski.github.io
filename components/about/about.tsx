@@ -65,6 +65,7 @@ export const About = () => {
             key={index}
             paragraphs={item.paragraphs}
             topHeader={item.topHeader}
+            skills={item.skills}
           />
         ))}
       </Box>

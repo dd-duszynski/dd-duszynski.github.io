@@ -66,7 +66,7 @@ export const ProjectCardOverlay = ({
         <Header type='h3' text={projects.technologyInfo} />
         <div className={styles.iconsContainer}>
           {technologies.map((i) => (
-            <SwitchIcon name={i.name} key={i.name} />
+            <SwitchIcon name={i.name} key={i.name} withTooltip={false} />
           ))}
         </div>
       </Box>

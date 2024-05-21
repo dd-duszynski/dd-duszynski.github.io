@@ -73,6 +73,7 @@ export interface IExperience {
   topHeader: string;
   bottomHeader: string;
   paragraphs: string[];
+  skills: string[];
 }
 
 export interface IFooter {
