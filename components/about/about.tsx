@@ -5,8 +5,6 @@ import Header from '../header/header';
 import Paragraph from '../paragraph/paragraph';
 import TimelineCard from '../timeline-card/timeline-card';
 import styles from './about.module.scss';
-import Image from 'next/image';
-import avatar from '@/public/images/avatar.jpg';
 
 export const About = () => {
   return (
@@ -22,16 +20,9 @@ export const About = () => {
           text={`${strings.about.header}:`}
           addClass={styles.header}
         />
-        <div className={styles.avatarBox}>
-          <Image src={avatar} className={styles.avatar} alt='avatar' />
-          {strings.about.paragraphs.map((paragraph, index) => (
-            <Paragraph
-              addClass={styles.paragraph}
-              key={index}
-              text={paragraph}
-            />
-          ))}
-        </div>
+        {strings.about.paragraphs.map((paragraph, index) => (
+          <Paragraph addClass={styles.paragraph} key={index} text={paragraph} />
+        ))}
       </Box>
 
       <Box
@@ -62,7 +53,7 @@ export const About = () => {
         justify='flex-start'
       >
         <Header
-          type='h1'
+          type='h2'
           text={strings.about.experience}
           addClass={styles.header}
         />
@@ -77,7 +68,8 @@ export const About = () => {
           />
         ))}
       </Box>
-      <Box justify='flex-start'>
+
+      <Box justify='flex-start' addClass={styles.homeLinkBox}>
         <BackToHomeLink text={strings.projects.homeLink} />
       </Box>
     </section>
