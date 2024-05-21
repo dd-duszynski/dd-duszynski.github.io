@@ -1,11 +1,12 @@
 @import '../../styles/main.scss';
 
 .projects {
-  grid-column: 2/3;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  grid-column: 2/3;
+  justify-content: center;
+  padding-top: 8rem;
 }
 
 .h1 {

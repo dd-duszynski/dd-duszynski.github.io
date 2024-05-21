@@ -1,15 +1,14 @@
 @import '../../styles/main.scss';
 
 .technologies {
-  display: flex;
-  flex-wrap: wrap;
-  color: white;
-  grid-column: 2/3;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  color: white;
+  display: flex;
   flex-direction: column;
-  padding-top: 5rem;
+  flex-wrap: wrap;
+  grid-column: 2/3;
+  justify-content: center;
+  padding: 8rem 0;
 }
 
 .h1 {

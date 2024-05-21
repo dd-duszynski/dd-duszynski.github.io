@@ -166,7 +166,7 @@ export const Project = ({ project }: ProjectType) => {
             <Image alt='' className={styles.image} fill src={otherPhotos[1]} />
           </Box>
 
-          <Box justify='flex-start'>
+          <Box justify='flex-start' addClass={styles.homeLinkBox}>
             <BackToHomeLink text={projects.homeLink} />
           </Box>
         </Box>

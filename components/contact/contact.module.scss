@@ -1,14 +1,13 @@
 @import '../../styles/main.scss';
 
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  color: white;
-  grid-column: 2/3;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  color: white;
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  grid-column: 2/3;
+  justify-content: center;
   padding-top: 8rem;
 }
 
@@ -18,7 +17,7 @@
   flex-direction: column !important;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .contactIconsBox {
     flex-direction: row !important;
     gap: 6rem;

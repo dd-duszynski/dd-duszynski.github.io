@@ -26,8 +26,17 @@
     width: 70%;
   }
 
+  .paragraph {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    text-wrap: wrap;
+  }
+
   &:hover {
     transform: scale(1.02);
+    width: 26rem;
+    transition: all 0.1s ease-in-out;
     svg {
       color: lightgreen;
     }
@@ -37,8 +46,13 @@
   }
 }
 
-.paragraph {
-  display: block;
-  font-size: 1.2rem;
-  text-align: center;
+@media screen and (min-width: 1000px) {
+  .link {
+    &:hover {
+      transform: scale(1.02);
+      height: 20rem;
+      width: 24rem;
+      transition: all 0.1s ease-in-out;
+    }
+  }
 }
