@@ -1,0 +1,26 @@
+.switchIcon {
+  display: inline-block;
+  margin-right: 1.6rem;
+  margin-bottom: 1rem;
+
+  svg {
+    color: #eee;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &:hover {
+    svg {
+      color: lightgreen;
+    }
+  }
+
+  .tooltip {
+    background-color: lightgreen;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: -2rem;
+    z-index: 4;
+  }
+}

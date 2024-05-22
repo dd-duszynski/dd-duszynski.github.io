@@ -85,26 +85,17 @@
   }
 }
 
-.lastElement {
-  position: absolute;
-  top: 3.2rem;
-  height: 12rem;
-  width: 2rem;
-  left: 0;
-  background-color: $bgColor;
-}
+// TODO
+// .lastElement {
+//   position: absolute;
+//   top: 3.2rem;
+//   height: 12rem;
+//   width: 2rem;
+//   left: 0;
+//   background-color: $bgColor;
+// }
 
 .iconsContainer {
   padding-left: 1.6rem;
   padding-top: 1rem;
-
-  svg,
-  img,
-  span {
-    height: 2.8rem;
-    width: 2.8rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    color: #eee;
-  }
 }

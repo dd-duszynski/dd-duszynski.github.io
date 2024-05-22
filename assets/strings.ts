@@ -7,7 +7,6 @@ import pxl2 from '../public/images/pxl_rwd_2.png';
 const strings: IStrings = {
   navigation: [
     ['Main Page', '/'],
-    // ['Posts', '/posts'],
     ['About Me', '/about'],
     ['Projects', '/#projects'],
     ['Contact', '/#contact'],
@@ -522,16 +521,16 @@ const strings: IStrings = {
       paragraphs: [
         'Work on the security, development, and redesign of the information exchange platform for the European Agency.',
         'Work on developing and redesigning a low-code platform that allows users to create applications that improve and optimize business processes in their organizations.',
-        // 'Skills: TypeScript / React / Redux / Redux Thunk / SCSS Modules / Bootstrap / Sharepoint / Jest / Figma / Checkmarx / Scrum',
       ],
       skills: [
         'TypeScript',
         'React',
         'Redux',
+        'Jest',
+        'React Testing Library',
         'Sass',
         'Bootstrap',
         'Sharepoint',
-        'Jest',
         'Figma',
         'Checkmarx',
         'Scrum',
@@ -543,14 +542,15 @@ const strings: IStrings = {
       paragraphs: [
         'Development of software for the optical industry',
         'Work in the "Central UX" team responsible for the consistent design, app performance, and creating, documenting, and maintaining components for other teams',
-        // 'Skills: Typescript / React / Redux Saga / React Testing Library / SCSS Modules / SonarCloud / Scaled Agile Framework',
       ],
       skills: [
         'TypeScript',
         'React',
         'Redux',
+        'Jest',
         'React Testing Library',
         'Sass',
+        'Bootstrap',
         'SonarCloud',
         'Scrum',
       ],
@@ -560,11 +560,17 @@ const strings: IStrings = {
       bottomHeader: 'Software Developer [PrintXL]',
       paragraphs: [
         'Creation and development of a website for a large-format digital printing house based on the Gatsby framework and Headless CMS Contentful.',
-        // 'Skills: SCSS / JavaScript / React / Gatsby / Node / GraphQL / Contentful (Headless CMS)',
         'Co-creation of the production management system in the company based on Node.js / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.',
-        // 'Skills: Node.js / SQL / MS Excel',
       ],
-      skills: ['Node', 'MySQL', 'Excel'],
+      skills: [
+        'JavaScript',
+        'React',
+        'Gatsby',
+        'Node',
+        'MySQL',
+        'Excel',
+        'Kanban',
+      ],
     },
     {
       topHeader: 'Jul 2019 -> Jun 2021',
@@ -572,15 +578,14 @@ const strings: IStrings = {
       paragraphs: [
         'Creation and implementation of new products with market analysis, cost calculation, and optimal materials selection.',
         'Preparation of reports and constant cooperation with the management, sales, planning, logistics, and production departments.',
-        // 'Skills: Project Management / Business Analysis / Digital Printing / Research and Development (R&D) / Kanban / Customer Requirements / MS Excel',
       ],
       skills: [
-        'Project Management',
-        'Business Analysis',
-        'Digital Printing',
         'Research and Development',
-        'Kanban',
+        'Business Analysis',
+        'Project Management',
+        'Digital Printing',
         'Excel',
+        'Kanban',
       ],
     },
     {
@@ -590,14 +595,16 @@ const strings: IStrings = {
         'Managing the work and development of a seven-person department.',
         'Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing.',
         'Responsibility for the smooth flow of orders by the DTP department.',
-        // 'Skills: Team Management / Project Management / Digital Printing / Kanban / JavaScript',
       ],
       skills: [
         'Team Management',
         'Project Management',
+        'DTP',
         'Digital Printing',
-        'Kanban',
         'JavaScript',
+        'Adobe Illustrator',
+        'Adobe Photoshop',
+        'Kanban',
       ],
     },
     {
@@ -622,7 +629,6 @@ const strings: IStrings = {
       bottomHeader: 'Graphic Designer [AllElectronics]',
       paragraphs: [
         'Creating graphics, illustrations, and icons for online auctions.',
-        // 'Skills: Graphic Design / Adobe Illustrator / Adobe Photoshop',
       ],
       skills: ['Graphic Design', 'Adobe Illustrator', 'Adobe Photoshop'],
     },

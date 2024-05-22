@@ -1,5 +1,6 @@
 'use client';
 
+import classNames from 'classnames';
 import { BsKanban } from 'react-icons/bs';
 import { CgFigma } from 'react-icons/cg';
 import { DiSass, DiScrum, DiTrello } from 'react-icons/di';
@@ -20,6 +21,7 @@ import {
   SiAffinitypublisher,
   SiCheckmarx,
   SiCss3,
+  SiExpress,
   SiHtml5,
   SiJavascript,
   SiJest,
@@ -34,15 +36,15 @@ import {
   SiVisualstudiocode,
 } from 'react-icons/si';
 import { Tooltip } from 'react-tooltip';
-// import Express from '../../public/icons/express.svg';
-import { SiExpress } from 'react-icons/si';
+import styles from './switch-icon.module.scss';
 
 interface SwitchIconProps {
   name: string;
   withTooltip: boolean;
+  addClass?: string;
 }
 
-const SwitchIcon = ({ name, withTooltip }: SwitchIconProps) => {
+const SwitchIcon = ({ name, withTooltip, addClass }: SwitchIconProps) => {
   let icon;
   const tooltipId = name.replace(/\s/g, '');
   switch (name) {
@@ -180,22 +182,16 @@ const SwitchIcon = ({ name, withTooltip }: SwitchIconProps) => {
   }
 
   return (
-    <>
+    <div className={styles.switchIcon}>
       <span id={tooltipId}>{icon}</span>
       <Tooltip
         anchorSelect={`#${tooltipId}`}
         place='top'
-        style={{
-          backgroundColor: '#90ee90',
-          color: '#000',
-          fontWeight: 500,
-          fontSize: '1.2rem',
-          marginTop: '-2.5rem',
-        }}
+        className={classNames(styles.tooltip, addClass)}
       >
         {name}
       </Tooltip>
-    </>
+    </div>
   );
 };
 

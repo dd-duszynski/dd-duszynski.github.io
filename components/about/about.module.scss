@@ -1,13 +1,37 @@
 @import '../../styles/main.scss';
 
 .aboutSection {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  grid-column: 2/3;
-  justify-content: flex-start;
+  @include grid;
+  grid-column: 1/4;
+  justify-items: center;
   min-height: calc(100vh - 80px - 169px);
+  position: relative;
+}
+
+.mainBox {
+  grid-column: 2/3;
   gap: 3rem;
+  z-index: 1;
+}
+
+.background {
+  opacity: 0.07;
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 210px);
+  top: 0;
+  left: 0;
+  background-position: 20% 0%;
+  margin-top: $navBarHeight;
+  background-size: cover;
+  background-image: linear-gradient(
+      180deg,
+      $bgColor 0%,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0) 60%,
+      $bgColor 100%
+    ),
+    url(../../public/images/HeroImg.jpg);
 }
 
 .paragraph {
@@ -28,7 +52,7 @@
   position: absolute;
   top: 8rem;
   width: 0.1rem;
-  height: calc(100% - 16rem);
+  height: calc(100% - 24rem);
 }
 
 .whatCanIOfferListItem {
@@ -40,4 +64,16 @@
 
 .homeLinkBox {
   margin-bottom: 3rem;
+}
+
+@media (min-width: 600px) {
+  .background {
+    height: calc(100vh - 150px);
+  }
+}
+
+@media (min-width: 737px) {
+  .timelineExperience {
+    height: calc(100% - 22rem);
+  }
 }
