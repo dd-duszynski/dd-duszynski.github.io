@@ -15,7 +15,7 @@ const strings: IStrings = {
     'Hi, my name is Damian Duszyński. More about me ',
     'here',
     'I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript. You will find here a description of my projects and technologies that I use.',
-    'Feel free to',
+    'Feel free to ',
     'contact me',
   ],
   posts: {
@@ -500,7 +500,7 @@ const strings: IStrings = {
     header: 'About me',
     paragraphs: [
       "I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript. I'm currently exploring the Node.js ecosystem to evolve into a Full-stack Software Engineer, which is my main goal.",
-      "Privately, I enjoy a quiet life in the countryside, where I can peacefully develop my skills and passions. I'm a fan of ⚽ football, 🐕 dogs, ☕ black coffee and 🛸 sci-fi.",
+      'Privately, I enjoy a quiet life in the countryside, where I can peacefully develop my skills and passions. Fan of ⚽ football, 🐕 dogs, ☕ black coffee and 🛸 sci-fi.',
       "Feel free to connect with me if you share similar interests or if you're interested in collaborating on exciting projects.",
     ],
     experience: 'Experience: ',
