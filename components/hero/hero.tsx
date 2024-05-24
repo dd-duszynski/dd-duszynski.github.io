@@ -12,9 +12,9 @@ export const Hero = () => {
       <div className={styles.background} />
       <Box
         addClass={styles.box}
-        justify='center'
         align='center'
         direction='column'
+        justify='center'
       >
         <div>
           <Paragraph
@@ -29,8 +29,8 @@ export const Hero = () => {
           <br />
           <Paragraph
             addClass={styles.paragraph}
-            text={strings.hero[2]}
             breakLine
+            text={strings.hero[2]}
           />
           <Paragraph
             addClass={classNames(styles.inlineParagraph)}
@@ -41,7 +41,7 @@ export const Hero = () => {
           </Link>
           .
         </div>
-        <ScrollDown href='/#contact' />
+        <ScrollDown href='/#projects' />
       </Box>
     </section>
   );

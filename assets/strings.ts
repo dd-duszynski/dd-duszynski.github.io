@@ -9,6 +9,7 @@ const strings: IStrings = {
     ['Main Page', '/'],
     ['About Me', '/about'],
     ['Projects', '/#projects'],
+    ['Tools', '/#tools'],
     ['Contact', '/#contact'],
   ],
   hero: [
@@ -506,12 +507,12 @@ const strings: IStrings = {
     experience: 'Experience: ',
     whatCanIOffer: 'What can I offer?',
     whatCanIOfferList: [
-      '👩🏽‍💻 High work ethic',
-      '🤝 Strong cooperation attitude',
-      '🎨 UX and UI sensibility',
-      '📊 Ability to analyze business requirements and customer needs',
-      '💸 Experience in working with clients, sales department, and advertising agencies',
-      '💪🏻 Self-driven, problem-solving oriented, independent professionalism',
+      '👩🏽‍💻 High work ethic.',
+      '🤝 Strong cooperation attitude.',
+      '🎨 UX and UI sensibility.',
+      '📊 Ability to analyze business requirements and customer needs.',
+      '💸 Experience in working with clients, sales department, and advertising agencies.',
+      '💪🏻 Independent problem-solver.',
     ],
   },
   experience: [
@@ -540,8 +541,8 @@ const strings: IStrings = {
       topHeader: 'Jul 2021 -> Aug 2022',
       bottomHeader: 'Front-end Developer [Sonalake]',
       paragraphs: [
-        'Development of software for the optical industry',
-        'Work in the "Central UX" team responsible for the consistent design, app performance, and creating, documenting, and maintaining components for other teams',
+        'Development of software for the optical industry.',
+        'Work in the "Central UX" team responsible for the consistent design, app performance, and creating, documenting, and maintaining components for other teams.',
       ],
       skills: [
         'TypeScript',

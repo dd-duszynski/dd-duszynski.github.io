@@ -17,13 +17,13 @@ const TechnologyRow: React.FC<TechnologyRowProps> = ({
   choosenItem,
   headerText,
   technologies,
-  modalToggleHandler,
   choosenItemHandler,
+  modalToggleHandler,
 }) => {
   return (
     <article className={styles.technologyRow}>
       <Box justify='flex-start' align='center' addClass={styles.box}>
-        {headerText && <Header type='h3' text={headerText} />}
+        <Header type='h2' text={headerText} />
       </Box>
       <ul className={styles.technologyList}>
         {technologies.map((item: IListOfTechnology) => (
