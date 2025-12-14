@@ -13,6 +13,7 @@ import Header from '../header/header';
 import Paragraph from '../paragraph/paragraph';
 import SwitchIcon from '../switch-icon/switch-icon';
 import styles from './technology-modal.module.scss';
+import strings from '@/assets/strings';
 
 interface TechnologyModalProps {
   name: string;
@@ -104,7 +105,11 @@ const TechnologyModal = ({ name, context }: TechnologyModalProps) => {
           text={choosenContent.description}
           addClass={styles.paragraph}
         />
-        <Header type='h2' text='Dowiedz się więcej:' addClass={styles.h2} />
+        <Header
+          type='h2'
+          text={strings.technologies.seeMore}
+          addClass={styles.h2}
+        />
         {choosenContent.links.map((i) => (
           <Link
             target='_blank'

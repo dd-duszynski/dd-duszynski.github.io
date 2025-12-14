@@ -18,30 +18,34 @@ export const Hero = () => {
       >
         <div>
           <Paragraph
-            addClass={classNames(styles.inlineParagraph)}
-            text={strings.hero[0]}
-          />
-          <Link href={'/about'} className={styles.link}>
-            {strings.hero[1]}
-          </Link>
-          .
-          <br />
-          <br />
-          <Paragraph
             addClass={styles.paragraph}
             breakLine
-            text={strings.hero[2]}
+            text={strings.hero[0]}
           />
           <Paragraph
             addClass={classNames(styles.inlineParagraph)}
-            text={strings.hero[3]}
+            text={strings.hero[1]}
+          />
+          <br />
+          <br />
+          <Paragraph
+            addClass={classNames(styles.inlineParagraph)}
+            text={strings.hero[2]}
+          />
+          <Link href={'/about'} className={styles.link}>
+            {strings.hero[3]}
+          </Link>
+          .
+          <Paragraph
+            addClass={classNames(styles.inlineParagraph)}
+            text={strings.hero[4]}
           />
           <Link href={'/#contact'} className={styles.link}>
-            {strings.hero[4]}
+            {strings.hero[5]}
           </Link>
           .
         </div>
-        <ScrollDown href='/#projects' />
+        <ScrollDown href='/#tools' />
       </Box>
     </section>
   );

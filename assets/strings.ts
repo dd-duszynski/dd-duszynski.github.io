@@ -8,16 +8,17 @@ const strings: IStrings = {
   navigation: [
     ['Main Page', '/'],
     ['About Me', '/about'],
-    ['Projects', '/#projects'],
+    // ['Projects', '/#projects'],
     ['Tools', '/#tools'],
     ['Contact', '/#contact'],
   ],
   hero: [
-    'Hi, my name is Damian Duszyński. More about me ',
-    'here',
-    'I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript. You will find here a description of my projects and technologies that I use.',
-    'Feel free to ',
-    'contact me',
+    'Hi, my name is Damian. Software developer who understands business, design, and team leadership. Skilled in building bridges between these areas.',
+    'Specialized in React.js, Next.js, and TypeScript. Currently exploring the Microsoft Azure, and .NET ecosystem.',
+    'More ',
+    'about me',
+    ' Feel free to ',
+    'contact',
   ],
   posts: {
     title: 'Posts',
@@ -295,7 +296,7 @@ const strings: IStrings = {
         ['Smashing Magazine ', 'https://www.smashingmagazine.com/'],
         ['awwards. ', 'https://www.awwwards.com/'],
         [
-          'Heurystyki Nielsena ',
+          'Nielsen heuristics',
           'https://www.nngroup.com/articles/ten-usability-heuristics/#poster',
         ],
       ],
@@ -500,9 +501,9 @@ const strings: IStrings = {
   about: {
     header: 'About me',
     paragraphs: [
-      "I am a Front-end Developer and UX/UI design enthusiast, specializing in React.js and TypeScript. I'm currently exploring the Node.js ecosystem to evolve into a Full-stack Software Engineer, which is my main goal.",
-      'Privately, I enjoy a quiet life in the countryside, where I can peacefully develop my skills and passions. Fan of ⚽ football, 🐕 dogs, ☕ black coffee and 🛸 sci-fi.',
-      "Feel free to connect with me if you share similar interests or if you're interested in collaborating on exciting projects.",
+      'Software developer who understands business, design, and team leadership. Skilled in building bridges between these areas. Specialized in React, TypeScript, Node.js, and currently exploring the Azure / .NET ecosystem.',
+      'I believe in continuous growth through small, consistent improvements, following the Atomic Habits philosophy. Fascinated by the possibilities of AI tools.',
+      'Beyond work, I enjoy a quiet life in the countryside with my family and dogs, where I can focus on both professional growth and personal passions. In my free time, I train regularly, which helps me stay disciplined and focused.',
     ],
     experience: 'Experience: ',
     whatCanIOffer: 'What can I offer?',
@@ -512,16 +513,17 @@ const strings: IStrings = {
       '🎨 UX and UI sensibility.',
       '📊 Ability to analyze business requirements and customer needs.',
       '💸 Experience in working with clients, sales department, and advertising agencies.',
-      '💪🏻 Independent problem-solver.',
+      '💪🏻 Independence in solving problems.',
     ],
   },
   experience: [
     {
-      topHeader: 'Sep 2022 -> Present',
-      bottomHeader: 'Front-end Developer [Fabrity]',
+      topHeader: 'Mar 2023 -> Present',
+      bottomHeader: 'Senior Front-end Developer [Fabrity]',
       paragraphs: [
-        'Work on the security, development, and redesign of the information exchange platform for the European Agency.',
-        'Work on developing and redesigning a low-code platform that allows users to create applications that improve and optimize business processes in their organizations.',
+        'Development, redesign, and maintenance of an information exchange platform for the European Border and Coast Guard Agency.',
+        'Collaborated with designers, security teams, analysts, and product owners to ensure a seamless user experience, compliance with security standards, and alignment with business requirements.',
+        'Worked in a full Scrum environment, actively participating in refinements, sprint planning, and reviews to ensure efficient development and delivery of high-quality solutions.',
       ],
       skills: [
         'TypeScript',
@@ -538,11 +540,30 @@ const strings: IStrings = {
       ],
     },
     {
-      topHeader: 'Jul 2021 -> Aug 2022',
+      topHeader: 'Sep 2022 -> Feb 2023 [6 mos]',
+      bottomHeader: 'Front-end Developer [Fabrity]',
+      paragraphs: [
+        'Worked on Fastive, a versatile low-code platform that enables companies to optimize their processes.',
+        'Adjusted all components to align with the new design in collaboration with designers and product owners.',
+      ],
+      skills: [
+        'TypeScript',
+        'React',
+        'Redux',
+        'Jest',
+        'React Testing Library',
+        'Sass',
+        'Bootstrap',
+        'Figma',
+      ],
+    },
+    {
+      topHeader: 'Jul 2021 -> Aug 2022 [1yr 2mos]',
       bottomHeader: 'Front-end Developer [Sonalake]',
       paragraphs: [
-        'Development of software for the optical industry.',
-        'Work in the "Central UX" team responsible for the consistent design, app performance, and creating, documenting, and maintaining components for other teams.',
+        'Developed software for the optical industry, focusing on performance and scalability.',
+        'Worked in the Central UX team, ensuring consistency across applications and maintaining a design system.',
+        'Contributed to a Scaled Agile Framework (SAFe) workflow, coordinating with multiple development teams.',
       ],
       skills: [
         'TypeScript',
@@ -557,11 +578,12 @@ const strings: IStrings = {
       ],
     },
     {
-      topHeader: 'Jul 2020 -> Jun 2021',
+      topHeader: 'Jul 2020 -> Jun 2021 [2 yrs]',
       bottomHeader: 'Software Developer [PrintXL]',
       paragraphs: [
-        'Creation and development of a website for a large-format digital printing house based on the Gatsby framework and Headless CMS Contentful.',
-        'Co-creation of the production management system in the company based on Node.js / SQL / MS Excel. The system consists of panels for leaders of each department and a dashboard for managers.',
+        'Built and maintained a website for a large-format printing company using Gatsby.js & Contentful CMS.',
+        'Co-developed a production management system in Node.js & SQL, optimizing internal workflows.',
+        'Developed JavaScript automation scripts for Adobe software, for standardizing file preparation process.',
       ],
       skills: [
         'JavaScript',
@@ -574,7 +596,7 @@ const strings: IStrings = {
       ],
     },
     {
-      topHeader: 'Jul 2019 -> Jun 2021',
+      topHeader: 'Jul 2019 -> Jun 2021 [2 yrs]',
       bottomHeader: 'Research & Development Manager [PrintXL]',
       paragraphs: [
         'Creation and implementation of new products with market analysis, cost calculation, and optimal materials selection.',
@@ -590,12 +612,12 @@ const strings: IStrings = {
       ],
     },
     {
-      topHeader: 'Jun 2018 -> Jul 2019',
+      topHeader: 'Jun 2018 -> Jul 2019 [1yr 2mos]',
       bottomHeader: 'DTP Department Manager [PrintXL]',
       paragraphs: [
-        'Managing the work and development of a seven-person department.',
-        'Creating a group of JavaScript scripts for Adobe programs that automated and standardized the process of preparing graphics for printing.',
-        'Responsibility for the smooth flow of orders by the DTP department.',
+        'Managed the work and development of a seven-person department.',
+        'Ensured a smooth workflow, optimizing processes to improve efficiency and reduce errors.',
+        'Collaborated with other departments to ensure seamless project execution and timely deliveries.',
       ],
       skills: [
         'Team Management',
@@ -609,13 +631,12 @@ const strings: IStrings = {
       ],
     },
     {
-      topHeader: 'Mar 2013 -> Jun 2018',
+      topHeader: 'Mar 2013 -> Jun 2018 [5yrs 4mos]',
       bottomHeader: 'DTP Specialist [PrintXL]',
       paragraphs: [
-        'Verification of the correctness of files sent by the customer and their comprehensive preparation for production.',
-        'Development of product specifications and instructions for customers.',
-        'Create color profiles for printing machines using the X-Rite I1 spectrophotometer.',
-        // 'Skills: DTP / Digital Printing / Adobe Illustrator / Adobe Photoshop',
+        'Verified the correctness of files sent by customers and ensured their proper preparation for production.',
+        'Developed product specifications and instructions for customers.',
+        'Created color profiles for printing machines using the X-Rite i1 spectrophotometer, improving color consistency and print quality.',
       ],
       skills: [
         'DTP',
@@ -626,12 +647,19 @@ const strings: IStrings = {
       ],
     },
     {
-      topHeader: 'Oct 2012 -> Dec 2013',
+      topHeader: 'Oct 2012 -> Dec 2013 [1yr 3mos]',
       bottomHeader: 'Graphic Designer [AllElectronics]',
       paragraphs: [
-        'Creating graphics, illustrations, and icons for online auctions.',
+        'Designed graphics, illustrations, and icons for an online sales platform, enhancing product presentation.',
+        'Created visually appealing banners, product images, and marketing materials to improve conversion rates.',
+        'Ensured consistency in branding and optimized graphics for various screen sizes and resolutions.',
       ],
-      skills: ['Graphic Design', 'Adobe Illustrator', 'Adobe Photoshop'],
+      skills: [
+        'Digital Marketing',
+        'Graphic Design',
+        'Adobe Illustrator',
+        'Adobe Photoshop',
+      ],
     },
   ],
   footer: {

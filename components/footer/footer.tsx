@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className={styles.container}>
         <Box justify='space-between' align='center' direction='row'>
           <Paragraph
-            text='© Damian Duszyński 2024'
+            text='© Damian Duszyński 2025'
             addClass={styles.copyright}
           />
           <ScrollToTopButton />

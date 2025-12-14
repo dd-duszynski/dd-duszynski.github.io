@@ -12,7 +12,11 @@ const ContactForm = () => {
     <section className={styles.contact} id='contact'>
       <Box justify='center' align='flex-start' direction='column'>
         <Header type='h1' text={strings.contact.header} />
-        <Box addClass={styles.contactIconsBox} justify='center' align='center'>
+        <Box
+          addClass={styles.contactIconsBox}
+          align='center'
+          justify='space-between'
+        >
           <ContactItem
             text='dd.duszynski@gmail.com'
             url='mailto:dd.duszynski@gmail.com'

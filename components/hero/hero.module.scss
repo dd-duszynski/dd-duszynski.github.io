@@ -7,6 +7,7 @@
   height: calc(100vh - 210px);
   margin-bottom: 12rem;
   position: relative;
+  justify-items: center;
 
   p {
     font-size: 1.6rem;
@@ -58,6 +59,541 @@
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+// Futurystyczny układ scalony w kształcie drzewa z animowanym impulsem energii
+.circuitBoard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+
+  // Główny pień drzewa układu scalonego
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    height: 60%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 255, 150, 0.8) 0%,
+      rgba(0, 255, 150, 0.6) 50%,
+      rgba(0, 255, 150, 0.3) 100%
+    );
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.5);
+    animation: trunkPulse 3s ease-in-out infinite;
+  }
+
+  // Rozgałęzienia drzewa układu scalonego
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      // Główne gałęzie poziome (lewy i prawy)
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 48%,
+        rgba(0, 255, 150, 0.6) 50%,
+        transparent 52%,
+        transparent 100%
+      ),
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 23%,
+        rgba(0, 255, 150, 0.4) 25%,
+        transparent 27%,
+        transparent 100%
+      ),
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 73%,
+        rgba(0, 255, 150, 0.4) 75%,
+        transparent 77%,
+        transparent 100%
+      ),
+      // Gałęzie ukośne - lewe górne
+      linear-gradient(
+          135deg,
+          transparent 0%,
+          transparent 23%,
+          rgba(0, 200, 255, 0.5) 25%,
+          transparent 27%,
+          transparent 100%
+        ),
+      linear-gradient(
+        135deg,
+        transparent 0%,
+        transparent 33%,
+        rgba(0, 200, 255, 0.4) 35%,
+        transparent 37%,
+        transparent 100%
+      ),
+      // Gałęzie ukośne - prawe górne
+      linear-gradient(
+          45deg,
+          transparent 0%,
+          transparent 23%,
+          rgba(0, 200, 255, 0.5) 25%,
+          transparent 27%,
+          transparent 100%
+        ),
+      linear-gradient(
+        45deg,
+        transparent 0%,
+        transparent 33%,
+        rgba(0, 200, 255, 0.4) 35%,
+        transparent 37%,
+        transparent 100%
+      ),
+      // Małe rozgałęzienia
+      linear-gradient(
+          90deg,
+          transparent 0%,
+          transparent 33%,
+          rgba(0, 255, 200, 0.3) 35%,
+          transparent 37%,
+          transparent 100%
+        ),
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 63%,
+        rgba(0, 255, 200, 0.3) 65%,
+        transparent 67%,
+        transparent 100%
+      ),
+      // Węzły połączeń na rozgałęzieniach
+      radial-gradient(
+          circle at 50% 40%,
+          rgba(0, 255, 150, 0.8) 2px,
+          transparent 4px
+        ),
+      radial-gradient(
+        circle at 25% 25%,
+        rgba(0, 255, 150, 0.6) 1.5px,
+        transparent 3px
+      ),
+      radial-gradient(
+        circle at 75% 25%,
+        rgba(0, 255, 150, 0.6) 1.5px,
+        transparent 3px
+      ),
+      radial-gradient(
+        circle at 35% 35%,
+        rgba(0, 200, 255, 0.5) 1px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 65% 35%,
+        rgba(0, 200, 255, 0.5) 1px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 25% 50%,
+        rgba(0, 255, 200, 0.4) 1px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 75% 50%,
+        rgba(0, 255, 200, 0.4) 1px,
+        transparent 2px
+      ),
+      // Dodatkowe mikro-gałęzie
+      linear-gradient(
+          120deg,
+          transparent 0%,
+          transparent 18%,
+          rgba(0, 255, 150, 0.2) 20%,
+          transparent 22%,
+          transparent 100%
+        ),
+      linear-gradient(
+        60deg,
+        transparent 0%,
+        transparent 18%,
+        rgba(0, 255, 150, 0.2) 20%,
+        transparent 22%,
+        transparent 100%
+      );
+
+    background-size: 100% 2px, 50% 2px, 50% 2px,
+      // główne gałęzie poziome
+      100% 100%,
+      100% 100%,
+      // gałęzie ukośne lewe
+      100% 100%,
+      100% 100%,
+      // gałęzie ukośne prawe
+      70% 2px,
+      70% 2px,
+      // małe rozgałęzienia
+      100% 100%,
+      100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%,
+      // węzły
+      100% 100%,
+      100% 100%; // mikro-gałęzie
+
+    background-position: 50% 40%, 25% 25%, 75% 25%,
+      // główne gałęzie poziome
+      0% 0%,
+      0% 0%,
+      // gałęzie ukośne lewe
+      0% 0%,
+      0% 0%,
+      // gałęzie ukośne prawe
+      15% 35%,
+      85% 35%,
+      // małe rozgałęzienia
+      0% 0%,
+      0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%,
+      // węzły
+      0% 0%,
+      0% 0%; // mikro-gałęzie
+
+    animation: branchPulse 4s ease-in-out infinite;
+  }
+}
+
+.circuit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  // Dodatkowe rozgałęzienia drzewa układu scalonego
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      // Dodatkowe gałęzie pierwotne
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 49%,
+        rgba(0, 255, 150, 0.4) 50%,
+        transparent 51%,
+        transparent 100%
+      ),
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 14%,
+        rgba(0, 255, 150, 0.3) 15%,
+        transparent 16%,
+        transparent 100%
+      ),
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 84%,
+        rgba(0, 255, 150, 0.3) 85%,
+        transparent 86%,
+        transparent 100%
+      ),
+      // Gałęzie wtórne
+      linear-gradient(
+          120deg,
+          transparent 0%,
+          transparent 39%,
+          rgba(0, 200, 255, 0.3) 40%,
+          transparent 41%,
+          transparent 100%
+        ),
+      linear-gradient(
+        60deg,
+        transparent 0%,
+        transparent 39%,
+        rgba(0, 200, 255, 0.3) 40%,
+        transparent 41%,
+        transparent 100%
+      ),
+      // Końcówki gałęzi z mikroelementami
+      radial-gradient(
+          circle at 15% 15%,
+          rgba(0, 255, 150, 0.4) 1px,
+          transparent 2px
+        ),
+      radial-gradient(
+        circle at 85% 15%,
+        rgba(0, 255, 150, 0.4) 1px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 10% 30%,
+        rgba(0, 200, 255, 0.3) 1px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 90% 30%,
+        rgba(0, 200, 255, 0.3) 1px,
+        transparent 2px
+      );
+
+    background-size: 100% 1px, 30% 1px, 30% 1px, 100% 100%, 100% 100%, 100% 100%,
+      100% 100%, 100% 100%, 100% 100%;
+
+    background-position: 50% 50%, 15% 15%, 85% 15%, 0% 0%, 0% 0%, 0% 0%, 0% 0%,
+      0% 0%, 0% 0%;
+
+    animation: secondaryBranches 5s ease-in-out infinite 1s;
+  }
+
+  // Pionowy pień główny z dodatkową intensywnością
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    height: 70%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 255, 150, 1) 0%,
+      rgba(0, 255, 150, 0.8) 30%,
+      rgba(0, 255, 150, 0.5) 60%,
+      rgba(0, 255, 150, 0.2) 100%
+    );
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px rgba(0, 255, 150, 0.6), 0 0 16px rgba(0, 255, 150, 0.3);
+    animation: mainTrunkPulse 3s ease-in-out infinite 0.5s;
+  }
+}
+
+.energyPulse {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 150, 1) 0%,
+    rgba(0, 255, 150, 0.8) 30%,
+    rgba(0, 255, 150, 0.4) 60%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 150, 0.8), 0 0 20px rgba(0, 255, 150, 0.6),
+    0 0 30px rgba(0, 255, 150, 0.4);
+  animation: energyTravel 5s linear infinite;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(
+      circle,
+      transparent 0%,
+      rgba(0, 255, 150, 0.2) 50%,
+      transparent 100%
+    );
+    border-radius: 50%;
+    animation: pulseGlow 1s ease-in-out infinite alternate;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+}
+
+// Animacje
+@keyframes circuitPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes circuitSecondary {
+  0% {
+    transform: translateX(-5px) translateY(-5px);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(5px) translateY(5px);
+    opacity: 0.4;
+  }
+}
+
+@keyframes circuitLine {
+  0%,
+  100% {
+    opacity: 0.3;
+    box-shadow: 0 0 5px rgba(0, 255, 150, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 255, 150, 0.8);
+  }
+}
+
+@keyframes circuitLineVertical {
+  0%,
+  100% {
+    opacity: 0.3;
+    box-shadow: 0 0 5px rgba(0, 200, 255, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.8);
+  }
+}
+
+@keyframes energyTravel {
+  0% {
+    bottom: 5%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.5);
+  }
+  10% {
+    bottom: 15%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+  25% {
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1.1);
+  }
+  35% {
+    bottom: 40%;
+    left: 25%;
+    transform: translate(-50%, 0) scale(1);
+  }
+  45% {
+    bottom: 25%;
+    left: 15%;
+    transform: translate(-50%, 0) scale(0.8);
+  }
+  55% {
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1.1);
+  }
+  65% {
+    bottom: 40%;
+    left: 75%;
+    transform: translate(-50%, 0) scale(1);
+  }
+  75% {
+    bottom: 25%;
+    left: 85%;
+    transform: translate(-50%, 0) scale(0.8);
+  }
+  85% {
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1.1);
+  }
+  95% {
+    bottom: 60%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, 0) scale(0.9);
+  }
+  100% {
+    bottom: 70%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.5);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0.2;
+  }
+}
+
+// Animacje dla struktury drzewa układu scalonego
+@keyframes trunkPulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    box-shadow: 0 0 10px rgba(0, 255, 150, 0.5);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(0, 255, 150, 0.8);
+  }
+}
+
+@keyframes branchPulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    filter: brightness(0.8);
+  }
+  50% {
+    opacity: 0.8;
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes secondaryBranches {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes mainTrunkPulse {
+  0%,
+  100% {
+    opacity: 0.8;
+    box-shadow: 0 0 8px rgba(0, 255, 150, 0.6), 0 0 16px rgba(0, 255, 150, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 255, 150, 0.9), 0 0 30px rgba(0, 255, 150, 0.6);
+  }
 }
 
 @media (min-width: 600px) {

@@ -34,7 +34,6 @@
   }
 
   &:hover {
-    transform: scale(1.02);
     width: 26rem;
     transition: all 0.1s ease-in-out;
     svg {
@@ -49,8 +48,6 @@
 @media screen and (min-width: 1000px) {
   .link {
     &:hover {
-      transform: scale(1.02);
-      height: 20rem;
       width: 24rem;
       transition: all 0.1s ease-in-out;
     }
