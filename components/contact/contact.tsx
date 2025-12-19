@@ -23,14 +23,14 @@ const ContactForm = () => {
             icon={<IoMail />}
           />
           <ContactItem
-            text='github.com/dd-duszynski'
-            url='https://github.com/dd-duszynski'
-            icon={<TbBrandGithubFilled />}
-          />
-          <ContactItem
             text='linkedin.com/in/dd-duszynski'
             url='https://www.linkedin.com/in/dd-duszynski'
             icon={<FaLinkedinIn />}
+          />
+          <ContactItem
+            text='github.com/dd-duszynski'
+            url='https://github.com/dd-duszynski'
+            icon={<TbBrandGithubFilled />}
           />
         </Box>
       </Box>

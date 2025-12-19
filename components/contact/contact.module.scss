@@ -12,16 +12,16 @@
 }
 
 .contactIconsBox {
-  gap: 6rem;
-  height: 58rem;
   flex-direction: column !important;
+  height: 58rem;
+  padding-block: 4rem;
 }
 
 @media screen and (min-width: 1000px) {
   .contactIconsBox {
     flex-direction: row !important;
     gap: 6rem;
-    height: 40rem;
+    height: 24rem;
     flex-direction: row;
   }
 }

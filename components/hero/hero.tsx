@@ -18,10 +18,12 @@ export const Hero = () => {
       >
         <div>
           <Paragraph
-            addClass={styles.paragraph}
+            addClass={styles.inlineParagraph}
             breakLine
             text={strings.hero[0]}
           />
+          <br />
+          <br />
           <Paragraph
             addClass={classNames(styles.inlineParagraph)}
             text={strings.hero[1]}
